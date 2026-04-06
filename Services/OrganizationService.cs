@@ -19,5 +19,10 @@ namespace BackendApp.Services
         {
             return await _organizationRepository.SaveData(organization);
         }
+
+        public async Task<Organization> GetEnitityByAttributes(Organization organization)
+        {
+            return await _organizationRepository.GetEnitityByAttributes(organization);
+        }
     }
 }

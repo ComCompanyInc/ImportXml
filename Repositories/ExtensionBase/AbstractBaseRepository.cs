@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace BackendApp.Repositories
+namespace BackendApp.Repositories.AbstractBase
 {
     /// <summary>
     /// Универсальный класс для управления сущностями

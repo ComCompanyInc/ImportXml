@@ -19,5 +19,10 @@ namespace BackendApp.Services
         {
             return await _addressRepository.SaveData(address);
         }
+
+        public async Task<Address> GetEnitityByAttributes(Address addressData)
+        {
+            return await _addressRepository.GetEnitityByAttributes(addressData);
+        }
     }
 }

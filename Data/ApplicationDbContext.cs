@@ -12,6 +12,7 @@ namespace BackendApp.Data
         {
         }
 
+        public DbSet<BaseData> BaseData { get; set; }
         public DbSet<Address> Addresses { get; set; }
         public DbSet<Communication> Communications { get; set; }
         public DbSet<District> Districts { get; set; }

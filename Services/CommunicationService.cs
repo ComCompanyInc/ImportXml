@@ -19,5 +19,10 @@ namespace BackendApp.Services
         {
             return await _communicationRepository.SaveData(communication);
         }
+
+        public async Task<Communication> GetEnitityByAttributes(Communication communication)
+        {
+            return await _communicationRepository.GetEnitityByAttributes(communication);
+        }
     }
 }

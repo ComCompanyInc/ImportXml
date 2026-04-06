@@ -1,5 +1,6 @@
 ﻿using BackendApp.Data;
 using BackendApp.Models;
+using BackendApp.Repositories.AbstractBase;
 using System;
 using System.Collections.Generic;
 using System.Text;

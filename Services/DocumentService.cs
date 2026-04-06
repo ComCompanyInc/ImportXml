@@ -19,5 +19,10 @@ namespace BackendApp.Services
         {
             return await _documentRepository.SaveData(document);
         }
+
+        public async Task<Document> GetEnitityByAttributes(Document document)
+        {
+            return await _documentRepository.GetEnitityByAttributes(document);
+        }
     }
 }

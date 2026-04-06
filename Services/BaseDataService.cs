@@ -18,5 +18,10 @@ namespace BackendApp.Services
         public async Task<BaseData> SaveBaseDataObject(BaseData baseData) {
             return await _baseDataRepository.SaveData(baseData);
         }
+
+        public async Task<BaseData> GetEnitityByAttributes(BaseData baseDate)
+        {
+            return await _baseDataRepository.GetEnitityByAttributes(baseDate);
+        }
     }
 }

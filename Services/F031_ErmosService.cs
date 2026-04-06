@@ -53,7 +53,14 @@ namespace BackendApp.Services
                 Date = DateTime.ParseExact(dataContainer.BaseData.Date, "dd.MM.yyyy", null)
             }; // создаем обьект с заголовком и передаем в него данные из документа
 
-            long baseDataId = (await _baseDataService.SaveBaseDataObject(baseData)).Id;
+            long baseDataId;
+
+            BaseData existingBaseData = await _baseDataService.GetEnitityByAttributes(baseData);
+            if (existingBaseData != null) {
+                baseDataId = existingBaseData.Id;
+            } else {
+                baseDataId = (await _baseDataService.SaveBaseDataObject(baseData)).Id;
+            }
 
             foreach (MoDataDto item in dataContainer.ZapList) // перебираем все записи данных листа с данными
             {
@@ -65,7 +72,15 @@ namespace BackendApp.Services
                     Email = item.Email,
                 }; // данные контактов
 
-                long communicationId = (await _comminicationService.SaveCommunicationObject(communication)).Id;
+                long communicationId;
+
+                // если обьект уже существует в БД - сразу берем у него ID, иначе создаем его и берем у новосозданного Id
+                Communication existingCommunication = await _comminicationService.GetEnitityByAttributes(communication);
+                if (existingCommunication != null) {
+                    communicationId = existingCommunication.Id;
+                } else {
+                    communicationId = (await _comminicationService.SaveCommunicationObject(communication)).Id;
+                }
 
                 Organization organization = new Organization
                 {
@@ -74,7 +89,14 @@ namespace BackendApp.Services
                     Okopf = item.Okopf
                 };
 
-                long organizationId = (await _organizationService.SaveOrganizationObject(organization)).Id;
+                long organizationId;
+
+                Organization existingOrganization = await _organizationService.GetEnitityByAttributes(organization);
+                if (existingOrganization != null) {
+                    organizationId = existingOrganization.Id;
+                } else {
+                    organizationId = (await _organizationService.SaveOrganizationObject(organization)).Id;
+                }
 
                 Document document = new Document
                 {
@@ -83,7 +105,14 @@ namespace BackendApp.Services
                     Ogrn = item.Ogrn
                 };
 
-                long documentId = (await _documentService.SaveDocumentObject(document)).Id;
+                long documentId;
+
+                Document existingDocument = await _documentService.GetEnitityByAttributes(document);
+                if (existingDocument != null) {
+                    documentId = existingDocument.Id;
+                } else {
+                    documentId = (await _documentService.SaveDocumentObject(document)).Id;
+                }
 
                 MoDocument moDocument = new MoDocument
                 {
@@ -93,7 +122,14 @@ namespace BackendApp.Services
                     DateBeg = DateTime.Today
                 };
 
-                string moDocumentId = (await _moDocumentService.SaveMoDocument(moDocument)).MoId;
+                string moDocumentId;
+
+                MoDocument existingMoDocument = await _moDocumentService.GetEnitityByAttributes(moDocument);
+                if (existingMoDocument != null) {
+                    moDocumentId = existingMoDocument.MoId;
+                } else {
+                    moDocumentId = (await _moDocumentService.SaveMoDocument(moDocument)).MoId;
+                }
 
                 Address address = new Address
                 {
@@ -102,7 +138,14 @@ namespace BackendApp.Services
                     Index = item.FullAddressName.Substring(0, 6),
                 };
 
-                long addressId = (await _addressService.SaveAddressObject(address)).Id;
+                long addressId;
+
+                Address existingAddress = await _addressService.GetEnitityByAttributes(address);
+                if (existingAddress != null) {
+                    addressId = existingAddress.Id;
+                } else {
+                    addressId = (await _addressService.SaveAddressObject(address)).Id;
+                }
 
                 f031_ermo f031_ermo = new f031_ermo
                 {
@@ -117,7 +160,10 @@ namespace BackendApp.Services
                     CommunicationId = communicationId,
                 };
 
-                await SaveF031_ermoObject(f031_ermo);
+                if (await this.GetEnitityByAttributes(f031_ermo) == null)
+                {
+                    await SaveF031_ermoObject(f031_ermo);
+                }
             }
 
             return true;
@@ -126,6 +172,11 @@ namespace BackendApp.Services
         public async Task<f031_ermo> SaveF031_ermoObject(f031_ermo f031_ermo)
         {
             return await _f031_ErmosRepository.SaveData(f031_ermo);
+        }
+
+        public async Task<f031_ermo> GetEnitityByAttributes(f031_ermo f031_ErmoData)
+        {
+            return await _f031_ErmosRepository.GetEnitityByAttributes(f031_ErmoData);
         }
     }
 }
