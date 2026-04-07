@@ -1,0 +1,551 @@
+<packet>
+<zglv>
+<type>TRMO-6.957</type>
+<version>5.291</version>
+<date>27.03.2026</date>
+</zglv>
+<zap>
+<UIDMO>01202600100</UIDMO>
+<IDMO>00029300000000000</IDMO>
+<MCOD>010076</MCOD>
+<OKTMO_P>79000000000</OKTMO_P>
+<SUBJ>Республика Адыгея</SUBJ>
+<D_BEGIN>29.05.2025</D_BEGIN>
+<D_BEGIN_OMS>01.01.2026</D_BEGIN_OMS>
+<D_END/>
+<NAME_E/>
+<OSP>0</OSP>
+<PARENT_IDMO>00029300000000000</PARENT_IDMO>
+<PARENT_UIDMO>01202600100</PARENT_UIDMO>
+<VID_MO>Поликлиники (в том числе детские), а также поликлиники государственной и муниципальной систем здравоохранения. консультативно-диагностическая, в том числе детская</VID_MO>
+<OID_MO>1.2.643.5.1.13.13.12.2.77.11252</OID_MO>
+<OID_SPMO/>
+<NAM_MOP>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "М-ЛАЙН"</NAM_MOP>
+<NAM_MOK>ООО "М-ЛАЙН"</NAM_MOK>
+<INN>7722749786</INN>
+<KPP>772201001</KPP>
+<OGRN>1117746482391</OGRN>
+<JURADDRESS_INDEX>111024</JURADDRESS_INDEX>
+<JURADDRESS_ADDRESS>111024, г Москва, ш Энтузиастов, д 6</JURADDRESS_ADDRESS>
+<GAR_ADDRESS>de9b2227-051b-4794-bd28-70e2396e1316</GAR_ADDRESS>
+<OKFS>16</OKFS>
+<VEDPRI>38</VEDPRI>
+<PHONE>+74951206116</PHONE>
+<FAX/>
+<EMAIL>OMS@PMT-GROUP.RU</EMAIL>
+<DATEBEG>01.01.2026</DATEBEG>
+<DATEEND>31.12.2026</DATEEND>
+</zap>
+<zap>
+<UIDMO>01202600200</UIDMO>
+<IDMO>00003500000000000</IDMO>
+<MCOD>010060</MCOD>
+<OKTMO_P>79000000000</OKTMO_P>
+<SUBJ>Республика Адыгея</SUBJ>
+<D_BEGIN>03.06.2025</D_BEGIN>
+<D_BEGIN_OMS>01.01.2026</D_BEGIN_OMS>
+<D_END/>
+<NAME_E/>
+<OSP>0</OSP>
+<PARENT_IDMO>00003500000000000</PARENT_IDMO>
+<PARENT_UIDMO>01202600200</PARENT_UIDMO>
+<VID_MO>Лечебно-профилактические медицинские организации. Центры (в том числе детские), а также специализированные центры государственной и муниципальной систем здравоохранения</VID_MO>
+<OID_MO>1.2.643.5.1.13.13.12.2.39.11138</OID_MO>
+<OID_SPMO/>
+<NAM_MOP>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "БАЛТИЙСКАЯ МЕДИЦИНСКАЯ КОМПАНИЯ"</NAM_MOP>
+<NAM_MOK>ООО "БМК"</NAM_MOK>
+<INN>5024144956</INN>
+<KPP>390601001</KPP>
+<OGRN>1145024003882</OGRN>
+<JURADDRESS_INDEX>236010</JURADDRESS_INDEX>
+<JURADDRESS_ADDRESS>236010, обл Калининградская, г Калининград, пр-кт Мира, д 136</JURADDRESS_ADDRESS>
+<GAR_ADDRESS>c21fd00a-02b0-4372-9b61-00b4877647e9</GAR_ADDRESS>
+<OKFS>23</OKFS>
+<VEDPRI>38</VEDPRI>
+<PHONE>+74012611550</PHONE>
+<FAX/>
+<EMAIL>info@bmc-med.ru</EMAIL>
+<DATEBEG>11.03.2026</DATEBEG>
+<DATEEND>31.12.2026</DATEEND>
+</zap>
+<zap>
+<UIDMO>01202600201</UIDMO>
+<IDMO>00003503000000007</IDMO>
+<MCOD>010078</MCOD>
+<OKTMO_P>79000000000</OKTMO_P>
+<SUBJ>Республика Адыгея</SUBJ>
+<D_BEGIN>03.06.2025</D_BEGIN>
+<D_BEGIN_OMS>01.01.2026</D_BEGIN_OMS>
+<D_END/>
+<NAME_E/>
+<OSP>1</OSP>
+<PARENT_IDMO>00003500000000000</PARENT_IDMO>
+<PARENT_UIDMO>01202600200</PARENT_UIDMO>
+<VID_MO>Лечебно-профилактические медицинские организации. Центры (в том числе детские), а также специализированные центры государственной и муниципальной систем здравоохранения</VID_MO>
+<OID_MO>1.2.643.5.1.13.13.12.2.1.19945</OID_MO>
+<OID_SPMO/>
+<NAM_MOP>Адыгейский филиал общества с ограниченной ответственностью «Балтийская медицинская компания»</NAM_MOP>
+<NAM_MOK>Адыгейский филиал ООО «БМК»</NAM_MOK>
+<INN>5024144956</INN>
+<KPP>010143001</KPP>
+<OGRN>1145024003882</OGRN>
+<JURADDRESS_INDEX/>
+<JURADDRESS_ADDRESS>Респ Адыгея, р-н Шовгеновский, аул Хакуринохабль, ул Гагарина, д 50</JURADDRESS_ADDRESS>
+<GAR_ADDRESS>65103ae3-4e3e-4e94-b2d2-13940ff393aa</GAR_ADDRESS>
+<OKFS>23</OKFS>
+<VEDPRI/>
+<PHONE>+74012611550</PHONE>
+<FAX/>
+<EMAIL>info@bmc-med.ru</EMAIL>
+<DATEBEG>11.03.2026</DATEBEG>
+<DATEEND>31.12.2026</DATEEND>
+</zap>
+<zap>
+<UIDMO>01202600300</UIDMO>
+<IDMO>00001700000000000</IDMO>
+<MCOD>010027</MCOD>
+<OKTMO_P>79000000000</OKTMO_P>
+<SUBJ>Республика Адыгея</SUBJ>
+<D_BEGIN>03.06.2025</D_BEGIN>
+<D_BEGIN_OMS>01.01.2026</D_BEGIN_OMS>
+<D_END/>
+<NAME_E/>
+<OSP>0</OSP>
+<PARENT_IDMO>00001700000000000</PARENT_IDMO>
+<PARENT_UIDMO>01202600300</PARENT_UIDMO>
+<VID_MO>Лечебно-профилактические медицинские организации. Больницы (в том числе детские)</VID_MO>
+<OID_MO>1.2.643.5.1.13.13.12.2.1.21</OID_MO>
+<OID_SPMO/>
+<NAM_MOP>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ РЕСПУБЛИКИ АДЫГЕЯ "ТАХТАМУКАЙСКАЯ ЦЕНТРАЛЬНАЯ РАЙОННАЯ БОЛЬНИЦА"</NAM_MOP>
+<NAM_MOK>ГБУЗ РА "ТАХТАМУКАЙСКАЯ ЦРБ"</NAM_MOK>
+<INN>0106001332</INN>
+<KPP>010701001</KPP>
+<OGRN>1020100823270</OGRN>
+<JURADDRESS_INDEX>385100</JURADDRESS_INDEX>
+<JURADDRESS_ADDRESS>385100, Респ Адыгея, р-н Тахтамукайский, аул Тахтамукай, ул В.И.Ленина, д 15</JURADDRESS_ADDRESS>
+<GAR_ADDRESS>6874c603-4581-4ec3-8633-51ebae30b6f2</GAR_ADDRESS>
+<OKFS>13</OKFS>
+<VEDPRI>02</VEDPRI>
+<PHONE>+78777196356</PHONE>
+<FAX/>
+<EMAIL>crbt@adygheya.gov.ru</EMAIL>
+<DATEBEG>23.03.2026</DATEBEG>
+<DATEEND>31.12.2026</DATEEND>
+</zap>
+<zap>
+<UIDMO>01202600400</UIDMO>
+<IDMO>01235000000000000</IDMO>
+<MCOD>010049</MCOD>
+<OKTMO_P>79000000000</OKTMO_P>
+<SUBJ>Республика Адыгея</SUBJ>
+<D_BEGIN>05.06.2025</D_BEGIN>
+<D_BEGIN_OMS>01.01.2026</D_BEGIN_OMS>
+<D_END/>
+<NAME_E/>
+<OSP>0</OSP>
+<PARENT_IDMO>01235000000000000</PARENT_IDMO>
+<PARENT_UIDMO>01202600400</PARENT_UIDMO>
+<VID_MO>Лаборатории. клинико-диагностическая</VID_MO>
+<OID_MO>1.2.643.5.1.13.13.12.2.46.22465</OID_MO>
+<OID_SPMO/>
+<NAM_MOP>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ВИТАЛАБ"</NAM_MOP>
+<NAM_MOK>ООО "ВИТАЛАБ"</NAM_MOK>
+<INN>4632255762</INN>
+<KPP>463201001</KPP>
+<OGRN>1194632007063</OGRN>
+<JURADDRESS_INDEX>305007</JURADDRESS_INDEX>
+<JURADDRESS_ADDRESS>305007, обл Курская, г Курск, проезд Моковский 2-й, д 11</JURADDRESS_ADDRESS>
+<GAR_ADDRESS>11b3102c-b1f8-42d4-9399-2b7e975ca873</GAR_ADDRESS>
+<OKFS>16</OKFS>
+<VEDPRI/>
+<PHONE>+78002227746</PHONE>
+<FAX/>
+<EMAIL>foms@vitalab.expert</EMAIL>
+<DATEBEG>01.01.2026</DATEBEG>
+<DATEEND>31.12.2026</DATEEND>
+</zap>
+<zap>
+<UIDMO>01202600500</UIDMO>
+<IDMO>00002900000000000</IDMO>
+<MCOD>010053</MCOD>
+<OKTMO_P>79000000000</OKTMO_P>
+<SUBJ>Республика Адыгея</SUBJ>
+<D_BEGIN>09.06.2025</D_BEGIN>
+<D_BEGIN_OMS>01.01.2026</D_BEGIN_OMS>
+<D_END/>
+<NAME_E/>
+<OSP>0</OSP>
+<PARENT_IDMO>00002900000000000</PARENT_IDMO>
+<PARENT_UIDMO>01202600500</PARENT_UIDMO>
+<VID_MO>Поликлиники (в том числе детские), а также поликлиники государственной и муниципальной систем здравоохранения. консультативно-диагностическая, в том числе детская</VID_MO>
+<OID_MO>1.2.643.5.1.13.13.12.2.23.19896</OID_MO>
+<OID_SPMO/>
+<NAM_MOP>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ФОРМУЛА ЗДОРОВЬЯ"</NAM_MOP>
+<NAM_MOK>ООО "ФОРМУЛА ЗДОРОВЬЯ"</NAM_MOK>
+<INN>2311132846</INN>
+<KPP>231101001</KPP>
+<OGRN>1112311001692</OGRN>
+<JURADDRESS_INDEX>350072</JURADDRESS_INDEX>
+<JURADDRESS_ADDRESS>350072, край Краснодарский, г Краснодар, ул Московская, д 40</JURADDRESS_ADDRESS>
+<GAR_ADDRESS>8184dd56-ff1b-4512-a231-47785807b4f7</GAR_ADDRESS>
+<OKFS>16</OKFS>
+<VEDPRI>38</VEDPRI>
+<PHONE>+79180601140</PHONE>
+<FAX/>
+<EMAIL>MALIKO08@MAIL.RU</EMAIL>
+<DATEBEG>16.02.2026</DATEBEG>
+<DATEEND>31.12.2026</DATEEND>
+</zap>
+<zap>
+<UIDMO>01202600600</UIDMO>
+<IDMO>00229600000000000</IDMO>
+<MCOD>010081</MCOD>
+<OKTMO_P>79000000000</OKTMO_P>
+<SUBJ>Республика Адыгея</SUBJ>
+<D_BEGIN>15.07.2025</D_BEGIN>
+<D_BEGIN_OMS>01.01.2026</D_BEGIN_OMS>
+<D_END/>
+<NAME_E/>
+<OSP>0</OSP>
+<PARENT_IDMO>00229600000000000</PARENT_IDMO>
+<PARENT_UIDMO>01202600600</PARENT_UIDMO>
+<VID_MO>Специализированные больницы (в том числе по профилю медицинской помощи), а также специализированные больницы государственной и муниципальной систем здравоохранения. онкологическая</VID_MO>
+<OID_MO>1.2.643.5.1.13.13.12.2.77.12354</OID_MO>
+<OID_SPMO/>
+<NAM_MOP>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ВЫСОКИЕ МЕДИЦИНСКИЕ ТЕХНОЛОГИИ"</NAM_MOP>
+<NAM_MOK>ООО "ВМТ"</NAM_MOK>
+<INN>9729272464</INN>
+<KPP>772901001</KPP>
+<OGRN>1187746565676</OGRN>
+<JURADDRESS_INDEX>119415</JURADDRESS_INDEX>
+<JURADDRESS_ADDRESS>119415, г Москва, ул Лобачевского, д. 42 стр. 4</JURADDRESS_ADDRESS>
+<GAR_ADDRESS>23ac56e4-5523-4336-aeeb-b8ec161342e5</GAR_ADDRESS>
+<OKFS>16</OKFS>
+<VEDPRI>38</VEDPRI>
+<PHONE>+78632800058</PHONE>
+<FAX/>
+<EMAIL>i.iudkovskaia@pet-net.ru</EMAIL>
+<DATEBEG>25.02.2026</DATEBEG>
+<DATEEND>31.12.2026</DATEEND>
+</zap>
+<zap>
+<UIDMO>01202600700</UIDMO>
+<IDMO>01323400000000000</IDMO>
+<MCOD>010090</MCOD>
+<OKTMO_P>79000000000</OKTMO_P>
+<SUBJ>Республика Адыгея</SUBJ>
+<D_BEGIN>23.07.2025</D_BEGIN>
+<D_BEGIN_OMS>01.01.2026</D_BEGIN_OMS>
+<D_END/>
+<NAME_E/>
+<OSP>0</OSP>
+<PARENT_IDMO>01323400000000000</PARENT_IDMO>
+<PARENT_UIDMO>01202600700</PARENT_UIDMO>
+<VID_MO>Поликлиники (в том числе детские), а также поликлиники государственной и муниципальной систем здравоохранения. консультативно-диагностическая, в том числе детская</VID_MO>
+<OID_MO>1.2.643.5.1.13.13.12.2.77.128442</OID_MO>
+<OID_SPMO/>
+<NAM_MOP>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "М-ЛАЙН МЕДИЦИНА"</NAM_MOP>
+<NAM_MOK>ООО "М-ЛАЙН МЕДИЦИНА"</NAM_MOK>
+<INN>9731141483</INN>
+<KPP>773101001</KPP>
+<OGRN>1247700641704</OGRN>
+<JURADDRESS_INDEX>121552</JURADDRESS_INDEX>
+<JURADDRESS_ADDRESS>121552, г Москва, ул Ельнинская, д 15 к. 3, кв 8</JURADDRESS_ADDRESS>
+<GAR_ADDRESS>8da0dc0c-ce5a-4bf9-9608-992390d271a6</GAR_ADDRESS>
+<OKFS>16</OKFS>
+<VEDPRI/>
+<PHONE>+74951206116</PHONE>
+<FAX/>
+<EMAIL>service@mlinemedoms.ru</EMAIL>
+<DATEBEG>18.02.2026</DATEBEG>
+<DATEEND>31.12.2026</DATEEND>
+</zap>
+<zap>
+<UIDMO>01202600800</UIDMO>
+<IDMO>00228300000000000</IDMO>
+<MCOD>010091</MCOD>
+<OKTMO_P>79000000000</OKTMO_P>
+<SUBJ>Республика Адыгея</SUBJ>
+<D_BEGIN>29.07.2025</D_BEGIN>
+<D_BEGIN_OMS>01.01.2026</D_BEGIN_OMS>
+<D_END/>
+<NAME_E/>
+<OSP>0</OSP>
+<PARENT_IDMO>00228300000000000</PARENT_IDMO>
+<PARENT_UIDMO>01202600800</PARENT_UIDMO>
+<VID_MO>Центры (в том числе детские), а также специализированные центры государственной и муниципальной систем здравоохранения. консультативно-диагностический, в том числе детский</VID_MO>
+<OID_MO>1.2.643.5.1.13.13.12.2.58.20132</OID_MO>
+<OID_SPMO/>
+<NAM_MOP>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ ДИАГНОСТИЧЕСКИЙ ЦЕНТР "КЛИНИКА-СИТИ"</NAM_MOP>
+<NAM_MOK>ООО ДЦ "КЛИНИКА-СИТИ"</NAM_MOK>
+<INN>5835121251</INN>
+<KPP>583501001</KPP>
+<OGRN>1165835072138</OGRN>
+<JURADDRESS_INDEX>440039</JURADDRESS_INDEX>
+<JURADDRESS_ADDRESS>440039, обл Пензенская, г Пенза, ул Заводская, д 5</JURADDRESS_ADDRESS>
+<GAR_ADDRESS>d54d5e40-b64e-4ccf-a9e7-30337e7a2015</GAR_ADDRESS>
+<OKFS>16</OKFS>
+<VEDPRI>38</VEDPRI>
+<PHONE>+79186775516</PHONE>
+<FAX/>
+<EMAIL>STASURGARCHEV-MRT@YANDEX.RU</EMAIL>
+<DATEBEG>01.01.2026</DATEBEG>
+<DATEEND>31.12.2026</DATEEND>
+</zap>
+<zap>
+<UIDMO>01202600900</UIDMO>
+<IDMO>01204600000000000</IDMO>
+<MCOD>010088</MCOD>
+<OKTMO_P>79000000000</OKTMO_P>
+<SUBJ>Республика Адыгея</SUBJ>
+<D_BEGIN>04.08.2025</D_BEGIN>
+<D_BEGIN_OMS>01.01.2026</D_BEGIN_OMS>
+<D_END>14.01.2026</D_END>
+<NAME_E>4</NAME_E>
+<OSP>0</OSP>
+<PARENT_IDMO>01204600000000000</PARENT_IDMO>
+<PARENT_UIDMO>01202600900</PARENT_UIDMO>
+<VID_MO>Специализированные больницы (в том числе по профилю медицинской помощи), а также специализированные больницы государственной и муниципальной систем здравоохранения. онкологическая</VID_MO>
+<OID_MO>1.2.643.5.1.13.13.12.2.77.28041</OID_MO>
+<OID_SPMO/>
+<NAM_MOP>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ПЭТ-КЛИНИК"</NAM_MOP>
+<NAM_MOK>ООО "ПЭТ-КЛИНИК"</NAM_MOK>
+<INN>7707444451</INN>
+<KPP>770701001</KPP>
+<OGRN>1207700383076</OGRN>
+<JURADDRESS_INDEX>127055</JURADDRESS_INDEX>
+<JURADDRESS_ADDRESS>127055, г Москва, туп 1-й Тихвинский, д 5-7</JURADDRESS_ADDRESS>
+<GAR_ADDRESS>ad80df2f-adc5-4bae-819f-68889b442531</GAR_ADDRESS>
+<OKFS>16</OKFS>
+<VEDPRI/>
+<PHONE>+74959884799</PHONE>
+<FAX/>
+<EMAIL>v.romanchuk@oncoart.ru</EMAIL>
+<DATEBEG>14.01.2026</DATEBEG>
+<DATEEND>31.12.2026</DATEEND>
+</zap>
+<zap>
+<UIDMO>01202601000</UIDMO>
+<IDMO>00033700000000000</IDMO>
+<MCOD>010092</MCOD>
+<OKTMO_P>79000000000</OKTMO_P>
+<SUBJ>Республика Адыгея</SUBJ>
+<D_BEGIN>05.08.2025</D_BEGIN>
+<D_BEGIN_OMS>01.01.2026</D_BEGIN_OMS>
+<D_END/>
+<NAME_E/>
+<OSP>0</OSP>
+<PARENT_IDMO>00033700000000000</PARENT_IDMO>
+<PARENT_UIDMO>01202601000</PARENT_UIDMO>
+<VID_MO>Центры (в том числе детские), а также специализированные центры государственной и муниципальной систем здравоохранения. специализированные (по профилям медицинской помощи)</VID_MO>
+<OID_MO>1.2.643.5.1.13.13.12.2.78.12474</OID_MO>
+<OID_SPMO/>
+<NAM_MOP>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ЛЕЧЕБНО-ДИАГНОСТИЧЕСКИЙ ЦЕНТР МЕЖДУНАРОДНОГО ИНСТИТУТА БИОЛОГИЧЕСКИХ СИСТЕМ ИМЕНИ СЕРГЕЯ БЕРЕЗИНА"</NAM_MOP>
+<NAM_MOK>ООО "ЛДЦ МИБС"</NAM_MOK>
+<INN>7802290931</INN>
+<KPP>780201001</KPP>
+<OGRN>1137800001448</OGRN>
+<JURADDRESS_INDEX>194354</JURADDRESS_INDEX>
+<JURADDRESS_ADDRESS>194354, г Санкт-Петербург, ул Есенина, д. 2 к. 3 литера А</JURADDRESS_ADDRESS>
+<GAR_ADDRESS>c97e9e7e-61cf-4fe3-ae54-1b8ce6ac1dad</GAR_ADDRESS>
+<OKFS>16</OKFS>
+<VEDPRI/>
+<PHONE>+79602725530</PHONE>
+<FAX/>
+<EMAIL>gud@ldc.ru</EMAIL>
+<DATEBEG>01.01.2026</DATEBEG>
+<DATEEND>31.12.2026</DATEEND>
+</zap>
+<zap>
+<UIDMO>01202601100</UIDMO>
+<IDMO>00701000000000000</IDMO>
+<MCOD>010082</MCOD>
+<OKTMO_P>79000000000</OKTMO_P>
+<SUBJ>Республика Адыгея</SUBJ>
+<D_BEGIN>05.08.2025</D_BEGIN>
+<D_BEGIN_OMS>01.01.2026</D_BEGIN_OMS>
+<D_END/>
+<NAME_E/>
+<OSP>0</OSP>
+<PARENT_IDMO>00701000000000000</PARENT_IDMO>
+<PARENT_UIDMO>01202601100</PARENT_UIDMO>
+<VID_MO>Лечебно-профилактические медицинские организации. Амбулатория, в том числе врачебная</VID_MO>
+<OID_MO>1.2.643.5.1.13.13.12.2.61.12503</OID_MO>
+<OID_SPMO/>
+<NAM_MOP>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ИНВИТРО-РОСТОВ-НА-ДОНУ"</NAM_MOP>
+<NAM_MOK>ООО "ИНВИТРО-РОСТОВ-НА-ДОНУ"</NAM_MOK>
+<INN>6166066649</INN>
+<KPP>616101001</KPP>
+<OGRN>1086166002702</OGRN>
+<JURADDRESS_INDEX>344092</JURADDRESS_INDEX>
+<JURADDRESS_ADDRESS>344092, обл Ростовская, г Ростов-на-Дону, пр-кт Космонавтов, д 2</JURADDRESS_ADDRESS>
+<GAR_ADDRESS>96a77e47-2960-41ae-aa5f-3b5adaa836cb</GAR_ADDRESS>
+<OKFS>23</OKFS>
+<VEDPRI>38</VEDPRI>
+<PHONE>+79611613333</PHONE>
+<FAX/>
+<EMAIL>dvorobinskiy@invitro.ru</EMAIL>
+<DATEBEG>01.01.2026</DATEBEG>
+<DATEEND>31.12.2026</DATEEND>
+</zap>
+<zap>
+<UIDMO>01202601200</UIDMO>
+<IDMO>00004100000000000</IDMO>
+<MCOD>010072</MCOD>
+<OKTMO_P>79000000000</OKTMO_P>
+<SUBJ>Республика Адыгея</SUBJ>
+<D_BEGIN>07.08.2025</D_BEGIN>
+<D_BEGIN_OMS>01.01.2026</D_BEGIN_OMS>
+<D_END/>
+<NAME_E/>
+<OSP>0</OSP>
+<PARENT_IDMO>00004100000000000</PARENT_IDMO>
+<PARENT_UIDMO>01202601200</PARENT_UIDMO>
+<VID_MO>Лечебно-профилактические медицинские организации. Поликлиники (в том числе детские), а также поликлиники государственной и муниципальной систем здравоохранения</VID_MO>
+<OID_MO>1.2.643.5.1.13.13.12.2.1.19987</OID_MO>
+<OID_SPMO/>
+<NAM_MOP>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ЭФФЕКТ"</NAM_MOP>
+<NAM_MOK>ООО "ЭФФЕКТ"</NAM_MOK>
+<INN>0105068133</INN>
+<KPP>010501001</KPP>
+<OGRN>1130105000310</OGRN>
+<JURADDRESS_INDEX>385020</JURADDRESS_INDEX>
+<JURADDRESS_ADDRESS>385020, Респ Адыгея, г Майкоп, ул Пионерская, д 374Е</JURADDRESS_ADDRESS>
+<GAR_ADDRESS>5d21d0f3-cee9-4f0b-92d5-316c06009108</GAR_ADDRESS>
+<OKFS>16</OKFS>
+<VEDPRI>38</VEDPRI>
+<PHONE>+79034651088</PHONE>
+<FAX/>
+<EMAIL>9182212626@mail.ru</EMAIL>
+<DATEBEG>16.02.2026</DATEBEG>
+<DATEEND>31.12.2026</DATEEND>
+</zap>
+<zap>
+<UIDMO>01202601300</UIDMO>
+<IDMO>01275300000000000</IDMO>
+<MCOD>010093</MCOD>
+<OKTMO_P>79000000000</OKTMO_P>
+<SUBJ>Республика Адыгея</SUBJ>
+<D_BEGIN>07.08.2025</D_BEGIN>
+<D_BEGIN_OMS>01.01.2026</D_BEGIN_OMS>
+<D_END/>
+<NAME_E/>
+<OSP>0</OSP>
+<PARENT_IDMO>01275300000000000</PARENT_IDMO>
+<PARENT_UIDMO>01202601300</PARENT_UIDMO>
+<VID_MO>Медицинские организации особого типа. Лаборатории</VID_MO>
+<OID_MO>1.2.643.5.1.13.13.12.2.23.118893</OID_MO>
+<OID_SPMO/>
+<NAM_MOP>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ХЕЛИКС КРАСНОДАР"</NAM_MOP>
+<NAM_MOK>ООО "ХЕЛИКС КРАСНОДАР"</NAM_MOK>
+<INN>2312325921</INN>
+<KPP>231201001</KPP>
+<OGRN>1242300017277</OGRN>
+<JURADDRESS_INDEX>350059</JURADDRESS_INDEX>
+<JURADDRESS_ADDRESS>350059, край Краснодарский, г Краснодар, ул Уральская, д 124</JURADDRESS_ADDRESS>
+<GAR_ADDRESS>e3729dcc-f867-4745-8d7b-f1a07b1f0179</GAR_ADDRESS>
+<OKFS>16</OKFS>
+<VEDPRI/>
+<PHONE>+78126076607</PHONE>
+<FAX/>
+<EMAIL>oms2025@helix.ru</EMAIL>
+<DATEBEG>01.01.2026</DATEBEG>
+<DATEEND>31.12.2026</DATEEND>
+</zap>
+<zap>
+<UIDMO>01202601400</UIDMO>
+<IDMO>00003200000000000</IDMO>
+<MCOD>010056</MCOD>
+<OKTMO_P>79000000000</OKTMO_P>
+<SUBJ>Республика Адыгея</SUBJ>
+<D_BEGIN>08.08.2025</D_BEGIN>
+<D_BEGIN_OMS>01.01.2026</D_BEGIN_OMS>
+<D_END/>
+<NAME_E/>
+<OSP>0</OSP>
+<PARENT_IDMO>00003200000000000</PARENT_IDMO>
+<PARENT_UIDMO>01202601400</PARENT_UIDMO>
+<VID_MO>Лечебно-профилактические медицинские организации. Поликлиники (в том числе детские), а также поликлиники государственной и муниципальной систем здравоохранения</VID_MO>
+<OID_MO>1.2.643.5.1.13.13.12.2.23.19972</OID_MO>
+<OID_SPMO/>
+<NAM_MOP>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ СОВМЕСТНОЕ ПРЕДПРИЯТИЕ МЕДИЦИНСКИЙ ЦЕНТР ЭКСТРАКОРПОРАЛЬНОГО ОПЛОДОТВОРЕНИЯ "ЭМБРИО"</NAM_MOP>
+<NAM_MOK>ООО СП МЦ ЭКО "ЭМБРИО"</NAM_MOK>
+<INN>2308121763</INN>
+<KPP>230801001</KPP>
+<OGRN>1062308026362</OGRN>
+<JURADDRESS_INDEX>350089</JURADDRESS_INDEX>
+<JURADDRESS_ADDRESS>350089, край Краснодарский, г Краснодар, ул им. генерала И.Л. Шифрина, д 5</JURADDRESS_ADDRESS>
+<GAR_ADDRESS>bf4ffa13-5e78-4888-beb2-228db8f32668</GAR_ADDRESS>
+<OKFS>16</OKFS>
+<VEDPRI>38</VEDPRI>
+<PHONE>+78619922623</PHONE>
+<FAX/>
+<EMAIL>EMBRIO-IVF@MAIL.RU</EMAIL>
+<DATEBEG>17.02.2026</DATEBEG>
+<DATEEND>31.12.2026</DATEEND>
+</zap>
+<zap>
+<UIDMO>01202601500</UIDMO>
+<IDMO>00002300000000000</IDMO>
+<MCOD>010038</MCOD>
+<OKTMO_P>79000000000</OKTMO_P>
+<SUBJ>Республика Адыгея</SUBJ>
+<D_BEGIN>11.08.2025</D_BEGIN>
+<D_BEGIN_OMS>01.01.2026</D_BEGIN_OMS>
+<D_END/>
+<NAME_E/>
+<OSP>0</OSP>
+<PARENT_IDMO>00002300000000000</PARENT_IDMO>
+<PARENT_UIDMO>01202601500</PARENT_UIDMO>
+<VID_MO>Лечебно-профилактические медицинские организации. Медицинские организации скорой медицинской помощи и переливания крови</VID_MO>
+<OID_MO>1.2.643.5.1.13.13.12.2.1.16</OID_MO>
+<OID_SPMO/>
+<NAM_MOP>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ РЕСПУБЛИКИ АДЫГЕЯ "АДЫГЕЙСКИЙ РЕСПУБЛИКАНСКИЙ ЦЕНТР СКОРОЙ МЕДИЦИНСКОЙ ПОМОЩИ И МЕДИЦИНЫ КАТАСТРОФ"</NAM_MOP>
+<NAM_MOK>ГБУЗ РА "АРЦСМП И МК"</NAM_MOK>
+<INN>0105020244</INN>
+<KPP>010501001</KPP>
+<OGRN>1020100708396</OGRN>
+<JURADDRESS_INDEX>385012</JURADDRESS_INDEX>
+<JURADDRESS_ADDRESS>385012, Респ Адыгея, г Майкоп, ул Спортивная, д 39А</JURADDRESS_ADDRESS>
+<GAR_ADDRESS>65c6ce10-87b4-4f45-b705-dba481460830</GAR_ADDRESS>
+<OKFS>13</OKFS>
+<VEDPRI>02</VEDPRI>
+<PHONE>+78722522213</PHONE>
+<FAX/>
+<EMAIL>ssmp_03@inbox.ru</EMAIL>
+<DATEBEG>27.02.2026</DATEBEG>
+<DATEEND>31.12.2026</DATEEND>
+</zap>
+<zap>
+<UIDMO>01202601600</UIDMO>
+<IDMO>00002200000000000</IDMO>
+<MCOD>010037</MCOD>
+<OKTMO_P>79000000000</OKTMO_P>
+<SUBJ>Республика Адыгея</SUBJ>
+<D_BEGIN>11.08.2025</D_BEGIN>
+<D_BEGIN_OMS>01.01.2026</D_BEGIN_OMS>
+<D_END/>
+<NAME_E/>
+<OSP>0</OSP>
+<PARENT_IDMO>00002200000000000</PARENT_IDMO>
+<PARENT_UIDMO>01202601600</PARENT_UIDMO>
+<VID_MO>Центры (в том числе детские), а также специализированные центры государственной и муниципальной систем здравоохранения. лечебно-реабилитационный</VID_MO>
+<OID_MO>1.2.643.5.1.13.13.12.2.1.19894</OID_MO>
+<OID_SPMO/>
+<NAM_MOP>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "АТЛАНТ"</NAM_MOP>
+<NAM_MOK>ООО "АТЛАНТ"</NAM_MOK>
+<INN>0105058713</INN>
+<KPP>010501001</KPP>
+<OGRN>1090105001381</OGRN>
+<JURADDRESS_INDEX>385008</JURADDRESS_INDEX>
+<JURADDRESS_ADDRESS>385008, Респ Адыгея, г Майкоп, ул 12 Марта, д 155</JURADDRESS_ADDRESS>
+<GAR_ADDRESS>1477dc65-1327-4b54-a1de-815ea9f9c4cb</GAR_ADDRESS>
+<OKFS>16</OKFS>
+<VEDPRI>38</VEDPRI>
+<PHONE>+79994492700</PHONE>
+<FAX/>
+<EMAIL>ATLANT01@LIST.RU</EMAIL>
+<DATEBEG>17.02.2026</DATEBEG>
+<DATEEND>31.12.2026</DATEEND>
+</zap>
+</packet>

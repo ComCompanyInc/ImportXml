@@ -1,1 +1,3 @@
-curl.exe -X POST http://localhost:5000/api/F031_ErmosComtroller/import -H "Content-Type: application/xml" -d "@testXml.xml"
+curl.exe -X POST http://localhost:5000/api/F031_ErmosComtroller/import/F31 -H "Content-Type: application/xml" -d "@testXml(F031).xml"
+
+curl.exe -X POST http://localhost:5000/api/F031_ErmosComtroller/import/F32 -H "Content-Type: application/xml" -d "@testXml(F032).xml"

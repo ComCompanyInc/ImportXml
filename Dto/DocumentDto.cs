@@ -6,12 +6,12 @@ using System.Xml.Serialization;
 namespace BackendApp.Dto
 {
     [XmlRoot("packet")] // это корневой элемент в нашем XML
-    public class f031_ermoDto
+    public class DocumentDto<T>
     {
         [XmlElement("zglv")]
         public BaseDataDto BaseData { get; set; }
 
         [XmlElement("zap")]
-        public List<MoDataDto> ZapList { get; set; } = new List<MoDataDto>();
+        public List<T> ZapList { get; set; } = new List<T>();
     }
 }

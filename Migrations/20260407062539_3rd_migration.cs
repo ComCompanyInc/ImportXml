@@ -6,13 +6,13 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace BackendApp.Migrations
 {
     /// <inheritdoc />
-    public partial class fix_3rd_migration : Migration
+    public partial class _3rd_migration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropForeignKey(
-                name: "FK_Addresses_Districts_DistrictId1",
+                name: "FK_Addresses_Subjects_SubjectId",
                 table: "Addresses");
 
             migrationBuilder.DropForeignKey(
@@ -22,6 +22,30 @@ namespace BackendApp.Migrations
             migrationBuilder.DropForeignKey(
                 name: "FK_Organizations_OrgTypes_OrgTypeId",
                 table: "Organizations");
+
+            migrationBuilder.DropForeignKey(
+                name: "FK_Subjects_Districts_DistrictId1",
+                table: "Subjects");
+
+            migrationBuilder.DropIndex(
+                name: "IX_Subjects_DistrictId1",
+                table: "Subjects");
+
+            migrationBuilder.DropIndex(
+                name: "IX_Addresses_SubjectId",
+                table: "Addresses");
+
+            migrationBuilder.DropColumn(
+                name: "DistrictId",
+                table: "Subjects");
+
+            migrationBuilder.DropColumn(
+                name: "DistrictId1",
+                table: "Subjects");
+
+            migrationBuilder.DropColumn(
+                name: "SubjectId",
+                table: "Addresses");
 
             migrationBuilder.AlterColumn<string>(
                 name: "VedPri",
@@ -131,6 +155,68 @@ namespace BackendApp.Migrations
                 oldClrType: typeof(DateTime),
                 oldType: "datetime2");
 
+
+
+            // Удаляем старый ParentId (но сначала удаляем зависимости)
+            migrationBuilder.DropForeignKey(
+                name: "FK_F032_Trmos_F032_Trmos_ParentId",
+                table: "F032_Trmos");
+
+            migrationBuilder.DropIndex(
+                name: "IX_F032_Trmos_ParentId",
+                table: "F032_Trmos");
+
+            migrationBuilder.DropColumn(
+                name: "ParentId",
+                table: "F032_Trmos");
+
+            // Создаем новый ParentId
+            migrationBuilder.AddColumn<string>(
+                name: "ParentId",
+                table: "F032_Trmos",
+                type: "nvarchar(17)",
+                nullable: true);
+
+            // Удаляем первичный ключ
+            migrationBuilder.DropPrimaryKey(
+                name: "PK_F032_Trmos",
+                table: "F032_Trmos");
+
+            // Удаляем старый столбец Id
+            migrationBuilder.DropColumn(
+                name: "Id",
+                table: "F032_Trmos");
+
+            // Создаем новый Id
+            migrationBuilder.AddColumn<string>(
+                name: "Id",
+                table: "F032_Trmos",
+                type: "nvarchar(17)",
+                maxLength: 17,
+                nullable: false);
+
+            // Восстанавливаем первичный ключ
+            migrationBuilder.AddPrimaryKey(
+                name: "PK_F032_Trmos",
+                table: "F032_Trmos",
+                column: "Id");
+
+
+            // Восстанавливаем индекс и внешний ключ для ParentId
+            migrationBuilder.CreateIndex(
+                name: "IX_F032_Trmos_ParentId",
+                table: "F032_Trmos",
+                column: "ParentId");
+
+            migrationBuilder.AddForeignKey(
+                name: "FK_F032_Trmos_F032_Trmos_ParentId",
+                table: "F032_Trmos",
+                column: "ParentId",
+                principalTable: "F032_Trmos",
+                principalColumn: "Id");
+
+
+
             migrationBuilder.AddColumn<long>(
                 name: "CommunicationId",
                 table: "F031_Ermos",
@@ -159,6 +245,13 @@ namespace BackendApp.Migrations
                 nullable: false,
                 defaultValue: 0L);
 
+            migrationBuilder.AddColumn<long>(
+                name: "SubjectId",
+                table: "Districts",
+                type: "bigint",
+                nullable: false,
+                defaultValue: 0L);
+
             migrationBuilder.AlterColumn<string>(
                 name: "Site",
                 table: "Communications",
@@ -177,6 +270,14 @@ namespace BackendApp.Migrations
                 oldType: "nvarchar(40)",
                 oldMaxLength: 40);
 
+            migrationBuilder.AddColumn<string>(
+                name: "Type",
+                table: "BaseData",
+                type: "nvarchar(20)",
+                maxLength: 20,
+                nullable: false,
+                defaultValue: "");
+
             migrationBuilder.AlterColumn<string>(
                 name: "Okato",
                 table: "Addresses",
@@ -187,21 +288,17 @@ namespace BackendApp.Migrations
                 oldType: "nvarchar(5)",
                 oldMaxLength: 5);
 
-            migrationBuilder.AlterColumn<int>(
-                name: "DistrictId1",
-                table: "Addresses",
-                type: "int",
-                nullable: true,
-                oldClrType: typeof(int),
-                oldType: "int");
-
-            migrationBuilder.AlterColumn<long>(
+            migrationBuilder.AddColumn<long>(
                 name: "DistrictId",
                 table: "Addresses",
                 type: "bigint",
-                nullable: true,
-                oldClrType: typeof(long),
-                oldType: "bigint");
+                nullable: true);
+
+            migrationBuilder.AddColumn<int>(
+                name: "DistrictId1",
+                table: "Addresses",
+                type: "int",
+                nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Oktmo",
@@ -221,12 +318,30 @@ namespace BackendApp.Migrations
                 table: "F031_Ermos",
                 column: "DocumentId");
 
+            migrationBuilder.CreateIndex(
+                name: "IX_Districts_SubjectId",
+                table: "Districts",
+                column: "SubjectId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Addresses_DistrictId1",
+                table: "Addresses",
+                column: "DistrictId1");
+
             migrationBuilder.AddForeignKey(
                 name: "FK_Addresses_Districts_DistrictId1",
                 table: "Addresses",
                 column: "DistrictId1",
                 principalTable: "Districts",
                 principalColumn: "Id");
+
+            migrationBuilder.AddForeignKey(
+                name: "FK_Districts_Subjects_SubjectId",
+                table: "Districts",
+                column: "SubjectId",
+                principalTable: "Subjects",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Cascade);
 
             migrationBuilder.AddForeignKey(
                 name: "FK_F031_Ermos_Communications_CommunicationId",
@@ -267,6 +382,10 @@ namespace BackendApp.Migrations
                 table: "Addresses");
 
             migrationBuilder.DropForeignKey(
+                name: "FK_Districts_Subjects_SubjectId",
+                table: "Districts");
+
+            migrationBuilder.DropForeignKey(
                 name: "FK_F031_Ermos_Communications_CommunicationId",
                 table: "F031_Ermos");
 
@@ -290,6 +409,14 @@ namespace BackendApp.Migrations
                 name: "IX_F031_Ermos_DocumentId",
                 table: "F031_Ermos");
 
+            migrationBuilder.DropIndex(
+                name: "IX_Districts_SubjectId",
+                table: "Districts");
+
+            migrationBuilder.DropIndex(
+                name: "IX_Addresses_DistrictId1",
+                table: "Addresses");
+
             migrationBuilder.DropColumn(
                 name: "CommunicationId",
                 table: "F031_Ermos");
@@ -307,8 +434,38 @@ namespace BackendApp.Migrations
                 table: "F031_Ermos");
 
             migrationBuilder.DropColumn(
+                name: "SubjectId",
+                table: "Districts");
+
+            migrationBuilder.DropColumn(
+                name: "Type",
+                table: "BaseData");
+
+            migrationBuilder.DropColumn(
+                name: "DistrictId",
+                table: "Addresses");
+
+            migrationBuilder.DropColumn(
+                name: "DistrictId1",
+                table: "Addresses");
+
+            migrationBuilder.DropColumn(
                 name: "Oktmo",
                 table: "Addresses");
+
+            migrationBuilder.AddColumn<long>(
+                name: "DistrictId",
+                table: "Subjects",
+                type: "bigint",
+                nullable: false,
+                defaultValue: 0L);
+
+            migrationBuilder.AddColumn<int>(
+                name: "DistrictId1",
+                table: "Subjects",
+                type: "int",
+                nullable: false,
+                defaultValue: 0);
 
             migrationBuilder.AlterColumn<string>(
                 name: "VedPri",
@@ -442,6 +599,25 @@ namespace BackendApp.Migrations
                 oldType: "datetime2",
                 oldNullable: true);
 
+            migrationBuilder.AlterColumn<long>(
+                name: "ParentId",
+                table: "F032_Trmos",
+                type: "bigint",
+                nullable: true,
+                oldClrType: typeof(string),
+                oldType: "nvarchar(17)",
+                oldNullable: true);
+
+            migrationBuilder.AlterColumn<long>(
+                name: "Id",
+                table: "F032_Trmos",
+                type: "bigint",
+                nullable: false,
+                oldClrType: typeof(string),
+                oldType: "nvarchar(17)",
+                oldMaxLength: 17)
+                .Annotation("SqlServer:Identity", "1, 1");
+
             migrationBuilder.AlterColumn<string>(
                 name: "Site",
                 table: "Communications",
@@ -476,31 +652,28 @@ namespace BackendApp.Migrations
                 oldMaxLength: 5,
                 oldNullable: true);
 
-            migrationBuilder.AlterColumn<int>(
-                name: "DistrictId1",
-                table: "Addresses",
-                type: "int",
-                nullable: false,
-                defaultValue: 0,
-                oldClrType: typeof(int),
-                oldType: "int",
-                oldNullable: true);
-
-            migrationBuilder.AlterColumn<long>(
-                name: "DistrictId",
+            migrationBuilder.AddColumn<long>(
+                name: "SubjectId",
                 table: "Addresses",
                 type: "bigint",
                 nullable: false,
-                defaultValue: 0L,
-                oldClrType: typeof(long),
-                oldType: "bigint",
-                oldNullable: true);
+                defaultValue: 0L);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Subjects_DistrictId1",
+                table: "Subjects",
+                column: "DistrictId1");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Addresses_SubjectId",
+                table: "Addresses",
+                column: "SubjectId");
 
             migrationBuilder.AddForeignKey(
-                name: "FK_Addresses_Districts_DistrictId1",
+                name: "FK_Addresses_Subjects_SubjectId",
                 table: "Addresses",
-                column: "DistrictId1",
-                principalTable: "Districts",
+                column: "SubjectId",
+                principalTable: "Subjects",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Cascade);
 
@@ -517,6 +690,14 @@ namespace BackendApp.Migrations
                 table: "Organizations",
                 column: "OrgTypeId",
                 principalTable: "OrgTypes",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Cascade);
+
+            migrationBuilder.AddForeignKey(
+                name: "FK_Subjects_Districts_DistrictId1",
+                table: "Subjects",
+                column: "DistrictId1",
+                principalTable: "Districts",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Cascade);
         }

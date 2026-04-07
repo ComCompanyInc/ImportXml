@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
@@ -7,11 +8,13 @@ namespace BackendApp.Models
 {
     public class f032_trmo
     {
-        public long Id { get; set; }
+        [Key]
+        [StringLength(17,MinimumLength = 0, ErrorMessage = "Поле UIDMO (Id) должно содержать от 0 до 17 символов")]
+        public string Id { get; set; }
 
         // Первая связь с f031_ermo (основная)
         [ForeignKey(nameof(F031_Ermo))]
-        public long? f031_ermoId { get; set; }
+        public string? f031_ermoId { get; set; }
         [InverseProperty(nameof(f031_ermo.F032_Trmos))]
         public f031_ermo F031_Ermo { get; set; }
 
@@ -33,14 +36,14 @@ namespace BackendApp.Models
 
         // Вторая связь с f031_ermo (родительская)
         [ForeignKey(nameof(ParentIdMo))]
-        public long? f031_ermoParentId { get; set; }
+        public string? f031_ermoParentId { get; set; }
         public f031_ermo ParentIdMo { get; set; }
 
         [ForeignKey(nameof(Parent))]
-        public long? ParentId { get; set; }
+        public string? ParentId { get; set; }
         public f032_trmo Parent { get; set; }
 
-        public string MoDocumentId { get; set; }
+        public long MoDocumentId { get; set; }
         public MoDocument MoDocument { get; set; }
 
         public DateTime DateBeg { get; set; }
@@ -53,5 +56,6 @@ namespace BackendApp.Models
         public long BaseDataId { get; set; }
         public BaseData BaseData { get; set; }
 
+        public DateTime DateBeginOms { get; set; }
     }
 }

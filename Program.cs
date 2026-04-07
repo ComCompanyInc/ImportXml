@@ -23,6 +23,10 @@ builder.Services.AddScoped<DocumentService>();
 builder.Services.AddScoped<MoDocumentService>();
 builder.Services.AddScoped<OrganizationService>();
 builder.Services.AddScoped<CommunicationService>();
+builder.Services.AddScoped<OspTypeService>();
+builder.Services.AddScoped<SubjectService>();
+builder.Services.AddScoped<VidMoService>();
+builder.Services.AddScoped<F032_TrmosService>();
 
 // регестируем все репозиторные классы приложения для DI
 builder.Services.AddScoped<F031_ErmosRepository>();
@@ -32,6 +36,10 @@ builder.Services.AddScoped<DocumentRepository>();
 builder.Services.AddScoped<MoDocumentRepository>();
 builder.Services.AddScoped<OrganizationRepository>();
 builder.Services.AddScoped<CommunicationRepository>();
+builder.Services.AddScoped<OspTypeRepository>();
+builder.Services.AddScoped<SubjectRepository>();
+builder.Services.AddScoped<VidMoRepository>();
+builder.Services.AddScoped<F032_TrmoRepository>();
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi

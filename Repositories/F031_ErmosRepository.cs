@@ -40,12 +40,6 @@ namespace BackendApp.Repositories
                     .Where(c => c.AddressId == f031_ermoData.AddressId);
             }
 
-            if (!f031_ermoData.AddressCode.IsNullOrEmpty())
-            {
-                f031_ermoResult = f031_ermoResult
-                    .Where(c => c.AddressCode == f031_ermoData.AddressCode);
-            }
-
             if (f031_ermoData.BaseDataId != null)
             {
                 f031_ermoResult = f031_ermoResult

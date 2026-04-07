@@ -25,6 +25,6 @@ namespace BackendApp.Data
         public DbSet<OspType> OspType { get; set; }
         public DbSet<Subject> Subjects { get; set; }
         public DbSet<VidMo> VidMos { get; set; }
-
+        public DbSet<OspType> OspTypes { get; set; }
     }
 }

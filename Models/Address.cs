@@ -21,6 +21,9 @@ namespace BackendApp.Models
         [StringLength(11, MinimumLength = 11, ErrorMessage = "Код ОКТМО (Oktmo) - должен содержать 11 символов")]
         public string Oktmo { get; set; }
 
+        [StringLength(36, MinimumLength = 0, ErrorMessage = "Уникальный код адреса МО (AddressCode) - должен быть в диапазоне от 0 до 36 символов")]
+        public string AddressCode { get; set; }
+
         public long? DistrictId { get; set; }
         public District? District { get; set; }
 

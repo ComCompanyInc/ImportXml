@@ -1,4 +1,5 @@
 ﻿using BackendApp.Dto;
+using BackendApp.Dto.f031_ermos;
 using BackendApp.Services;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -18,9 +19,9 @@ namespace BackendApp.Controllers
             _f031_ErmosService = f031_ErmosService;
         }
 
-        [HttpPost("import")]
+        [HttpPost("import/F31")]
         [Consumes("application/xml")]
-        public async Task<bool> ImportXmlData([FromBody] f031_ermoDto dataContainer)
+        public async Task<bool> ImportXmlData([FromBody] DocumentDto<F31DataDto> dataContainer)
         {
             //return dataContainer;
 

@@ -1,4 +1,5 @@
 ﻿using BackendApp.Dto;
+using BackendApp.Dto.f031_ermos;
 using BackendApp.Models;
 using BackendApp.Repositories;
 using Microsoft.EntityFrameworkCore.Storage;
@@ -44,7 +45,7 @@ namespace BackendApp.Services
         /// (данные - фрагменты из F031.xml)
         /// </summary>
         /// <returns>Сохраненный обьект</returns>
-        public async Task<bool> SaveDataFromF31(f031_ermoDto dataContainer)
+        public async Task<bool> SaveDataFromF31(DocumentDto<F31DataDto> dataContainer)
         {
             BaseData baseData = new BaseData
             {
@@ -62,7 +63,7 @@ namespace BackendApp.Services
                 baseDataId = (await _baseDataService.SaveBaseDataObject(baseData)).Id;
             }
 
-            foreach (MoDataDto item in dataContainer.ZapList) // перебираем все записи данных листа с данными
+            foreach (F31DataDto item in dataContainer.ZapList) // перебираем все записи данных листа с данными
             {
                 //каждую новую итерацию нового элемента, создаем обьекты с данными из XML и сохраняем его по разным сущностям
                 Communication communication = new Communication
@@ -116,25 +117,26 @@ namespace BackendApp.Services
 
                 MoDocument moDocument = new MoDocument
                 {
-                    MoId = item.MoId,
+                    //MoId = item.MoId,
                     Okfs = item.Okfs,
                     OidMo = item.OidMo,
                     DateBeg = DateTime.Today
                 };
 
-                string moDocumentId;
+                long moDocumentId;
 
                 MoDocument existingMoDocument = await _moDocumentService.GetEnitityByAttributes(moDocument);
                 if (existingMoDocument != null) {
-                    moDocumentId = existingMoDocument.MoId;
+                    moDocumentId = existingMoDocument.Id;
                 } else {
-                    moDocumentId = (await _moDocumentService.SaveMoDocument(moDocument)).MoId;
+                    moDocumentId = (await _moDocumentService.SaveMoDocument(moDocument)).Id;
                 }
 
                 Address address = new Address
                 {
                     Oktmo = item.Oktmo,
                     Name = item.FullAddressName,
+                    AddressCode = item.AddressCode,
                     Index = item.FullAddressName.Substring(0, 6),
                 };
 
@@ -149,12 +151,12 @@ namespace BackendApp.Services
 
                 f031_ermo f031_ermo = new f031_ermo
                 {
+                    Id = item.F31_ErmosId,
                     BaseDataId = baseDataId,
                     MoDocumentId = moDocumentId,
                     OrganizationId = organizationId,
                     DocumentId = documentId,
                     AddressId = addressId,
-                    AddressCode = item.AddressCode,
                     DateBeg = DateTime.ParseExact(item.DateBeg, "dd.MM.yyyy", null),
                     DateEnd = DateTime.ParseExact(item.DateEnd, "dd.MM.yyyy", null),
                     CommunicationId = communicationId,

@@ -8,8 +8,8 @@ namespace BackendApp.Models
     public class MoDocument
     {
         [Key] // явно задаем ключ, тк название ключа некорректно для неявной пометки как ключ
-        [StringLength(17, MinimumLength = 17, ErrorMessage = "Реестровый номер МО (MoId) - должно быть 17 символов")]
-        public string MoId { get; set; }
+        //[StringLength(17, MinimumLength = 17, ErrorMessage = "Реестровый номер МО (MoId) - должно быть 17 символов")]
+        public long Id { get; set; }
 
         [StringLength(50, MinimumLength = 0, ErrorMessage = "ИП, осуществляющего МД (OidMo) - должно быть от 0 до 50 символов")]
         public string OidMo { get; set; }

@@ -8,17 +8,16 @@ namespace BackendApp.Models
 {
     public class f031_ermo
     {
-        public long Id { get; set; }
+        [Key]
+        [StringLength(17, MinimumLength = 0, ErrorMessage = "Длинна UIDMO (Id) должна быть от 0 до 17 символов")]
+        public string Id { get; set; }
 
-        public string MoDocumentId { get; set; }
+        public long MoDocumentId { get; set; }
 
         public MoDocument MoDocument { get; set; }
 
         public long AddressId { get; set; }
         public Address Address { get; set; }
-
-        [StringLength(36, MinimumLength = 0, ErrorMessage = "Уникальный код адреса МО (AddressCode) - должен быть в диапазоне от 0 до 36 символов")]
-        public string AddressCode { get; set; }
 
         public DateTime DateBeg { get; set; }
 

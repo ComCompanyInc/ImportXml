@@ -41,6 +41,12 @@ namespace BackendApp.Repositories
                     .Where(c => c.Okato == entityData.Okato);
             }
 
+            if (!entityData.AddressCode.IsNullOrEmpty())
+            {
+                addressesResult = addressesResult
+                    .Where(c => c.AddressCode == entityData.AddressCode);
+            }
+
             if (entityData.DistrictId != null)
             {
                 addressesResult = addressesResult

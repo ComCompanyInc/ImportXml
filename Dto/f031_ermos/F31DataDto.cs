@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Text;
 using System.Xml.Serialization;
 
-namespace BackendApp.Dto
+namespace BackendApp.Dto.f031_ermos
 {
-    public class MoDataDto
+    public class F31DataDto
     {
         [XmlElement("IDMO")]
-        public string MoId { get; set; }
+        public string F31_ErmosId { get; set; }
 
         [XmlElement("NAM_MOP")]
         public string Name { get; set; }

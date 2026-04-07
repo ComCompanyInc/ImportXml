@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BackendApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20260402142600_3rd_migration")]
-    partial class _3rd_migration
+    [Migration("20260407093832_fix_3rd_migration")]
+    partial class fix_3rd_migration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -33,10 +33,15 @@ namespace BackendApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
-                    b.Property<long>("DistrictId")
+                    b.Property<string>("AddressCode")
+                        .IsRequired()
+                        .HasMaxLength(36)
+                        .HasColumnType("nvarchar(36)");
+
+                    b.Property<long?>("DistrictId")
                         .HasColumnType("bigint");
 
-                    b.Property<int>("DistrictId1")
+                    b.Property<int?>("DistrictId1")
                         .HasColumnType("int");
 
                     b.Property<string>("Index")
@@ -50,9 +55,13 @@ namespace BackendApp.Migrations
                         .HasColumnType("nvarchar(300)");
 
                     b.Property<string>("Okato")
-                        .IsRequired()
                         .HasMaxLength(5)
                         .HasColumnType("nvarchar(5)");
+
+                    b.Property<string>("Oktmo")
+                        .IsRequired()
+                        .HasMaxLength(11)
+                        .HasColumnType("nvarchar(11)");
 
                     b.HasKey("Id");
 
@@ -106,7 +115,6 @@ namespace BackendApp.Migrations
                         .HasColumnType("nvarchar(40)");
 
                     b.Property<string>("HotLine")
-                        .IsRequired()
                         .HasMaxLength(40)
                         .HasColumnType("nvarchar(40)");
 
@@ -116,7 +124,6 @@ namespace BackendApp.Migrations
                         .HasColumnType("nvarchar(40)");
 
                     b.Property<string>("Site")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -190,7 +197,7 @@ namespace BackendApp.Migrations
                     b.Property<DateTime>("DateBeg")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("DateEnd")
+                    b.Property<DateTime?>("DateEnd")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("OidMo")
@@ -199,7 +206,6 @@ namespace BackendApp.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("OidSpmo")
-                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
@@ -208,7 +214,7 @@ namespace BackendApp.Migrations
                         .HasMaxLength(2)
                         .HasColumnType("nvarchar(2)");
 
-                    b.Property<long>("VidMoId")
+                    b.Property<long?>("VidMoId")
                         .HasColumnType("bigint");
 
                     b.HasKey("MoId");
@@ -243,19 +249,17 @@ namespace BackendApp.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
                     b.Property<string>("Kbk")
-                        .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
-                    b.Property<int>("KfTf")
+                    b.Property<int?>("KfTf")
                         .HasColumnType("int");
 
                     b.Property<string>("Mcod")
-                        .IsRequired()
                         .HasMaxLength(6)
                         .HasColumnType("nvarchar(6)");
 
-                    b.Property<int>("NalP")
+                    b.Property<int?>("NalP")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -264,11 +268,10 @@ namespace BackendApp.Migrations
                         .HasColumnType("nvarchar(2500)");
 
                     b.Property<string>("NameE")
-                        .IsRequired()
                         .HasMaxLength(1)
                         .HasColumnType("nvarchar(1)");
 
-                    b.Property<bool>("NoSmo")
+                    b.Property<bool?>("NoSmo")
                         .HasColumnType("bit");
 
                     b.Property<string>("Okopf")
@@ -277,11 +280,10 @@ namespace BackendApp.Migrations
                         .HasColumnType("nvarchar(5)");
 
                     b.Property<string>("OrgCode")
-                        .IsRequired()
                         .HasMaxLength(5)
                         .HasColumnType("nvarchar(5)");
 
-                    b.Property<long>("OrgTypeId")
+                    b.Property<long?>("OrgTypeId")
                         .HasColumnType("bigint");
 
                     b.Property<string>("ShortName")
@@ -290,7 +292,6 @@ namespace BackendApp.Migrations
                         .HasColumnType("nvarchar(250)");
 
                     b.Property<string>("VedPri")
-                        .IsRequired()
                         .HasMaxLength(2)
                         .HasColumnType("nvarchar(2)");
 
@@ -355,21 +356,26 @@ namespace BackendApp.Migrations
 
             modelBuilder.Entity("BackendApp.Models.f031_ermo", b =>
                 {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
-
-                    b.Property<string>("AddressCode")
-                        .IsRequired()
-                        .HasMaxLength(36)
-                        .HasColumnType("nvarchar(36)");
+                    b.Property<string>("Id")
+                        .HasMaxLength(17)
+                        .HasColumnType("nvarchar(17)");
 
                     b.Property<long>("AddressId")
                         .HasColumnType("bigint");
 
                     b.Property<long>("BaseDataId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("CommunicationId")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("DateBeg")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DateEnd")
+                        .HasColumnType("datetime2");
+
+                    b.Property<long>("DocumentId")
                         .HasColumnType("bigint");
 
                     b.Property<string>("MoDocumentId")
@@ -385,6 +391,10 @@ namespace BackendApp.Migrations
 
                     b.HasIndex("BaseDataId");
 
+                    b.HasIndex("CommunicationId");
+
+                    b.HasIndex("DocumentId");
+
                     b.HasIndex("MoDocumentId");
 
                     b.HasIndex("OrganizationId");
@@ -394,11 +404,9 @@ namespace BackendApp.Migrations
 
             modelBuilder.Entity("BackendApp.Models.f032_trmo", b =>
                 {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+                    b.Property<string>("Id")
+                        .HasMaxLength(17)
+                        .HasColumnType("nvarchar(17)");
 
                     b.Property<long>("AddressId")
                         .HasColumnType("bigint");
@@ -410,6 +418,9 @@ namespace BackendApp.Migrations
                         .HasColumnType("bigint");
 
                     b.Property<DateTime>("DateBeg")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DateBeginOms")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("DateEnd")
@@ -434,14 +445,14 @@ namespace BackendApp.Migrations
                     b.Property<long>("OspTypeId")
                         .HasColumnType("bigint");
 
-                    b.Property<long?>("ParentId")
-                        .HasColumnType("bigint");
+                    b.Property<string>("ParentId")
+                        .HasColumnType("nvarchar(17)");
 
-                    b.Property<long?>("f031_ermoId")
-                        .HasColumnType("bigint");
+                    b.Property<string>("f031_ermoId")
+                        .HasColumnType("nvarchar(17)");
 
-                    b.Property<long?>("f031_ermoParentId")
-                        .HasColumnType("bigint");
+                    b.Property<string>("f031_ermoParentId")
+                        .HasColumnType("nvarchar(17)");
 
                     b.HasKey("Id");
 
@@ -472,9 +483,7 @@ namespace BackendApp.Migrations
                 {
                     b.HasOne("BackendApp.Models.District", "District")
                         .WithMany()
-                        .HasForeignKey("DistrictId1")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("DistrictId1");
 
                     b.Navigation("District");
                 });
@@ -494,9 +503,7 @@ namespace BackendApp.Migrations
                 {
                     b.HasOne("BackendApp.Models.VidMo", "VidMos")
                         .WithMany("MoDocuments")
-                        .HasForeignKey("VidMoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("VidMoId");
 
                     b.Navigation("VidMos");
                 });
@@ -505,9 +512,7 @@ namespace BackendApp.Migrations
                 {
                     b.HasOne("BackendApp.Models.OrgType", "OrgType")
                         .WithMany("Organizations")
-                        .HasForeignKey("OrgTypeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("OrgTypeId");
 
                     b.Navigation("OrgType");
                 });
@@ -526,6 +531,18 @@ namespace BackendApp.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("BackendApp.Models.Communication", "Communication")
+                        .WithMany()
+                        .HasForeignKey("CommunicationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.Document", "Document")
+                        .WithMany()
+                        .HasForeignKey("DocumentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("BackendApp.Models.MoDocument", "MoDocument")
                         .WithMany()
                         .HasForeignKey("MoDocumentId")
@@ -541,6 +558,10 @@ namespace BackendApp.Migrations
                     b.Navigation("Address");
 
                     b.Navigation("BaseData");
+
+                    b.Navigation("Communication");
+
+                    b.Navigation("Document");
 
                     b.Navigation("MoDocument");
 
