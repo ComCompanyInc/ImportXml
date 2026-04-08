@@ -30,7 +30,7 @@ namespace BackendApp.Models
         public long OspTypeId { get; set; }
         public OspType OspType { get; set; }
 
-        public DateTime ExclusionDate { get; set; }
+        public DateTime? ExclusionDate { get; set; }
 
         public DateTime InclusionDate { get; set; }
 
@@ -48,7 +48,7 @@ namespace BackendApp.Models
 
         public DateTime DateBeg { get; set; }
 
-        public DateTime DateEnd { get; set; }
+        public DateTime? DateEnd { get; set; }
 
         public long CommunicationId { get; set; }
         public Communication Communication { get; set; }

@@ -32,7 +32,7 @@ namespace BackendApp.Models
         public string? Mcod { get; set; } // реестровый номер МО - если организация - МО
 
         [StringLength(5, MinimumLength = 5, ErrorMessage = "Код организационно-правовой нормы (Okopf) - должно быть 5 символов")]
-        public string Okopf { get; set; }
+        public string? Okopf { get; set; }
 
         [StringLength(1, MinimumLength = 1, ErrorMessage = "Причина и основание исключения МО (NameE) - должно быть 1 символ")]
         public String? NameE { get; set; }

@@ -11,7 +11,7 @@ namespace BackendApp.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class F032_TrmosController
+    public class F032_TrmosController : ControllerBase
     {
         private readonly F032_TrmosService _f032_TrmosService;
 
@@ -22,13 +22,11 @@ namespace BackendApp.Controllers
 
         [HttpPost("import/F32")]
         [Consumes("application/xml")]
-        public async Task<bool> ImportXmlData([FromBody] DocumentDto<F32DataDto> dataContainer)
+        public async Task</*DocumentDto<F32DataDto>*/ bool> ImportXmlData([FromBody] DocumentDto<F32DataDto> dataContainer)
         {
             //return dataContainer;
 
             return await _f032_TrmosService.SaveDataFromF32(dataContainer);
-
-            //return true;
         }
     }
 }

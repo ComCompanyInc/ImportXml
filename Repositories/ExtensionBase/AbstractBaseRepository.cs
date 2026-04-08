@@ -26,10 +26,18 @@ namespace BackendApp.Repositories.AbstractBase
         {
             if (obj != null)
             {
-                await _dbSet.AddAsync(obj);
-                await _context.SaveChangesAsync();
+                try
+                {
+                    await _dbSet.AddAsync(obj);
+                    await _context.SaveChangesAsync();
 
-                return obj;
+                    return obj;
+                }
+                catch (Exception ex) {
+                    Console.WriteLine("ОШИБКА: " + ex + " НА ОБЬЕКТЕ: " + obj.ToString());
+
+                    throw;
+                }
             }
             else
             {

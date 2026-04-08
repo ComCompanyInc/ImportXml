@@ -136,18 +136,17 @@ namespace BackendApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("DateBegin")
+                    b.Property<DateTime?>("DateBegin")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("DateEnd")
+                    b.Property<DateTime?>("DateEnd")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
 
-                    b.Property<long>("SubjectId")
+                    b.Property<long?>("SubjectId")
                         .HasColumnType("bigint");
 
                     b.HasKey("Id");
@@ -274,7 +273,6 @@ namespace BackendApp.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("Okopf")
-                        .IsRequired()
                         .HasMaxLength(5)
                         .HasColumnType("nvarchar(5)");
 
@@ -345,8 +343,8 @@ namespace BackendApp.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
 
                     b.HasKey("Id");
 
@@ -421,13 +419,13 @@ namespace BackendApp.Migrations
                     b.Property<DateTime>("DateBeginOms")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("DateEnd")
+                    b.Property<DateTime?>("DateEnd")
                         .HasColumnType("datetime2");
 
                     b.Property<long>("DocumentId")
                         .HasColumnType("bigint");
 
-                    b.Property<DateTime>("ExclusionDate")
+                    b.Property<DateTime?>("ExclusionDate")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("InclusionDate")
@@ -489,9 +487,7 @@ namespace BackendApp.Migrations
                 {
                     b.HasOne("BackendApp.Models.Subject", "Subject")
                         .WithMany()
-                        .HasForeignKey("SubjectId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("SubjectId");
 
                     b.Navigation("Subject");
                 });

@@ -141,6 +141,7 @@ X:\ASU\Кулаев\Projects\BackendApp\obj\Debug\net10.0\BackendApp.AssemblyInf
 X:\ASU\Кулаев\Projects\BackendApp\obj\Debug\net10.0\BackendApp.csproj.CoreCompileInputs.cache
 X:\ASU\Кулаев\Projects\BackendApp\obj\Debug\net10.0\BackendApp.MvcApplicationPartsAssemblyInfo.cs
 X:\ASU\Кулаев\Projects\BackendApp\obj\Debug\net10.0\BackendApp.MvcApplicationPartsAssemblyInfo.cache
+X:\ASU\Кулаев\Projects\BackendApp\obj\Debug\net10.0\BackendApp.sourcelink.json
 X:\ASU\Кулаев\Projects\BackendApp\obj\Debug\net10.0\rjimswa.dswa.cache.json
 X:\ASU\Кулаев\Projects\BackendApp\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 X:\ASU\Кулаев\Projects\BackendApp\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
@@ -156,5 +157,3 @@ X:\ASU\Кулаев\Projects\BackendApp\obj\Debug\net10.0\refint\BackendApp.dll
 X:\ASU\Кулаев\Projects\BackendApp\obj\Debug\net10.0\BackendApp.pdb
 X:\ASU\Кулаев\Projects\BackendApp\obj\Debug\net10.0\BackendApp.genruntimeconfig.cache
 X:\ASU\Кулаев\Projects\BackendApp\obj\Debug\net10.0\ref\BackendApp.dll
-X:\ASU\Кулаев\Projects\BackendApp\obj\Debug\net10.0\BackendApp.sourcelink.json
-X:\ASU\Кулаев\Projects\BackendApp\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

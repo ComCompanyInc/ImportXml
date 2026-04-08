@@ -1,6 +1,7 @@
 ﻿using BackendApp.Dto;
 using BackendApp.Dto.f031_ermos;
 using BackendApp.Dto.f032_trmos;
+using BackendApp.Helpers;
 using BackendApp.Models;
 using BackendApp.Repositories;
 using System;
@@ -22,6 +23,7 @@ namespace BackendApp.Services
         private readonly VidMoService _vidMoService;
         private readonly OspTypeService _ospService;
         private readonly SubjectService _subjectService;
+        private readonly DistrictService _districtService;
 
         public F032_TrmosService(
             F032_TrmoRepository f032_TrmosRepository,
@@ -33,7 +35,8 @@ namespace BackendApp.Services
             AddressService addressService,
             VidMoService vidMoService,
             OspTypeService ospService,
-            SubjectService subjectService
+            SubjectService subjectService,
+            DistrictService districtService
          )
         {
             _f032_TrmosRepository = f032_TrmosRepository;
@@ -47,6 +50,7 @@ namespace BackendApp.Services
             _vidMoService = vidMoService;
             _ospService = ospService;
             _subjectService = subjectService;
+            _districtService = districtService;
         }
 
         public async Task<bool> SaveDataFromF32(DocumentDto<F32DataDto> dataContainer)
@@ -156,6 +160,7 @@ namespace BackendApp.Services
                       OidMo = item.OidMo,
                       DateBeg = DateTime.Today,
                       VidMoId = vidMoId,
+                      OidSpmo = item.OidSpmo
                   };
 
                   long moDocumentId;
@@ -187,12 +192,30 @@ namespace BackendApp.Services
                       subjectId = (await _subjectService.SaveSubjectObject(subject)).Id;
                   }
 
+                  District district = new District
+                  {
+                      SubjectId = subjectId
+                  };
+
+                  long districtId;
+
+                  District existingDistrict = await _districtService.GetEnitityByAttributes(district);
+                  if (existingDistrict != null)
+                  {
+                      districtId = existingDistrict.Id;
+                  }
+                  else
+                  {
+                      districtId = (await _districtService.SaveDistrictObject(district)).Id;
+                  }
+
                   Address address = new Address
                   {
                       Oktmo = item.Oktmo,
                       Name = item.AddressName,
                       AddressCode = item.AddressCode,
-                      Index = item.Index
+                      Index = item.Index,
+                      DistrictId = districtId
                   };
 
                   long addressId;
@@ -228,11 +251,14 @@ namespace BackendApp.Services
                   {
                       Id = item.Id,
                       f031_ermoId = item.F031_ErmosId,
-                      ExclusionDate = DateTime.ParseExact(item.ExclusionDate, "dd.MM.yyyy", null),
+
+                      ExclusionDate = ConverterType.convertStringToData(item.ExclusionDate),
                       InclusionDate = DateTime.ParseExact(item.InclusionDate,"dd.MM.yyyy", null),
                       DateBeginOms = DateTime.ParseExact(item.DateBeginOms, "dd.MM.yyyy", null),
                       DateBeg = DateTime.ParseExact(item.DateBeg, "dd.MM.yyyy", null),
-                      DateEnd = DateTime.ParseExact(item.DateEnd, "dd.MM.yyyy", null),
+                      DateEnd = ConverterType.convertStringToData(item.DateEnd),
+                      f031_ermoParentId = item.ParentIdMo,
+                      ParentId = item.ParentId,
 
                       BaseDataId = baseDataId,
                       MoDocumentId = moDocumentId,
@@ -243,13 +269,23 @@ namespace BackendApp.Services
                       OspTypeId = ospTypeId,
                   };
 
-                  //if (await this.GetEnitityByAttributes(f031_ermo) == null)
-                  //{
-                  //    await SaveF031_ermoObject(f031_ermo);
-                  //}
-              }
+                if (await this.GetEnitityByAttributes(f032_trmo) == null)
+                {
+                    await SaveF032_trmoObject(f032_trmo);
+                }
+            }
 
             return true;
-        } 
+        }
+
+        public async Task<f032_trmo> SaveF032_trmoObject(f032_trmo f032_trmo)
+        {
+            return await _f032_TrmosRepository.SaveData(f032_trmo);
+        }
+
+        public async Task<f032_trmo> GetEnitityByAttributes(f032_trmo f032_TrmoData)
+        {
+            return await _f032_TrmosRepository.GetEnitityByAttributes(f032_TrmoData);
+        }
     }
 }
