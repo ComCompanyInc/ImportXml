@@ -1,10 +1,5 @@
-curl.exe -X POST http://localhost:5000/api/F031_ErmosComtroller/import/F31 -H "Content-Type: application/xml" -d "@testXml_F031.xml"
+Импортируем сначала справочник f031_remo, и только после него f032_trmos
 
-curl.exe -X POST http://localhost:5000/api/F032_TrmosController/import/F32 -H "Content-Type: application/xml" -d "@testXml_F032.xml"
-
-
-
-curl.exe -X POST http://localhost:5000/api/F032_Trmos/import/F32 -H "Content-Type: application/xml" -d "@testXml_F032.xml"
-
-
+//для боевого использования
 curl.exe -X POST http://localhost:5000/api/F031_ErmosComtroller/import/F31 -H "Content-Type: application/xml; charset=windows-1251" -d "@F031.xml"
+curl.exe -X POST http://localhost:5000/api/F032_Trmos/import/F32 -H "Content-Type: application/xml; charset=windows-1251" -d "@F032.xml"

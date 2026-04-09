@@ -47,16 +47,10 @@ namespace BackendApp.Repositories
                     .Where(c => c.AddressCode == entityData.AddressCode);
             }
 
-            if (entityData.DistrictId != null)
+            if (entityData.DistrictId != null && entityData.DistrictId != 0)
             {
                 addressesResult = addressesResult
                     .Where(c => c.DistrictId == entityData.DistrictId);
-            }
-
-            if (entityData.Oktmo != null)
-            {
-                addressesResult = addressesResult
-                    .Where(c => c.Oktmo == entityData.Oktmo);
             }
 
             if (entityData.Oktmo != null)

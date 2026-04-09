@@ -24,6 +24,7 @@ namespace BackendApp.Services
         private readonly OspTypeService _ospService;
         private readonly SubjectService _subjectService;
         private readonly DistrictService _districtService;
+        private readonly F031_ErmosService _f031_ermosService;
 
         public F032_TrmosService(
             F032_TrmoRepository f032_TrmosRepository,
@@ -36,7 +37,8 @@ namespace BackendApp.Services
             VidMoService vidMoService,
             OspTypeService ospService,
             SubjectService subjectService,
-            DistrictService districtService
+            DistrictService districtService,
+            F031_ErmosService f031_ermosService
          )
         {
             _f032_TrmosRepository = f032_TrmosRepository;
@@ -51,231 +53,260 @@ namespace BackendApp.Services
             _ospService = ospService;
             _subjectService = subjectService;
             _districtService = districtService;
+            _f031_ermosService = f031_ermosService;
         }
 
-        public async Task<bool> SaveDataFromF32(DocumentDto<F32DataDto> dataContainer)
+        public async Task<List<string>> SaveDataFromF32(DocumentDto<F32DataDto> dataContainer)
         {
-              BaseData baseData = new BaseData
-              {
-                  Type = dataContainer.BaseData.Type,
-                  Version = dataContainer.BaseData.Version,
-                  Date = DateTime.ParseExact(dataContainer.BaseData.Date, "dd.MM.yyyy", null)
-              }; // создаем обьект с заголовком и передаем в него данные из документа
+            List<string> errors = new List<string>();
 
-              long baseDataId;
+            BaseData baseData = new BaseData
+            {
+                Type = dataContainer.BaseData.Type,
+                Version = dataContainer.BaseData.Version,
+                Date = DateTime.ParseExact(dataContainer.BaseData.Date, "dd.MM.yyyy", null)
+            }; // создаем обьект с заголовком и передаем в него данные из документа
 
-              BaseData existingBaseData = await _baseDataService.GetEnitityByAttributes(baseData);
-              if (existingBaseData != null)
-              {
-                  baseDataId = existingBaseData.Id;
-              }
-              else
-              {
-                  baseDataId = (await _baseDataService.SaveBaseDataObject(baseData)).Id;
-              }
+            long baseDataId;
 
-              foreach (F32DataDto item in dataContainer.ZapList) // перебираем все записи данных листа с данными
-              {
-                  //каждую новую итерацию нового элемента, создаем обьекты с данными из XML и сохраняем его по разным сущностям
-                  Communication communication = new Communication
-                  {
-                      Phone = item.Phone,
-                      Fax = item.Fax,
-                      Email = item.Email,
-                  }; // данные контактов
+            BaseData existingBaseData = await _baseDataService.GetEnitityByAttributes(baseData);
+            if (existingBaseData != null)
+            {
+                baseDataId = existingBaseData.Id;
+            }
+            else
+            {
+                baseDataId = (await _baseDataService.SaveBaseDataObject(baseData)).Id;
+            }
 
-                  long communicationId;
-
-                  // если обьект уже существует в БД - сразу берем у него ID, иначе создаем его и берем у новосозданного Id
-                  Communication existingCommunication = await _comminicationService.GetEnitityByAttributes(communication);
-                  if (existingCommunication != null)
-                  {
-                      communicationId = existingCommunication.Id;
-                  }
-                  else
-                  {
-                      communicationId = (await _comminicationService.SaveCommunicationObject(communication)).Id;
-                  }
-
-                  Organization organization = new Organization
-                  {
-                      Name = item.OrgName,
-                      ShortName = item.OrgShortName,
-                      VedPri = item.VedPri,
-                      NameE = item.NameE,
-                      Mcod = item.Mcod,
-                  };
-
-                  long organizationId;
-
-                  Organization existingOrganization = await _organizationService.GetEnitityByAttributes(organization);
-                  if (existingOrganization != null)
-                  {
-                      organizationId = existingOrganization.Id;
-                  }
-                  else
-                  {
-                      organizationId = (await _organizationService.SaveOrganizationObject(organization)).Id;
-                  }
-
-                  Document document = new Document
-                  {
-                      Inn = item.Inn,
-                      Kpp = item.Kpp,
-                      Ogrn = item.Ogrn
-                  };
-
-                  long documentId;
-
-                  Document existingDocument = await _documentService.GetEnitityByAttributes(document);
-                  if (existingDocument != null)
-                  {
-                      documentId = existingDocument.Id;
-                  }
-                  else
-                  {
-                      documentId = (await _documentService.SaveDocumentObject(document)).Id;
-                  }
-
-                  VidMo vidMo = new VidMo()
-                  {
-                      Name = item.VidMo
-                  };
-
-                  long vidMoId;
-
-                  VidMo existingVidMo = await _vidMoService.GetEnitityByAttributes(vidMo);
-                  if (existingVidMo != null)
-                  {
-                      vidMoId = existingVidMo.Id;
-                  }
-                  else
-                  {
-                      vidMoId = (await _vidMoService.SaveVidMoObject(vidMo)).Id;
-                  }
-
-                  MoDocument moDocument = new MoDocument
-                  {
-                      Okfs = item.Okfs,
-                      OidMo = item.OidMo,
-                      DateBeg = DateTime.Today,
-                      VidMoId = vidMoId,
-                      OidSpmo = item.OidSpmo
-                  };
-
-                  long moDocumentId;
-
-                  MoDocument existingMoDocument = await _moDocumentService.GetEnitityByAttributes(moDocument);
-                  if (existingMoDocument != null)
-                  {
-                      moDocumentId = existingMoDocument.Id;
-                  }
-                  else
-                  {
-                      moDocumentId = (await _moDocumentService.SaveMoDocument(moDocument)).Id;
-                  }
-
-                  Subject subject = new Subject
-                  {
-                      Name = item.Subject
-                  };
-
-                  long subjectId;
-
-                  Subject existingSubject = await _subjectService.GetEnitityByAttributes(subject);
-                  if (existingSubject != null)
-                  {
-                      subjectId = existingSubject.Id;
-                  }
-                  else
-                  {
-                      subjectId = (await _subjectService.SaveSubjectObject(subject)).Id;
-                  }
-
-                  District district = new District
-                  {
-                      SubjectId = subjectId
-                  };
-
-                  long districtId;
-
-                  District existingDistrict = await _districtService.GetEnitityByAttributes(district);
-                  if (existingDistrict != null)
-                  {
-                      districtId = existingDistrict.Id;
-                  }
-                  else
-                  {
-                      districtId = (await _districtService.SaveDistrictObject(district)).Id;
-                  }
-
-                  Address address = new Address
-                  {
-                      Oktmo = item.Oktmo,
-                      Name = item.AddressName,
-                      AddressCode = item.AddressCode,
-                      Index = item.Index,
-                      DistrictId = districtId
-                  };
-
-                  long addressId;
-
-                  Address existingAddress = await _addressService.GetEnitityByAttributes(address);
-                  if (existingAddress != null)
-                  {
-                      addressId = existingAddress.Id;
-                  }
-                  else
-                  {
-                      addressId = (await _addressService.SaveAddressObject(address)).Id;
-                  }
-
-                  OspType ospType = new OspType()
-                  {
-                      Name = item.Osp
-                  };
-
-                  long ospTypeId;
-
-                  OspType existingOspType = await _ospService.GetEnitityByAttributes(ospType);
-                  if (existingOspType != null)
-                  {
-                      ospTypeId = existingOspType.Id;
-                  }
-                  else
-                  {
-                      ospTypeId = (await _ospService.SaveOspTypeObject(ospType)).Id;
-                  }
-
-                  f032_trmo f032_trmo = new f032_trmo
-                  {
-                      Id = item.Id,
-                      f031_ermoId = item.F031_ErmosId,
-
-                      ExclusionDate = ConverterType.convertStringToData(item.ExclusionDate),
-                      InclusionDate = DateTime.ParseExact(item.InclusionDate,"dd.MM.yyyy", null),
-                      DateBeginOms = DateTime.ParseExact(item.DateBeginOms, "dd.MM.yyyy", null),
-                      DateBeg = DateTime.ParseExact(item.DateBeg, "dd.MM.yyyy", null),
-                      DateEnd = ConverterType.convertStringToData(item.DateEnd),
-                      f031_ermoParentId = item.ParentIdMo,
-                      ParentId = item.ParentId,
-
-                      BaseDataId = baseDataId,
-                      MoDocumentId = moDocumentId,
-                      OrganizationId = organizationId,
-                      DocumentId = documentId,
-                      AddressId = addressId,
-                      CommunicationId = communicationId,
-                      OspTypeId = ospTypeId,
-                  };
-
-                if (await this.GetEnitityByAttributes(f032_trmo) == null)
+            foreach (F32DataDto item in dataContainer.ZapList) // перебираем все записи данных листа с данными
+            {
+                //каждую новую итерацию нового элемента, создаем обьекты с данными из XML и сохраняем его по разным сущностям
+                Communication communication = new Communication
                 {
-                    await SaveF032_trmoObject(f032_trmo);
+                    Phone = item.Phone,
+                    Fax = item.Fax,
+                    Email = item.Email,
+                }; // данные контактов
+
+                long communicationId;
+
+                // если обьект уже существует в БД - сразу берем у него ID, иначе создаем его и берем у новосозданного Id
+                Communication existingCommunication = await _comminicationService.GetEnitityByAttributes(communication);
+                if (existingCommunication != null)
+                {
+                    communicationId = existingCommunication.Id;
+                }
+                else
+                {
+                    communicationId = (await _comminicationService.SaveCommunicationObject(communication)).Id;
+                }
+
+                Organization organization = new Organization
+                {
+                    Name = item.OrgName,
+                    ShortName = item.OrgShortName,
+                    VedPri = item.VedPri,
+                    NameE = item.NameE,
+                    Mcod = item.Mcod,
+                };
+
+                long organizationId;
+
+                Organization existingOrganization = await _organizationService.GetEnitityByAttributes(organization);
+                if (existingOrganization != null)
+                {
+                    organizationId = existingOrganization.Id;
+                }
+                else
+                {
+                    organizationId = (await _organizationService.SaveOrganizationObject(organization)).Id;
+                }
+
+                Document document = new Document
+                {
+                    Inn = item.Inn,
+                    Kpp = item.Kpp,
+                    Ogrn = item.Ogrn
+                };
+
+                long documentId;
+
+                Document existingDocument = await _documentService.GetEnitityByAttributes(document);
+                if (existingDocument != null)
+                {
+                    documentId = existingDocument.Id;
+                }
+                else
+                {
+                    documentId = (await _documentService.SaveDocumentObject(document)).Id;
+                }
+
+                VidMo vidMo = new VidMo()
+                {
+                    Name = item.VidMo
+                };
+
+                long vidMoId;
+
+                VidMo existingVidMo = await _vidMoService.GetEnitityByAttributes(vidMo);
+                if (existingVidMo != null)
+                {
+                    vidMoId = existingVidMo.Id;
+                }
+                else
+                {
+                    vidMoId = (await _vidMoService.SaveVidMoObject(vidMo)).Id;
+                }
+
+                MoDocument moDocument = new MoDocument
+                {
+                    Okfs = item.Okfs,
+                    OidMo = item.OidMo,
+                    DateBeg = DateTime.Today,
+                    VidMoId = vidMoId,
+                    OidSpmo = item.OidSpmo
+                };
+
+                long moDocumentId;
+
+                MoDocument existingMoDocument = await _moDocumentService.GetEnitityByAttributes(moDocument);
+                if (existingMoDocument != null)
+                {
+                    moDocumentId = existingMoDocument.Id;
+                }
+                else
+                {
+                    moDocumentId = (await _moDocumentService.SaveMoDocument(moDocument)).Id;
+                }
+
+                Subject subject = new Subject
+                {
+                    Name = item.Subject
+                };
+
+                long subjectId;
+
+                Subject existingSubject = await _subjectService.GetEnitityByAttributes(subject);
+                if (existingSubject != null)
+                {
+                    subjectId = existingSubject.Id;
+                }
+                else
+                {
+                    subjectId = (await _subjectService.SaveSubjectObject(subject)).Id;
+                }
+
+                District district = new District
+                {
+                    SubjectId = subjectId
+                };
+
+                long districtId;
+
+                District existingDistrict = await _districtService.GetEnitityByAttributes(district);
+                if (existingDistrict != null)
+                {
+                    districtId = existingDistrict.Id;
+                }
+                else
+                {
+                    districtId = (await _districtService.SaveDistrictObject(district)).Id;
+                }
+
+                Address address = new Address
+                {
+                    Oktmo = item.Oktmo,
+                    Name = item.AddressName,
+                    AddressCode = item.AddressCode,
+                    Index = item.Index,
+                    DistrictId = districtId
+                };
+
+                long addressId;
+
+                Address existingAddress = await _addressService.GetEnitityByAttributes(address);
+                if (existingAddress != null)
+                {
+                    addressId = existingAddress.Id;
+                }
+                else
+                {
+                    addressId = (await _addressService.SaveAddressObject(address)).Id;
+                }
+
+                OspType ospType = new OspType()
+                {
+                    Name = item.Osp
+                };
+
+                long ospTypeId;
+
+                OspType existingOspType = await _ospService.GetEnitityByAttributes(ospType);
+                if (existingOspType != null)
+                {
+                    ospTypeId = existingOspType.Id;
+                }
+                else
+                {
+                    ospTypeId = (await _ospService.SaveOspTypeObject(ospType)).Id;
+                }
+
+                f032_trmo f032_trmo = new f032_trmo
+                {
+                    Id = item.Id,
+                    f031_ermoId = item.F031_ErmosId,
+
+                    ExclusionDate = ConverterType.convertStringToData(item.ExclusionDate),
+                    InclusionDate = DateTime.ParseExact(item.InclusionDate, "dd.MM.yyyy", null),
+                    DateBeginOms = DateTime.ParseExact(item.DateBeginOms, "dd.MM.yyyy", null),
+                    DateBeg = DateTime.ParseExact(item.DateBeg, "dd.MM.yyyy", null),
+                    DateEnd = ConverterType.convertStringToData(item.DateEnd),
+                    f031_ermoParentId = item.ParentIdMo,
+                    ParentId = item.ParentId,
+
+                    BaseDataId = baseDataId,
+                    MoDocumentId = moDocumentId,
+                    OrganizationId = organizationId,
+                    DocumentId = documentId,
+                    AddressId = addressId,
+                    CommunicationId = communicationId,
+                    OspTypeId = ospTypeId,
+                };
+
+                f031_ermo existingF031 = await _f031_ermosService.GetEnitityByAttributes(new f031_ermo { Id = item.F031_ErmosId });
+                f031_ermo existingF031Parent = await _f031_ermosService.GetEnitityByAttributes(new f031_ermo { Id = item.ParentIdMo });
+                if (existingF031 != null)
+                {
+                    if (existingF031Parent != null)
+                    {
+                        if (await this.GetEnitityByAttributes(f032_trmo) == null)
+                        {
+                            await SaveF032_trmoObject(f032_trmo);
+                        }
+                    } else {
+                        errors.Add(
+                            $"ОШИБКА: В ЗАПИСИ F032_Trmo с ID = {item.Id} - в таблице F031_Ermo, первичный ключ ID (IDMO), как f031_ermoParentId - {item.ParentIdMo} не найден. Сначала импортируйте документ F031_Ermo перед загрузкой документа F032_Trmo!" +
+                            $"\nОбьект с данными для сохранения в котором произошла ошибка:\n{System.Text.Json.JsonSerializer.Serialize(f032_trmo, new System.Text.Json.JsonSerializerOptions
+                            {
+                                WriteIndented = true,
+                                ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles //игнорируем циклические ссылки при выводе обьекта в формате json
+                            })}"
+                        );
+                    }
+                } else {
+                    errors.Add(
+                        $"ОШИБКА: В ЗАПИСИ F032_Trmo с ID = {item.Id} - в таблице F031_Ermo, первичный ключ ID (IDMO) - {item.F031_ErmosId} не найден. Сначала импортируйте документ F031_Ermo перед загрузкой документа F032_Trmo!" +
+                        $"\nОбьект с данными для сохранения в котором произошла ошибка:\n{System.Text.Json.JsonSerializer.Serialize(f032_trmo, new System.Text.Json.JsonSerializerOptions
+                        {
+                            WriteIndented = true,
+                            ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles //игнорируем циклические ссылки при выводе обьекта в формате json
+                        })}"
+                    );
                 }
             }
 
-            return true;
+            return errors;
         }
 
         public async Task<f032_trmo> SaveF032_trmoObject(f032_trmo f032_trmo)

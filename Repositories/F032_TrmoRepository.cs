@@ -28,25 +28,25 @@ namespace BackendApp.Repositories
                     .Where(c => c.Id == entityData.Id);
             }
 
-            if (entityData.OrganizationId != null)
+            if (entityData.OrganizationId != null && entityData.OrganizationId != 0)
             {
                 f032_TrmosResult = f032_TrmosResult
                     .Where(c => c.OrganizationId == entityData.OrganizationId);
             }
 
-            if (entityData.AddressId != null)
+            if (entityData.AddressId != null && entityData.AddressId != 0)
             {
                 f032_TrmosResult = f032_TrmosResult
                     .Where(c => c.AddressId == entityData.AddressId);
             }
 
-            if (entityData.DocumentId != null)
+            if (entityData.DocumentId != null && entityData.AddressId != 0)
             {
                 f032_TrmosResult = f032_TrmosResult
                     .Where(c => c.DocumentId == entityData.DocumentId);
             }
 
-            if (entityData.OspTypeId != null)
+            if (entityData.OspTypeId != null && entityData.OspTypeId != 0)
             {
                 f032_TrmosResult = f032_TrmosResult
                     .Where(c => c.OspTypeId == entityData.OspTypeId);
@@ -64,7 +64,7 @@ namespace BackendApp.Repositories
                     .Where(c => c.InclusionDate == entityData.InclusionDate);
             }
 
-            if (entityData.MoDocumentId != null)
+            if (entityData.MoDocumentId != null && entityData.MoDocumentId != 0)
             {
                 f032_TrmosResult = f032_TrmosResult
                     .Where(c => c.MoDocumentId == entityData.MoDocumentId);
@@ -82,25 +82,25 @@ namespace BackendApp.Repositories
                     .Where(c => c.DateEnd == entityData.DateEnd);
             }
 
-            if (entityData.CommunicationId != null)
+            if (entityData.CommunicationId != null && entityData.CommunicationId != 0)
             {
                 f032_TrmosResult = f032_TrmosResult
                     .Where(c => c.CommunicationId == entityData.CommunicationId);
             }
 
-            if (entityData.BaseDataId != null)
+            if (entityData.BaseDataId != null && entityData.BaseDataId != 0)
             {
                 f032_TrmosResult = f032_TrmosResult
                     .Where(c => c.BaseDataId == entityData.BaseDataId);
             }
 
-            if (entityData.ParentId != null)
+            if (!entityData.ParentId.IsNullOrEmpty())
             {
                 f032_TrmosResult = f032_TrmosResult
                     .Where(c => c.ParentId == entityData.ParentId);
             }
 
-            if (entityData.f031_ermoId != null)
+            if (!entityData.f031_ermoId.IsNullOrEmpty())
             {
                 f032_TrmosResult = f032_TrmosResult
                     .Where(c => c.f031_ermoId == entityData.f031_ermoId);

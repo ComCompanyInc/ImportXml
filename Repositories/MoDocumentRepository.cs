@@ -23,7 +23,7 @@ namespace BackendApp.Repositories
         {
             IQueryable<MoDocument> moDocumentResult = _context.MoDocuments;
 
-            if (entityData.Id != null)
+            if (entityData.Id != null && entityData.Id != 0)
             {
                 moDocumentResult = moDocumentResult
                     .Where(c => c.Id == entityData.Id);
@@ -41,7 +41,7 @@ namespace BackendApp.Repositories
                     .Where(c => c.Okfs == entityData.Okfs);
             }
 
-            if (entityData.VidMoId != null)
+            if (entityData.VidMoId != null && entityData.VidMoId != 0)
             {
                 moDocumentResult = moDocumentResult
                     .Where(c => c.VidMoId == entityData.VidMoId);

@@ -14,7 +14,7 @@ namespace BackendApp.Models
         [StringLength(2500, ErrorMessage = "Имя организации до 2500 символов")]
         public string Name { get; set; }
 
-        [StringLength(250, ErrorMessage = "Сокращенное до 250 символов")]
+        [StringLength(500, ErrorMessage = "Сокращенное до 500 символов")]
         public string ShortName { get; set; }
 
         [Range(0, 9999, ErrorMessage = "Количество филиалов заполняется в диапазоне значений до четырехзначного числа")]

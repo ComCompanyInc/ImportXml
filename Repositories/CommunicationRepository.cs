@@ -30,25 +30,25 @@ namespace BackendApp.Repositories
                 communication = communication
                     .Where(c => c.Phone == communicationData.Phone);
             }
-            
+
             if (!communicationData.Fax.IsNullOrEmpty())
             {
                 communication = communication
                     .Where(c => c.Fax == communicationData.Fax);
             }
-            
+
             if (!communicationData.Email.IsNullOrEmpty())
             {
                 communication = communication
                     .Where(c => c.Email == communicationData.Email);
             }
-            
+
             if (!communicationData.HotLine.IsNullOrEmpty())
             {
                 communication = communication
                     .Where(c => c.HotLine == communicationData.HotLine);
             }
-            
+
             if (!communicationData.Site.IsNullOrEmpty())
             {
                 communication = communication

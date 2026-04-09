@@ -3,6 +3,7 @@ using BackendApp.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace BackendApp.Repositories.AbstractBase
@@ -34,7 +35,15 @@ namespace BackendApp.Repositories.AbstractBase
                     return obj;
                 }
                 catch (Exception ex) {
-                    Console.WriteLine("ОШИБКА: " + ex + " НА ОБЬЕКТЕ: " + obj.ToString());
+                    
+                    // Автоматически выводим ВСЕ поля объекта
+                    string json = System.Text.Json.JsonSerializer.Serialize(obj, new System.Text.Json.JsonSerializerOptions
+                    {
+                        WriteIndented = true,
+                        ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles //игнорируем циклические ссылки при выводе обьекта в формате json
+                    });
+
+                    Console.WriteLine("ОШИБКА: " + ex + " НА ОБЬЕКТЕ: " + obj.ToString() + " " + json);
 
                     throw;
                 }

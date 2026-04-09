@@ -22,25 +22,31 @@ namespace BackendApp.Repositories
         {
             IQueryable<f031_ermo> f031_ermoResult = _context.F031_Ermos;
 
-            if (f031_ermoData.OrganizationId != null)
+            if (!f031_ermoData.Id.IsNullOrEmpty())
+            {
+                f031_ermoResult = f031_ermoResult
+                    .Where(c => c.Id == f031_ermoData.Id);
+            }
+
+            if (f031_ermoData.OrganizationId != null && f031_ermoData.OrganizationId != 0)
             {
                 f031_ermoResult = f031_ermoResult
                     .Where(c => c.OrganizationId == f031_ermoData.OrganizationId);
             }
 
-            if (f031_ermoData.MoDocumentId != null)
+            if (f031_ermoData.MoDocumentId != null && f031_ermoData.OrganizationId != 0)
             {
                 f031_ermoResult = f031_ermoResult
                     .Where(c => c.MoDocumentId == f031_ermoData.MoDocumentId);
             }
 
-            if (f031_ermoData.AddressId != null)
+            if (f031_ermoData.AddressId != null && f031_ermoData.OrganizationId != 0)
             {
                 f031_ermoResult = f031_ermoResult
                     .Where(c => c.AddressId == f031_ermoData.AddressId);
             }
 
-            if (f031_ermoData.BaseDataId != null)
+            if (f031_ermoData.BaseDataId != null && f031_ermoData.BaseDataId != 0)
             {
                 f031_ermoResult = f031_ermoResult
                     .Where(c => c.BaseDataId == f031_ermoData.BaseDataId);

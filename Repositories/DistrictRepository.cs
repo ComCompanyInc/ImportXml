@@ -41,7 +41,7 @@ namespace BackendApp.Repositories
                     .Where(c => c.DateEnd == entityData.DateEnd);
             }
 
-            if (entityData.SubjectId != null)
+            if (entityData.SubjectId != null && entityData.SubjectId != 0)
             {
                 documentResult = documentResult
                     .Where(c => c.SubjectId == entityData.SubjectId);

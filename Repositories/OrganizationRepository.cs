@@ -88,7 +88,7 @@ namespace BackendApp.Repositories
                     .Where(c => c.VedPri == entityData.VedPri);
             }
 
-            if (entityData.OrgTypeId != null)
+            if (entityData.OrgTypeId != null && entityData.OrgTypeId != 0)
             {
                 organizationResult = organizationResult
                     .Where(c => c.OrgTypeId == entityData.OrgTypeId);
