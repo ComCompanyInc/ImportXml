@@ -43,8 +43,8 @@ namespace BackendApp.Models
         public string? ParentId { get; set; }
         public f032_trmo Parent { get; set; }
 
-        public long MoDocumentId { get; set; }
-        public MoDocument MoDocument { get; set; }
+        public long OrgDocumentId { get; set; }
+        public OrgDocument OrgDocument { get; set; }
 
         public DateTime DateBeg { get; set; }
 

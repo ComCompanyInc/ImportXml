@@ -28,7 +28,7 @@ namespace BackendApp.Controllers
         /// <returns></returns>
         [HttpPost("import/F32")]
         [Consumes("application/xml")]
-        public async Task<List<string>> ImportXmlData()
+        public async Task<List<ErrorResponseDto>> ImportXmlData()
         {
             // РЕГИСТРИРУЕМ КОДИРОВКУ windows-1251 (всего одна строчка!)
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);

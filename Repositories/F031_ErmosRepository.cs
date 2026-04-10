@@ -34,10 +34,10 @@ namespace BackendApp.Repositories
                     .Where(c => c.OrganizationId == f031_ermoData.OrganizationId);
             }
 
-            if (f031_ermoData.MoDocumentId != null && f031_ermoData.OrganizationId != 0)
+            if (f031_ermoData.OrgDocumentId != null && f031_ermoData.OrganizationId != 0)
             {
                 f031_ermoResult = f031_ermoResult
-                    .Where(c => c.MoDocumentId == f031_ermoData.MoDocumentId);
+                    .Where(c => c.OrgDocumentId == f031_ermoData.OrgDocumentId);
             }
 
             if (f031_ermoData.AddressId != null && f031_ermoData.OrganizationId != 0)

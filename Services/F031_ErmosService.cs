@@ -17,8 +17,9 @@ namespace BackendApp.Services
         private readonly CommunicationService _comminicationService;
         private readonly OrganizationService _organizationService;
         private readonly DocumentService _documentService;
-        private readonly MoDocumentService _moDocumentService;
+        private readonly OrgDocumentService _moDocumentService;
         private readonly AddressService _addressService;
+        private readonly OidTypeService _oidTypeService;
 
         public F031_ErmosService(
             F031_ErmosRepository f031_ErmosRepository,
@@ -26,8 +27,9 @@ namespace BackendApp.Services
             CommunicationService comminicationService,
             OrganizationService organizationService,
             DocumentService documentService,
-            MoDocumentService moDocumentService,
-            AddressService addressService
+            OrgDocumentService moDocumentService,
+            AddressService addressService,
+            OidTypeService oidTypeService
         )
         {
             _f031_ErmosRepository = f031_ErmosRepository;
@@ -38,6 +40,7 @@ namespace BackendApp.Services
             _documentService = documentService;
             _moDocumentService = moDocumentService;
             _addressService = addressService;
+            _oidTypeService = oidTypeService;
         }
 
         /// <summary>
@@ -115,21 +118,37 @@ namespace BackendApp.Services
                     documentId = (await _documentService.SaveDocumentObject(document)).Id;
                 }
 
-                MoDocument moDocument = new MoDocument
+                OidType oidTypeMo = new OidType
+                {
+                    Name = item.OidMo,
+                };
+
+                long oidTypeMoId;
+                OidType existingOidTypeMo = await _oidTypeService.GetEnitityByAttributes(oidTypeMo);
+                if (existingOidTypeMo != null)
+                {
+                    oidTypeMoId = existingOidTypeMo.Id;
+                }
+                else
+                {
+                    oidTypeMoId = (await _oidTypeService.SaveOidTypeObject(oidTypeMo)).Id;
+                }
+
+                OrgDocument orgDocument = new OrgDocument
                 {
                     //MoId = item.MoId,
                     Okfs = item.Okfs,
-                    OidMo = item.OidMo,
+                    OidTypeMoId = oidTypeMoId,
                     DateBeg = DateTime.Today
                 };
 
-                long moDocumentId;
+                long orgDocumentId;
 
-                MoDocument existingMoDocument = await _moDocumentService.GetEnitityByAttributes(moDocument);
+                OrgDocument existingMoDocument = await _moDocumentService.GetEnitityByAttributes(orgDocument);
                 if (existingMoDocument != null) {
-                    moDocumentId = existingMoDocument.Id;
+                    orgDocumentId = existingMoDocument.Id;
                 } else {
-                    moDocumentId = (await _moDocumentService.SaveMoDocument(moDocument)).Id;
+                    orgDocumentId = (await _moDocumentService.SaveMoDocument(orgDocument)).Id;
                 }
 
                 Address address = new Address
@@ -153,7 +172,7 @@ namespace BackendApp.Services
                 {
                     Id = item.F31_ErmosId,
                     BaseDataId = baseDataId,
-                    MoDocumentId = moDocumentId,
+                    OrgDocumentId = orgDocumentId,
                     OrganizationId = organizationId,
                     DocumentId = documentId,
                     AddressId = addressId,

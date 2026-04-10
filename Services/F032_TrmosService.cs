@@ -18,13 +18,14 @@ namespace BackendApp.Services
         private readonly CommunicationService _comminicationService;
         private readonly OrganizationService _organizationService;
         private readonly DocumentService _documentService;
-        private readonly MoDocumentService _moDocumentService;
+        private readonly OrgDocumentService _moDocumentService;
         private readonly AddressService _addressService;
-        private readonly VidMoService _vidMoService;
+        private readonly VidTypeService _vidMoService;
         private readonly OspTypeService _ospService;
         private readonly SubjectService _subjectService;
         private readonly DistrictService _districtService;
         private readonly F031_ErmosService _f031_ermosService;
+        private readonly OidTypeService _oidTypeService;
 
         public F032_TrmosService(
             F032_TrmoRepository f032_TrmosRepository,
@@ -32,13 +33,14 @@ namespace BackendApp.Services
             CommunicationService comminicationService,
             OrganizationService organizationService,
             DocumentService documentService,
-            MoDocumentService moDocumentService,
+            OrgDocumentService moDocumentService,
             AddressService addressService,
-            VidMoService vidMoService,
+            VidTypeService vidMoService,
             OspTypeService ospService,
             SubjectService subjectService,
             DistrictService districtService,
-            F031_ErmosService f031_ermosService
+            F031_ErmosService f031_ermosService,
+            OidTypeService oidTypeService
          )
         {
             _f032_TrmosRepository = f032_TrmosRepository;
@@ -54,11 +56,12 @@ namespace BackendApp.Services
             _subjectService = subjectService;
             _districtService = districtService;
             _f031_ermosService = f031_ermosService;
+            _oidTypeService = oidTypeService;
         }
 
-        public async Task<List<string>> SaveDataFromF32(DocumentDto<F32DataDto> dataContainer)
+        public async Task<List<ErrorResponseDto>> SaveDataFromF32(DocumentDto<F32DataDto> dataContainer)
         {
-            List<string> errors = new List<string>();
+            List<ErrorResponseDto> errors = new List<ErrorResponseDto>();
 
             BaseData baseData = new BaseData
             {
@@ -142,14 +145,14 @@ namespace BackendApp.Services
                     documentId = (await _documentService.SaveDocumentObject(document)).Id;
                 }
 
-                VidMo vidMo = new VidMo()
+                VidType vidMo = new VidType()
                 {
                     Name = item.VidMo
                 };
 
                 long vidMoId;
 
-                VidMo existingVidMo = await _vidMoService.GetEnitityByAttributes(vidMo);
+                VidType existingVidMo = await _vidMoService.GetEnitityByAttributes(vidMo);
                 if (existingVidMo != null)
                 {
                     vidMoId = existingVidMo.Id;
@@ -159,25 +162,57 @@ namespace BackendApp.Services
                     vidMoId = (await _vidMoService.SaveVidMoObject(vidMo)).Id;
                 }
 
-                MoDocument moDocument = new MoDocument
+                OidType oidTypeMo = new OidType
                 {
-                    Okfs = item.Okfs,
-                    OidMo = item.OidMo,
-                    DateBeg = DateTime.Today,
-                    VidMoId = vidMoId,
-                    OidSpmo = item.OidSpmo
+                    Name = item.OidMo,
                 };
 
-                long moDocumentId;
-
-                MoDocument existingMoDocument = await _moDocumentService.GetEnitityByAttributes(moDocument);
-                if (existingMoDocument != null)
+                long oidTypeMoId;
+                OidType existingOidTypeMo = await _oidTypeService.GetEnitityByAttributes(oidTypeMo);
+                if (existingOidTypeMo != null)
                 {
-                    moDocumentId = existingMoDocument.Id;
+                    oidTypeMoId = existingOidTypeMo.Id;
                 }
                 else
                 {
-                    moDocumentId = (await _moDocumentService.SaveMoDocument(moDocument)).Id;
+                    oidTypeMoId = (await _oidTypeService.SaveOidTypeObject(oidTypeMo)).Id;
+                }
+
+                OidType oidTypeSpmo = new OidType
+                {
+                    Name = item.OidSpmo,
+                };
+
+                long oidTypeSpmoId;
+                OidType existingOidTypeSpmo = await _oidTypeService.GetEnitityByAttributes(oidTypeSpmo);
+                if (existingOidTypeSpmo != null)
+                {
+                    oidTypeSpmoId = existingOidTypeSpmo.Id;
+                }
+                else
+                {
+                    oidTypeSpmoId = (await _oidTypeService.SaveOidTypeObject(oidTypeSpmo)).Id;
+                }
+
+                OrgDocument orgDocument = new OrgDocument
+                {
+                    Okfs = item.Okfs,
+                    DateBeg = DateTime.Today,
+                    VidTypeId = vidMoId,
+                    OidTypeMoId = oidTypeMoId,
+                    OidTypeSpmoId = oidTypeSpmoId,
+                };
+
+                long orgDocumentId;
+
+                OrgDocument existingOrgDocument = await _moDocumentService.GetEnitityByAttributes(orgDocument);
+                if (existingOrgDocument != null)
+                {
+                    orgDocumentId = existingOrgDocument.Id;
+                }
+                else
+                {
+                    orgDocumentId = (await _moDocumentService.SaveMoDocument(orgDocument)).Id;
                 }
 
                 Subject subject = new Subject
@@ -266,7 +301,7 @@ namespace BackendApp.Services
                     ParentId = item.ParentId,
 
                     BaseDataId = baseDataId,
-                    MoDocumentId = moDocumentId,
+                    OrgDocumentId = orgDocumentId,
                     OrganizationId = organizationId,
                     DocumentId = documentId,
                     AddressId = addressId,
@@ -286,22 +321,20 @@ namespace BackendApp.Services
                         }
                     } else {
                         errors.Add(
-                            $"ОШИБКА: В ЗАПИСИ F032_Trmo с ID = {item.Id} - в таблице F031_Ermo, первичный ключ ID (IDMO), как f031_ermoParentId - {item.ParentIdMo} не найден. Сначала импортируйте документ F031_Ermo перед загрузкой документа F032_Trmo!" +
-                            $"\nОбьект с данными для сохранения в котором произошла ошибка:\n{System.Text.Json.JsonSerializer.Serialize(f032_trmo, new System.Text.Json.JsonSerializerOptions
+                            new ErrorResponseDto
                             {
-                                WriteIndented = true,
-                                ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles //игнорируем циклические ссылки при выводе обьекта в формате json
-                            })}"
+                                ErrorMessage = $"ОШИБКА: В ЗАПИСИ F032_Trmo с ID = {item.Id} - в таблице F031_Ermo, первичный ключ ID (IDMO), как f031_ermoParentId - {item.ParentIdMo} не найден. Сначала импортируйте документ F031_Ermo перед загрузкой документа F032_Trmo!",
+                                ConflictObject = f032_trmo
+                            }
                         );
                     }
                 } else {
                     errors.Add(
-                        $"ОШИБКА: В ЗАПИСИ F032_Trmo с ID = {item.Id} - в таблице F031_Ermo, первичный ключ ID (IDMO) - {item.F031_ErmosId} не найден. Сначала импортируйте документ F031_Ermo перед загрузкой документа F032_Trmo!" +
-                        $"\nОбьект с данными для сохранения в котором произошла ошибка:\n{System.Text.Json.JsonSerializer.Serialize(f032_trmo, new System.Text.Json.JsonSerializerOptions
+                        new ErrorResponseDto
                         {
-                            WriteIndented = true,
-                            ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles //игнорируем циклические ссылки при выводе обьекта в формате json
-                        })}"
+                            ErrorMessage = $"ОШИБКА: В ЗАПИСИ F032_Trmo с ID = {item.Id} - в таблице F031_Ermo, первичный ключ ID (IDMO) - {item.F031_ErmosId} не найден. Сначала импортируйте документ F031_Ermo перед загрузкой документа F032_Trmo!",
+                            ConflictObject = f032_trmo
+                        }
                     );
                 }
             }

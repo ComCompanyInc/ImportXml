@@ -7,7 +7,7 @@ namespace BackendApp.Models
 {
     public class District
     {
-        public int Id { get; set; }
+        public long Id { get; set; }
 
         [StringLength(250, MinimumLength = 0, ErrorMessage = "Название округа (Name) - не должно превышать 250 символов")]
         public string? Name { get; set; }
@@ -19,6 +19,6 @@ namespace BackendApp.Models
         public long? SubjectId { get; set; }
         public Subject? Subject { get; set; }
 
-        List<Address> Addresses { get; set; } = new List<Address>();
+        public List<Address> Addresses { get; set; } = new List<Address>();
     }
 }

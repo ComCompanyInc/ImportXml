@@ -17,9 +17,9 @@ Org.NameE AS [NAME_E],
 Osp.[Name] AS [OSP],
 ParentF031.[Id] AS [PARENT_IDMO],
 Parent.[Id] AS [PARENT_UIDMO],
-VidMo.[Name] AS [VID_MO],
-MoDoc.[OidMo] AS [OID_MO],
-MoDoc.[OidSpmo] AS [OID_SPMO],
+VidType.[Name] AS [VID_MO],
+OidMo.[Name] AS [OID_MO],
+OidSpmo.[Name] AS [OID_SPMO],
 Org.[Name] AS [NAM_MOP],
 Org.[ShortName] AS [NAM_MOK],
 Doc.[Inn] AS [INN],
@@ -28,7 +28,7 @@ Doc.[Ogrn] AS [OGRN],
 Addr.[Index] AS [JURADDRESS_INDEX],
 Addr.[Name] AS [JURADDRESS_ADDRESS],
 Addr.AddressCode AS [GAR_ADDRESS],
-MoDoc.[Okfs] AS [OKFS],
+OrgDoc.[Okfs] AS [OKFS],
 Org.VedPri AS [VEDPRI],
 Comunication.Phone AS [PHONE],
 Comunication.Fax AS [FAX],
@@ -46,8 +46,8 @@ JOIN Districts Distr
 ON Addr.DistrictId = Distr.Id
 JOIN [Subjects] Subj
 ON Subj.Id = Distr.SubjectId
-JOIN MoDocuments MoDoc
-ON F32.MoDocumentId = MoDoc.Id
+JOIN OrgDocuments OrgDoc
+ON F32.OrgDocumentId = OrgDoc.Id
 JOIN OspType Osp
 ON F32.OspTypeId = Osp.Id
 
@@ -57,11 +57,15 @@ ON F32.ParentId = Parent.Id
 JOIN F031_Ermos ParentF031
 ON F32.f031_ermoParentId = ParentF031.Id
 
-JOIN VidMos VidMo
-ON MoDoc.VidMoId = VidMo.Id
 JOIN Documents Doc
 ON F32.DocumentId = Doc.Id
 JOIN Communications Comunication
 ON F32.CommunicationId = Comunication.Id
 JOIN BaseData BData
 ON F32.BaseDataId = BData.Id
+JOIN OidTypes OidMo
+ON OrgDoc.OidTypeMoId = OidMo.Id
+JOIN OidTypes OidSpmo
+ON OrgDoc.OidTypeSpmoId = OidSpmo.Id
+JOIN VidTypes VidType
+ON OrgDoc.VidTypeId = VidType.Id

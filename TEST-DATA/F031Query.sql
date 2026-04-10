@@ -11,9 +11,9 @@ Organizations.ShortName as [NAM_MOK],
 Documents.Inn as [INN],
 Documents.[Kpp] as [KPP],
 Documents.[Ogrn] as [OGRN],
-MoDocuments.OidMo as [OID_MO],
+OidMo.[Name] as [OID_MO],
 Organizations.Okopf as [OKOPF],
-MoDocuments.Okfs as [OKFS],
+OrgDocuments.Okfs as [OKFS],
 [Addresses].[Name] as [ADDR_J],
 [Addresses].AddressCode as [ADDR_J_GAR],
 [Addresses].[Oktmo] as OKTMO,
@@ -25,8 +25,8 @@ F031_Ermos.DateEnd as DATEEND
 FROM F031_Ermos
 JOIN Organizations
 ON F031_Ermos.OrganizationId = Organizations.Id
-JOIN MoDocuments
-ON F031_Ermos.MoDocumentId = MoDocuments.Id
+JOIN OrgDocuments
+ON F031_Ermos.OrgDocumentId = OrgDocuments.Id
 JOIN Documents
 ON F031_Ermos.DocumentId = Documents.Id
 JOIN Addresses
@@ -35,4 +35,5 @@ JOIN BaseData
 ON F031_Ermos.BaseDataId = BaseData.Id
 JOIN Communications
 ON F031_Ermos.CommunicationId = Communications.Id
-
+JOIN OidTypes OidMo
+ON OrgDocuments.OidTypeMoId = OidMo.Id

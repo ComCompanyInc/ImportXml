@@ -38,9 +38,6 @@ namespace BackendApp.Migrations
                     b.Property<long?>("DistrictId")
                         .HasColumnType("bigint");
 
-                    b.Property<int?>("DistrictId1")
-                        .HasColumnType("int");
-
                     b.Property<string>("Index")
                         .IsRequired()
                         .HasMaxLength(6)
@@ -62,7 +59,7 @@ namespace BackendApp.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("DistrictId1");
+                    b.HasIndex("DistrictId");
 
                     b.ToTable("Addresses");
                 });
@@ -130,11 +127,11 @@ namespace BackendApp.Migrations
 
             modelBuilder.Entity("BackendApp.Models.District", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("bigint");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
                     b.Property<DateTime?>("DateBegin")
                         .HasColumnType("datetime2");
@@ -184,7 +181,25 @@ namespace BackendApp.Migrations
                     b.ToTable("Documents");
                 });
 
-            modelBuilder.Entity("BackendApp.Models.MoDocument", b =>
+            modelBuilder.Entity("BackendApp.Models.OidType", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("OidTypes");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.OrgDocument", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
@@ -198,28 +213,29 @@ namespace BackendApp.Migrations
                     b.Property<DateTime?>("DateEnd")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("OidMo")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                    b.Property<long?>("OidTypeMoId")
+                        .HasColumnType("bigint");
 
-                    b.Property<string>("OidSpmo")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                    b.Property<long?>("OidTypeSpmoId")
+                        .HasColumnType("bigint");
 
                     b.Property<string>("Okfs")
                         .IsRequired()
                         .HasMaxLength(2)
                         .HasColumnType("nvarchar(2)");
 
-                    b.Property<long?>("VidMoId")
+                    b.Property<long?>("VidTypeId")
                         .HasColumnType("bigint");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("VidMoId");
+                    b.HasIndex("OidTypeMoId");
 
-                    b.ToTable("MoDocuments");
+                    b.HasIndex("OidTypeSpmoId");
+
+                    b.HasIndex("VidTypeId");
+
+                    b.ToTable("OrgDocuments");
                 });
 
             modelBuilder.Entity("BackendApp.Models.OrgType", b =>
@@ -333,7 +349,7 @@ namespace BackendApp.Migrations
                     b.ToTable("Subjects");
                 });
 
-            modelBuilder.Entity("BackendApp.Models.VidMo", b =>
+            modelBuilder.Entity("BackendApp.Models.VidType", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
@@ -348,7 +364,7 @@ namespace BackendApp.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("VidMos");
+                    b.ToTable("VidTypes");
                 });
 
             modelBuilder.Entity("BackendApp.Models.f031_ermo", b =>
@@ -375,7 +391,7 @@ namespace BackendApp.Migrations
                     b.Property<long>("DocumentId")
                         .HasColumnType("bigint");
 
-                    b.Property<long>("MoDocumentId")
+                    b.Property<long>("OrgDocumentId")
                         .HasColumnType("bigint");
 
                     b.Property<long>("OrganizationId")
@@ -391,7 +407,7 @@ namespace BackendApp.Migrations
 
                     b.HasIndex("DocumentId");
 
-                    b.HasIndex("MoDocumentId");
+                    b.HasIndex("OrgDocumentId");
 
                     b.HasIndex("OrganizationId");
 
@@ -431,7 +447,7 @@ namespace BackendApp.Migrations
                     b.Property<DateTime>("InclusionDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<long>("MoDocumentId")
+                    b.Property<long>("OrgDocumentId")
                         .HasColumnType("bigint");
 
                     b.Property<long>("OrganizationId")
@@ -459,7 +475,7 @@ namespace BackendApp.Migrations
 
                     b.HasIndex("DocumentId");
 
-                    b.HasIndex("MoDocumentId");
+                    b.HasIndex("OrgDocumentId");
 
                     b.HasIndex("OrganizationId");
 
@@ -477,8 +493,8 @@ namespace BackendApp.Migrations
             modelBuilder.Entity("BackendApp.Models.Address", b =>
                 {
                     b.HasOne("BackendApp.Models.District", "District")
-                        .WithMany()
-                        .HasForeignKey("DistrictId1");
+                        .WithMany("Addresses")
+                        .HasForeignKey("DistrictId");
 
                     b.Navigation("District");
                 });
@@ -492,13 +508,25 @@ namespace BackendApp.Migrations
                     b.Navigation("Subject");
                 });
 
-            modelBuilder.Entity("BackendApp.Models.MoDocument", b =>
+            modelBuilder.Entity("BackendApp.Models.OrgDocument", b =>
                 {
-                    b.HasOne("BackendApp.Models.VidMo", "VidMos")
-                        .WithMany("MoDocuments")
-                        .HasForeignKey("VidMoId");
+                    b.HasOne("BackendApp.Models.OidType", "OidTypeMo")
+                        .WithMany()
+                        .HasForeignKey("OidTypeMoId");
 
-                    b.Navigation("VidMos");
+                    b.HasOne("BackendApp.Models.OidType", "OidTypeSpmo")
+                        .WithMany()
+                        .HasForeignKey("OidTypeSpmoId");
+
+                    b.HasOne("BackendApp.Models.VidType", "VidTypes")
+                        .WithMany("MoDocuments")
+                        .HasForeignKey("VidTypeId");
+
+                    b.Navigation("OidTypeMo");
+
+                    b.Navigation("OidTypeSpmo");
+
+                    b.Navigation("VidTypes");
                 });
 
             modelBuilder.Entity("BackendApp.Models.Organization", b =>
@@ -536,9 +564,9 @@ namespace BackendApp.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BackendApp.Models.MoDocument", "MoDocument")
+                    b.HasOne("BackendApp.Models.OrgDocument", "OrgDocument")
                         .WithMany()
-                        .HasForeignKey("MoDocumentId")
+                        .HasForeignKey("OrgDocumentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -556,7 +584,7 @@ namespace BackendApp.Migrations
 
                     b.Navigation("Document");
 
-                    b.Navigation("MoDocument");
+                    b.Navigation("OrgDocument");
 
                     b.Navigation("Organization");
                 });
@@ -587,9 +615,9 @@ namespace BackendApp.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BackendApp.Models.MoDocument", "MoDocument")
+                    b.HasOne("BackendApp.Models.OrgDocument", "OrgDocument")
                         .WithMany()
-                        .HasForeignKey("MoDocumentId")
+                        .HasForeignKey("OrgDocumentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -627,7 +655,7 @@ namespace BackendApp.Migrations
 
                     b.Navigation("F031_Ermo");
 
-                    b.Navigation("MoDocument");
+                    b.Navigation("OrgDocument");
 
                     b.Navigation("Organization");
 
@@ -650,6 +678,11 @@ namespace BackendApp.Migrations
                     b.Navigation("F032_Trmos");
                 });
 
+            modelBuilder.Entity("BackendApp.Models.District", b =>
+                {
+                    b.Navigation("Addresses");
+                });
+
             modelBuilder.Entity("BackendApp.Models.OrgType", b =>
                 {
                     b.Navigation("Organizations");
@@ -667,7 +700,7 @@ namespace BackendApp.Migrations
                     b.Navigation("F032_Trmos");
                 });
 
-            modelBuilder.Entity("BackendApp.Models.VidMo", b =>
+            modelBuilder.Entity("BackendApp.Models.VidType", b =>
                 {
                     b.Navigation("MoDocuments");
                 });

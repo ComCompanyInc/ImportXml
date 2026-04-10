@@ -64,10 +64,10 @@ namespace BackendApp.Repositories
                     .Where(c => c.InclusionDate == entityData.InclusionDate);
             }
 
-            if (entityData.MoDocumentId != null && entityData.MoDocumentId != 0)
+            if (entityData.OrgDocumentId != null && entityData.OrgDocumentId != 0)
             {
                 f032_TrmosResult = f032_TrmosResult
-                    .Where(c => c.MoDocumentId == entityData.MoDocumentId);
+                    .Where(c => c.OrgDocumentId == entityData.OrgDocumentId);
             }
 
             if (entityData.DateBeg != default(DateTime))

@@ -12,9 +12,9 @@ namespace BackendApp.Models
         [StringLength(17, MinimumLength = 0, ErrorMessage = "Длинна UIDMO (Id) должна быть от 0 до 17 символов")]
         public string Id { get; set; }
 
-        public long MoDocumentId { get; set; }
+        public long OrgDocumentId { get; set; }
 
-        public MoDocument MoDocument { get; set; }
+        public OrgDocument OrgDocument { get; set; }
 
         public long AddressId { get; set; }
         public Address Address { get; set; }
