@@ -99,12 +99,10 @@ namespace BackendApp.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
                     b.Property<string>("Email")
-                        .IsRequired()
                         .HasMaxLength(40)
                         .HasColumnType("nvarchar(40)");
 
                     b.Property<string>("Fax")
-                        .IsRequired()
                         .HasMaxLength(40)
                         .HasColumnType("nvarchar(40)");
 
@@ -220,7 +218,6 @@ namespace BackendApp.Migrations
                         .HasColumnType("bigint");
 
                     b.Property<string>("Okfs")
-                        .IsRequired()
                         .HasMaxLength(2)
                         .HasColumnType("nvarchar(2)");
 
@@ -490,6 +487,52 @@ namespace BackendApp.Migrations
                     b.ToTable("F032_Trmos");
                 });
 
+            modelBuilder.Entity("BackendApp.Models.f033_spmo", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasMaxLength(17)
+                        .HasColumnType("nvarchar(17)");
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasMaxLength(17)
+                        .HasColumnType("nvarchar(17)");
+
+                    b.Property<long>("CommunicationId")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("DateBeg")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DateEnd")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(4000)
+                        .HasColumnType("nvarchar(4000)");
+
+                    b.Property<long>("OrgDocumentId")
+                        .HasColumnType("bigint");
+
+                    b.Property<int>("OspType")
+                        .HasColumnType("int");
+
+                    b.Property<long>("OspTypeId")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("ShortName")
+                        .HasMaxLength(4000)
+                        .HasColumnType("nvarchar(4000)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CommunicationId");
+
+                    b.HasIndex("OrgDocumentId");
+
+                    b.ToTable("F033_Spmos");
+                });
+
             modelBuilder.Entity("BackendApp.Models.Address", b =>
                 {
                     b.HasOne("BackendApp.Models.District", "District")
@@ -664,6 +707,25 @@ namespace BackendApp.Migrations
                     b.Navigation("Parent");
 
                     b.Navigation("ParentIdMo");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f033_spmo", b =>
+                {
+                    b.HasOne("BackendApp.Models.Communication", "Communication")
+                        .WithMany()
+                        .HasForeignKey("CommunicationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.OrgDocument", "OrgDocument")
+                        .WithMany()
+                        .HasForeignKey("OrgDocumentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Communication");
+
+                    b.Navigation("OrgDocument");
                 });
 
             modelBuilder.Entity("BackendApp.Models.Address", b =>

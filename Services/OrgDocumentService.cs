@@ -15,7 +15,7 @@ namespace BackendApp.Services
             _moDocumentRepository = moDocumentRepository;
         }
 
-        public async Task<OrgDocument> SaveMoDocument(OrgDocument moDocument)
+        public async Task<OrgDocument> SaveOrgDocument(OrgDocument moDocument)
         {
             return await _moDocumentRepository.SaveData(moDocument);
         }

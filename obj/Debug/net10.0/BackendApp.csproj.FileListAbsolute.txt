@@ -157,3 +157,4 @@ X:\ASU\Кулаев\Projects\BackendApp\obj\Debug\net10.0\refint\BackendApp.dll
 X:\ASU\Кулаев\Projects\BackendApp\obj\Debug\net10.0\BackendApp.pdb
 X:\ASU\Кулаев\Projects\BackendApp\obj\Debug\net10.0\BackendApp.genruntimeconfig.cache
 X:\ASU\Кулаев\Projects\BackendApp\obj\Debug\net10.0\ref\BackendApp.dll
+X:\ASU\Кулаев\Projects\BackendApp\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

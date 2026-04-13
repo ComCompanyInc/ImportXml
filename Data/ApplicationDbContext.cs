@@ -27,5 +27,6 @@ namespace BackendApp.Data
         public DbSet<VidType> VidTypes { get; set; }
         public DbSet<OspType> OspTypes { get; set; }
         public DbSet<OidType> OidTypes { get; set; }
+        public DbSet<f033_spmo> F033_Spmos { get; set; }
     }
 }

@@ -15,7 +15,7 @@ namespace BackendApp.Models
         //public string OidMo { get; set; }
 
         [StringLength(2, MinimumLength = 2, ErrorMessage = "Код формы собственности МО (Okfs) - должно быть 2 символа")]
-        public string Okfs { get; set; }
+        public string? Okfs { get; set; }
 
         //public long? VidMoId { get; set; }
         public long? VidTypeId { get; set; }

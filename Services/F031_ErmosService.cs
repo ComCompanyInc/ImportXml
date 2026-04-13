@@ -148,7 +148,7 @@ namespace BackendApp.Services
                 if (existingMoDocument != null) {
                     orgDocumentId = existingMoDocument.Id;
                 } else {
-                    orgDocumentId = (await _moDocumentService.SaveMoDocument(orgDocument)).Id;
+                    orgDocumentId = (await _moDocumentService.SaveOrgDocument(orgDocument)).Id;
                 }
 
                 Address address = new Address

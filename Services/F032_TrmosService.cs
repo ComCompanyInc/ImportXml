@@ -15,7 +15,7 @@ namespace BackendApp.Services
         private readonly F032_TrmoRepository _f032_TrmosRepository;
 
         private readonly BaseDataService _baseDataService;
-        private readonly CommunicationService _comminicationService;
+        private readonly CommunicationService _communicationService;
         private readonly OrganizationService _organizationService;
         private readonly DocumentService _documentService;
         private readonly OrgDocumentService _moDocumentService;
@@ -30,7 +30,7 @@ namespace BackendApp.Services
         public F032_TrmosService(
             F032_TrmoRepository f032_TrmosRepository,
             BaseDataService baseDataService,
-            CommunicationService comminicationService,
+            CommunicationService communicationService,
             OrganizationService organizationService,
             DocumentService documentService,
             OrgDocumentService moDocumentService,
@@ -46,7 +46,7 @@ namespace BackendApp.Services
             _f032_TrmosRepository = f032_TrmosRepository;
 
             _baseDataService = baseDataService;
-            _comminicationService = comminicationService;
+            _communicationService = communicationService;
             _organizationService = organizationService;
             _documentService = documentService;
             _moDocumentService = moDocumentService;
@@ -95,14 +95,14 @@ namespace BackendApp.Services
                 long communicationId;
 
                 // если обьект уже существует в БД - сразу берем у него ID, иначе создаем его и берем у новосозданного Id
-                Communication existingCommunication = await _comminicationService.GetEnitityByAttributes(communication);
+                Communication existingCommunication = await _communicationService.GetEnitityByAttributes(communication);
                 if (existingCommunication != null)
                 {
                     communicationId = existingCommunication.Id;
                 }
                 else
                 {
-                    communicationId = (await _comminicationService.SaveCommunicationObject(communication)).Id;
+                    communicationId = (await _communicationService.SaveCommunicationObject(communication)).Id;
                 }
 
                 Organization organization = new Organization
@@ -159,7 +159,7 @@ namespace BackendApp.Services
                 }
                 else
                 {
-                    vidMoId = (await _vidMoService.SaveVidMoObject(vidMo)).Id;
+                    vidMoId = (await _vidMoService.SaveVidTypeObject(vidMo)).Id;
                 }
 
                 OidType oidTypeMo = new OidType
@@ -212,7 +212,7 @@ namespace BackendApp.Services
                 }
                 else
                 {
-                    orgDocumentId = (await _moDocumentService.SaveMoDocument(orgDocument)).Id;
+                    orgDocumentId = (await _moDocumentService.SaveOrgDocument(orgDocument)).Id;
                 }
 
                 Subject subject = new Subject

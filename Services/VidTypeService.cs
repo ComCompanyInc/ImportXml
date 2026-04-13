@@ -20,7 +20,7 @@ namespace BackendApp.Services
             _vidMoRepository = vidMoRepository;
         }
 
-        public async Task<VidType> SaveVidMoObject(VidType vidMo)
+        public async Task<VidType> SaveVidTypeObject(VidType vidMo)
         {
             return await _vidMoRepository.SaveData(vidMo);
         }

@@ -3,3 +3,5 @@
 //для боевого использования
 curl.exe -X POST http://localhost:5000/api/F031_ErmosComtroller/import/F31 -H "Content-Type: application/xml; charset=windows-1251" -d "@F031.xml"
 curl.exe -X POST http://localhost:5000/api/F032_Trmos/import/F32 -H "Content-Type: application/xml; charset=windows-1251" -d "@F032.xml"
+
+curl.exe -X POST http://localhost:5000/api/F033_SpmosController/import/F33 -H "Content-Type: application/xml; charset=windows-1251" -d "@F033.xml"

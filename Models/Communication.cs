@@ -14,14 +14,12 @@ namespace BackendApp.Models
         [Phone(ErrorMessage = "Некорректный формат телефона")]
         public string Phone { get; set; }
 
-        [Required(ErrorMessage = "Факс обязательно")]
         [StringLength(40, ErrorMessage = "Факс до 40 символов")]
-        public string Fax { get; set; }
+        public string? Fax { get; set; }
 
-        [Required(ErrorMessage = "Эл. Почта обязательно")]
         [StringLength(40, ErrorMessage = "Эл. Почта до 50 символов")]
         [EmailAddress(ErrorMessage = "Некорректный формат email")]
-        public string Email { get; set; }
+        public string? Email { get; set; }
 
         [StringLength(40, ErrorMessage = "Телефон горячей линии до 40 символов")]
         [Phone(ErrorMessage = "Некорректный формат телефона горячей линии")]
