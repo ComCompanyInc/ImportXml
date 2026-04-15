@@ -14,11 +14,14 @@ namespace BackendApp.Models
         [StringLength(17, MinimumLength = 0, ErrorMessage = "Поле Code (IDSPMO) должно иметь длинну от 0 до 100 символов")]
         public string Code { get; set; } // IDSMO
 
-        [StringLength(4000, MinimumLength = 0, ErrorMessage = "Поле Name (NAM_SPMO) должно иметь длинну от 0 до 4000 символов")]
-        public string? Name { get; set; } // NAM_SPMO
+        public OrgName OrgName { get; set; }
+        public long OrgNameId { get; set; }
 
-        [StringLength(4000, MinimumLength = 0, ErrorMessage = "Поле ShortName (NAM_SK_SPMO) должно иметь длинну от 0 до 4000 символов")]
-        public string? ShortName { get; set; } // NAM_SK_SPMO
+        //[StringLength(4000, MinimumLength = 0, ErrorMessage = "Поле Name (NAM_SPMO) должно иметь длинну от 0 до 4000 символов")]
+        //public string? Name { get; set; } // NAM_SPMO
+
+        //[StringLength(4000, MinimumLength = 0, ErrorMessage = "Поле ShortName (NAM_SK_SPMO) должно иметь длинну от 0 до 4000 символов")]
+        //public string? ShortName { get; set; } // NAM_SK_SPMO
 
         public DateTime DateBeg { get; set; } // DateBeg
 

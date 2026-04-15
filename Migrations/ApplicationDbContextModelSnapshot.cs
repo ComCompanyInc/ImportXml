@@ -178,6 +178,32 @@ namespace BackendApp.Migrations
                     b.ToTable("Documents");
                 });
 
+            modelBuilder.Entity("BackendApp.Models.License", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<DateTime?>("DateE")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("Dstart")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("Dterm")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("LicenseNum")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Licenses");
+                });
+
             modelBuilder.Entity("BackendApp.Models.OidType", b =>
                 {
                     b.Property<long>("Id")
@@ -234,6 +260,29 @@ namespace BackendApp.Migrations
                     b.ToTable("OrgDocuments");
                 });
 
+            modelBuilder.Entity("BackendApp.Models.OrgName", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(4000)
+                        .HasColumnType("nvarchar(4000)");
+
+                    b.Property<string>("ShortName")
+                        .IsRequired()
+                        .HasMaxLength(4000)
+                        .HasColumnType("nvarchar(4000)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("OrgNames");
+                });
+
             modelBuilder.Entity("BackendApp.Models.OrgType", b =>
                 {
                     b.Property<long>("Id")
@@ -272,11 +321,6 @@ namespace BackendApp.Migrations
                     b.Property<int?>("NalP")
                         .HasColumnType("int");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(2500)
-                        .HasColumnType("nvarchar(2500)");
-
                     b.Property<string>("NameE")
                         .HasMaxLength(1)
                         .HasColumnType("nvarchar(1)");
@@ -292,19 +336,19 @@ namespace BackendApp.Migrations
                         .HasMaxLength(5)
                         .HasColumnType("nvarchar(5)");
 
-                    b.Property<long?>("OrgTypeId")
+                    b.Property<long>("OrgNameId")
                         .HasColumnType("bigint");
 
-                    b.Property<string>("ShortName")
-                        .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
+                    b.Property<long?>("OrgTypeId")
+                        .HasColumnType("bigint");
 
                     b.Property<string>("VedPri")
                         .HasMaxLength(2)
                         .HasColumnType("nvarchar(2)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("OrgNameId");
 
                     b.HasIndex("OrgTypeId");
 
@@ -509,11 +553,10 @@ namespace BackendApp.Migrations
                     b.Property<DateTime>("DateEnd")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Name")
-                        .HasMaxLength(4000)
-                        .HasColumnType("nvarchar(4000)");
-
                     b.Property<long>("OrgDocumentId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("OrgNameId")
                         .HasColumnType("bigint");
 
                     b.Property<int>("OspType")
@@ -522,10 +565,6 @@ namespace BackendApp.Migrations
                     b.Property<long>("OspTypeId")
                         .HasColumnType("bigint");
 
-                    b.Property<string>("ShortName")
-                        .HasMaxLength(4000)
-                        .HasColumnType("nvarchar(4000)");
-
                     b.HasKey("Id");
 
                     b.HasIndex("BaseDataId");
@@ -533,6 +572,8 @@ namespace BackendApp.Migrations
                     b.HasIndex("CommunicationId");
 
                     b.HasIndex("OrgDocumentId");
+
+                    b.HasIndex("OrgNameId");
 
                     b.ToTable("F033_Spmos");
                 });
@@ -563,10 +604,8 @@ namespace BackendApp.Migrations
                         .HasMaxLength(17)
                         .HasColumnType("nvarchar(17)");
 
-                    b.Property<string>("LicenseNum")
-                        .IsRequired()
-                        .HasMaxLength(32)
-                        .HasColumnType("nvarchar(32)");
+                    b.Property<long>("LicenseId")
+                        .HasColumnType("bigint");
 
                     b.HasKey("Id");
 
@@ -577,6 +616,8 @@ namespace BackendApp.Migrations
                     b.HasIndex("F032_TrmoId");
 
                     b.HasIndex("F033_SpmoId");
+
+                    b.HasIndex("LicenseId");
 
                     b.ToTable("F038_Addrmps");
                 });
@@ -622,9 +663,17 @@ namespace BackendApp.Migrations
 
             modelBuilder.Entity("BackendApp.Models.Organization", b =>
                 {
+                    b.HasOne("BackendApp.Models.OrgName", "OrgName")
+                        .WithMany()
+                        .HasForeignKey("OrgNameId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("BackendApp.Models.OrgType", "OrgType")
                         .WithMany("Organizations")
                         .HasForeignKey("OrgTypeId");
+
+                    b.Navigation("OrgName");
 
                     b.Navigation("OrgType");
                 });
@@ -777,11 +826,19 @@ namespace BackendApp.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("BackendApp.Models.OrgName", "OrgName")
+                        .WithMany()
+                        .HasForeignKey("OrgNameId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("BaseData");
 
                     b.Navigation("Communication");
 
                     b.Navigation("OrgDocument");
+
+                    b.Navigation("OrgName");
                 });
 
             modelBuilder.Entity("BackendApp.Models.f038_addrmp", b =>
@@ -806,6 +863,12 @@ namespace BackendApp.Migrations
                         .WithMany("F038_Addrmp")
                         .HasForeignKey("F033_SpmoId");
 
+                    b.HasOne("BackendApp.Models.License", "License")
+                        .WithMany()
+                        .HasForeignKey("LicenseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Address");
 
                     b.Navigation("BaseData");
@@ -813,6 +876,8 @@ namespace BackendApp.Migrations
                     b.Navigation("F032_Trmo");
 
                     b.Navigation("F033_Spmo");
+
+                    b.Navigation("License");
                 });
 
             modelBuilder.Entity("BackendApp.Models.Address", b =>

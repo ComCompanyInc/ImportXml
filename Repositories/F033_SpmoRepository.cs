@@ -35,17 +35,17 @@ namespace BackendApp.Repositories
                     .Where(c => c.Code == entityData.Code);
             }
 
-            if (!entityData.Name.IsNullOrEmpty())
-            {
-                f033_Spmos = f033_Spmos
-                    .Where(c => c.Name == entityData.Name);
-            }
+            //if (!entityData.Name.IsNullOrEmpty())
+            //{
+            //    f033_Spmos = f033_Spmos
+            //        .Where(c => c.Name == entityData.Name);
+            //}
 
-            if (!entityData.ShortName.IsNullOrEmpty())
-            {
-                f033_Spmos = f033_Spmos
-                    .Where(c => c.ShortName == entityData.ShortName);
-            }
+            //if (!entityData.ShortName.IsNullOrEmpty())
+            //{
+            //    f033_Spmos = f033_Spmos
+            //        .Where(c => c.ShortName == entityData.ShortName);
+            //}
 
             if (entityData.OspTypeId != null && entityData.OspTypeId != 0)
             {

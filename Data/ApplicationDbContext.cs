@@ -29,5 +29,7 @@ namespace BackendApp.Data
         public DbSet<OidType> OidTypes { get; set; }
         public DbSet<f033_spmo> F033_Spmos { get; set; }
         public DbSet<f038_addrmp> F038_Addrmps { get; set; }
+        public DbSet<OrgName> OrgNames { get; set; }
+        public DbSet<License> Licenses { get; set; }
     }
 }

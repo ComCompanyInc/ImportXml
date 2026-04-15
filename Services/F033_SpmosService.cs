@@ -19,6 +19,7 @@ namespace BackendApp.Services
         private readonly OrgDocumentService _orgDocumentService;
         private readonly OidTypeService _oidTypeService;
         private readonly VidTypeService _vidTypeService;
+        private readonly OrgNameService _orgNameService;
 
         public F033_SpmosService(
             F033_SpmoRepository f033_SpmosRepository,
@@ -27,7 +28,8 @@ namespace BackendApp.Services
             OspTypeService ospTypeService,
             OrgDocumentService orgDocumentService,
             OidTypeService oidTypeService,
-            VidTypeService vidTypeService
+            VidTypeService vidTypeService,
+            OrgNameService orgNameService
         )
         {
             _f033_SpmosRepository = f033_SpmosRepository;
@@ -38,6 +40,7 @@ namespace BackendApp.Services
             _orgDocumentService = orgDocumentService;
             _oidTypeService = oidTypeService;
             _vidTypeService = vidTypeService;
+            _orgNameService = orgNameService;
         }
 
         public async Task<bool> SaveDataFromF33(DocumentDto<F33DataDto> dataContainer)
@@ -153,12 +156,30 @@ namespace BackendApp.Services
                     orgDocumentId = (await _orgDocumentService.SaveOrgDocument(orgDocument)).Id;
                 }
 
+                OrgName orgName = new OrgName
+                {
+                    Name = item.Name,
+                    ShortName = item.ShortName
+                };
+
+                long orgNameId;
+
+                OrgName existingOrgName = await _orgNameService.GetEnitityByAttributes(orgName);
+                if (existingOrgName != null)
+                {
+                    orgNameId = existingOrgName.Id;
+                }
+                else
+                {
+                    orgNameId = (await _orgNameService.SaveOrgNameObject(orgName)).Id;
+                }
+
                 f033_spmo f033_spmo = new f033_spmo
                 {
                     BaseDataId = baseDataId,
                     Id = item.Id,
                     Code = item.Code,
-                    Name = item.Name,
+                    OrgNameId = orgNameId,
                     OspTypeId = ospId,
                     OrgDocumentId = orgDocumentId,
                     CommunicationId = communicationId,

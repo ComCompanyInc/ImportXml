@@ -20,6 +20,7 @@ namespace BackendApp.Services
         private readonly OrgDocumentService _moDocumentService;
         private readonly AddressService _addressService;
         private readonly OidTypeService _oidTypeService;
+        private readonly OrgNameService _orgNameService;
 
         public F031_ErmosService(
             F031_ErmosRepository f031_ErmosRepository,
@@ -29,7 +30,8 @@ namespace BackendApp.Services
             DocumentService documentService,
             OrgDocumentService moDocumentService,
             AddressService addressService,
-            OidTypeService oidTypeService
+            OidTypeService oidTypeService,
+            OrgNameService orgNameService
         )
         {
             _f031_ErmosRepository = f031_ErmosRepository;
@@ -41,6 +43,7 @@ namespace BackendApp.Services
             _moDocumentService = moDocumentService;
             _addressService = addressService;
             _oidTypeService = oidTypeService;
+            _orgNameService = orgNameService;
         }
 
         /// <summary>
@@ -86,10 +89,27 @@ namespace BackendApp.Services
                     communicationId = (await _comminicationService.SaveCommunicationObject(communication)).Id;
                 }
 
-                Organization organization = new Organization
+                OrgName orgName = new OrgName
                 {
                     Name = item.Name,
-                    ShortName = item.ShortName,
+                    ShortName = item.ShortName
+                };
+
+                long orgNameId;
+
+                OrgName existingOrgName = await _orgNameService.GetEnitityByAttributes(orgName);
+                if (existingOrgName != null)
+                {
+                    orgNameId = existingOrgName.Id;
+                }
+                else
+                {
+                    orgNameId = (await _orgNameService.SaveOrgNameObject(orgName)).Id;
+                }
+
+                Organization organization = new Organization
+                {
+                    OrgNameId = orgNameId,
                     Okopf = item.Okopf
                 };
 
@@ -124,6 +144,7 @@ namespace BackendApp.Services
                 };
 
                 long oidTypeMoId;
+
                 OidType existingOidTypeMo = await _oidTypeService.GetEnitityByAttributes(oidTypeMo);
                 if (existingOidTypeMo != null)
                 {

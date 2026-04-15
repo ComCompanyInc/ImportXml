@@ -23,15 +23,10 @@ namespace BackendApp.Repositories
         {
             IQueryable<Organization> organizationResult = _context.Organizations;
 
-            if (!entityData.Name.IsNullOrEmpty()) {
-                organizationResult = organizationResult
-                    .Where(c => c.Name == entityData.Name);
-            }
-
-            if (!entityData.ShortName.IsNullOrEmpty())
+            if (entityData.OrgNameId != null && entityData.OrgNameId != 0)
             {
                 organizationResult = organizationResult
-                    .Where(c => c.ShortName == entityData.ShortName);
+                    .Where(c => c.OrgNameId == entityData.OrgNameId);
             }
 
             if (entityData.KfTf != null)

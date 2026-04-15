@@ -10,12 +10,15 @@ namespace BackendApp.Models
     {
         public long Id { get; set; }
 
-        [Required(ErrorMessage = "Имя организации обязательно")]
-        [StringLength(2500, ErrorMessage = "Имя организации до 2500 символов")]
-        public string Name { get; set; }
+        public long OrgNameId { get; set; }
+        public OrgName OrgName { get; set; }
 
-        [StringLength(500, ErrorMessage = "Сокращенное до 500 символов")]
-        public string ShortName { get; set; }
+        //[Required(ErrorMessage = "Имя организации обязательно")]
+        //[StringLength(2500, ErrorMessage = "Имя организации до 2500 символов")]
+        //public string Name { get; set; }
+
+        //[StringLength(500, ErrorMessage = "Сокращенное до 500 символов")]
+        //public string ShortName { get; set; }
 
         [Range(0, 9999, ErrorMessage = "Количество филиалов заполняется в диапазоне значений до четырехзначного числа")]
         public int? KfTf { get; set; }

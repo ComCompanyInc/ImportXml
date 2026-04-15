@@ -26,6 +26,7 @@ namespace BackendApp.Services
         private readonly DistrictService _districtService;
         private readonly F031_ErmosService _f031_ermosService;
         private readonly OidTypeService _oidTypeService;
+        private readonly OrgNameService _orgNameService;
 
         public F032_TrmosService(
             F032_TrmoRepository f032_TrmosRepository,
@@ -40,7 +41,8 @@ namespace BackendApp.Services
             SubjectService subjectService,
             DistrictService districtService,
             F031_ErmosService f031_ermosService,
-            OidTypeService oidTypeService
+            OidTypeService oidTypeService,
+            OrgNameService orgNameService
          )
         {
             _f032_TrmosRepository = f032_TrmosRepository;
@@ -57,6 +59,8 @@ namespace BackendApp.Services
             _districtService = districtService;
             _f031_ermosService = f031_ermosService;
             _oidTypeService = oidTypeService;
+            _organizationService = organizationService;
+            _orgNameService = orgNameService;
         }
 
         public async Task<List<ErrorResponseDto>> SaveDataFromF32(DocumentDto<F32DataDto> dataContainer)
@@ -105,10 +109,27 @@ namespace BackendApp.Services
                     communicationId = (await _communicationService.SaveCommunicationObject(communication)).Id;
                 }
 
-                Organization organization = new Organization
+                OrgName orgName = new OrgName
                 {
                     Name = item.OrgName,
-                    ShortName = item.OrgShortName,
+                    ShortName = item.OrgShortName
+                };
+
+                long orgNameId;
+
+                OrgName exsistingOrgName = await _orgNameService.GetEnitityByAttributes(orgName);
+                if (exsistingOrgName != null)
+                {
+                    orgNameId = exsistingOrgName.Id;
+                }
+                else
+                {
+                    orgNameId = (await _orgNameService.SaveOrgNameObject(orgName)).Id;
+                }
+
+                Organization organization = new Organization
+                {
+                    OrgNameId = orgNameId,
                     VedPri = item.VedPri,
                     NameE = item.NameE,
                     Mcod = item.Mcod,
@@ -318,6 +339,16 @@ namespace BackendApp.Services
                         if (await this.GetEnitityByAttributes(f032_trmo) == null)
                         {
                             await SaveF032_trmoObject(f032_trmo);
+                        }
+                        else
+                        {
+                            errors.Add(
+                                new ErrorResponseDto
+                                {
+                                    ErrorMessage = $"ПРЕДУПРЕЖДЕНИЕ: В F032_Trmo с ID = {item.Id} - в таблице F031_Ermo, уже существует данная запись!",
+                                    ConflictObject = f032_trmo
+                                }
+                            );
                         }
                     } else {
                         errors.Add(

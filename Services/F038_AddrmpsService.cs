@@ -5,6 +5,7 @@ using BackendApp.Models;
 using BackendApp.Repositories;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Text;
 
 namespace BackendApp.Services
@@ -17,13 +18,15 @@ namespace BackendApp.Services
         private readonly F033_SpmosService _f033_SpmosService;
         private readonly BaseDataService _baseDataService;
         private readonly AddressService _addressService;
+        private readonly LicenseService _licenseService;
 
         public F038_AddrmpsService(
             F038_AddrmpRepository f038_AddrmpRepository,
             F032_TrmosService f032_TrmosService,
             F033_SpmosService f033_SpmosService,
             BaseDataService baseDataService,
-            AddressService addressService
+            AddressService addressService,
+            LicenseService licenseService
         )
         {
             _f038_AddrmpRepository = f038_AddrmpRepository;
@@ -32,6 +35,7 @@ namespace BackendApp.Services
             _f033_SpmosService = f033_SpmosService;
             _baseDataService = baseDataService;
             _addressService = addressService;
+            _licenseService = licenseService;
         }
 
         public async Task<List<ErrorResponseDto>> SaveDataFromF38(DocumentDto<F38DataDto> dataContainer)
@@ -78,6 +82,24 @@ namespace BackendApp.Services
                     addressId = (await _addressService.SaveAddressObject(address)).Id;
                 }
 
+                Models.License license = new Models.License()
+                {
+                    LicenseNum = item.LicenseNum,
+                    //OrganizationId = orga
+                };
+
+                long licenseId;
+
+                Models.License existingLicense = await _licenseService.GetEnitityByAttributes(license);
+                if (existingLicense != null)
+                {
+                    licenseId = existingLicense.Id;
+                }
+                else
+                {
+                    licenseId = (await _licenseService.SaveLicenseObject(license)).Id;
+                }
+
                 f038_addrmp f038_Addrmp = new f038_addrmp
                 {
                     Id = item.Id,
@@ -85,7 +107,7 @@ namespace BackendApp.Services
                     F032_TrmoId = item.F032_TrmosId,
                     F033_SpmoId = item.F033_SpmosId,
                     AddressId = addressId,
-                    LicenseNum = item.LicenseNum,
+                    LicenseId = licenseId,
                     DateBeg = DateTime.ParseExact(item.DateBeg, "dd.MM.yyyy", null),
                     DateEnd = DateTime.ParseExact(item.DateEnd, "dd.MM.yyyy", null)
                 };
@@ -100,7 +122,20 @@ namespace BackendApp.Services
                 {
                     if (existingF033 != null)
                     {
-                        SaveF038_addrmpObject(f038_Addrmp);
+                        if (await GetEnitityByAttributes(f038_Addrmp) == null)
+                        {
+                            await SaveF038_addrmpObject(f038_Addrmp);
+                        }
+                        else
+                        {
+                            errors.Add(
+                                new ErrorResponseDto
+                                {
+                                    ErrorMessage = $"ПРЕДУПРЕЖДЕНИЕ: В F038_Addrmp с ID = {item.Id} - в таблице F038_Addrmp, уже существует данная запись!",
+                                    ConflictObject = f038_Addrmp
+                                }
+                            );
+                        }
                     }
                     else
                     {

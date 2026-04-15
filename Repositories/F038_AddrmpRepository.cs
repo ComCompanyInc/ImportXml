@@ -41,11 +41,11 @@ namespace BackendApp.Repositories
                     .Where(c => c.F033_SpmoId == entityData.F033_SpmoId);
             }
 
-            if (!entityData.LicenseNum.IsNullOrEmpty())
-            {
-                f038_addrmpResult = f038_addrmpResult
-                    .Where(c => c.LicenseNum == entityData.LicenseNum);
-            }
+            //if (!entityData.LicenseNum.IsNullOrEmpty())
+            //{
+            //    f038_addrmpResult = f038_addrmpResult
+            //        .Where(c => c.LicenseNum == entityData.LicenseNum);
+            //}
 
             if (entityData.AddressId != null && entityData.AddressId != 0)
             {

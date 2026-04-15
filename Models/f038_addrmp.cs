@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
@@ -19,8 +20,11 @@ namespace BackendApp.Models
         public string? F033_SpmoId { get; set; } // UIDSPMO
         public f033_spmo F033_Spmo { get; set; }
 
-        [StringLength(32, MinimumLength = 0, ErrorMessage = "Поле N_DOC (LicenseNum) должно содержать от 0 до 32 символов")]
-        public string LicenseNum { get; set; } // N_DOC
+        public License License { get; set; }
+        public long LicenseId { get; set; } // N_DOC
+
+        //[StringLength(32, MinimumLength = 0, ErrorMessage = "Поле N_DOC (LicenseNum) должно содержать от 0 до 32 символов")]
+        //public string LicenseNum { get; set; } // N_DOC
 
         public long AddressId { get; set; }
         public Address Address { get; set; }
