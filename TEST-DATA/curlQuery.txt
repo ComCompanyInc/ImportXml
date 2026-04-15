@@ -1,7 +1,11 @@
-Импортируем сначала справочник f031_remo, и только после него f032_trmos
+порядок импорта документов XML:
+F031 -> F032 -> F033 -> F38(f32, f33)
 
-//для боевого использования
-curl.exe -X POST http://localhost:5000/api/F031_ErmosComtroller/import/F31 -H "Content-Type: application/xml; charset=windows-1251" -d "@F031.xml"
-curl.exe -X POST http://localhost:5000/api/F032_Trmos/import/F32 -H "Content-Type: application/xml; charset=windows-1251" -d "@F032.xml"
 
-curl.exe -X POST http://localhost:5000/api/F033_SpmosController/import/F33 -H "Content-Type: application/xml; charset=windows-1251" -d "@F033.xml"
+1) curl.exe -X POST http://localhost:5000/api/F031_ErmosComtroller/import/F31 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F031_ermo.xml"
+
+2) curl.exe -X POST http://localhost:5000/api/F032_Trmos/import/F32 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F032_trmo.xml"
+
+3) curl.exe -X POST http://localhost:5000/api/F033_Spmos/import/F33 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F033_spmo.xml"
+
+4) curl.exe -X POST http://localhost:5000/api/F038_Addrmps/import/F38 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F038_addrmp.xml"

@@ -59,13 +59,13 @@ namespace BackendApp.Repositories
                     .Where(c => c.OrgDocumentId == entityData.OrgDocumentId);
             }
 
-            if (entityData.DateBeg != default(DateTime))
+            if (entityData.DateBeg != default(DateTime) && entityData.DateBeg != null)
             {
                 f033_Spmos = f033_Spmos
                     .Where(c => c.DateBeg == entityData.DateBeg);
             }
 
-            if (entityData.DateEnd != default(DateTime))
+            if (entityData.DateEnd != default(DateTime) && entityData.DateEnd != null)
             {
                 f033_Spmos = f033_Spmos
                     .Where(c => c.DateEnd == entityData.DateEnd);

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<packet>
+  <zglv>
+    <type>ERMO-6.957</type>
+    <version>4.433</version>
+    <date>27.03.2026</date>
+  </zglv>
+  <zap>
+    <UIDSPMO>77202600400001001</UIDSPMO>
+    <IDSPMO>01080000013001001</IDSPMO>
+    <NAM_SPMO>ООО "ЮНИДЕНТ"</NAM_SPMO>
+    <NAM_SK_SPMO>ООО "ЮНИДЕНТ"</NAM_SK_SPMO>
+    <PHONE/>
+    <OSP>0</OSP>
+    <VID_SPMO>Стоматологические</VID_SPMO>
+    <OID_SPMO>1.2.643.5.1.13.13.12.2.77.46277.0.530713</OID_SPMO>
+    <DATEBEG>01.01.2026</DATEBEG>
+    <DATEEND>31.12.2026</DATEEND>
+  </zap>
+</packet>

@@ -57,5 +57,7 @@ namespace BackendApp.Models
         public BaseData BaseData { get; set; }
 
         public DateTime DateBeginOms { get; set; }
+
+        public List<f038_addrmp> F038_Addrmp { get; set; } = new List<f038_addrmp>();
     }
 }

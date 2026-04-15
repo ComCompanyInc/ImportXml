@@ -40,7 +40,7 @@ namespace BackendApp.Repositories
                     .Where(c => c.AddressId == entityData.AddressId);
             }
 
-            if (entityData.DocumentId != null && entityData.AddressId != 0)
+            if (entityData.DocumentId != null && entityData.DocumentId != 0)
             {
                 f032_TrmosResult = f032_TrmosResult
                     .Where(c => c.DocumentId == entityData.DocumentId);
@@ -52,13 +52,13 @@ namespace BackendApp.Repositories
                     .Where(c => c.OspTypeId == entityData.OspTypeId);
             }
 
-            if (entityData.ExclusionDate != default(DateTime))
+            if (entityData.ExclusionDate != default(DateTime) && entityData.ExclusionDate != null)
             {
                 f032_TrmosResult = f032_TrmosResult
                     .Where(c => c.ExclusionDate == entityData.ExclusionDate);
             }
 
-            if (entityData.InclusionDate != default(DateTime))
+            if (entityData.InclusionDate != default(DateTime) && entityData.InclusionDate != null)
             {
                 f032_TrmosResult = f032_TrmosResult
                     .Where(c => c.InclusionDate == entityData.InclusionDate);
@@ -76,7 +76,7 @@ namespace BackendApp.Repositories
                     .Where(c => c.DateBeg == entityData.DateBeg);
             }
 
-            if (entityData.DateEnd != default(DateTime))
+            if (entityData.DateEnd != default(DateTime) && entityData.DateEnd != null)
             {
                 f032_TrmosResult = f032_TrmosResult
                     .Where(c => c.DateEnd == entityData.DateEnd);
@@ -112,7 +112,7 @@ namespace BackendApp.Repositories
                     .Where(c => c.f031_ermoParentId == entityData.f031_ermoParentId);
             }
 
-            if (entityData.DateBeginOms != null)
+            if (entityData.DateBeginOms != null && entityData.DateBeginOms != default(DateTime))
             {
                 f032_TrmosResult = f032_TrmosResult
                     .Where(c => c.DateBeginOms == entityData.DateBeginOms);

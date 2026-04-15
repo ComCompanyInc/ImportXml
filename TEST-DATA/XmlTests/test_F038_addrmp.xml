@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<packet>
+  <zglv>
+    <type>ADDRMP-6.957</type>
+    <version>4.291</version>
+    <date>27.03.2026</date>
+  </zglv>
+  <zap>
+    <IDADDRESS>20841076606</IDADDRESS>
+    <UIDMO>77202600400</UIDMO>
+    <UIDSPMO>77202600400001001</UIDSPMO>
+    <N_DOC>Л041-01137-77/00357027</N_DOC>
+    <ADDR>117588, г. Москва, Новоясеневский проспект, д. 1, стр. 4</ADDR>
+    <ADDR_GAR>5ad445a0-db81-47d9-8b8f-d0e02b75a897</ADDR_GAR>
+    <DATEBEG>01.01.2026</DATEBEG>
+    <DATEEND>31.12.2026</DATEEND>
+  </zap>
+</packet>

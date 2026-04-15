@@ -32,5 +32,10 @@ namespace BackendApp.Models
 
         public Communication Communication { get; set; } // PHONE
         public long CommunicationId { get; set; }
+
+        public long BaseDataId { get; set; }
+        public BaseData BaseData { get; set; }
+
+        public List<f038_addrmp> F038_Addrmp { get; set; } = new List<f038_addrmp>();
     }
 }

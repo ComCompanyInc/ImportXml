@@ -3,32 +3,120 @@
   "WorkspaceRootPath": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\models\\communication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:models\\communication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\repositories\\f033_spmorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:repositories\\f033_spmorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\repositories\\extensionbase\\abstractbaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:repositories\\extensionbase\\abstractbaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\models\\f038_addrmp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:models\\f038_addrmp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\services\\f038_addrmpsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:services\\f038_addrmpsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\repositories\\f032_trmorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:repositories\\f032_trmorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\services\\f033_spmosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:services\\f033_spmosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\models\\f032_trmo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:models\\f032_trmo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\repositories\\f038_addrmprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:repositories\\f038_addrmprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\models\\f031_ermo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:models\\f031_ermo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\repositories\\extensionbase\\abstractbaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:repositories\\extensionbase\\abstractbaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\services\\f031_ermosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:services\\f031_ermosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\services\\f032_trmosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:services\\f032_trmosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\repositories\\f033_spmorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:repositories\\f033_spmorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\models\\orgtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:models\\orgtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\controllers\\f038_addrmpscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:controllers\\f038_addrmpscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\dto\\f038_addrmp\\f38datadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:dto\\f038_addrmp\\f38datadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\dto\\f031_ermos\\f31datadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:dto\\f031_ermos\\f31datadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\dto\\documentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:dto\\documentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\dto\\basedatadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:dto\\basedatadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\controllers\\f033_spmoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:controllers\\f033_spmoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\models\\f033_spmo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:models\\f033_spmo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\controllers\\f032_trmoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:controllers\\f032_trmoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\services\\oidtypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:services\\oidtypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\dto\\f033_spmo\\f33datadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:dto\\f033_spmo\\f33datadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\models\\f033_spmo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:models\\f033_spmo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\repositories\\f031_ermosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:repositories\\f031_ermosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\repositories\\oidtyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:repositories\\oidtyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\models\\basedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:models\\basedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\models\\communication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:models\\communication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\repositories\\orgdocumentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,24 +127,12 @@
       "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:services\\orgdocumentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\controllers\\f033_spmoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:controllers\\f033_spmoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\backendapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:backendapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\models\\orgdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:models\\orgdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\controllers\\f032_trmoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:controllers\\f032_trmoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\services\\vidtypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -71,24 +147,8 @@
       "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:dto\\f032_trmos\\f32datadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\models\\f032_trmo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:models\\f032_trmo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\services\\organizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:services\\organizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\repositories\\f032_trmorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:repositories\\f032_trmorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\repositories\\f031_ermosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:repositories\\f031_ermosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\controllers\\f031_ermoscomtroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -99,22 +159,6 @@
       "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:models\\oidtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\dto\\basedatadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:dto\\basedatadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\dto\\f031_ermos\\f31datadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:dto\\f031_ermos\\f31datadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\services\\f031_ermosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:services\\f031_ermosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\models\\orgtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:models\\orgtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\models\\district.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:models\\district.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -123,28 +167,12 @@
       "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:models\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\models\\f031_ermo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:models\\f031_ermo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\dto\\errorresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:dto\\errorresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\repositories\\vidtyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:repositories\\vidtyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\services\\oidtypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:services\\oidtypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\repositories\\oidtyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:repositories\\oidtyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\repositories\\osptyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -199,10 +227,6 @@
       "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:services\\addressservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\dto\\documentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:dto\\documentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\enums\\eosptype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:enums\\eosptype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -229,10 +253,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\services\\basedataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:services\\basedataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\models\\basedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|solutionrelative:models\\basedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08FC5E57-8E59-9CBE-C51D-27C01FEB7FF7}|BackendApp.csproj|x:\\asu\\\u043A\u0443\u043B\u0430\u0435\u0432\\projects\\backendapp\\migrations\\20260407093832_fix_3rd_migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -270,11 +290,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 12,
               "Title": "OrgType.cs",
               "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\OrgType.cs",
               "RelativeDocumentMoniker": "Models\\OrgType.cs",
@@ -287,369 +307,178 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Communication.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\Communication.cs",
-              "RelativeDocumentMoniker": "Models\\Communication.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\Communication.cs",
-              "RelativeToolTip": "Models\\Communication.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T06:16:44.743Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AbstractBaseRepository.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\ExtensionBase\\AbstractBaseRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\ExtensionBase\\AbstractBaseRepository.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\ExtensionBase\\AbstractBaseRepository.cs",
-              "RelativeToolTip": "Repositories\\ExtensionBase\\AbstractBaseRepository.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAgwCMAAAARAAAAAAAAAA==",
+              "Title": "f038_addrmp.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\f038_addrmp.cs",
+              "RelativeDocumentMoniker": "Models\\f038_addrmp.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\f038_addrmp.cs",
+              "RelativeToolTip": "Models\\f038_addrmp.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAQwAkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T11:39:55.296Z",
+              "WhenOpened": "2026-04-14T06:19:43.292Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "F033_SpmosService.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\F033_SpmosService.cs",
-              "RelativeDocumentMoniker": "Services\\F033_SpmosService.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\F033_SpmosService.cs",
-              "RelativeToolTip": "Services\\F033_SpmosService.cs",
-              "ViewState": "AgIAAI0AAAAAAAAAAAAMwKIAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-13T07:34:28.699Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "BackendApp.csproj",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\BackendApp.csproj",
-              "RelativeDocumentMoniker": "BackendApp.csproj",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\BackendApp.csproj",
-              "RelativeToolTip": "BackendApp.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-04-01T06:07:37.131Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "OrgDocumentRepository.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\OrgDocumentRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\OrgDocumentRepository.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\OrgDocumentRepository.cs",
-              "RelativeToolTip": "Repositories\\OrgDocumentRepository.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAgwCkAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T07:43:41.071Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "f033_spmo.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\f033_spmo.cs",
-              "RelativeDocumentMoniker": "Models\\f033_spmo.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\f033_spmo.cs",
-              "RelativeToolTip": "Models\\f033_spmo.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAQwBUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-13T05:57:37.614Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "F033_SpmoRepository.cs",
               "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\F033_SpmoRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\F033_SpmoRepository.cs",
               "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\F033_SpmoRepository.cs",
               "RelativeToolTip": "Repositories\\F033_SpmoRepository.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAADwv0kAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-13T06:55:13.027Z"
+              "WhenOpened": "2026-04-13T06:55:13.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "F038_AddrmpsService.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\F038_AddrmpsService.cs",
+              "RelativeDocumentMoniker": "Services\\F038_AddrmpsService.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\F038_AddrmpsService.cs",
+              "RelativeToolTip": "Services\\F038_AddrmpsService.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAgwEoAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T08:03:53.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "F033_SpmosService.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\F033_SpmosService.cs",
+              "RelativeDocumentMoniker": "Services\\F033_SpmosService.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\F033_SpmosService.cs",
+              "RelativeToolTip": "Services\\F033_SpmosService.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAnwE0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T07:34:28.699Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "F032_TrmosService.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\F032_TrmosService.cs",
-              "RelativeDocumentMoniker": "Services\\F032_TrmosService.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\F032_TrmosService.cs",
-              "RelativeToolTip": "Services\\F032_TrmosService.cs",
-              "ViewState": "AgIAAAIBAAAAAAAAAAAgwDwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-06T13:32:39.934Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "F33DataDto.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Dto\\f033_spmo\\F33DataDto.cs",
-              "RelativeDocumentMoniker": "Dto\\f033_spmo\\F33DataDto.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Dto\\f033_spmo\\F33DataDto.cs",
-              "RelativeToolTip": "Dto\\f033_spmo\\F33DataDto.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAIA6wCMAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-13T05:50:13.837Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "OrgDocument.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\OrgDocument.cs",
-              "RelativeDocumentMoniker": "Models\\OrgDocument.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\OrgDocument.cs",
-              "RelativeToolTip": "Models\\OrgDocument.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T09:09:09.05Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "OrgDocumentService.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\OrgDocumentService.cs",
-              "RelativeDocumentMoniker": "Services\\OrgDocumentService.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\OrgDocumentService.cs",
-              "RelativeToolTip": "Services\\OrgDocumentService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-03T07:05:49.229Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "VidTypeService.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\VidTypeService.cs",
-              "RelativeDocumentMoniker": "Services\\VidTypeService.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\VidTypeService.cs",
-              "RelativeToolTip": "Services\\VidTypeService.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAewBYAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T11:24:41.379Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "F032_TrmosController.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Controllers\\F032_TrmosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\F032_TrmosController.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Controllers\\F032_TrmosController.cs",
-              "RelativeToolTip": "Controllers\\F032_TrmosController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAA5wB8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T06:44:59.121Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "F033_SpmosController.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Controllers\\F033_SpmosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\F033_SpmosController.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Controllers\\F033_SpmosController.cs",
-              "RelativeToolTip": "Controllers\\F033_SpmosController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwCwAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-13T09:59:40.328Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADUAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T13:37:15.656Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "OspTypeService.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\OspTypeService.cs",
-              "RelativeDocumentMoniker": "Services\\OspTypeService.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\OspTypeService.cs",
-              "RelativeToolTip": "Services\\OspTypeService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T12:13:57.658Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "F32DataDto.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Dto\\f032_trmos\\F32DataDto.cs",
-              "RelativeDocumentMoniker": "Dto\\f032_trmos\\F32DataDto.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Dto\\f032_trmos\\F32DataDto.cs",
-              "RelativeToolTip": "Dto\\f032_trmos\\F32DataDto.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAMwCUAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-06T14:13:56.451Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "f032_trmo.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\f032_trmo.cs",
-              "RelativeDocumentMoniker": "Models\\f032_trmo.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\f032_trmo.cs",
-              "RelativeToolTip": "Models\\f032_trmo.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAwwA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T11:35:43.004Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "OrganizationService.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\OrganizationService.cs",
-              "RelativeDocumentMoniker": "Services\\OrganizationService.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\OrganizationService.cs",
-              "RelativeToolTip": "Services\\OrganizationService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-03T06:22:53.471Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
               "Title": "F032_TrmoRepository.cs",
               "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\F032_TrmoRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\F032_TrmoRepository.cs",
               "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\F032_TrmoRepository.cs",
               "RelativeToolTip": "Repositories\\F032_TrmoRepository.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBIAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAEwHUAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-06T13:41:43.979Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAzwB0AAAAqAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "F038_AddrmpRepository.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\F038_AddrmpRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\F038_AddrmpRepository.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\F038_AddrmpRepository.cs",
+              "RelativeToolTip": "Repositories\\F038_AddrmpRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAkwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T13:12:19.457Z"
+              "WhenOpened": "2026-04-14T07:13:34.386Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "F031_ErmosRepository.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\F031_ErmosRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\F031_ErmosRepository.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\F031_ErmosRepository.cs",
-              "RelativeToolTip": "Repositories\\F031_ErmosRepository.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAQwCQAAAArAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "f032_trmo.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\f032_trmo.cs",
+              "RelativeDocumentMoniker": "Models\\f032_trmo.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\f032_trmo.cs",
+              "RelativeToolTip": "Models\\f032_trmo.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAA8wDwAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T12:20:43.273Z"
+              "WhenOpened": "2026-04-01T11:35:43.004Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "F031_ErmosComtroller.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Controllers\\F031_ErmosComtroller.cs",
-              "RelativeDocumentMoniker": "Controllers\\F031_ErmosComtroller.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Controllers\\F031_ErmosComtroller.cs",
-              "RelativeToolTip": "Controllers\\F031_ErmosComtroller.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAswCgAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T07:45:53.323Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "OidType.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\OidType.cs",
-              "RelativeDocumentMoniker": "Models\\OidType.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\OidType.cs",
-              "RelativeToolTip": "Models\\OidType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T06:20:11.043Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "BaseDataDto.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Dto\\BaseDataDto.cs",
-              "RelativeDocumentMoniker": "Dto\\BaseDataDto.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Dto\\BaseDataDto.cs",
-              "RelativeToolTip": "Dto\\BaseDataDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T07:48:55.615Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 7,
               "Title": "f031_ermo.cs",
               "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\f031_ermo.cs",
               "RelativeDocumentMoniker": "Models\\f031_ermo.cs",
               "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\f031_ermo.cs",
               "RelativeToolTip": "Models\\f031_ermo.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-01T11:38:06.203Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "District.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\District.cs",
-              "RelativeDocumentMoniker": "Models\\District.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\District.cs",
-              "RelativeToolTip": "Models\\District.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T10:52:00.941Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 8,
               "Title": "Address.cs",
               "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\Address.cs",
               "RelativeDocumentMoniker": "Models\\Address.cs",
               "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\Address.cs",
               "RelativeToolTip": "Models\\Address.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAswA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-01T11:02:10.724Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Document.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\Document.cs",
-              "RelativeDocumentMoniker": "Models\\Document.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\Document.cs",
-              "RelativeToolTip": "Models\\Document.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "AbstractBaseRepository.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\ExtensionBase\\AbstractBaseRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\ExtensionBase\\AbstractBaseRepository.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\ExtensionBase\\AbstractBaseRepository.cs",
+              "RelativeToolTip": "Repositories\\ExtensionBase\\AbstractBaseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T11:22:10.936Z"
+              "WhenOpened": "2026-04-02T11:39:55.296Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 11,
+              "Title": "F032_TrmosService.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\F032_TrmosService.cs",
+              "RelativeDocumentMoniker": "Services\\F032_TrmosService.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\F032_TrmosService.cs",
+              "RelativeToolTip": "Services\\F032_TrmosService.cs",
+              "ViewState": "AgIAAOsAAAAAAAAAAAAUwAABAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T13:32:39.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "F031_ErmosService.cs",
               "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\F031_ErmosService.cs",
               "RelativeDocumentMoniker": "Services\\F031_ErmosService.cs",
               "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\F031_ErmosService.cs",
               "RelativeToolTip": "Services\\F031_ErmosService.cs",
-              "ViewState": "AgIAAI0AAAAAAAAAAAAswL0AAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAswKAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-02T09:32:44.482Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 13,
+              "Title": "F038_AddrmpsController.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Controllers\\F038_AddrmpsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\F038_AddrmpsController.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Controllers\\F038_AddrmpsController.cs",
+              "RelativeToolTip": "Controllers\\F038_AddrmpsController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAADwvy0AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T09:41:37.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "F38DataDto.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Dto\\f038_addrmp\\F38DataDto.cs",
+              "RelativeDocumentMoniker": "Dto\\f038_addrmp\\F38DataDto.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Dto\\f038_addrmp\\F38DataDto.cs",
+              "RelativeToolTip": "Dto\\f038_addrmp\\F38DataDto.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA1wCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T06:49:30.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "F31DataDto.cs",
               "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Dto\\f031_ermos\\F31DataDto.cs",
               "RelativeDocumentMoniker": "Dto\\f031_ermos\\F31DataDto.cs",
@@ -661,211 +490,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "ErrorResponseDto.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Dto\\ErrorResponseDto.cs",
-              "RelativeDocumentMoniker": "Dto\\ErrorResponseDto.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Dto\\ErrorResponseDto.cs",
-              "RelativeToolTip": "Dto\\ErrorResponseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T07:51:17.593Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "VidTypeRepository.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\VidTypeRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\VidTypeRepository.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\VidTypeRepository.cs",
-              "RelativeToolTip": "Repositories\\VidTypeRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T11:25:21.201Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "OidTypeService.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\OidTypeService.cs",
-              "RelativeDocumentMoniker": "Services\\OidTypeService.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\OidTypeService.cs",
-              "RelativeToolTip": "Services\\OidTypeService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBgAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T06:53:25.255Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "OidTypeRepository.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\OidTypeRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\OidTypeRepository.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\OidTypeRepository.cs",
-              "RelativeToolTip": "Repositories\\OidTypeRepository.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAqwBUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T06:36:38.601Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "OspTypeRepository.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\OspTypeRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\OspTypeRepository.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\OspTypeRepository.cs",
-              "RelativeToolTip": "Repositories\\OspTypeRepository.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T11:54:22.051Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "SubjectRepository.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\SubjectRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\SubjectRepository.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\SubjectRepository.cs",
-              "RelativeToolTip": "Repositories\\SubjectRepository.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA7wBcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T12:42:15.215Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "OspType.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\OspType.cs",
-              "RelativeDocumentMoniker": "Models\\OspType.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\OspType.cs",
-              "RelativeToolTip": "Models\\OspType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T10:43:06.197Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "Organization.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\Organization.cs",
-              "RelativeDocumentMoniker": "Models\\Organization.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\Organization.cs",
-              "RelativeToolTip": "Models\\Organization.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T06:29:30.515Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "VidType.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\VidType.cs",
-              "RelativeDocumentMoniker": "Models\\VidType.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\VidType.cs",
-              "RelativeToolTip": "Models\\VidType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T09:44:40.184Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "ConverterType.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Helpers\\ConverterType.cs",
-              "RelativeDocumentMoniker": "Helpers\\ConverterType.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Helpers\\ConverterType.cs",
-              "RelativeToolTip": "Helpers\\ConverterType.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T08:52:20.054Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "DistrictRepository.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\DistrictRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\DistrictRepository.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\DistrictRepository.cs",
-              "RelativeToolTip": "Repositories\\DistrictRepository.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAADgvysAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T12:54:40.553Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "DocumentRepository.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\DocumentRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\DocumentRepository.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\DocumentRepository.cs",
-              "RelativeToolTip": "Repositories\\DocumentRepository.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowB0AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-03T06:38:23.353Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "BaseDataRepository.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\BaseDataRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\BaseDataRepository.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\BaseDataRepository.cs",
-              "RelativeToolTip": "Repositories\\BaseDataRepository.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBoAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T11:53:40.633Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "CommunicationRepository.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\CommunicationRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\CommunicationRepository.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\CommunicationRepository.cs",
-              "RelativeToolTip": "Repositories\\CommunicationRepository.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwDYAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T09:53:12.468Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "AddressRepository.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\AddressRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\AddressRepository.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\AddressRepository.cs",
-              "RelativeToolTip": "Repositories\\AddressRepository.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAADgvzEAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T12:52:53.866Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "AddressService.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\AddressService.cs",
-              "RelativeDocumentMoniker": "Services\\AddressService.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\AddressService.cs",
-              "RelativeToolTip": "Services\\AddressService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAhwBgAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T13:18:50.76Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "OrganizationRepository.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\OrganizationRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\OrganizationRepository.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\OrganizationRepository.cs",
-              "RelativeToolTip": "Repositories\\OrganizationRepository.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAADgv1gAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-03T06:24:01.89Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 16,
               "Title": "DocumentDto.cs",
               "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Dto\\DocumentDto.cs",
               "RelativeDocumentMoniker": "Dto\\DocumentDto.cs",
@@ -877,91 +502,127 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "EOspType.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Enums\\EOspType.cs",
-              "RelativeDocumentMoniker": "Enums\\EOspType.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Enums\\EOspType.cs",
-              "RelativeToolTip": "Enums\\EOspType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 17,
+              "Title": "BaseDataDto.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Dto\\BaseDataDto.cs",
+              "RelativeDocumentMoniker": "Dto\\BaseDataDto.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Dto\\BaseDataDto.cs",
+              "RelativeToolTip": "Dto\\BaseDataDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T10:46:54.755Z"
+              "WhenOpened": "2026-04-02T07:48:55.615Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "EOrgType.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Enums\\EOrgType.cs",
-              "RelativeDocumentMoniker": "Enums\\EOrgType.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Enums\\EOrgType.cs",
-              "RelativeToolTip": "Enums\\EOrgType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 18,
+              "Title": "F033_SpmosController.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Controllers\\F033_SpmosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\F033_SpmosController.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Controllers\\F033_SpmosController.cs",
+              "RelativeToolTip": "Controllers\\F033_SpmosController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAiwCAAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T06:42:36.641Z"
+              "WhenOpened": "2026-04-13T09:59:40.328Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "ENalP.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Enums\\ENalP.cs",
-              "RelativeDocumentMoniker": "Enums\\ENalP.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Enums\\ENalP.cs",
-              "RelativeToolTip": "Enums\\ENalP.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "f033_spmo.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\f033_spmo.cs",
+              "RelativeDocumentMoniker": "Models\\f033_spmo.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\f033_spmo.cs",
+              "RelativeToolTip": "Models\\f033_spmo.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAA8wCIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T08:45:58.593Z"
+              "WhenOpened": "2026-04-13T05:57:37.614Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "DistrictService.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\DistrictService.cs",
-              "RelativeDocumentMoniker": "Services\\DistrictService.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\DistrictService.cs",
-              "RelativeToolTip": "Services\\DistrictService.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAUwAkAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 20,
+              "Title": "Program.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T05:45:25.648Z"
+              "WhenOpened": "2026-04-01T13:37:15.656Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "DocumentService.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\DocumentService.cs",
-              "RelativeDocumentMoniker": "Services\\DocumentService.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\DocumentService.cs",
-              "RelativeToolTip": "Services\\DocumentService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 21,
+              "Title": "F032_TrmosController.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Controllers\\F032_TrmosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\F032_TrmosController.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Controllers\\F032_TrmosController.cs",
+              "RelativeToolTip": "Controllers\\F032_TrmosController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwB8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-03T06:50:19.87Z"
+              "WhenOpened": "2026-04-02T06:44:59.121Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "SubjectService.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\SubjectService.cs",
-              "RelativeDocumentMoniker": "Services\\SubjectService.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\SubjectService.cs",
-              "RelativeToolTip": "Services\\SubjectService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBUAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 22,
+              "Title": "OidTypeService.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\OidTypeService.cs",
+              "RelativeDocumentMoniker": "Services\\OidTypeService.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\OidTypeService.cs",
+              "RelativeToolTip": "Services\\OidTypeService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBgAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T12:41:45.824Z"
+              "WhenOpened": "2026-04-10T06:53:25.255Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
-              "Title": "BaseDataService.cs",
-              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\BaseDataService.cs",
-              "RelativeDocumentMoniker": "Services\\BaseDataService.cs",
-              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\BaseDataService.cs",
-              "RelativeToolTip": "Services\\BaseDataService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 23,
+              "Title": "F33DataDto.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Dto\\f033_spmo\\F33DataDto.cs",
+              "RelativeDocumentMoniker": "Dto\\f033_spmo\\F33DataDto.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Dto\\f033_spmo\\F33DataDto.cs",
+              "RelativeToolTip": "Dto\\f033_spmo\\F33DataDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T11:58:20.601Z"
+              "WhenOpened": "2026-04-13T05:50:13.837Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 24,
+              "Title": "F031_ErmosRepository.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\F031_ErmosRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\F031_ErmosRepository.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\F031_ErmosRepository.cs",
+              "RelativeToolTip": "Repositories\\F031_ErmosRepository.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwCQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T12:20:43.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "OidTypeRepository.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\OidTypeRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\OidTypeRepository.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\OidTypeRepository.cs",
+              "RelativeToolTip": "Repositories\\OidTypeRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T06:36:38.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAuwB0AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T13:12:19.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "BaseData.cs",
               "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\BaseData.cs",
               "RelativeDocumentMoniker": "Models\\BaseData.cs",
@@ -973,7 +634,427 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Communication.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\Communication.cs",
+              "RelativeDocumentMoniker": "Models\\Communication.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\Communication.cs",
+              "RelativeToolTip": "Models\\Communication.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T06:16:44.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "BackendApp.csproj",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\BackendApp.csproj",
+              "RelativeDocumentMoniker": "BackendApp.csproj",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\BackendApp.csproj",
+              "RelativeToolTip": "BackendApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-01T06:07:37.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "OrgDocumentRepository.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\OrgDocumentRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\OrgDocumentRepository.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\OrgDocumentRepository.cs",
+              "RelativeToolTip": "Repositories\\OrgDocumentRepository.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAgwCkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T07:43:41.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "OrgDocument.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\OrgDocument.cs",
+              "RelativeDocumentMoniker": "Models\\OrgDocument.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\OrgDocument.cs",
+              "RelativeToolTip": "Models\\OrgDocument.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T09:09:09.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "OrgDocumentService.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\OrgDocumentService.cs",
+              "RelativeDocumentMoniker": "Services\\OrgDocumentService.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\OrgDocumentService.cs",
+              "RelativeToolTip": "Services\\OrgDocumentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T07:05:49.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "VidTypeService.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\VidTypeService.cs",
+              "RelativeDocumentMoniker": "Services\\VidTypeService.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\VidTypeService.cs",
+              "RelativeToolTip": "Services\\VidTypeService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAewBYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T11:24:41.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "OspTypeService.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\OspTypeService.cs",
+              "RelativeDocumentMoniker": "Services\\OspTypeService.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\OspTypeService.cs",
+              "RelativeToolTip": "Services\\OspTypeService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T12:13:57.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "F32DataDto.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Dto\\f032_trmos\\F32DataDto.cs",
+              "RelativeDocumentMoniker": "Dto\\f032_trmos\\F32DataDto.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Dto\\f032_trmos\\F32DataDto.cs",
+              "RelativeToolTip": "Dto\\f032_trmos\\F32DataDto.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAMwCUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T14:13:56.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "OrganizationService.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\OrganizationService.cs",
+              "RelativeDocumentMoniker": "Services\\OrganizationService.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\OrganizationService.cs",
+              "RelativeToolTip": "Services\\OrganizationService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T06:22:53.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "F031_ErmosComtroller.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Controllers\\F031_ErmosComtroller.cs",
+              "RelativeDocumentMoniker": "Controllers\\F031_ErmosComtroller.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Controllers\\F031_ErmosComtroller.cs",
+              "RelativeToolTip": "Controllers\\F031_ErmosComtroller.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAswCgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T07:45:53.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "OidType.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\OidType.cs",
+              "RelativeDocumentMoniker": "Models\\OidType.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\OidType.cs",
+              "RelativeToolTip": "Models\\OidType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T06:20:11.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "District.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\District.cs",
+              "RelativeDocumentMoniker": "Models\\District.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\District.cs",
+              "RelativeToolTip": "Models\\District.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T10:52:00.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Document.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\Document.cs",
+              "RelativeDocumentMoniker": "Models\\Document.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\Document.cs",
+              "RelativeToolTip": "Models\\Document.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T11:22:10.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ErrorResponseDto.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Dto\\ErrorResponseDto.cs",
+              "RelativeDocumentMoniker": "Dto\\ErrorResponseDto.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Dto\\ErrorResponseDto.cs",
+              "RelativeToolTip": "Dto\\ErrorResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T07:51:17.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "VidTypeRepository.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\VidTypeRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\VidTypeRepository.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\VidTypeRepository.cs",
+              "RelativeToolTip": "Repositories\\VidTypeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T11:25:21.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "OspTypeRepository.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\OspTypeRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\OspTypeRepository.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\OspTypeRepository.cs",
+              "RelativeToolTip": "Repositories\\OspTypeRepository.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T11:54:22.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "SubjectRepository.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\SubjectRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\SubjectRepository.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\SubjectRepository.cs",
+              "RelativeToolTip": "Repositories\\SubjectRepository.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA7wBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T12:42:15.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "OspType.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\OspType.cs",
+              "RelativeDocumentMoniker": "Models\\OspType.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\OspType.cs",
+              "RelativeToolTip": "Models\\OspType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T10:43:06.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Organization.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\Organization.cs",
+              "RelativeDocumentMoniker": "Models\\Organization.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\Organization.cs",
+              "RelativeToolTip": "Models\\Organization.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T06:29:30.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "VidType.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\VidType.cs",
+              "RelativeDocumentMoniker": "Models\\VidType.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\VidType.cs",
+              "RelativeToolTip": "Models\\VidType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T09:44:40.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "ConverterType.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Helpers\\ConverterType.cs",
+              "RelativeDocumentMoniker": "Helpers\\ConverterType.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Helpers\\ConverterType.cs",
+              "RelativeToolTip": "Helpers\\ConverterType.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T08:52:20.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "DistrictRepository.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\DistrictRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\DistrictRepository.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\DistrictRepository.cs",
+              "RelativeToolTip": "Repositories\\DistrictRepository.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAADgvysAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T12:54:40.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "DocumentRepository.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\DocumentRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\DocumentRepository.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\DocumentRepository.cs",
+              "RelativeToolTip": "Repositories\\DocumentRepository.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowB0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T06:38:23.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "BaseDataRepository.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\BaseDataRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\BaseDataRepository.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\BaseDataRepository.cs",
+              "RelativeToolTip": "Repositories\\BaseDataRepository.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T11:53:40.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "CommunicationRepository.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\CommunicationRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\CommunicationRepository.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\CommunicationRepository.cs",
+              "RelativeToolTip": "Repositories\\CommunicationRepository.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwDYAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T09:53:12.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "AddressRepository.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\AddressRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\AddressRepository.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\AddressRepository.cs",
+              "RelativeToolTip": "Repositories\\AddressRepository.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAADgvzEAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T12:52:53.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "AddressService.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\AddressService.cs",
+              "RelativeDocumentMoniker": "Services\\AddressService.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\AddressService.cs",
+              "RelativeToolTip": "Services\\AddressService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAhwBgAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T13:18:50.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "OrganizationRepository.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\OrganizationRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\OrganizationRepository.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\OrganizationRepository.cs",
+              "RelativeToolTip": "Repositories\\OrganizationRepository.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAADgv1gAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T06:24:01.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "EOspType.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Enums\\EOspType.cs",
+              "RelativeDocumentMoniker": "Enums\\EOspType.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Enums\\EOspType.cs",
+              "RelativeToolTip": "Enums\\EOspType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T10:46:54.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "EOrgType.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Enums\\EOrgType.cs",
+              "RelativeDocumentMoniker": "Enums\\EOrgType.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Enums\\EOrgType.cs",
+              "RelativeToolTip": "Enums\\EOrgType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T06:42:36.641Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 58,
+              "Title": "ENalP.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Enums\\ENalP.cs",
+              "RelativeDocumentMoniker": "Enums\\ENalP.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Enums\\ENalP.cs",
+              "RelativeToolTip": "Enums\\ENalP.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T08:45:58.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "DistrictService.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\DistrictService.cs",
+              "RelativeDocumentMoniker": "Services\\DistrictService.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\DistrictService.cs",
+              "RelativeToolTip": "Services\\DistrictService.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAUwAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T05:45:25.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "DocumentService.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\DocumentService.cs",
+              "RelativeDocumentMoniker": "Services\\DocumentService.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\DocumentService.cs",
+              "RelativeToolTip": "Services\\DocumentService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T06:50:19.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "SubjectService.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\SubjectService.cs",
+              "RelativeDocumentMoniker": "Services\\SubjectService.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\SubjectService.cs",
+              "RelativeToolTip": "Services\\SubjectService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T12:41:45.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "BaseDataService.cs",
+              "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\BaseDataService.cs",
+              "RelativeDocumentMoniker": "Services\\BaseDataService.cs",
+              "ToolTip": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\BaseDataService.cs",
+              "RelativeToolTip": "Services\\BaseDataService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T11:58:20.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
               "Title": "20260407093832_fix_3rd_migration.cs",
               "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Migrations\\20260407093832_fix_3rd_migration.cs",
               "RelativeDocumentMoniker": "Migrations\\20260407093832_fix_3rd_migration.cs",
@@ -985,7 +1066,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 64,
               "Title": "20260407062539_3rd_migration.cs",
               "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Migrations\\20260407062539_3rd_migration.cs",
               "RelativeDocumentMoniker": "Migrations\\20260407062539_3rd_migration.cs",
@@ -997,7 +1078,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 65,
               "Title": "20260402081641_fix_2nd_migration.cs",
               "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Migrations\\20260402081641_fix_2nd_migration.cs",
               "RelativeDocumentMoniker": "Migrations\\20260402081641_fix_2nd_migration.cs",
@@ -1009,7 +1090,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 66,
               "Title": "CommunicationService.cs",
               "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Services\\CommunicationService.cs",
               "RelativeDocumentMoniker": "Services\\CommunicationService.cs",
@@ -1021,7 +1102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 67,
               "Title": "ISearchData.cs",
               "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Repositories\\ExtensionBase\\ISearchData.cs",
               "RelativeDocumentMoniker": "Repositories\\ExtensionBase\\ISearchData.cs",
@@ -1033,7 +1114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 69,
               "Title": "appsettings.json",
               "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -1045,7 +1126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 68,
               "Title": "Subject.cs",
               "DocumentMoniker": "X:\\ASU\\\u041A\u0443\u043B\u0430\u0435\u0432\\Projects\\BackendApp\\Models\\Subject.cs",
               "RelativeDocumentMoniker": "Models\\Subject.cs",

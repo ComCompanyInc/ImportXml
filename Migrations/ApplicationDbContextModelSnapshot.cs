@@ -53,7 +53,6 @@ namespace BackendApp.Migrations
                         .HasColumnType("nvarchar(5)");
 
                     b.Property<string>("Oktmo")
-                        .IsRequired()
                         .HasMaxLength(11)
                         .HasColumnType("nvarchar(11)");
 
@@ -493,6 +492,9 @@ namespace BackendApp.Migrations
                         .HasMaxLength(17)
                         .HasColumnType("nvarchar(17)");
 
+                    b.Property<long>("BaseDataId")
+                        .HasColumnType("bigint");
+
                     b.Property<string>("Code")
                         .IsRequired()
                         .HasMaxLength(17)
@@ -526,11 +528,57 @@ namespace BackendApp.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("BaseDataId");
+
                     b.HasIndex("CommunicationId");
 
                     b.HasIndex("OrgDocumentId");
 
                     b.ToTable("F033_Spmos");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f038_addrmp", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasMaxLength(19)
+                        .HasColumnType("nvarchar(19)");
+
+                    b.Property<long>("AddressId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("BaseDataId")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("DateBeg")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DateEnd")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("F032_TrmoId")
+                        .HasMaxLength(17)
+                        .HasColumnType("nvarchar(17)");
+
+                    b.Property<string>("F033_SpmoId")
+                        .HasMaxLength(17)
+                        .HasColumnType("nvarchar(17)");
+
+                    b.Property<string>("LicenseNum")
+                        .IsRequired()
+                        .HasMaxLength(32)
+                        .HasColumnType("nvarchar(32)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AddressId");
+
+                    b.HasIndex("BaseDataId");
+
+                    b.HasIndex("F032_TrmoId");
+
+                    b.HasIndex("F033_SpmoId");
+
+                    b.ToTable("F038_Addrmps");
                 });
 
             modelBuilder.Entity("BackendApp.Models.Address", b =>
@@ -711,6 +759,12 @@ namespace BackendApp.Migrations
 
             modelBuilder.Entity("BackendApp.Models.f033_spmo", b =>
                 {
+                    b.HasOne("BackendApp.Models.BaseData", "BaseData")
+                        .WithMany()
+                        .HasForeignKey("BaseDataId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("BackendApp.Models.Communication", "Communication")
                         .WithMany()
                         .HasForeignKey("CommunicationId")
@@ -723,9 +777,42 @@ namespace BackendApp.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("BaseData");
+
                     b.Navigation("Communication");
 
                     b.Navigation("OrgDocument");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f038_addrmp", b =>
+                {
+                    b.HasOne("BackendApp.Models.Address", "Address")
+                        .WithMany("F038_Addrmp")
+                        .HasForeignKey("AddressId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.BaseData", "BaseData")
+                        .WithMany()
+                        .HasForeignKey("BaseDataId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.f032_trmo", "F032_Trmo")
+                        .WithMany("F038_Addrmp")
+                        .HasForeignKey("F032_TrmoId");
+
+                    b.HasOne("BackendApp.Models.f033_spmo", "F033_Spmo")
+                        .WithMany("F038_Addrmp")
+                        .HasForeignKey("F033_SpmoId");
+
+                    b.Navigation("Address");
+
+                    b.Navigation("BaseData");
+
+                    b.Navigation("F032_Trmo");
+
+                    b.Navigation("F033_Spmo");
                 });
 
             modelBuilder.Entity("BackendApp.Models.Address", b =>
@@ -733,6 +820,8 @@ namespace BackendApp.Migrations
                     b.Navigation("F031_Ermos");
 
                     b.Navigation("F032_Trmos");
+
+                    b.Navigation("F038_Addrmp");
                 });
 
             modelBuilder.Entity("BackendApp.Models.BaseData", b =>
@@ -770,6 +859,16 @@ namespace BackendApp.Migrations
             modelBuilder.Entity("BackendApp.Models.f031_ermo", b =>
                 {
                     b.Navigation("F032_Trmos");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f032_trmo", b =>
+                {
+                    b.Navigation("F038_Addrmp");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f033_spmo", b =>
+                {
+                    b.Navigation("F038_Addrmp");
                 });
 #pragma warning restore 612, 618
         }

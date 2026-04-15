@@ -155,6 +155,7 @@ namespace BackendApp.Services
 
                 f033_spmo f033_spmo = new f033_spmo
                 {
+                    BaseDataId = baseDataId,
                     Id = item.Id,
                     Code = item.Code,
                     Name = item.Name,
