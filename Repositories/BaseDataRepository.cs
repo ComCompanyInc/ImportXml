@@ -43,5 +43,10 @@ namespace BackendApp.Repositories
 
             return await basaeDataResult.FirstOrDefaultAsync();
         }
+
+        public Task<BaseData> UpdateObject(BaseData existingEntity, BaseData entityData)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

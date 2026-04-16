@@ -23,37 +23,67 @@ namespace BackendApp.Repositories
         {
             IQueryable<Models.License> licenseResult = _context.Licenses;
 
-            if (entityData.Id != null && entityData.Id != 0)
-            {
-                licenseResult = licenseResult
-                    .Where(c => c.Id == entityData.Id);
-            }
+            //if (entityData.Id != null && entityData.Id != 0)
+            //{
+            //    licenseResult = licenseResult
+            //        .Where(c => c.Id == entityData.Id);
+            //}
 
+            Models.License updatedLicense = null;
             if (!entityData.LicenseNum.IsNullOrEmpty())
             {
                 licenseResult = licenseResult
                     .Where(c => c.LicenseNum == entityData.LicenseNum);
             }
 
+            Models.License existingLicense = await licenseResult.FirstOrDefaultAsync();
+            if (existingLicense != null)
+            {
+                updatedLicense = await UpdateObject(existingLicense, entityData);
+            }
+
+            //if (entityData.Dstart != null && entityData.Dstart != default(DateTime))
+            //{
+            //    licenseResult = licenseResult
+            //        .Where(c => c.Dstart == entityData.Dstart);
+            //}
+
+            //if (entityData.DateE != null && entityData.DateE != default(DateTime))
+            //{
+            //    licenseResult = licenseResult
+            //        .Where(c => c.DateE == entityData.DateE);
+            //}
+
+            //if (entityData.Dterm != null && entityData.Dterm != default(DateTime))
+            //{
+            //    licenseResult = licenseResult
+            //        .Where(c => c.Dterm == entityData.Dterm);
+            //}
+
+            return updatedLicense;
+        }
+
+        public async Task<Models.License> UpdateObject(Models.License existingEntity, Models.License entityData)
+        {
             if (entityData.Dstart != null && entityData.Dstart != default(DateTime))
             {
-                licenseResult = licenseResult
-                    .Where(c => c.Dstart == entityData.Dstart);
+                existingEntity.Dstart = entityData.Dstart;
             }
 
             if (entityData.DateE != null && entityData.DateE != default(DateTime))
             {
-                licenseResult = licenseResult
-                    .Where(c => c.DateE == entityData.DateE);
+                existingEntity.DateE = entityData.DateE;
             }
 
             if (entityData.Dterm != null && entityData.Dterm != default(DateTime))
             {
-                licenseResult = licenseResult
-                    .Where(c => c.Dterm == entityData.Dterm);
+                existingEntity.Dterm = entityData.Dterm;
             }
 
-            return await licenseResult.FirstOrDefaultAsync();
+            _context.Update(existingEntity);
+            await _context.SaveChangesAsync();
+
+            return existingEntity;
         }
     }
 }

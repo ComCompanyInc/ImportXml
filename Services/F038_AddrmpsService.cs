@@ -85,7 +85,6 @@ namespace BackendApp.Services
                 Models.License license = new Models.License()
                 {
                     LicenseNum = item.LicenseNum,
-                    //OrganizationId = orga
                 };
 
                 long licenseId;

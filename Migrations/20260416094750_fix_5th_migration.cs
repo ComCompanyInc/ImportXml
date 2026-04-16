@@ -111,6 +111,53 @@ namespace BackendApp.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "F037_Licmos",
+                columns: table => new
+                {
+                    Id = table.Column<long>(type: "bigint", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    F031_ErmoId = table.Column<string>(type: "nvarchar(17)", maxLength: 17, nullable: false),
+                    OrgDocumentId = table.Column<long>(type: "bigint", nullable: true),
+                    OrganizationId = table.Column<long>(type: "bigint", nullable: true),
+                    F032_TrmoId = table.Column<long>(type: "bigint", nullable: false),
+                    F032_TrmoId1 = table.Column<string>(type: "nvarchar(17)", nullable: true),
+                    LicenseId = table.Column<long>(type: "bigint", nullable: false),
+                    DateBeg = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DateEnd = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_F037_Licmos", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_F037_Licmos_F031_Ermos_F031_ErmoId",
+                        column: x => x.F031_ErmoId,
+                        principalTable: "F031_Ermos",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_F037_Licmos_F032_Trmos_F032_TrmoId1",
+                        column: x => x.F032_TrmoId1,
+                        principalTable: "F032_Trmos",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_F037_Licmos_Licenses_LicenseId",
+                        column: x => x.LicenseId,
+                        principalTable: "Licenses",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_F037_Licmos_OrgDocuments_OrgDocumentId",
+                        column: x => x.OrgDocumentId,
+                        principalTable: "OrgDocuments",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_F037_Licmos_Organizations_OrganizationId",
+                        column: x => x.OrganizationId,
+                        principalTable: "Organizations",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
                 name: "F033_Spmos",
                 columns: table => new
                 {
@@ -226,6 +273,31 @@ namespace BackendApp.Migrations
                 column: "OrgNameId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_F037_Licmos_F031_ErmoId",
+                table: "F037_Licmos",
+                column: "F031_ErmoId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_F037_Licmos_F032_TrmoId1",
+                table: "F037_Licmos",
+                column: "F032_TrmoId1");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_F037_Licmos_LicenseId",
+                table: "F037_Licmos",
+                column: "LicenseId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_F037_Licmos_OrganizationId",
+                table: "F037_Licmos",
+                column: "OrganizationId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_F037_Licmos_OrgDocumentId",
+                table: "F037_Licmos",
+                column: "OrgDocumentId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_F038_Addrmps_AddressId",
                 table: "F038_Addrmps",
                 column: "AddressId");
@@ -277,6 +349,9 @@ namespace BackendApp.Migrations
             migrationBuilder.DropForeignKey(
                 name: "FK_Organizations_OrgNames_OrgNameId",
                 table: "Organizations");
+
+            migrationBuilder.DropTable(
+                name: "F037_Licmos");
 
             migrationBuilder.DropTable(
                 name: "F038_Addrmps");

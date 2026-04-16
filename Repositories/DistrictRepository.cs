@@ -23,31 +23,61 @@ namespace BackendApp.Repositories
         {
             IQueryable<District> documentResult = _context.Districts;
 
+            District updatedDistrict = null;
             if (!entityData.Name.IsNullOrEmpty())
             {
                 documentResult = documentResult
                     .Where(c => c.Name == entityData.Name);
+
+                District existingDistrict = await documentResult.FirstOrDefaultAsync();
+                if (existingDistrict != null)
+                {
+                    updatedDistrict = await UpdateObject(existingDistrict, entityData);
+                }
             }
 
+            //if (entityData.DateBegin != default(DateTime))
+            //{
+            //    documentResult = documentResult
+            //        .Where(c => c.DateBegin == entityData.DateBegin);
+            //}
+
+            //if (entityData.DateEnd != default(DateTime))
+            //{
+            //    documentResult = documentResult
+            //        .Where(c => c.DateEnd == entityData.DateEnd);
+            //}
+
+            //if (entityData.SubjectId != null && entityData.SubjectId != 0)
+            //{
+            //    documentResult = documentResult
+            //        .Where(c => c.SubjectId == entityData.SubjectId);
+            //}
+
+            return updatedDistrict;
+        }
+
+        public async Task<District> UpdateObject(District existingEntity, District entityData)
+        {
             if (entityData.DateBegin != default(DateTime))
             {
-                documentResult = documentResult
-                    .Where(c => c.DateBegin == entityData.DateBegin);
+                existingEntity.DateBegin = entityData.DateBegin;
             }
 
             if (entityData.DateEnd != default(DateTime))
             {
-                documentResult = documentResult
-                    .Where(c => c.DateEnd == entityData.DateEnd);
+                existingEntity.DateEnd = entityData.DateEnd;
             }
 
             if (entityData.SubjectId != null && entityData.SubjectId != 0)
             {
-                documentResult = documentResult
-                    .Where(c => c.SubjectId == entityData.SubjectId);
+                existingEntity.SubjectId = entityData.SubjectId;
             }
 
-            return await documentResult.FirstOrDefaultAsync();
+            _context.Update(existingEntity);
+            await _context.SaveChangesAsync();
+
+            return existingEntity;
         }
     }
 }

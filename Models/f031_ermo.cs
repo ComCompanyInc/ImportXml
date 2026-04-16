@@ -38,5 +38,7 @@ namespace BackendApp.Models
 
         public long CommunicationId { get; set; }
         public Communication Communication { get; set; }
+
+        public List<f037_licmo> F037_Licmos { get; set; } = new List<f037_licmo>();
     }
 }

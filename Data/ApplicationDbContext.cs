@@ -31,5 +31,6 @@ namespace BackendApp.Data
         public DbSet<f038_addrmp> F038_Addrmps { get; set; }
         public DbSet<OrgName> OrgNames { get; set; }
         public DbSet<License> Licenses { get; set; }
+        public DbSet<f037_licmo> F037_Licmos { get; set; }
     }
 }

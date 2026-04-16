@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<packet>
+  <zglv>
+    <type>LicMO-6.957</type>
+    <version>5.291</version>
+    <date>27.03.2026</date>
+  </zglv>
+  <zap>
+    <IDMO>01080000000000000</IDMO>
+    <OID_MO>1.2.643.5.1.13.13.12.2.77.46277</OID_MO>
+    <MCOD>770075</MCOD>
+    <UIDMO>77202600400</UIDMO>
+    <N_DOC>Л041-01137-77/00357027</N_DOC>
+    <DATEBEG>12.10.2020</DATEBEG>
+    <DATEEND>31.12.2099</DATEEND>
+  </zap>
+</packet>

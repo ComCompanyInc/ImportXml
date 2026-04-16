@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BackendApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20260415132428_fix_5th_migration")]
+    [Migration("20260416094750_fix_5th_migration")]
     partial class fix_5th_migration
     {
         /// <inheritdoc />
@@ -581,6 +581,55 @@ namespace BackendApp.Migrations
                     b.ToTable("F033_Spmos");
                 });
 
+            modelBuilder.Entity("BackendApp.Models.f037_licmo", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<DateTime>("DateBeg")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DateEnd")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("F031_ErmoId")
+                        .IsRequired()
+                        .HasMaxLength(17)
+                        .HasColumnType("nvarchar(17)");
+
+                    b.Property<long>("F032_TrmoId")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("F032_TrmoId1")
+                        .HasColumnType("nvarchar(17)");
+
+                    b.Property<long>("LicenseId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long?>("OrgDocumentId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long?>("OrganizationId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("F031_ErmoId");
+
+                    b.HasIndex("F032_TrmoId1");
+
+                    b.HasIndex("LicenseId");
+
+                    b.HasIndex("OrgDocumentId");
+
+                    b.HasIndex("OrganizationId");
+
+                    b.ToTable("F037_Licmos");
+                });
+
             modelBuilder.Entity("BackendApp.Models.f038_addrmp", b =>
                 {
                     b.Property<string>("Id")
@@ -646,11 +695,11 @@ namespace BackendApp.Migrations
             modelBuilder.Entity("BackendApp.Models.OrgDocument", b =>
                 {
                     b.HasOne("BackendApp.Models.OidType", "OidTypeMo")
-                        .WithMany()
+                        .WithMany("MoOrgDocuments")
                         .HasForeignKey("OidTypeMoId");
 
                     b.HasOne("BackendApp.Models.OidType", "OidTypeSpmo")
-                        .WithMany()
+                        .WithMany("SpmoOrgDocuments")
                         .HasForeignKey("OidTypeSpmoId");
 
                     b.HasOne("BackendApp.Models.VidType", "VidTypes")
@@ -708,7 +757,7 @@ namespace BackendApp.Migrations
                         .IsRequired();
 
                     b.HasOne("BackendApp.Models.OrgDocument", "OrgDocument")
-                        .WithMany()
+                        .WithMany("F031_Ermos")
                         .HasForeignKey("OrgDocumentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -844,6 +893,43 @@ namespace BackendApp.Migrations
                     b.Navigation("OrgName");
                 });
 
+            modelBuilder.Entity("BackendApp.Models.f037_licmo", b =>
+                {
+                    b.HasOne("BackendApp.Models.f031_ermo", "F031_Ermo")
+                        .WithMany("F037_Licmos")
+                        .HasForeignKey("F031_ErmoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.f032_trmo", "F032_Trmo")
+                        .WithMany("F037_Licmos")
+                        .HasForeignKey("F032_TrmoId1");
+
+                    b.HasOne("BackendApp.Models.License", "License")
+                        .WithMany("F037_Licmos")
+                        .HasForeignKey("LicenseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.OrgDocument", "OrgDocument")
+                        .WithMany("F037_Licmos")
+                        .HasForeignKey("OrgDocumentId");
+
+                    b.HasOne("BackendApp.Models.Organization", "Organization")
+                        .WithMany("F037_Licmos")
+                        .HasForeignKey("OrganizationId");
+
+                    b.Navigation("F031_Ermo");
+
+                    b.Navigation("F032_Trmo");
+
+                    b.Navigation("License");
+
+                    b.Navigation("OrgDocument");
+
+                    b.Navigation("Organization");
+                });
+
             modelBuilder.Entity("BackendApp.Models.f038_addrmp", b =>
                 {
                     b.HasOne("BackendApp.Models.Address", "Address")
@@ -867,7 +953,7 @@ namespace BackendApp.Migrations
                         .HasForeignKey("F033_SpmoId");
 
                     b.HasOne("BackendApp.Models.License", "License")
-                        .WithMany()
+                        .WithMany("F038_Addrmps")
                         .HasForeignKey("LicenseId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -902,6 +988,27 @@ namespace BackendApp.Migrations
                     b.Navigation("Addresses");
                 });
 
+            modelBuilder.Entity("BackendApp.Models.License", b =>
+                {
+                    b.Navigation("F037_Licmos");
+
+                    b.Navigation("F038_Addrmps");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.OidType", b =>
+                {
+                    b.Navigation("MoOrgDocuments");
+
+                    b.Navigation("SpmoOrgDocuments");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.OrgDocument", b =>
+                {
+                    b.Navigation("F031_Ermos");
+
+                    b.Navigation("F037_Licmos");
+                });
+
             modelBuilder.Entity("BackendApp.Models.OrgType", b =>
                 {
                     b.Navigation("Organizations");
@@ -909,6 +1016,8 @@ namespace BackendApp.Migrations
 
             modelBuilder.Entity("BackendApp.Models.Organization", b =>
                 {
+                    b.Navigation("F037_Licmos");
+
                     b.Navigation("f031_Ermos");
 
                     b.Navigation("f032_trmos");
@@ -927,10 +1036,14 @@ namespace BackendApp.Migrations
             modelBuilder.Entity("BackendApp.Models.f031_ermo", b =>
                 {
                     b.Navigation("F032_Trmos");
+
+                    b.Navigation("F037_Licmos");
                 });
 
             modelBuilder.Entity("BackendApp.Models.f032_trmo", b =>
                 {
+                    b.Navigation("F037_Licmos");
+
                     b.Navigation("F038_Addrmp");
                 });
 

@@ -30,5 +30,10 @@ namespace BackendApp.Repositories
 
             return await oidTypeResult.FirstOrDefaultAsync();
         }
+
+        public Task<OidType> UpdateObject(OidType existingEntity, OidType entityData)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

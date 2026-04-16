@@ -23,43 +23,83 @@ namespace BackendApp.Repositories
         {
             IQueryable<Address> addressesResult = _context.Addresses;
 
+            Address updatedAddress = null;
             if (!entityData.Name.IsNullOrEmpty())
             {
                 addressesResult = addressesResult
                     .Where(c => c.Name == entityData.Name);
+
+                Address existingAddress = await addressesResult.FirstOrDefaultAsync();
+                if (existingAddress != null)
+                {
+                    updatedAddress = await UpdateObject(existingAddress, entityData);
+                }
             }
 
+            //if (!entityData.Index.IsNullOrEmpty())
+            //{
+            //    addressesResult = addressesResult
+            //        .Where(c => c.Index == entityData.Index);
+            //}
+
+            //if (!entityData.Okato.IsNullOrEmpty())
+            //{
+            //    addressesResult = addressesResult
+            //        .Where(c => c.Okato == entityData.Okato);
+            //}
+
+            //if (!entityData.AddressCode.IsNullOrEmpty())
+            //{
+            //    addressesResult = addressesResult
+            //        .Where(c => c.AddressCode == entityData.AddressCode);
+            //}
+
+            //if (entityData.DistrictId != null && entityData.DistrictId != 0)
+            //{
+            //    addressesResult = addressesResult
+            //        .Where(c => c.DistrictId == entityData.DistrictId);
+            //}
+
+            //if (entityData.Oktmo != null)
+            //{
+            //    addressesResult = addressesResult
+            //        .Where(c => c.Oktmo == entityData.Oktmo);
+            //}
+
+            return updatedAddress;
+        }
+
+        public async Task<Address> UpdateObject(Address existingEntity, Address entityData)
+        {
             if (!entityData.Index.IsNullOrEmpty())
             {
-                addressesResult = addressesResult
-                    .Where(c => c.Index == entityData.Index);
+                existingEntity.Index = entityData.Index;
             }
 
             if (!entityData.Okato.IsNullOrEmpty())
             {
-                addressesResult = addressesResult
-                    .Where(c => c.Okato == entityData.Okato);
+                existingEntity.Okato = entityData.Okato;
             }
 
             if (!entityData.AddressCode.IsNullOrEmpty())
             {
-                addressesResult = addressesResult
-                    .Where(c => c.AddressCode == entityData.AddressCode);
+                existingEntity.AddressCode = entityData.AddressCode;
             }
 
             if (entityData.DistrictId != null && entityData.DistrictId != 0)
             {
-                addressesResult = addressesResult
-                    .Where(c => c.DistrictId == entityData.DistrictId);
+                existingEntity.DistrictId = entityData.DistrictId;
             }
 
             if (entityData.Oktmo != null)
             {
-                addressesResult = addressesResult
-                    .Where(c => c.Oktmo == entityData.Oktmo);
+                existingEntity.Oktmo = entityData.Oktmo;
             }
 
-            return await addressesResult.FirstOrDefaultAsync();
+            _context.Update(existingEntity);
+            await _context.SaveChangesAsync();
+
+            return existingEntity;
         }
     }
 }

@@ -30,5 +30,10 @@ namespace BackendApp.Repositories
 
             return await vidMoResult.FirstOrDefaultAsync();
         }
+
+        public Task<VidType> UpdateObject(VidType existingEntity, VidType entityData)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -16,8 +16,8 @@ namespace BackendApp.Models
 
         public string LicenseNum { get; set; }
 
-        List<f038_addrmp> F038_Addrmps { get; set; } = new List<f038_addrmp>();
+        public List<f038_addrmp> F038_Addrmps { get; set; } = new List<f038_addrmp>();
 
-
+        public List<f037_licmo> F037_Licmos { get; set; } = new List<f037_licmo>();
     }
 }

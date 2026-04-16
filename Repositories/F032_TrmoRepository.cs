@@ -28,97 +28,180 @@ namespace BackendApp.Repositories
                     .Where(c => c.Id == entityData.Id);
             }
 
+            //if (entityData.OrganizationId != null && entityData.OrganizationId != 0)
+            //{
+            //    f032_TrmosResult = f032_TrmosResult
+            //        .Where(c => c.OrganizationId == entityData.OrganizationId);
+            //}
+
+            //if (entityData.AddressId != null && entityData.AddressId != 0)
+            //{
+            //    f032_TrmosResult = f032_TrmosResult
+            //        .Where(c => c.AddressId == entityData.AddressId);
+            //}
+
+            //if (entityData.DocumentId != null && entityData.DocumentId != 0)
+            //{
+            //    f032_TrmosResult = f032_TrmosResult
+            //        .Where(c => c.DocumentId == entityData.DocumentId);
+            //}
+
+            //if (entityData.OspTypeId != null && entityData.OspTypeId != 0)
+            //{
+            //    f032_TrmosResult = f032_TrmosResult
+            //        .Where(c => c.OspTypeId == entityData.OspTypeId);
+            //}
+
+            //if (entityData.ExclusionDate != default(DateTime) && entityData.ExclusionDate != null)
+            //{
+            //    f032_TrmosResult = f032_TrmosResult
+            //        .Where(c => c.ExclusionDate == entityData.ExclusionDate);
+            //}
+
+            //if (entityData.InclusionDate != default(DateTime) && entityData.InclusionDate != null)
+            //{
+            //    f032_TrmosResult = f032_TrmosResult
+            //        .Where(c => c.InclusionDate == entityData.InclusionDate);
+            //}
+
+            //if (entityData.OrgDocumentId != null && entityData.OrgDocumentId != 0)
+            //{
+            //    f032_TrmosResult = f032_TrmosResult
+            //        .Where(c => c.OrgDocumentId == entityData.OrgDocumentId);
+            //}
+
+            //if (entityData.DateBeg != default(DateTime))
+            //{
+            //    f032_TrmosResult = f032_TrmosResult
+            //        .Where(c => c.DateBeg == entityData.DateBeg);
+            //}
+
+            //if (entityData.DateEnd != default(DateTime) && entityData.DateEnd != null)
+            //{
+            //    f032_TrmosResult = f032_TrmosResult
+            //        .Where(c => c.DateEnd == entityData.DateEnd);
+            //}
+
+            //if (entityData.CommunicationId != null && entityData.CommunicationId != 0)
+            //{
+            //    f032_TrmosResult = f032_TrmosResult
+            //        .Where(c => c.CommunicationId == entityData.CommunicationId);
+            //}
+
+            //if (entityData.BaseDataId != null && entityData.BaseDataId != 0)
+            //{
+            //    f032_TrmosResult = f032_TrmosResult
+            //        .Where(c => c.BaseDataId == entityData.BaseDataId);
+            //}
+
+            //if (!entityData.ParentId.IsNullOrEmpty())
+            //{
+            //    f032_TrmosResult = f032_TrmosResult
+            //        .Where(c => c.ParentId == entityData.ParentId);
+            //}
+
+            //if (!entityData.f031_ermoId.IsNullOrEmpty())
+            //{
+            //    f032_TrmosResult = f032_TrmosResult
+            //        .Where(c => c.f031_ermoId == entityData.f031_ermoId);
+            //}
+
+            //if (entityData.f031_ermoParentId != null)
+            //{
+            //    f032_TrmosResult = f032_TrmosResult
+            //        .Where(c => c.f031_ermoParentId == entityData.f031_ermoParentId);
+            //}
+
+            //if (entityData.DateBeginOms != null && entityData.DateBeginOms != default(DateTime))
+            //{
+            //    f032_TrmosResult = f032_TrmosResult
+            //        .Where(c => c.DateBeginOms == entityData.DateBeginOms);
+            //}
+
+            return await f032_TrmosResult.FirstOrDefaultAsync();
+        }
+
+        public async Task<f032_trmo> UpdateObject(f032_trmo existingEntity, f032_trmo entityData)
+        {
             if (entityData.OrganizationId != null && entityData.OrganizationId != 0)
             {
-                f032_TrmosResult = f032_TrmosResult
-                    .Where(c => c.OrganizationId == entityData.OrganizationId);
+                existingEntity.OrganizationId = entityData.OrganizationId;
             }
 
             if (entityData.AddressId != null && entityData.AddressId != 0)
             {
-                f032_TrmosResult = f032_TrmosResult
-                    .Where(c => c.AddressId == entityData.AddressId);
+                existingEntity.AddressId = entityData.AddressId;
             }
 
             if (entityData.DocumentId != null && entityData.DocumentId != 0)
             {
-                f032_TrmosResult = f032_TrmosResult
-                    .Where(c => c.DocumentId == entityData.DocumentId);
+                existingEntity.DocumentId = entityData.DocumentId;
             }
 
             if (entityData.OspTypeId != null && entityData.OspTypeId != 0)
             {
-                f032_TrmosResult = f032_TrmosResult
-                    .Where(c => c.OspTypeId == entityData.OspTypeId);
+                existingEntity.OspTypeId = entityData.OspTypeId;
             }
 
             if (entityData.ExclusionDate != default(DateTime) && entityData.ExclusionDate != null)
             {
-                f032_TrmosResult = f032_TrmosResult
-                    .Where(c => c.ExclusionDate == entityData.ExclusionDate);
+                existingEntity.ExclusionDate = entityData.ExclusionDate;
             }
 
             if (entityData.InclusionDate != default(DateTime) && entityData.InclusionDate != null)
             {
-                f032_TrmosResult = f032_TrmosResult
-                    .Where(c => c.InclusionDate == entityData.InclusionDate);
+                existingEntity.ExclusionDate = entityData.InclusionDate;
             }
 
             if (entityData.OrgDocumentId != null && entityData.OrgDocumentId != 0)
             {
-                f032_TrmosResult = f032_TrmosResult
-                    .Where(c => c.OrgDocumentId == entityData.OrgDocumentId);
+                existingEntity.OrgDocumentId = entityData.OrgDocumentId;
             }
 
             if (entityData.DateBeg != default(DateTime))
             {
-                f032_TrmosResult = f032_TrmosResult
-                    .Where(c => c.DateBeg == entityData.DateBeg);
+                existingEntity.DateBeg = entityData.DateBeg;
             }
 
             if (entityData.DateEnd != default(DateTime) && entityData.DateEnd != null)
             {
-                f032_TrmosResult = f032_TrmosResult
-                    .Where(c => c.DateEnd == entityData.DateEnd);
+                existingEntity.DateEnd = entityData.DateEnd;
             }
 
             if (entityData.CommunicationId != null && entityData.CommunicationId != 0)
             {
-                f032_TrmosResult = f032_TrmosResult
-                    .Where(c => c.CommunicationId == entityData.CommunicationId);
+                existingEntity.CommunicationId = entityData.CommunicationId;
             }
 
             if (entityData.BaseDataId != null && entityData.BaseDataId != 0)
             {
-                f032_TrmosResult = f032_TrmosResult
-                    .Where(c => c.BaseDataId == entityData.BaseDataId);
+                existingEntity.BaseDataId = entityData.BaseDataId;
             }
 
             if (!entityData.ParentId.IsNullOrEmpty())
             {
-                f032_TrmosResult = f032_TrmosResult
-                    .Where(c => c.ParentId == entityData.ParentId);
+                existingEntity.ParentId = entityData.ParentId;
             }
 
             if (!entityData.f031_ermoId.IsNullOrEmpty())
             {
-                f032_TrmosResult = f032_TrmosResult
-                    .Where(c => c.f031_ermoId == entityData.f031_ermoId);
+                existingEntity.f031_ermoId = entityData.f031_ermoId;
             }
 
             if (entityData.f031_ermoParentId != null)
             {
-                f032_TrmosResult = f032_TrmosResult
-                    .Where(c => c.f031_ermoParentId == entityData.f031_ermoParentId);
+                existingEntity.f031_ermoParentId = entityData.f031_ermoParentId;
             }
 
             if (entityData.DateBeginOms != null && entityData.DateBeginOms != default(DateTime))
             {
-                f032_TrmosResult = f032_TrmosResult
-                    .Where(c => c.DateBeginOms == entityData.DateBeginOms);
+                existingEntity.DateBeginOms = entityData.DateBeginOms;
             }
 
-            return await f032_TrmosResult.FirstOrDefaultAsync();
+            _context.Update(existingEntity);
+            await _context.SaveChangesAsync();
+
+            return existingEntity;
         }
     }
 }

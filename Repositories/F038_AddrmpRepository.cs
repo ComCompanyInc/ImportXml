@@ -23,19 +23,20 @@ namespace BackendApp.Repositories
         {
             IQueryable<f038_addrmp> f038_addrmpResult = _context.F038_Addrmps;
 
-            if (!entityData.Id.IsNullOrEmpty())
-            {
-                f038_addrmpResult = f038_addrmpResult
-                    .Where(c => c.Id == entityData.Id);
-            }
+            //if (!entityData.Id.IsNullOrEmpty())
+            //{
+            //    f038_addrmpResult = f038_addrmpResult
+            //        .Where(c => c.Id == entityData.Id);
+            //}
 
-            if (!entityData.F032_TrmoId.IsNullOrEmpty())
-            {
-                f038_addrmpResult = f038_addrmpResult
-                    .Where(c => c.F032_TrmoId == entityData.F032_TrmoId);
-            }
+            //if (!entityData.F032_TrmoId.IsNullOrEmpty())
+            //{
+            //    f038_addrmpResult = f038_addrmpResult
+            //        .Where(c => c.F032_TrmoId == entityData.F032_TrmoId);
+            //}
 
-            if (!entityData.F033_SpmoId.IsNullOrEmpty())
+            f038_addrmp updatedF038_Addrmp = null;
+            if (!entityData.F033_SpmoId.IsNullOrEmpty()) // UIDSPMO
             {
                 f038_addrmpResult = f038_addrmpResult
                     .Where(c => c.F033_SpmoId == entityData.F033_SpmoId);
@@ -47,25 +48,59 @@ namespace BackendApp.Repositories
             //        .Where(c => c.LicenseNum == entityData.LicenseNum);
             //}
 
-            if (entityData.AddressId != null && entityData.AddressId != 0)
+            if (entityData.AddressId != null && entityData.AddressId != 0) // IDADDRESS
             {
                 f038_addrmpResult = f038_addrmpResult
                     .Where(c => c.AddressId == entityData.AddressId);
             }
 
+            f038_addrmp existingF038_Addrmp = await f038_addrmpResult.FirstOrDefaultAsync();
+            if (existingF038_Addrmp != null)
+            {
+                updatedF038_Addrmp = await UpdateObject(existingF038_Addrmp, entityData);
+            }
+
+            //if (entityData.DateBeg != null && entityData.DateBeg != default(DateTime))
+            //{
+            //    f038_addrmpResult = f038_addrmpResult
+            //        .Where(c => c.DateBeg == entityData.DateBeg);
+            //}
+
+            //if (entityData.DateEnd != null && entityData.DateEnd != default(DateTime))
+            //{
+            //    f038_addrmpResult = f038_addrmpResult
+            //        .Where(c => c.DateEnd == entityData.DateEnd);
+            //}
+
+            return updatedF038_Addrmp;
+        }
+
+        public async Task<f038_addrmp> UpdateObject(f038_addrmp existingEntity, f038_addrmp entityData)
+        {
+            if (!entityData.F032_TrmoId.IsNullOrEmpty())
+            {
+                existingEntity.F032_TrmoId = entityData.F032_TrmoId;
+            }
+
+            if (entityData.LicenseId != null && entityData.LicenseId != 0)
+            {
+                existingEntity.LicenseId = entityData.LicenseId;
+            }
+
             if (entityData.DateBeg != null && entityData.DateBeg != default(DateTime))
             {
-                f038_addrmpResult = f038_addrmpResult
-                    .Where(c => c.DateBeg == entityData.DateBeg);
+                existingEntity.DateBeg = entityData.DateBeg;
             }
 
             if (entityData.DateEnd != null && entityData.DateEnd != default(DateTime))
             {
-                f038_addrmpResult = f038_addrmpResult
-                    .Where(c => c.DateEnd == entityData.DateEnd);
+                existingEntity.DateEnd = entityData.DateEnd;
             }
 
-            return await f038_addrmpResult.FirstOrDefaultAsync();
+            _context.Update(existingEntity);
+            await _context.SaveChangesAsync();
+
+            return existingEntity;
         }
     }
 }

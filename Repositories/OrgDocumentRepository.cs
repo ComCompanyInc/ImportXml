@@ -23,12 +23,13 @@ namespace BackendApp.Repositories
         {
             IQueryable<OrgDocument> moDocumentResult = _context.OrgDocuments;
 
-            if (entityData.Id != null && entityData.Id != 0)
-            {
-                moDocumentResult = moDocumentResult
-                    .Where(c => c.Id == entityData.Id);
-            }
+            //if (entityData.Id != null && entityData.Id != 0)
+            //{
+            //    moDocumentResult = moDocumentResult
+            //        .Where(c => c.Id == entityData.Id);
+            //}
 
+            OrgDocument updatedOrgDocument = null;
             if (entityData.OidTypeMoId != null && entityData.OidTypeMoId != 0)
             {
                 moDocumentResult = moDocumentResult
@@ -41,11 +42,11 @@ namespace BackendApp.Repositories
                     .Where(c => c.OidTypeSpmoId == entityData.OidTypeSpmoId);
             }
 
-            if (!entityData.Okfs.IsNullOrEmpty())
-            {
-                moDocumentResult = moDocumentResult
-                    .Where(c => c.Okfs == entityData.Okfs);
-            }
+            //if (!entityData.Okfs.IsNullOrEmpty())
+            //{
+            //    moDocumentResult = moDocumentResult
+            //        .Where(c => c.Okfs == entityData.Okfs);
+            //}
 
             if (entityData.VidTypeId != null && entityData.VidTypeId != 0)
             {
@@ -59,13 +60,37 @@ namespace BackendApp.Repositories
                     .Where(c => c.DateBeg == entityData.DateBeg);
             }
 
-            if (entityData.DateEnd != default(DateTime))
+            OrgDocument existingOrgDocument = await moDocumentResult.FirstOrDefaultAsync();
+            if (existingOrgDocument != null)
             {
-                moDocumentResult = moDocumentResult
-                    .Where(c => c.DateEnd == entityData.DateEnd);
+                updatedOrgDocument = await UpdateObject(existingOrgDocument, entityData);
             }
 
-            return await moDocumentResult.FirstOrDefaultAsync();
+            //if (entityData.DateEnd != default(DateTime))
+            //{
+            //    moDocumentResult = moDocumentResult
+            //        .Where(c => c.DateEnd == entityData.DateEnd);
+            //}
+
+            return updatedOrgDocument;
+        }
+
+        public async Task<OrgDocument> UpdateObject(OrgDocument existingEntity, OrgDocument entityData)
+        {
+            if (entityData.DateEnd != default(DateTime))
+            {
+                existingEntity.DateEnd = entityData.DateEnd;
+            }
+
+            if (!entityData.Okfs.IsNullOrEmpty())
+            {
+                existingEntity.Okfs = entityData.Okfs;
+            }
+
+            _context.Update(existingEntity);
+            await _context.SaveChangesAsync();
+
+            return existingEntity;
         }
     }
 }

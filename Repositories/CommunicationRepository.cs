@@ -25,37 +25,73 @@ namespace BackendApp.Repositories
         {
             IQueryable<Communication> communication = _context.Communications; //IQueryable<> - сохраняет состояние запросов (where и тд) в отличае от DbSet
 
+            Communication updatedCommunication = null;
             if (!communicationData.Phone.IsNullOrEmpty())
             {
                 communication = communication
                     .Where(c => c.Phone == communicationData.Phone);
+
+                Communication existingCommunication = await communication.FirstOrDefaultAsync();
+                if (existingCommunication != null)
+                {
+                    updatedCommunication = await UpdateObject(existingCommunication, communicationData);
+                }
             }
 
-            if (!communicationData.Fax.IsNullOrEmpty())
+            //if (!communicationData.Fax.IsNullOrEmpty())
+            //{
+            //    communication = communication
+            //        .Where(c => c.Fax == communicationData.Fax);
+            //}
+
+            //if (!communicationData.Email.IsNullOrEmpty())
+            //{
+            //    communication = communication
+            //        .Where(c => c.Email == communicationData.Email);
+            //}
+
+            //if (!communicationData.HotLine.IsNullOrEmpty())
+            //{
+            //    communication = communication
+            //        .Where(c => c.HotLine == communicationData.HotLine);
+            //}
+
+            //if (!communicationData.Site.IsNullOrEmpty())
+            //{
+            //    communication = communication
+            //        .Where(c => c.Site == communicationData.Site);
+            //}
+
+            return updatedCommunication;
+        }
+
+        public async Task<Communication> UpdateObject(Communication existingEntity, Communication entityData)
+        {
+
+            if (!entityData.Fax.IsNullOrEmpty())
             {
-                communication = communication
-                    .Where(c => c.Fax == communicationData.Fax);
+                existingEntity.Fax = entityData.Fax;
             }
 
-            if (!communicationData.Email.IsNullOrEmpty())
+            if (!entityData.Email.IsNullOrEmpty())
             {
-                communication = communication
-                    .Where(c => c.Email == communicationData.Email);
+                existingEntity.Email = entityData.Email;
             }
 
-            if (!communicationData.HotLine.IsNullOrEmpty())
+            if (!entityData.HotLine.IsNullOrEmpty())
             {
-                communication = communication
-                    .Where(c => c.HotLine == communicationData.HotLine);
+                existingEntity.HotLine = entityData.HotLine;
             }
 
-            if (!communicationData.Site.IsNullOrEmpty())
+            if (!entityData.Site.IsNullOrEmpty())
             {
-                communication = communication
-                    .Where(c => c.Site == communicationData.Site);
+                existingEntity.Site = entityData.Site;
             }
 
-            return await communication.FirstOrDefaultAsync();
+            _context.Update(existingEntity);
+            await _context.SaveChangesAsync();
+
+            return existingEntity;
         }
     }
 }

@@ -15,8 +15,8 @@ namespace BackendApp.Models
         [StringLength(4000, MinimumLength = 0, ErrorMessage = "Некорреттная длинна короткого наименования организации")]
         public string ShortName { get; set; }
 
-        List<Organization> Organizations = new List<Organization>();
+        List<Organization> Organizations { get; set; } = new List<Organization>();
 
-        List<f033_spmo> F033_Spmo = new List<f033_spmo>();
+        List<f033_spmo> F033_Spmo { get; set; } = new List<f033_spmo>();
     }
 }

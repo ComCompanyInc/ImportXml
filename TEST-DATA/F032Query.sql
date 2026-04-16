@@ -20,8 +20,8 @@ Parent.[Id] AS [PARENT_UIDMO],
 VidType.[Name] AS [VID_MO],
 OidMo.[Name] AS [OID_MO],
 OidSpmo.[Name] AS [OID_SPMO],
-Org.[Name] AS [NAM_MOP],
-Org.[ShortName] AS [NAM_MOK],
+OrgName.[Name] AS [NAM_MOP],
+OrgName.[ShortName] AS [NAM_MOK],
 Doc.[Inn] AS [INN],
 Doc.[Kpp] AS [KPP],
 Doc.[Ogrn] AS [OGRN],
@@ -69,3 +69,5 @@ JOIN OidTypes OidSpmo
 ON OrgDoc.OidTypeSpmoId = OidSpmo.Id
 JOIN VidTypes VidType
 ON OrgDoc.VidTypeId = VidType.Id
+JOIN OrgNames OrgName
+ON Org.OrgNameId = OrgName.Id

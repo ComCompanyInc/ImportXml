@@ -52,5 +52,7 @@ namespace BackendApp.Models
         public List<f031_ermo> f031_Ermos { get; set; } = new List<f031_ermo>();
 
         public List<f032_trmo> f032_trmos { get; set; } = new List<f032_trmo>();
+
+        public List<f037_licmo> F037_Licmos { get; set; } = new List<f037_licmo>();
     }
 }

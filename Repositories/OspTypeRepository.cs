@@ -30,5 +30,10 @@ namespace BackendApp.Repositories
 
             return await ospTypeResult.FirstOrDefaultAsync();
         }
+
+        public Task<OspType> UpdateObject(OspType existingEntity, OspType entityData)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

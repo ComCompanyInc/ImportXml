@@ -36,5 +36,10 @@ namespace BackendApp.Repositories
 
             return orgNameResult.FirstOrDefaultAsync();
         }
+
+        public Task<OrgName> UpdateObject(OrgName existingEntity, OrgName entityData)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

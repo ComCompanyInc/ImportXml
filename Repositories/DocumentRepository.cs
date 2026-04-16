@@ -23,25 +23,49 @@ namespace BackendApp.Repositories
         {
             IQueryable<Document> documentResult = _context.Documents;
 
+            Document updatedDocument = null;
             if (!entityData.Inn.IsNullOrEmpty())
             {
                 documentResult = documentResult
                     .Where(c => c.Inn == entityData.Inn);
+
+                Document existingDocument = await documentResult.FirstOrDefaultAsync();
+                if (existingDocument != null) {
+                    updatedDocument = await UpdateObject(existingDocument, entityData);
+                }
             }
 
-            if (!entityData.Ogrn.IsNullOrEmpty())
+            //if (!entityData.Ogrn.IsNullOrEmpty())
+            //{
+            //    documentResult = documentResult
+            //        .Where(c => c.Ogrn == entityData.Ogrn);
+            //}
+
+            //if (!entityData.Kpp.IsNullOrEmpty())
+            //{
+            //    documentResult = documentResult
+            //        .Where(c => c.Kpp == entityData.Kpp);
+            //}
+
+            return updatedDocument;
+        }
+
+        public async Task<Document> UpdateObject(Document existingEntity, Document entityData)
+        {
+            if (!existingEntity.Ogrn.IsNullOrEmpty())
             {
-                documentResult = documentResult
-                    .Where(c => c.Ogrn == entityData.Ogrn);
+                existingEntity.Ogrn = entityData.Ogrn;
             }
 
-            if (!entityData.Kpp.IsNullOrEmpty())
+            if (!existingEntity.Kpp.IsNullOrEmpty())
             {
-                documentResult = documentResult
-                    .Where(c => c.Kpp == entityData.Kpp);
+                existingEntity.Kpp = entityData.Kpp;
             }
 
-            return await documentResult.FirstOrDefaultAsync();
+            _context.Update(existingEntity);
+            await _context.SaveChangesAsync();
+
+            return existingEntity;
         }
     }
 }

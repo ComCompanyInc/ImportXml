@@ -6,8 +6,8 @@ BaseData.[Type] as [type],
 BaseData.[Version] as [version],
 BaseData.[Date] as [date],
 F031_Ermos.Id as [IDMO],
-Organizations.[Name] as [NAM_MOP],
-Organizations.ShortName as [NAM_MOK],
+OrgName.[Name] as [NAM_MOP],
+OrgName.ShortName as [NAM_MOK],
 Documents.Inn as [INN],
 Documents.[Kpp] as [KPP],
 Documents.[Ogrn] as [OGRN],
@@ -37,3 +37,5 @@ JOIN Communications
 ON F031_Ermos.CommunicationId = Communications.Id
 JOIN OidTypes OidMo
 ON OrgDocuments.OidTypeMoId = OidMo.Id
+JOIN OrgNames OrgName
+ON Organizations.OrgNameId = OrgName.Id

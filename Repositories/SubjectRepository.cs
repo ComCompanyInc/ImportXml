@@ -30,5 +30,10 @@ namespace BackendApp.Repositories
 
             return await subjectResult.FirstOrDefaultAsync();
         }
+
+        public Task<Subject> UpdateObject(Subject existingEntity, Subject entityData)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
