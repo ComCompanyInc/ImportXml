@@ -24,5 +24,10 @@ namespace BackendApp.Services
         {
             return await _organizationRepository.GetEnitityByAttributes(organization);
         }
+
+        public async Task<Organization> FindOrganizationByMcod(string Mcod)
+        {
+            return await _organizationRepository.FindOrganizationByMcod(Mcod);
+        }
     }
 }

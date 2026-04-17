@@ -112,10 +112,6 @@ namespace BackendApp.Services
                 };
 
                 f032_trmo existingF032 = await _f032_TrmosService.GetEnitityByAttributes(new f032_trmo { Id = item.F032_TrmosId });
-
-                Console.WriteLine("Обьект->>> ");
-                Console.WriteLine(existingF032.Id);
-
                 f033_spmo existingF033 = await _f033_SpmosService.GetEnitityByAttributes(new f033_spmo { Id = item.F033_SpmosId });
                 if (existingF032 != null)
                 {

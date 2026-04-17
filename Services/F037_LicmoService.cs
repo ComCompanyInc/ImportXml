@@ -11,19 +11,23 @@ namespace BackendApp.Services
 {
     public class F037_LicmoService
     {
-        private readonly F037_LicMoRepository _f037_LicMoRepository;
+        private readonly F037_LicmoRepository _f037_LicMoRepository;
 
         private readonly BaseDataService _baseDataService;
         private readonly OidTypeService _oidTypeService;
         private readonly OrgDocumentService _orgDocumentService;
         private readonly OrganizationService _organizationService;
+        private readonly LicenseService _licenseService;
+        private readonly F032_TrmosService _f032_TrmosService;
 
         public F037_LicmoService(
-            F037_LicMoRepository f037_LicMoRepository,
+            F037_LicmoRepository f037_LicMoRepository,
             BaseDataService baseDataService,
             OidTypeService oidTypeService,
             OrgDocumentService orgDocumentService,
-            OrganizationService organizationService
+            OrganizationService organizationService,
+            LicenseService licenseService,
+            F032_TrmosService f032_TrmosService
         )
         {
             _f037_LicMoRepository = f037_LicMoRepository;
@@ -31,11 +35,13 @@ namespace BackendApp.Services
             _oidTypeService = oidTypeService;
             _orgDocumentService = orgDocumentService;
             _organizationService = organizationService;
+            _licenseService = licenseService;
+            _f032_TrmosService = f032_TrmosService;
         }
 
-        public async Task<bool> SaveDataFromF37(DocumentDto<F37DataDto> dataContainer)
+        public async Task<List<ErrorResponseDto>> SaveDataFromF37(DocumentDto<F37DataDto> dataContainer)
         {
-            /*List<ErrorResponseDto> errors = new List<ErrorResponseDto>();
+            List<ErrorResponseDto> errors = new List<ErrorResponseDto>();
 
             BaseData baseData = new BaseData
             {
@@ -58,27 +64,45 @@ namespace BackendApp.Services
 
             foreach (F37DataDto item in dataContainer.ZapList) // перебираем все записи данных листа с данными
             {
+                //license f031 f032
+
+                Models.License license = new Models.License()
+                {
+                    LicenseNum = item.LicenseNum,
+                };
+
+                long licenseId;
+
+                Models.License existingLicense = await _licenseService.GetEnitityByAttributes(license);
+                if (existingLicense != null)
+                {
+                    licenseId = existingLicense.Id;
+                }
+                else
+                {
+                    licenseId = (await _licenseService.SaveLicenseObject(license)).Id;
+                }
 
                 OidType oidType = new OidType
                 {
                     Name = item.OidMo
                 };
 
-                long oidTypeSpmoId;
+                long oidTypeMoId;
 
                 OidType existingOid = await _oidTypeService.GetEnitityByAttributes(oidType);
                 if (existingOid != null)
                 {
-                    oidTypeSpmoId = existingOid.Id;
+                    oidTypeMoId = existingOid.Id;
                 }
                 else
                 {
-                    oidTypeSpmoId = (await _oidTypeService.SaveOidTypeObject(oidType)).Id;
+                    oidTypeMoId = (await _oidTypeService.SaveOidTypeObject(oidType)).Id;
                 }
 
                 OrgDocument orgDocument = new OrgDocument
                 {
-                    OidTypeSpmoId = oidTypeSpmoId,
+                    OidTypeMoId = oidTypeMoId,
                     //VidTypeId = vidTypeSpmoId
                 };
 
@@ -94,12 +118,63 @@ namespace BackendApp.Services
                     orgDocumentId = (await _orgDocumentService.SaveOrgDocument(orgDocument)).Id;
                 }
 
-                Organization organization = _organizationService.GetEnitityByAttributes(new Organization { Mcod = item.MCode });
-                if (organization != null)
-            */
+                //Organization organizationEntity = new Organization
+                //{
+                //    Mcod = item.MCode
+                //};
 
-                return true;
-            //}
+                long? organizationId = null;
+                Organization organization = await _organizationService.FindOrganizationByMcod(item.MCode);
+                if (organization != null && item.MCode != null)
+                {
+                    organizationId = organization.Id;
+                }
+                else {
+                    errors.Add(
+                        new ErrorResponseDto
+                        {
+                            ErrorMessage = $"ПРЕДУПРЕЖДЕНИЕ: В ЗАПИСИ F037_Licmos с ID = {item.Id} - в таблице F037_Licmos, Запись Mcod в таблице Organizations - {item.MCode} не найдена.",
+                            ConflictObject = { }
+                        }
+                    );
+                }
+
+                f037_licmo f037_Licmo = new f037_licmo
+                {
+                    F031_ErmoId = item.F031_ErmoId,
+                    F032_TrmoId = item.F032_TrmoId,
+                    OrganizationId = organizationId,
+                    OrgDocumentId = orgDocumentId,
+                    LicenseId = licenseId,
+                };
+
+                f032_trmo existingF032 = await _f032_TrmosService.GetEnitityByAttributes(new f032_trmo { Id = item.F032_TrmoId });
+                if (existingF032 != null)
+                {
+                    await SaveF037_licmoObject(f037_Licmo);
+                }
+                else {
+                    errors.Add(
+                        new ErrorResponseDto
+                        {
+                            ErrorMessage = $"ОШИБКА: В ЗАПИСИ F037_Licmos с ID = {item.Id} - в таблице F037_Licmos, Запись Mcod в таблице Organizations - {item.MCode} не найдена.",
+                            ConflictObject = organization
+                        }
+                    );
+                }
+            }
+
+            return errors;
+        }
+
+        public async Task<f037_licmo> SaveF037_licmoObject(f037_licmo f037_Licmo)
+        {
+            return await _f037_LicMoRepository.SaveData(f037_Licmo);
+        }
+
+        public async Task<f037_licmo> GetEnitityByAttributes(f037_licmo f037_Licmo)
+        {
+            return await _f037_LicMoRepository.GetEnitityByAttributes(f037_Licmo);
         }
     }
 }

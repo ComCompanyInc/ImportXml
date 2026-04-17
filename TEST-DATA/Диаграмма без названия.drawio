@@ -4397,7 +4397,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="aH9welCHb047cq4JjSz2" name="Страница-2">
-    <mxGraphModel dx="577" dy="317" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="577" dy="355" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -7573,8 +7573,7 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="5870" y="3060" />
-              <mxPoint x="5870" y="3120" />
-              <mxPoint x="5760" y="3120" />
+              <mxPoint x="5870" y="3121" />
             </Array>
             <mxPoint x="5700" y="3300" as="targetPoint" />
           </mxGeometry>
@@ -7776,8 +7775,8 @@
         <mxCell id="4T9wTSR_5LhgsT5pLtRA-753" edge="1" parent="4T9wTSR_5LhgsT5pLtRA-712" source="4T9wTSR_5LhgsT5pLtRA-713" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="4T9wTSR_5LhgsT5pLtRA-749">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="380" y="49" />
-              <mxPoint x="380" y="550" />
+              <mxPoint x="360" y="50" />
+              <mxPoint x="360" y="563" />
             </Array>
             <mxPoint x="300" y="529" as="targetPoint" />
           </mxGeometry>
@@ -7932,7 +7931,7 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="5850" y="3060" />
-              <mxPoint x="5850" y="2643" />
+              <mxPoint x="5850" y="2656" />
             </Array>
           </mxGeometry>
         </mxCell>

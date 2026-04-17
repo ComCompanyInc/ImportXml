@@ -10,11 +10,11 @@ using System.Text;
 
 namespace BackendApp.Repositories
 {
-    public class F037_LicMoRepository : AbstractBaseRepository<f037_licmo>, ISearchData<f037_licmo>
+    public class F037_LicmoRepository : AbstractBaseRepository<f037_licmo>, ISearchData<f037_licmo>
     {
         private readonly ApplicationDbContext _context;
 
-        public F037_LicMoRepository(ApplicationDbContext context) : base(context)
+        public F037_LicmoRepository(ApplicationDbContext context) : base(context)
         {
             _context = context;
         }
@@ -48,7 +48,7 @@ namespace BackendApp.Repositories
             //}
 
             f037_licmo updatedF037_Licmo = null;
-            if (entityData.F032_TrmoId != null && entityData.F032_TrmoId != 0) // UIDMO
+            if (!entityData.F032_TrmoId.IsNullOrEmpty()) // UIDMO
             {
                 f037_LicmosResult = f037_LicmosResult
                     .Where(c => c.F032_TrmoId == entityData.F032_TrmoId);

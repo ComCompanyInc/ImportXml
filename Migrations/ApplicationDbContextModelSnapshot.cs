@@ -593,14 +593,11 @@ namespace BackendApp.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("F031_ErmoId")
-                        .IsRequired()
                         .HasMaxLength(17)
                         .HasColumnType("nvarchar(17)");
 
-                    b.Property<long>("F032_TrmoId")
-                        .HasColumnType("bigint");
-
-                    b.Property<string>("F032_TrmoId1")
+                    b.Property<string>("F032_TrmoId")
+                        .HasMaxLength(17)
                         .HasColumnType("nvarchar(17)");
 
                     b.Property<long>("LicenseId")
@@ -616,7 +613,7 @@ namespace BackendApp.Migrations
 
                     b.HasIndex("F031_ErmoId");
 
-                    b.HasIndex("F032_TrmoId1");
+                    b.HasIndex("F032_TrmoId");
 
                     b.HasIndex("LicenseId");
 
@@ -894,13 +891,11 @@ namespace BackendApp.Migrations
                 {
                     b.HasOne("BackendApp.Models.f031_ermo", "F031_Ermo")
                         .WithMany("F037_Licmos")
-                        .HasForeignKey("F031_ErmoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("F031_ErmoId");
 
                     b.HasOne("BackendApp.Models.f032_trmo", "F032_Trmo")
                         .WithMany("F037_Licmos")
-                        .HasForeignKey("F032_TrmoId1");
+                        .HasForeignKey("F032_TrmoId");
 
                     b.HasOne("BackendApp.Models.License", "License")
                         .WithMany("F037_Licmos")

@@ -30,34 +30,22 @@ namespace BackendApp.Repositories
             //}
 
             OrgDocument updatedOrgDocument = null;
-            if (entityData.OidTypeMoId != null && entityData.OidTypeMoId != 0)
+            if (!entityData.Okfs.IsNullOrEmpty())
             {
                 moDocumentResult = moDocumentResult
-                    .Where(c => c.OidTypeMoId == entityData.OidTypeMoId);
-            }
-
-            if (entityData.OidTypeSpmoId != null && entityData.OidTypeSpmoId != 0)
-            {
-                moDocumentResult = moDocumentResult
-                    .Where(c => c.OidTypeSpmoId == entityData.OidTypeSpmoId);
-            }
-
-            //if (!entityData.Okfs.IsNullOrEmpty())
-            //{
-            //    moDocumentResult = moDocumentResult
-            //        .Where(c => c.Okfs == entityData.Okfs);
-            //}
-
-            if (entityData.VidTypeId != null && entityData.VidTypeId != 0)
-            {
-                moDocumentResult = moDocumentResult
-                    .Where(c => c.VidTypeId == entityData.VidTypeId);
+                    .Where(c => c.Okfs == entityData.Okfs);
             }
 
             if (entityData.DateBeg != default(DateTime))
             {
                 moDocumentResult = moDocumentResult
                     .Where(c => c.DateBeg == entityData.DateBeg);
+            }
+
+            if (entityData.DateEnd != default(DateTime))
+            {
+                moDocumentResult = moDocumentResult
+                    .Where(c => c.DateEnd == entityData.DateEnd);
             }
 
             OrgDocument existingOrgDocument = await moDocumentResult.FirstOrDefaultAsync();
@@ -77,14 +65,19 @@ namespace BackendApp.Repositories
 
         public async Task<OrgDocument> UpdateObject(OrgDocument existingEntity, OrgDocument entityData)
         {
-            if (entityData.DateEnd != default(DateTime))
+            if (entityData.OidTypeMoId != null && entityData.OidTypeMoId != 0)
             {
-                existingEntity.DateEnd = entityData.DateEnd;
+                existingEntity.OidTypeMoId = entityData.OidTypeMoId;
             }
 
-            if (!entityData.Okfs.IsNullOrEmpty())
+            if (entityData.OidTypeSpmoId != null && entityData.OidTypeSpmoId != 0)
             {
-                existingEntity.Okfs = entityData.Okfs;
+                existingEntity.OidTypeSpmoId = entityData.OidTypeSpmoId;
+            }
+
+            if (entityData.VidTypeId != null && entityData.VidTypeId != 0)
+            {
+                existingEntity.VidTypeId = entityData.VidTypeId;
             }
 
             _context.Update(existingEntity);

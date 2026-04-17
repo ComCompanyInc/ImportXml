@@ -7,6 +7,8 @@ namespace BackendApp.Dto.f037_licmo
 {
     public class F37DataDto
     {
+        public long Id { get; set; }
+
         [XmlElement("IDMO")]
         public string F031_ErmoId { get; set; }
 

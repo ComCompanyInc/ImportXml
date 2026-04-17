@@ -158,5 +158,17 @@ namespace BackendApp.Repositories
 
             return existingEntity;
         }
+
+        /// <summary>
+        /// Найти организацию по Mcod
+        /// </summary>
+        /// <param name="Mcod"></param>
+        /// <returns>Экземпляр найденой организации</returns>
+        public async Task<Organization> FindOrganizationByMcod(string Mcod)
+        {
+            return await _context.Organizations
+                .Where(c => c.Mcod == Mcod)
+                .FirstOrDefaultAsync();
+        }
     }
 }

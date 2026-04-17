@@ -116,11 +116,10 @@ namespace BackendApp.Migrations
                 {
                     Id = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    F031_ErmoId = table.Column<string>(type: "nvarchar(17)", maxLength: 17, nullable: false),
+                    F031_ErmoId = table.Column<string>(type: "nvarchar(17)", maxLength: 17, nullable: true),
                     OrgDocumentId = table.Column<long>(type: "bigint", nullable: true),
                     OrganizationId = table.Column<long>(type: "bigint", nullable: true),
-                    F032_TrmoId = table.Column<long>(type: "bigint", nullable: false),
-                    F032_TrmoId1 = table.Column<string>(type: "nvarchar(17)", nullable: true),
+                    F032_TrmoId = table.Column<string>(type: "nvarchar(17)", maxLength: 17, nullable: true),
                     LicenseId = table.Column<long>(type: "bigint", nullable: false),
                     DateBeg = table.Column<DateTime>(type: "datetime2", nullable: false),
                     DateEnd = table.Column<DateTime>(type: "datetime2", nullable: false)
@@ -132,11 +131,10 @@ namespace BackendApp.Migrations
                         name: "FK_F037_Licmos_F031_Ermos_F031_ErmoId",
                         column: x => x.F031_ErmoId,
                         principalTable: "F031_Ermos",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_F037_Licmos_F032_Trmos_F032_TrmoId1",
-                        column: x => x.F032_TrmoId1,
+                        name: "FK_F037_Licmos_F032_Trmos_F032_TrmoId",
+                        column: x => x.F032_TrmoId,
                         principalTable: "F032_Trmos",
                         principalColumn: "Id");
                     table.ForeignKey(
@@ -278,9 +276,9 @@ namespace BackendApp.Migrations
                 column: "F031_ErmoId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_F037_Licmos_F032_TrmoId1",
+                name: "IX_F037_Licmos_F032_TrmoId",
                 table: "F037_Licmos",
-                column: "F032_TrmoId1");
+                column: "F032_TrmoId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_F037_Licmos_LicenseId",
