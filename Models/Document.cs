@@ -21,5 +21,7 @@ namespace BackendApp.Models
         List<f032_trmo> F032_Trmos { get; set; } = new List<f032_trmo>();
 
         List<f031_ermo> F031_Ermos { get; set; } = new List<f031_ermo>();
+
+        public List<f002_smoEmp> F002_SmoEmps { get; set; } = new List<f002_smoEmp>();
     }
 }

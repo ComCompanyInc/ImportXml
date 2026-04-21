@@ -32,5 +32,10 @@ namespace BackendApp.Data
         public DbSet<OrgName> OrgNames { get; set; }
         public DbSet<License> Licenses { get; set; }
         public DbSet<f037_licmo> F037_Licmos { get; set; }
+        public DbSet<f019_PersAccOrg> f019_PersAccOrgs { get; set; }
+        public DbSet<f002_smoEmp> F002_SmoEmps { get; set; }
+        public DbSet<f002_InsInclude> InsIncludes { get; set; }
+        public DbSet<Person> People { get; set; }
+        public DbSet<f002_smo_insAdvice> f002_smo_insAdvices { get; set; }
     }
 }

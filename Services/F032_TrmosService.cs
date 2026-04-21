@@ -27,6 +27,7 @@ namespace BackendApp.Services
         private readonly F031_ErmosService _f031_ermosService;
         private readonly OidTypeService _oidTypeService;
         private readonly OrgNameService _orgNameService;
+        private readonly F002_InsIncludeService _insIncludeService;
 
         public F032_TrmosService(
             F032_TrmoRepository f032_TrmosRepository,
@@ -42,7 +43,8 @@ namespace BackendApp.Services
             DistrictService districtService,
             F031_ErmosService f031_ermosService,
             OidTypeService oidTypeService,
-            OrgNameService orgNameService
+            OrgNameService orgNameService,
+            F002_InsIncludeService insIncludeService
          )
         {
             _f032_TrmosRepository = f032_TrmosRepository;
@@ -61,6 +63,7 @@ namespace BackendApp.Services
             _oidTypeService = oidTypeService;
             _organizationService = organizationService;
             _orgNameService = orgNameService;
+            _insIncludeService = insIncludeService;
         }
 
         public async Task<List<ErrorResponseDto>> SaveDataFromF32(DocumentDto<F32DataDto> dataContainer)
@@ -131,7 +134,6 @@ namespace BackendApp.Services
                 {
                     OrgNameId = orgNameId,
                     VedPri = item.VedPri,
-                    NameE = item.NameE,
                     Mcod = item.Mcod,
                 };
 
@@ -145,6 +147,24 @@ namespace BackendApp.Services
                 else
                 {
                     organizationId = (await _organizationService.SaveOrganizationObject(organization)).Id;
+                }
+
+                f002_InsInclude insInclude = new f002_InsInclude
+                {
+                    NameE = item.NameE,
+                    //OrganizationId = organizationId,
+                };
+
+                long insIncludeId;
+
+                f002_InsInclude exsistingInsInclude = await _insIncludeService.GetEnitityByAttributes(insInclude);
+                if (exsistingOrgName != null)
+                {
+                    insIncludeId = exsistingOrgName.Id;
+                }
+                else
+                {
+                    insIncludeId = (await _insIncludeService.SaveInsIncludeObject(insInclude)).Id;
                 }
 
                 Document document = new Document

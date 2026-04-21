@@ -132,15 +132,15 @@ namespace BackendApp.Repositories
                 existingEntity.Okopf = entityData.Okopf;
             }
 
-            if (!entityData.NameE.IsNullOrEmpty())
-            {
-                existingEntity.NameE = entityData.NameE;
-            }
+            //if (!entityData.NameE.IsNullOrEmpty())
+            //{
+            //    existingEntity.NameE = entityData.NameE;
+            //}
 
-            if (entityData.NalP != null && entityData.NalP != 0)
-            {
-                existingEntity.NalP = entityData.NalP;
-            }
+            //if (entityData.NalP != null && entityData.NalP != 0)
+            //{
+            //    existingEntity.NalP = entityData.NalP;
+            //}
 
             if (!entityData.VedPri.IsNullOrEmpty())
             {

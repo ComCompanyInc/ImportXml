@@ -29,5 +29,7 @@ namespace BackendApp.Models
         public string? Site { get; set; }
 
         List<f031_ermo> F031_Ermos { get; set; } = new List<f031_ermo>();
+
+        public List<f002_smoEmp> F002_SmoEmps { get; set; } = new List<f002_smoEmp>();
     }
 }

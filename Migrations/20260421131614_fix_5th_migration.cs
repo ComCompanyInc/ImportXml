@@ -16,7 +16,15 @@ namespace BackendApp.Migrations
                 table: "F032_Trmos");
 
             migrationBuilder.DropColumn(
+                name: "NalP",
+                table: "Organizations");
+
+            migrationBuilder.DropColumn(
                 name: "Name",
+                table: "Organizations");
+
+            migrationBuilder.DropColumn(
+                name: "NameE",
                 table: "Organizations");
 
             migrationBuilder.DropColumn(
@@ -71,6 +79,16 @@ namespace BackendApp.Migrations
                 oldMaxLength: 40);
 
             migrationBuilder.AlterColumn<string>(
+                name: "Type",
+                table: "BaseData",
+                type: "nvarchar(20)",
+                maxLength: 20,
+                nullable: true,
+                oldClrType: typeof(string),
+                oldType: "nvarchar(20)",
+                oldMaxLength: 20);
+
+            migrationBuilder.AlterColumn<string>(
                 name: "Oktmo",
                 table: "Addresses",
                 type: "nvarchar(11)",
@@ -79,6 +97,38 @@ namespace BackendApp.Migrations
                 oldClrType: typeof(string),
                 oldType: "nvarchar(11)",
                 oldMaxLength: 11);
+
+            migrationBuilder.AlterColumn<string>(
+                name: "AddressCode",
+                table: "Addresses",
+                type: "nvarchar(36)",
+                maxLength: 36,
+                nullable: true,
+                oldClrType: typeof(string),
+                oldType: "nvarchar(36)",
+                oldMaxLength: 36);
+
+            migrationBuilder.CreateTable(
+                name: "InsIncludes",
+                columns: table => new
+                {
+                    Id = table.Column<long>(type: "bigint", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    NameE = table.Column<string>(type: "nvarchar(1)", maxLength: 1, nullable: false),
+                    NalP = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DBegin = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    DEnd = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    OrganizationId = table.Column<long>(type: "bigint", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_InsIncludes", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_InsIncludes_Organizations_OrganizationId",
+                        column: x => x.OrganizationId,
+                        principalTable: "Organizations",
+                        principalColumn: "Id");
+                });
 
             migrationBuilder.CreateTable(
                 name: "Licenses",
@@ -108,6 +158,21 @@ namespace BackendApp.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_OrgNames", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "People",
+                columns: table => new
+                {
+                    Id = table.Column<long>(type: "bigint", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(40)", maxLength: 40, nullable: false),
+                    Surname = table.Column<string>(type: "nvarchar(40)", maxLength: 40, nullable: false),
+                    Patronymic = table.Column<string>(type: "nvarchar(40)", maxLength: 40, nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_People", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -200,6 +265,73 @@ namespace BackendApp.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "F002_SmoEmps",
+                columns: table => new
+                {
+                    SmoCod = table.Column<string>(type: "nvarchar(5)", maxLength: 5, nullable: false),
+                    AddressId = table.Column<long>(type: "bigint", nullable: false),
+                    OrganizationId = table.Column<long>(type: "bigint", nullable: false),
+                    DocumentId = table.Column<long>(type: "bigint", nullable: false),
+                    CommunicationId = table.Column<long>(type: "bigint", nullable: false),
+                    PersonId = table.Column<long>(type: "bigint", nullable: false),
+                    BaseDataId = table.Column<long>(type: "bigint", nullable: false),
+                    LicenseId = table.Column<long>(type: "bigint", nullable: false),
+                    F002_InsIncludeId = table.Column<long>(type: "bigint", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_F002_SmoEmps", x => x.SmoCod);
+                    table.ForeignKey(
+                        name: "FK_F002_SmoEmps_Addresses_AddressId",
+                        column: x => x.AddressId,
+                        principalTable: "Addresses",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_F002_SmoEmps_BaseData_BaseDataId",
+                        column: x => x.BaseDataId,
+                        principalTable: "BaseData",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_F002_SmoEmps_Communications_CommunicationId",
+                        column: x => x.CommunicationId,
+                        principalTable: "Communications",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_F002_SmoEmps_Documents_DocumentId",
+                        column: x => x.DocumentId,
+                        principalTable: "Documents",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_F002_SmoEmps_InsIncludes_F002_InsIncludeId",
+                        column: x => x.F002_InsIncludeId,
+                        principalTable: "InsIncludes",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_F002_SmoEmps_Licenses_LicenseId",
+                        column: x => x.LicenseId,
+                        principalTable: "Licenses",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_F002_SmoEmps_Organizations_OrganizationId",
+                        column: x => x.OrganizationId,
+                        principalTable: "Organizations",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_F002_SmoEmps_People_PersonId",
+                        column: x => x.PersonId,
+                        principalTable: "People",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "F038_Addrmps",
                 columns: table => new
                 {
@@ -245,10 +377,126 @@ namespace BackendApp.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "f002_smo_insAdvices",
+                columns: table => new
+                {
+                    Id = table.Column<long>(type: "bigint", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    YearWork = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Duved = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    KolZl = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DEdit = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    F002_SmoEmpSmoCod = table.Column<string>(type: "nvarchar(5)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_f002_smo_insAdvices", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_f002_smo_insAdvices_F002_SmoEmps_F002_SmoEmpSmoCod",
+                        column: x => x.F002_SmoEmpSmoCod,
+                        principalTable: "F002_SmoEmps",
+                        principalColumn: "SmoCod",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "f019_PersAccOrgs",
+                columns: table => new
+                {
+                    Id = table.Column<long>(type: "bigint", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    OrganizationId = table.Column<long>(type: "bigint", nullable: true),
+                    AddressId = table.Column<long>(type: "bigint", nullable: true),
+                    DateBeg = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DateEnd = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    F002_SmoEmpId = table.Column<string>(type: "nvarchar(5)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_f019_PersAccOrgs", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_f019_PersAccOrgs_Addresses_AddressId",
+                        column: x => x.AddressId,
+                        principalTable: "Addresses",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_f019_PersAccOrgs_F002_SmoEmps_F002_SmoEmpId",
+                        column: x => x.F002_SmoEmpId,
+                        principalTable: "F002_SmoEmps",
+                        principalColumn: "SmoCod",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_f019_PersAccOrgs_Organizations_OrganizationId",
+                        column: x => x.OrganizationId,
+                        principalTable: "Organizations",
+                        principalColumn: "Id");
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_Organizations_OrgNameId",
                 table: "Organizations",
                 column: "OrgNameId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_f002_smo_insAdvices_F002_SmoEmpSmoCod",
+                table: "f002_smo_insAdvices",
+                column: "F002_SmoEmpSmoCod");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_F002_SmoEmps_AddressId",
+                table: "F002_SmoEmps",
+                column: "AddressId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_F002_SmoEmps_BaseDataId",
+                table: "F002_SmoEmps",
+                column: "BaseDataId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_F002_SmoEmps_CommunicationId",
+                table: "F002_SmoEmps",
+                column: "CommunicationId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_F002_SmoEmps_DocumentId",
+                table: "F002_SmoEmps",
+                column: "DocumentId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_F002_SmoEmps_F002_InsIncludeId",
+                table: "F002_SmoEmps",
+                column: "F002_InsIncludeId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_F002_SmoEmps_LicenseId",
+                table: "F002_SmoEmps",
+                column: "LicenseId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_F002_SmoEmps_OrganizationId",
+                table: "F002_SmoEmps",
+                column: "OrganizationId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_F002_SmoEmps_PersonId",
+                table: "F002_SmoEmps",
+                column: "PersonId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_f019_PersAccOrgs_AddressId",
+                table: "f019_PersAccOrgs",
+                column: "AddressId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_f019_PersAccOrgs_F002_SmoEmpId",
+                table: "f019_PersAccOrgs",
+                column: "F002_SmoEmpId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_f019_PersAccOrgs_OrganizationId",
+                table: "f019_PersAccOrgs",
+                column: "OrganizationId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_F033_Spmos_BaseDataId",
@@ -320,6 +568,11 @@ namespace BackendApp.Migrations
                 table: "F038_Addrmps",
                 column: "LicenseId");
 
+            migrationBuilder.CreateIndex(
+                name: "IX_InsIncludes_OrganizationId",
+                table: "InsIncludes",
+                column: "OrganizationId");
+
             migrationBuilder.AddForeignKey(
                 name: "FK_F032_Trmos_OrgDocuments_OrgDocumentId",
                 table: "F032_Trmos",
@@ -349,16 +602,31 @@ namespace BackendApp.Migrations
                 table: "Organizations");
 
             migrationBuilder.DropTable(
+                name: "f002_smo_insAdvices");
+
+            migrationBuilder.DropTable(
+                name: "f019_PersAccOrgs");
+
+            migrationBuilder.DropTable(
                 name: "F037_Licmos");
 
             migrationBuilder.DropTable(
                 name: "F038_Addrmps");
 
             migrationBuilder.DropTable(
+                name: "F002_SmoEmps");
+
+            migrationBuilder.DropTable(
                 name: "F033_Spmos");
 
             migrationBuilder.DropTable(
+                name: "InsIncludes");
+
+            migrationBuilder.DropTable(
                 name: "Licenses");
+
+            migrationBuilder.DropTable(
+                name: "People");
 
             migrationBuilder.DropTable(
                 name: "OrgNames");
@@ -393,6 +661,12 @@ namespace BackendApp.Migrations
                 oldMaxLength: 2,
                 oldNullable: true);
 
+            migrationBuilder.AddColumn<int>(
+                name: "NalP",
+                table: "Organizations",
+                type: "int",
+                nullable: true);
+
             migrationBuilder.AddColumn<string>(
                 name: "Name",
                 table: "Organizations",
@@ -400,6 +674,13 @@ namespace BackendApp.Migrations
                 maxLength: 2500,
                 nullable: false,
                 defaultValue: "");
+
+            migrationBuilder.AddColumn<string>(
+                name: "NameE",
+                table: "Organizations",
+                type: "nvarchar(1)",
+                maxLength: 1,
+                nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "ShortName",
@@ -434,6 +715,18 @@ namespace BackendApp.Migrations
                 oldNullable: true);
 
             migrationBuilder.AlterColumn<string>(
+                name: "Type",
+                table: "BaseData",
+                type: "nvarchar(20)",
+                maxLength: 20,
+                nullable: false,
+                defaultValue: "",
+                oldClrType: typeof(string),
+                oldType: "nvarchar(20)",
+                oldMaxLength: 20,
+                oldNullable: true);
+
+            migrationBuilder.AlterColumn<string>(
                 name: "Oktmo",
                 table: "Addresses",
                 type: "nvarchar(11)",
@@ -443,6 +736,18 @@ namespace BackendApp.Migrations
                 oldClrType: typeof(string),
                 oldType: "nvarchar(11)",
                 oldMaxLength: 11,
+                oldNullable: true);
+
+            migrationBuilder.AlterColumn<string>(
+                name: "AddressCode",
+                table: "Addresses",
+                type: "nvarchar(36)",
+                maxLength: 36,
+                nullable: false,
+                defaultValue: "",
+                oldClrType: typeof(string),
+                oldType: "nvarchar(36)",
+                oldMaxLength: 36,
                 oldNullable: true);
 
             migrationBuilder.AddForeignKey(

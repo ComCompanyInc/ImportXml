@@ -22,7 +22,7 @@ namespace BackendApp.Models
         public string? Oktmo { get; set; }
 
         [StringLength(36, MinimumLength = 0, ErrorMessage = "Уникальный код адреса МО (AddressCode) - должен быть в диапазоне от 0 до 36 символов")]
-        public string AddressCode { get; set; } // GAR
+        public string? AddressCode { get; set; } // GAR
 
         public long? DistrictId { get; set; }
         public District? District { get; set; }
@@ -32,5 +32,9 @@ namespace BackendApp.Models
         public List<f032_trmo> F032_Trmos { get; set; } = new List<f032_trmo>();
 
         public List<f038_addrmp> F038_Addrmp { get; set; } = new List<f038_addrmp>();
+
+        public List<f019_PersAccOrg> F019_PersAccOrgs { get; set; } = new List<f019_PersAccOrg>();
+
+        public List<f002_smoEmp> F002_SmoEmps { get; set; } = new List<f002_smoEmp>();
     }
 }

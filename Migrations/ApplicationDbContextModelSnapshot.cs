@@ -31,7 +31,6 @@ namespace BackendApp.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
                     b.Property<string>("AddressCode")
-                        .IsRequired()
                         .HasMaxLength(36)
                         .HasColumnType("nvarchar(36)");
 
@@ -75,7 +74,6 @@ namespace BackendApp.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Type")
-                        .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
@@ -318,13 +316,6 @@ namespace BackendApp.Migrations
                         .HasMaxLength(6)
                         .HasColumnType("nvarchar(6)");
 
-                    b.Property<int?>("NalP")
-                        .HasColumnType("int");
-
-                    b.Property<string>("NameE")
-                        .HasMaxLength(1)
-                        .HasColumnType("nvarchar(1)");
-
                     b.Property<bool?>("NoSmo")
                         .HasColumnType("bit");
 
@@ -371,6 +362,34 @@ namespace BackendApp.Migrations
                     b.ToTable("OspType");
                 });
 
+            modelBuilder.Entity("BackendApp.Models.Person", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(40)
+                        .HasColumnType("nvarchar(40)");
+
+                    b.Property<string>("Patronymic")
+                        .IsRequired()
+                        .HasMaxLength(40)
+                        .HasColumnType("nvarchar(40)");
+
+                    b.Property<string>("Surname")
+                        .IsRequired()
+                        .HasMaxLength(40)
+                        .HasColumnType("nvarchar(40)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("People");
+                });
+
             modelBuilder.Entity("BackendApp.Models.Subject", b =>
                 {
                     b.Property<long>("Id")
@@ -405,6 +424,156 @@ namespace BackendApp.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("VidTypes");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f002_InsInclude", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<DateTime?>("DBegin")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DEnd")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("NalP")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NameE")
+                        .IsRequired()
+                        .HasMaxLength(1)
+                        .HasColumnType("nvarchar(1)");
+
+                    b.Property<long?>("OrganizationId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrganizationId");
+
+                    b.ToTable("InsIncludes");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f002_smoEmp", b =>
+                {
+                    b.Property<string>("SmoCod")
+                        .HasMaxLength(5)
+                        .HasColumnType("nvarchar(5)");
+
+                    b.Property<long>("AddressId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("BaseDataId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("CommunicationId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("DocumentId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("F002_InsIncludeId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("LicenseId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("OrganizationId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("PersonId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("SmoCod");
+
+                    b.HasIndex("AddressId");
+
+                    b.HasIndex("BaseDataId");
+
+                    b.HasIndex("CommunicationId");
+
+                    b.HasIndex("DocumentId");
+
+                    b.HasIndex("F002_InsIncludeId");
+
+                    b.HasIndex("LicenseId");
+
+                    b.HasIndex("OrganizationId");
+
+                    b.HasIndex("PersonId");
+
+                    b.ToTable("F002_SmoEmps");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f002_smo_insAdvice", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<DateTime>("DEdit")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("Duved")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("F002_SmoEmpSmoCod")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(5)");
+
+                    b.Property<string>("KolZl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("YearWork")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("F002_SmoEmpSmoCod");
+
+                    b.ToTable("f002_smo_insAdvices");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f019_PersAccOrg", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<long?>("AddressId")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("DateBeg")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DateEnd")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("F002_SmoEmpId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(5)");
+
+                    b.Property<long?>("OrganizationId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AddressId");
+
+                    b.HasIndex("F002_SmoEmpId");
+
+                    b.HasIndex("OrganizationId");
+
+                    b.ToTable("f019_PersAccOrgs");
                 });
 
             modelBuilder.Entity("BackendApp.Models.f031_ermo", b =>
@@ -724,6 +893,114 @@ namespace BackendApp.Migrations
                     b.Navigation("OrgType");
                 });
 
+            modelBuilder.Entity("BackendApp.Models.f002_InsInclude", b =>
+                {
+                    b.HasOne("BackendApp.Models.Organization", null)
+                        .WithMany("InsIncludes")
+                        .HasForeignKey("OrganizationId");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f002_smoEmp", b =>
+                {
+                    b.HasOne("BackendApp.Models.Address", "Address")
+                        .WithMany("F002_SmoEmps")
+                        .HasForeignKey("AddressId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.BaseData", "BaseData")
+                        .WithMany("F002_SmoEmps")
+                        .HasForeignKey("BaseDataId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.Communication", "Communication")
+                        .WithMany("F002_SmoEmps")
+                        .HasForeignKey("CommunicationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.Document", "Document")
+                        .WithMany("F002_SmoEmps")
+                        .HasForeignKey("DocumentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.f002_InsInclude", "F002_InsInclude")
+                        .WithMany()
+                        .HasForeignKey("F002_InsIncludeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.License", "License")
+                        .WithMany("F002_SmoEmps")
+                        .HasForeignKey("LicenseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.Organization", "Organization")
+                        .WithMany("F002_SmoEmps")
+                        .HasForeignKey("OrganizationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.Person", "Person")
+                        .WithMany("F002_SmoEmps")
+                        .HasForeignKey("PersonId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Address");
+
+                    b.Navigation("BaseData");
+
+                    b.Navigation("Communication");
+
+                    b.Navigation("Document");
+
+                    b.Navigation("F002_InsInclude");
+
+                    b.Navigation("License");
+
+                    b.Navigation("Organization");
+
+                    b.Navigation("Person");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f002_smo_insAdvice", b =>
+                {
+                    b.HasOne("BackendApp.Models.f002_smoEmp", "F002_SmoEmp")
+                        .WithMany("F002_Smo_InsAdvices")
+                        .HasForeignKey("F002_SmoEmpSmoCod")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("F002_SmoEmp");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f019_PersAccOrg", b =>
+                {
+                    b.HasOne("BackendApp.Models.Address", "Address")
+                        .WithMany("F019_PersAccOrgs")
+                        .HasForeignKey("AddressId");
+
+                    b.HasOne("BackendApp.Models.f002_smoEmp", "F002_SmoEmp")
+                        .WithMany("F019_PersAccOrgs")
+                        .HasForeignKey("F002_SmoEmpId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.Organization", "Organization")
+                        .WithMany("F019_PersAccOrgs")
+                        .HasForeignKey("OrganizationId");
+
+                    b.Navigation("Address");
+
+                    b.Navigation("F002_SmoEmp");
+
+                    b.Navigation("Organization");
+                });
+
             modelBuilder.Entity("BackendApp.Models.f031_ermo", b =>
                 {
                     b.HasOne("BackendApp.Models.Address", "Address")
@@ -733,7 +1010,7 @@ namespace BackendApp.Migrations
                         .IsRequired();
 
                     b.HasOne("BackendApp.Models.BaseData", "BaseData")
-                        .WithMany()
+                        .WithMany("F031_Ermos")
                         .HasForeignKey("BaseDataId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -963,6 +1240,10 @@ namespace BackendApp.Migrations
 
             modelBuilder.Entity("BackendApp.Models.Address", b =>
                 {
+                    b.Navigation("F002_SmoEmps");
+
+                    b.Navigation("F019_PersAccOrgs");
+
                     b.Navigation("F031_Ermos");
 
                     b.Navigation("F032_Trmos");
@@ -972,7 +1253,16 @@ namespace BackendApp.Migrations
 
             modelBuilder.Entity("BackendApp.Models.BaseData", b =>
                 {
+                    b.Navigation("F002_SmoEmps");
+
+                    b.Navigation("F031_Ermos");
+
                     b.Navigation("F032_Trmos");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.Communication", b =>
+                {
+                    b.Navigation("F002_SmoEmps");
                 });
 
             modelBuilder.Entity("BackendApp.Models.District", b =>
@@ -980,8 +1270,15 @@ namespace BackendApp.Migrations
                     b.Navigation("Addresses");
                 });
 
+            modelBuilder.Entity("BackendApp.Models.Document", b =>
+                {
+                    b.Navigation("F002_SmoEmps");
+                });
+
             modelBuilder.Entity("BackendApp.Models.License", b =>
                 {
+                    b.Navigation("F002_SmoEmps");
+
                     b.Navigation("F037_Licmos");
 
                     b.Navigation("F038_Addrmps");
@@ -1008,7 +1305,13 @@ namespace BackendApp.Migrations
 
             modelBuilder.Entity("BackendApp.Models.Organization", b =>
                 {
+                    b.Navigation("F002_SmoEmps");
+
+                    b.Navigation("F019_PersAccOrgs");
+
                     b.Navigation("F037_Licmos");
+
+                    b.Navigation("InsIncludes");
 
                     b.Navigation("f031_Ermos");
 
@@ -1020,9 +1323,21 @@ namespace BackendApp.Migrations
                     b.Navigation("F032_Trmos");
                 });
 
+            modelBuilder.Entity("BackendApp.Models.Person", b =>
+                {
+                    b.Navigation("F002_SmoEmps");
+                });
+
             modelBuilder.Entity("BackendApp.Models.VidType", b =>
                 {
                     b.Navigation("MoDocuments");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f002_smoEmp", b =>
+                {
+                    b.Navigation("F002_Smo_InsAdvices");
+
+                    b.Navigation("F019_PersAccOrgs");
                 });
 
             modelBuilder.Entity("BackendApp.Models.f031_ermo", b =>

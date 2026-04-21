@@ -37,10 +37,10 @@ namespace BackendApp.Models
         [StringLength(5, MinimumLength = 5, ErrorMessage = "Код организационно-правовой нормы (Okopf) - должно быть 5 символов")]
         public string? Okopf { get; set; }
 
-        [StringLength(1, MinimumLength = 1, ErrorMessage = "Причина и основание исключения МО (NameE) - должно быть 1 символ")]
-        public String? NameE { get; set; }
+        //[StringLength(1, MinimumLength = 1, ErrorMessage = "Причина и основание исключения МО (NameE) - должно быть 1 символ")]
+        //public String? NameE { get; set; }
 
-        public ENalP? NalP { get; set; }
+        //public ENalP? NalP { get; set; }
 
         [StringLength(2, MinimumLength = 2, ErrorMessage = "Ведомственная принадлежность (VedPri) - должна быть 2 символа")]
         public string? VedPri { get; set; }
@@ -54,5 +54,11 @@ namespace BackendApp.Models
         public List<f032_trmo> f032_trmos { get; set; } = new List<f032_trmo>();
 
         public List<f037_licmo> F037_Licmos { get; set; } = new List<f037_licmo>();
+
+        public List<f019_PersAccOrg> F019_PersAccOrgs { get; set; } = new List<f019_PersAccOrg>();
+
+        public List<f002_smoEmp> F002_SmoEmps { get; set; } = new List<f002_smoEmp>();
+
+        public List<f002_InsInclude> InsIncludes { get; set; } = new List<f002_InsInclude>();
     }
 }
