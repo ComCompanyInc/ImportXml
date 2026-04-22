@@ -13,3 +13,7 @@ F031 -> F032 -> F033 -> F38(f32, f33)
 5) curl.exe -X POST http://localhost:5000/api/F037_Licmo/import/F37 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F037_licmo.xml"
 
 6) curl.exe -X POST http://localhost:5000/api/F002_SmoEmp/import/F2 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F002.xml"
+
+7) curl.exe -X POST http://localhost:5000/api/F005_StatOpl/import/F5 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F005_StatOpl.xml"
+
+8) curl.exe -X POST http://localhost:5000/api/F006_VidExp/import/F6 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F006_VidExp.xml"

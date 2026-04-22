@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace BackendApp.Models
@@ -28,7 +29,14 @@ namespace BackendApp.Models
         [Url(ErrorMessage = "Не корректный формат url сайта")]
         public string? Site { get; set; }
 
-        List<f031_ermo> F031_Ermos { get; set; } = new List<f031_ermo>();
+        public long? AdditionalContactId { get; set; }
+        [ForeignKey(nameof(AdditionalContactId))]
+        public Communication? AdditionalContact { get; set; }
+
+        [InverseProperty(nameof(AdditionalContact))]
+        public List<Communication> AdditionalContacts { get; set; } = new List<Communication>();
+
+        public List <f031_ermo> F031_Ermos { get; set; } = new List<f031_ermo>();
 
         public List<f002_smoEmp> F002_SmoEmps { get; set; } = new List<f002_smoEmp>();
     }

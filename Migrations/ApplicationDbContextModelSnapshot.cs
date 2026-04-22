@@ -95,6 +95,9 @@ namespace BackendApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
+                    b.Property<long?>("AdditionalContactId")
+                        .HasColumnType("bigint");
+
                     b.Property<string>("Email")
                         .HasMaxLength(40)
                         .HasColumnType("nvarchar(40)");
@@ -116,6 +119,8 @@ namespace BackendApp.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AdditionalContactId");
 
                     b.ToTable("Communications");
                 });
@@ -174,6 +179,24 @@ namespace BackendApp.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Documents");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.ExpType", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(1500)
+                        .HasColumnType("nvarchar(1500)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ExpTypes");
                 });
 
             modelBuilder.Entity("BackendApp.Models.License", b =>
@@ -362,6 +385,24 @@ namespace BackendApp.Migrations
                     b.ToTable("OspType");
                 });
 
+            modelBuilder.Entity("BackendApp.Models.PaymentStatus", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<string>("StatusName")
+                        .IsRequired()
+                        .HasMaxLength(254)
+                        .HasColumnType("nvarchar(254)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("PaymentStatuses");
+                });
+
             modelBuilder.Entity("BackendApp.Models.Person", b =>
                 {
                     b.Property<long>("Id")
@@ -539,6 +580,64 @@ namespace BackendApp.Migrations
                     b.HasIndex("F002_SmoEmpSmoCod");
 
                     b.ToTable("f002_smo_insAdvices");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f005_StatOpl", b =>
+                {
+                    b.Property<long>("StatusCode")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("StatusCode"));
+
+                    b.Property<long>("BaseDataId")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("DateBeg")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DateEnd")
+                        .HasColumnType("datetime2");
+
+                    b.Property<long>("PaymentStatusId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("StatusCode");
+
+                    b.HasIndex("BaseDataId");
+
+                    b.HasIndex("PaymentStatusId");
+
+                    b.ToTable("F005_StatOpls");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f006_VidExp", b =>
+                {
+                    b.Property<long>("VidId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("VidId"));
+
+                    b.Property<long>("BaseDataId")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("DateBeg")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DateEnd")
+                        .HasColumnType("datetime2");
+
+                    b.Property<long>("ExpTypeId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("VidId");
+
+                    b.HasIndex("BaseDataId");
+
+                    b.HasIndex("ExpTypeId");
+
+                    b.ToTable("F006_VidExps");
                 });
 
             modelBuilder.Entity("BackendApp.Models.f019_PersAccOrg", b =>
@@ -846,6 +945,15 @@ namespace BackendApp.Migrations
                     b.Navigation("District");
                 });
 
+            modelBuilder.Entity("BackendApp.Models.Communication", b =>
+                {
+                    b.HasOne("BackendApp.Models.Communication", "AdditionalContact")
+                        .WithMany("AdditionalContacts")
+                        .HasForeignKey("AdditionalContactId");
+
+                    b.Navigation("AdditionalContact");
+                });
+
             modelBuilder.Entity("BackendApp.Models.District", b =>
                 {
                     b.HasOne("BackendApp.Models.Subject", "Subject")
@@ -978,6 +1086,44 @@ namespace BackendApp.Migrations
                     b.Navigation("F002_SmoEmp");
                 });
 
+            modelBuilder.Entity("BackendApp.Models.f005_StatOpl", b =>
+                {
+                    b.HasOne("BackendApp.Models.BaseData", "BaseData")
+                        .WithMany()
+                        .HasForeignKey("BaseDataId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.PaymentStatus", "PaymentStatus")
+                        .WithMany("F005_StatOpls")
+                        .HasForeignKey("PaymentStatusId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("BaseData");
+
+                    b.Navigation("PaymentStatus");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f006_VidExp", b =>
+                {
+                    b.HasOne("BackendApp.Models.BaseData", "BaseData")
+                        .WithMany()
+                        .HasForeignKey("BaseDataId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.ExpType", "ExpType")
+                        .WithMany("F006_VidExps")
+                        .HasForeignKey("ExpTypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("BaseData");
+
+                    b.Navigation("ExpType");
+                });
+
             modelBuilder.Entity("BackendApp.Models.f019_PersAccOrg", b =>
                 {
                     b.HasOne("BackendApp.Models.Address", "Address")
@@ -1016,7 +1162,7 @@ namespace BackendApp.Migrations
                         .IsRequired();
 
                     b.HasOne("BackendApp.Models.Communication", "Communication")
-                        .WithMany()
+                        .WithMany("F031_Ermos")
                         .HasForeignKey("CommunicationId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -1262,7 +1408,11 @@ namespace BackendApp.Migrations
 
             modelBuilder.Entity("BackendApp.Models.Communication", b =>
                 {
+                    b.Navigation("AdditionalContacts");
+
                     b.Navigation("F002_SmoEmps");
+
+                    b.Navigation("F031_Ermos");
                 });
 
             modelBuilder.Entity("BackendApp.Models.District", b =>
@@ -1273,6 +1423,11 @@ namespace BackendApp.Migrations
             modelBuilder.Entity("BackendApp.Models.Document", b =>
                 {
                     b.Navigation("F002_SmoEmps");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.ExpType", b =>
+                {
+                    b.Navigation("F006_VidExps");
                 });
 
             modelBuilder.Entity("BackendApp.Models.License", b =>
@@ -1321,6 +1476,11 @@ namespace BackendApp.Migrations
             modelBuilder.Entity("BackendApp.Models.OspType", b =>
                 {
                     b.Navigation("F032_Trmos");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.PaymentStatus", b =>
+                {
+                    b.Navigation("F005_StatOpls");
                 });
 
             modelBuilder.Entity("BackendApp.Models.Person", b =>

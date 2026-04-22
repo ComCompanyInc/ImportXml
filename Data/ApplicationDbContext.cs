@@ -37,5 +37,9 @@ namespace BackendApp.Data
         public DbSet<f002_InsInclude> InsIncludes { get; set; }
         public DbSet<Person> People { get; set; }
         public DbSet<f002_smo_insAdvice> f002_smo_insAdvices { get; set; }
+        public DbSet<PaymentStatus> PaymentStatuses { get; set; }
+        public DbSet<f005_StatOpl> F005_StatOpls { get; set; }
+        public DbSet<ExpType> ExpTypes { get; set; }
+        public DbSet<f006_VidExp> F006_VidExps { get; set; }
     }
 }

@@ -58,8 +58,6 @@ namespace BackendApp.Services
 
         public async Task<bool> SaveDataFromF2(F2DataDto dataContainer)
         {
-            //return false;
-
             BaseData baseData = new BaseData
             {
                 Version = dataContainer.Version,
