@@ -102,32 +102,38 @@ namespace BackendApp.Repositories
 
         public async Task<Organization> UpdateObject(Organization existingEntity, Organization entityData)
         {
-            if (entityData.KfTf != null)
+            if (entityData.KfTf != null
+                && entityData.KfTf != existingEntity.KfTf)
             {
                 existingEntity.KfTf = entityData.KfTf;
             }
 
-            if (!entityData.Kbk.IsNullOrEmpty())
+            if (!entityData.Kbk.IsNullOrEmpty()
+                && entityData.Kbk != existingEntity.Kbk)
             {
                 existingEntity.Kbk = entityData.Kbk;
             }
 
-            if (entityData.NoSmo != null)
+            if (entityData.NoSmo != null
+                && entityData.NoSmo != existingEntity.NoSmo)
             {
                 existingEntity.NoSmo = entityData.NoSmo;
             }
 
-            if (!entityData.OrgCode.IsNullOrEmpty())
+            if (!entityData.OrgCode.IsNullOrEmpty()
+                && entityData.OrgCode != existingEntity.OrgCode)
             {
                 existingEntity.OrgCode = entityData.OrgCode;
             }
 
-            if (!entityData.Mcod.IsNullOrEmpty())
+            if (!entityData.Mcod.IsNullOrEmpty()
+                && entityData.Mcod != existingEntity.Mcod)
             {
                 existingEntity.Mcod = entityData.Mcod;
             }
 
-            if (!entityData.Okopf.IsNullOrEmpty())
+            if (!entityData.Okopf.IsNullOrEmpty()
+                && entityData.Okopf != existingEntity.Okopf)
             {
                 existingEntity.Okopf = entityData.Okopf;
             }
@@ -142,12 +148,15 @@ namespace BackendApp.Repositories
             //    existingEntity.NalP = entityData.NalP;
             //}
 
-            if (!entityData.VedPri.IsNullOrEmpty())
+            if (!entityData.VedPri.IsNullOrEmpty()
+                && entityData.VedPri != existingEntity.VedPri)
             {
                 existingEntity.VedPri = entityData.VedPri;
             }
 
-            if (entityData.OrgTypeId != null && entityData.OrgTypeId != 0)
+            if (entityData.OrgTypeId != null
+                && entityData.OrgTypeId != 0
+                && entityData.OrgTypeId != existingEntity.OrgTypeId)
             {
                 existingEntity.OrgTypeId = entityData.OrgTypeId;
             }

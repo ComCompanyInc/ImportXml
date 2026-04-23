@@ -123,77 +123,103 @@ namespace BackendApp.Repositories
 
         public async Task<f032_trmo> UpdateObject(f032_trmo existingEntity, f032_trmo entityData)
         {
-            if (entityData.OrganizationId != null && entityData.OrganizationId != 0)
+            if (entityData.OrganizationId != null
+                && entityData.OrganizationId != 0
+                && entityData.OrganizationId != existingEntity.OrganizationId)
             {
                 existingEntity.OrganizationId = entityData.OrganizationId;
             }
 
-            if (entityData.AddressId != null && entityData.AddressId != 0)
+            if (entityData.AddressId != null
+                && entityData.AddressId != 0
+                && entityData.AddressId != existingEntity.AddressId)
             {
                 existingEntity.AddressId = entityData.AddressId;
             }
 
-            if (entityData.DocumentId != null && entityData.DocumentId != 0)
+            if (entityData.DocumentId != null
+                && entityData.DocumentId != 0
+                && entityData.DocumentId != existingEntity.DocumentId)
             {
                 existingEntity.DocumentId = entityData.DocumentId;
             }
 
-            if (entityData.OspTypeId != null && entityData.OspTypeId != 0)
+            if (entityData.OspTypeId != null
+                && entityData.OspTypeId != 0
+                && entityData.OspTypeId != existingEntity.OspTypeId)
             {
                 existingEntity.OspTypeId = entityData.OspTypeId;
             }
 
-            if (entityData.ExclusionDate != default(DateTime) && entityData.ExclusionDate != null)
+            if (entityData.ExclusionDate != default(DateTime)
+                && entityData.ExclusionDate != null
+                && entityData.ExclusionDate != existingEntity.ExclusionDate)
             {
                 existingEntity.ExclusionDate = entityData.ExclusionDate;
             }
 
-            if (entityData.InclusionDate != default(DateTime) && entityData.InclusionDate != null)
+            if (entityData.InclusionDate != default(DateTime)
+                && entityData.InclusionDate != null
+                && entityData.InclusionDate != existingEntity.InclusionDate)
             {
                 existingEntity.ExclusionDate = entityData.InclusionDate;
             }
 
-            if (entityData.OrgDocumentId != null && entityData.OrgDocumentId != 0)
+            if (entityData.OrgDocumentId != null
+                && entityData.OrgDocumentId != 0
+                && entityData.OrgDocumentId != existingEntity.OrgDocumentId)
             {
                 existingEntity.OrgDocumentId = entityData.OrgDocumentId;
             }
 
-            if (entityData.DateBeg != default(DateTime))
+            if (entityData.DateBeg != default(DateTime)
+                && entityData.DateBeg != existingEntity.DateBeg)
             {
                 existingEntity.DateBeg = entityData.DateBeg;
             }
 
-            if (entityData.DateEnd != default(DateTime) && entityData.DateEnd != null)
+            if (entityData.DateEnd != default(DateTime)
+                && entityData.DateEnd != null
+                && entityData.DateEnd != existingEntity.DateEnd)
             {
                 existingEntity.DateEnd = entityData.DateEnd;
             }
 
-            if (entityData.CommunicationId != null && entityData.CommunicationId != 0)
+            if (entityData.CommunicationId != null
+                && entityData.CommunicationId != 0
+                && entityData.CommunicationId != existingEntity.CommunicationId)
             {
                 existingEntity.CommunicationId = entityData.CommunicationId;
             }
 
-            if (entityData.BaseDataId != null && entityData.BaseDataId != 0)
+            if (entityData.BaseDataId != null
+                && entityData.BaseDataId != 0
+                && entityData.BaseDataId != existingEntity.BaseDataId)
             {
                 existingEntity.BaseDataId = entityData.BaseDataId;
             }
 
-            if (!entityData.ParentId.IsNullOrEmpty())
+            if (!entityData.ParentId.IsNullOrEmpty()
+                && entityData.ParentId != existingEntity.ParentId)
             {
                 existingEntity.ParentId = entityData.ParentId;
             }
 
-            if (!entityData.f031_ermoId.IsNullOrEmpty())
+            if (!entityData.f031_ermoId.IsNullOrEmpty()
+                && entityData.f031_ermoId != existingEntity.f031_ermoId)
             {
                 existingEntity.f031_ermoId = entityData.f031_ermoId;
             }
 
-            if (entityData.f031_ermoParentId != null)
+            if (entityData.f031_ermoParentId != null
+                && entityData.f031_ermoParentId != existingEntity.f031_ermoParentId)
             {
                 existingEntity.f031_ermoParentId = entityData.f031_ermoParentId;
             }
 
-            if (entityData.DateBeginOms != null && entityData.DateBeginOms != default(DateTime))
+            if (entityData.DateBeginOms != null
+                && entityData.DateBeginOms != default(DateTime)
+                && entityData.DateBeginOms != existingEntity.DateBeginOms)
             {
                 existingEntity.DateBeginOms = entityData.DateBeginOms;
             }

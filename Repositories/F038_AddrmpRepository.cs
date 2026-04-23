@@ -77,22 +77,29 @@ namespace BackendApp.Repositories
 
         public async Task<f038_addrmp> UpdateObject(f038_addrmp existingEntity, f038_addrmp entityData)
         {
-            if (!entityData.F032_TrmoId.IsNullOrEmpty())
+            if (!entityData.F032_TrmoId.IsNullOrEmpty()
+                && entityData.F032_TrmoId != existingEntity.F032_TrmoId)
             {
                 existingEntity.F032_TrmoId = entityData.F032_TrmoId;
             }
 
-            if (entityData.LicenseId != null && entityData.LicenseId != 0)
+            if (entityData.LicenseId != null
+                && entityData.LicenseId != 0
+                && entityData.LicenseId != existingEntity.LicenseId)
             {
                 existingEntity.LicenseId = entityData.LicenseId;
             }
 
-            if (entityData.DateBeg != null && entityData.DateBeg != default(DateTime))
+            if (entityData.DateBeg != null
+                && entityData.DateBeg != default(DateTime)
+                && entityData.DateBeg != existingEntity.DateBeg)
             {
                 existingEntity.DateBeg = entityData.DateBeg;
             }
 
-            if (entityData.DateEnd != null && entityData.DateEnd != default(DateTime))
+            if (entityData.DateEnd != null
+                && entityData.DateEnd != default(DateTime)
+                && entityData.DateEnd != existingEntity.DateEnd)
             {
                 existingEntity.DateEnd = entityData.DateEnd;
             }

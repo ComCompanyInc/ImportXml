@@ -71,27 +71,36 @@ namespace BackendApp.Repositories
 
         public async Task<f033_spmo> UpdateObject(f033_spmo existingEntity, f033_spmo entityData)
         {
-            if (!entityData.Code.IsNullOrEmpty())
+            if (!entityData.Code.IsNullOrEmpty()
+                && entityData.Code != existingEntity.Code)
             {
                 existingEntity.Code = entityData.Code;
             }
 
-            if (entityData.OspTypeId != null && entityData.OspTypeId != 0)
+            if (entityData.OspTypeId != null
+                && entityData.OspTypeId != 0
+                && entityData.OspTypeId != existingEntity.OspTypeId)
             {
                 existingEntity.OspTypeId = entityData.OspTypeId;
             }
 
-            if (entityData.OrgDocumentId != null && entityData.OrgDocumentId != 0)
+            if (entityData.OrgDocumentId != null
+                && entityData.OrgDocumentId != 0
+                && entityData.OrgDocumentId != existingEntity.OrgDocumentId)
             {
                 existingEntity.OrgDocumentId = entityData.OrgDocumentId;
             }
 
-            if (entityData.DateBeg != default(DateTime) && entityData.DateBeg != null)
+            if (entityData.DateBeg != default(DateTime)
+                && entityData.DateBeg != null
+                && entityData.DateBeg != existingEntity.DateBeg)
             {
                 existingEntity.DateBeg = entityData.DateBeg;
             }
 
-            if (entityData.DateEnd != default(DateTime) && entityData.DateEnd != null)
+            if (entityData.DateEnd != default(DateTime)
+                && entityData.DateEnd != null
+                && entityData.DateEnd != existingEntity.DateEnd)
             {
                 existingEntity.DateEnd = entityData.DateEnd;
             }

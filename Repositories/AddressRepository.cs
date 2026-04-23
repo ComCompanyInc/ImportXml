@@ -71,27 +71,33 @@ namespace BackendApp.Repositories
 
         public async Task<Address> UpdateObject(Address existingEntity, Address entityData)
         {
-            if (!entityData.Index.IsNullOrEmpty())
+            if (!entityData.Index.IsNullOrEmpty()
+                && entityData.Index != existingEntity.Index)
             {
                 existingEntity.Index = entityData.Index;
             }
 
-            if (!entityData.Okato.IsNullOrEmpty())
+            if (!entityData.Okato.IsNullOrEmpty()
+                && entityData.Okato != existingEntity.Okato)
             {
                 existingEntity.Okato = entityData.Okato;
             }
 
-            if (!entityData.AddressCode.IsNullOrEmpty())
+            if (!entityData.AddressCode.IsNullOrEmpty()
+                && entityData.AddressCode != existingEntity.AddressCode)
             {
                 existingEntity.AddressCode = entityData.AddressCode;
             }
 
-            if (entityData.DistrictId != null && entityData.DistrictId != 0)
+            if (entityData.DistrictId != null
+                && entityData.DistrictId != 0
+                && entityData.DistrictId != existingEntity.DistrictId)
             {
                 existingEntity.DistrictId = entityData.DistrictId;
             }
 
-            if (entityData.Oktmo != null)
+            if (entityData.Oktmo != null
+                && entityData.Oktmo != existingEntity.Oktmo)
             {
                 existingEntity.Oktmo = entityData.Oktmo;
             }

@@ -52,12 +52,14 @@ namespace BackendApp.Repositories
 
         public async Task<Document> UpdateObject(Document existingEntity, Document entityData)
         {
-            if (!existingEntity.Ogrn.IsNullOrEmpty())
+            if (!entityData.Ogrn.IsNullOrEmpty()
+                && entityData.Ogrn != existingEntity.Ogrn)
             {
                 existingEntity.Ogrn = entityData.Ogrn;
             }
 
-            if (!existingEntity.Kpp.IsNullOrEmpty())
+            if (!entityData.Kpp.IsNullOrEmpty()
+                && entityData.Kpp != existingEntity.Kpp)
             {
                 existingEntity.Kpp = entityData.Kpp;
             }

@@ -59,17 +59,21 @@ namespace BackendApp.Repositories
 
         public async Task<District> UpdateObject(District existingEntity, District entityData)
         {
-            if (entityData.DateBegin != default(DateTime))
+            if (entityData.DateBegin != default(DateTime)
+                && entityData.DateBegin != existingEntity.DateBegin)
             {
                 existingEntity.DateBegin = entityData.DateBegin;
             }
 
-            if (entityData.DateEnd != default(DateTime))
+            if (entityData.DateEnd != default(DateTime)
+                && entityData.DateEnd != existingEntity.DateEnd)
             {
                 existingEntity.DateEnd = entityData.DateEnd;
             }
 
-            if (entityData.SubjectId != null && entityData.SubjectId != 0)
+            if (entityData.SubjectId != null
+                && entityData.SubjectId != 0
+                && entityData.SubjectId != existingEntity.SubjectId)
             {
                 existingEntity.SubjectId = entityData.SubjectId;
             }

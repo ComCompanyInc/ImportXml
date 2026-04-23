@@ -65,22 +65,30 @@ namespace BackendApp.Repositories
 
         public async Task<f031_ermo> UpdateObject(f031_ermo existingEntity, f031_ermo entityData)
         {
-            if (entityData.OrganizationId != null && entityData.OrganizationId != 0)
+            if (entityData.OrganizationId != null
+                && entityData.OrganizationId != 0
+                && entityData.OrganizationId != existingEntity.OrganizationId)
             {
                 existingEntity.OrganizationId = entityData.OrganizationId;
             }
 
-            if (entityData.OrgDocumentId != null && entityData.OrgDocumentId != 0)
+            if (entityData.OrgDocumentId != null
+                && entityData.OrgDocumentId != 0
+                && entityData.OrgDocumentId != existingEntity.OrgDocumentId)
             {
                 existingEntity.OrgDocumentId = entityData.OrgDocumentId;
             }
 
-            if (entityData.AddressId != null && entityData.AddressId != 0)
+            if (entityData.AddressId != null
+                && entityData.AddressId != 0
+                && entityData.AddressId != existingEntity.AddressId)
             {
                 existingEntity.AddressId = entityData.AddressId;
             }
 
-            if (entityData.BaseDataId != null && entityData.BaseDataId != 0)
+            if (entityData.BaseDataId != null
+                && entityData.BaseDataId != 0
+                && entityData.BaseDataId != existingEntity.BaseDataId)
             {
                 existingEntity.BaseDataId = entityData.BaseDataId;
             }

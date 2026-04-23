@@ -89,32 +89,43 @@ namespace BackendApp.Repositories
 
         public async Task<f037_licmo> UpdateObject(f037_licmo existingEntity, f037_licmo entityData)
         {
-            if (!entityData.F031_ErmoId.IsNullOrEmpty())
+            if (!entityData.F031_ErmoId.IsNullOrEmpty()
+                && entityData.F031_ErmoId != existingEntity.F031_ErmoId)
             {
                 existingEntity.F031_ErmoId = entityData.F031_ErmoId;
             }
 
-            if (entityData.OrgDocumentId != null && entityData.OrgDocumentId != 0)
+            if (entityData.OrgDocumentId != null
+                && entityData.OrgDocumentId != 0
+                && entityData.OrgDocumentId != existingEntity.OrgDocumentId)
             {
                 existingEntity.OrgDocumentId = entityData.OrgDocumentId;
             }
 
-            if (entityData.OrganizationId != null && entityData.OrganizationId != 0)
+            if (entityData.OrganizationId != null
+                && entityData.OrganizationId != 0
+                && entityData.OrganizationId != existingEntity.OrganizationId)
             {
                 existingEntity.OrganizationId = entityData.OrganizationId;
             }
 
-            if (entityData.LicenseId != null && entityData.LicenseId != 0)
+            if (entityData.LicenseId != null
+                && entityData.LicenseId != 0
+                && entityData.LicenseId != existingEntity.LicenseId)
             {
                 existingEntity.LicenseId = entityData.LicenseId;
             }
 
-            if (entityData.DateBeg != null && entityData.DateBeg != default(DateTime))
+            if (entityData.DateBeg != null
+                && entityData.DateBeg != default(DateTime)
+                && entityData.DateBeg != existingEntity.DateBeg)
             {
                 existingEntity.DateBeg = entityData.DateBeg;
             }
 
-            if (entityData.DateEnd != null && entityData.DateEnd != default(DateTime))
+            if (entityData.DateEnd != null
+                && entityData.DateEnd != default(DateTime)
+                && entityData.DateEnd != existingEntity.DateEnd)
             {
                 existingEntity.DateEnd = entityData.DateEnd;
             }

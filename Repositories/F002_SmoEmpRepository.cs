@@ -41,27 +41,37 @@ namespace BackendApp.Repositories
 
         public async Task<f002_smoEmp> UpdateObject(f002_smoEmp existingEntity, f002_smoEmp entityData)
         {
-            if (entityData.AddressId != null && entityData.AddressId != 0)
+            if (entityData.AddressId != null
+                && entityData.AddressId != 0
+                && entityData.AddressId != existingEntity.AddressId)
             {
                 existingEntity.AddressId = entityData.AddressId;
             }
 
-            if (entityData.OrganizationId != null && entityData.OrganizationId != 0)
+            if (entityData.OrganizationId != null
+                && entityData.OrganizationId != 0
+                && entityData.OrganizationId != existingEntity.OrganizationId)
             {
                 existingEntity.OrganizationId = entityData.OrganizationId;
             }
 
-            if (entityData.DocumentId != null && entityData.DocumentId != 0)
+            if (entityData.DocumentId != null
+                && entityData.DocumentId != 0
+                && entityData.DocumentId != existingEntity.DocumentId)
             {
                 existingEntity.DocumentId = entityData.DocumentId;
             }
 
-            if (entityData.CommunicationId != null && entityData.CommunicationId != 0)
+            if (entityData.CommunicationId != null
+                && entityData.CommunicationId != 0
+                && entityData.CommunicationId != existingEntity.CommunicationId)
             {
                 existingEntity.CommunicationId = entityData.CommunicationId;
             }
 
-            if (entityData.PersonId != null && entityData.PersonId != 0)
+            if (entityData.PersonId != null
+                && entityData.PersonId != 0
+                && entityData.PersonId != existingEntity.PersonId)
             {
                 existingEntity.PersonId = entityData.PersonId;
             }

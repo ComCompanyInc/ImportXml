@@ -68,22 +68,26 @@ namespace BackendApp.Repositories
         public async Task<Communication> UpdateObject(Communication existingEntity, Communication entityData)
         {
 
-            if (!entityData.Fax.IsNullOrEmpty())
+            if (!entityData.Fax.IsNullOrEmpty()
+                && entityData.Fax != existingEntity.Fax)
             {
                 existingEntity.Fax = entityData.Fax;
             }
 
-            if (!entityData.Email.IsNullOrEmpty())
+            if (!entityData.Email.IsNullOrEmpty()
+                && entityData.Email != existingEntity.Email)
             {
                 existingEntity.Email = entityData.Email;
             }
 
-            if (!entityData.HotLine.IsNullOrEmpty())
+            if (!entityData.HotLine.IsNullOrEmpty()
+                && entityData.HotLine != existingEntity.HotLine)
             {
                 existingEntity.HotLine = entityData.HotLine;
             }
 
-            if (!entityData.Site.IsNullOrEmpty())
+            if (!entityData.Site.IsNullOrEmpty()
+                && entityData.Site != existingEntity.Site)
             {
                 existingEntity.Site = entityData.Site;
             }

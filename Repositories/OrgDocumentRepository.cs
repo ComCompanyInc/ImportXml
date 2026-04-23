@@ -65,17 +65,23 @@ namespace BackendApp.Repositories
 
         public async Task<OrgDocument> UpdateObject(OrgDocument existingEntity, OrgDocument entityData)
         {
-            if (entityData.OidTypeMoId != null && entityData.OidTypeMoId != 0)
+            if (entityData.OidTypeMoId != null
+                && entityData.OidTypeMoId != 0
+                && entityData.OidTypeMoId != existingEntity.OidTypeMoId)
             {
                 existingEntity.OidTypeMoId = entityData.OidTypeMoId;
             }
 
-            if (entityData.OidTypeSpmoId != null && entityData.OidTypeSpmoId != 0)
+            if (entityData.OidTypeSpmoId != null
+                && entityData.OidTypeSpmoId != 0
+                && entityData.OidTypeSpmoId != existingEntity.OidTypeSpmoId)
             {
                 existingEntity.OidTypeSpmoId = entityData.OidTypeSpmoId;
             }
 
-            if (entityData.VidTypeId != null && entityData.VidTypeId != 0)
+            if (entityData.VidTypeId != null
+                && entityData.VidTypeId != 0
+                && entityData.VidTypeId != existingEntity.VidTypeId)
             {
                 existingEntity.VidTypeId = entityData.VidTypeId;
             }

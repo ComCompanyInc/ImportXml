@@ -65,17 +65,23 @@ namespace BackendApp.Repositories
 
         public async Task<Models.License> UpdateObject(Models.License existingEntity, Models.License entityData)
         {
-            if (entityData.Dstart != null && entityData.Dstart != default(DateTime))
+            if (entityData.Dstart != null
+                && entityData.Dstart != default(DateTime)
+                && entityData.Dstart != existingEntity.Dstart)
             {
                 existingEntity.Dstart = entityData.Dstart;
             }
 
-            if (entityData.DateE != null && entityData.DateE != default(DateTime))
+            if (entityData.DateE != null
+                && entityData.DateE != default(DateTime)
+                && entityData.DateE != existingEntity.DateE)
             {
                 existingEntity.DateE = entityData.DateE;
             }
 
-            if (entityData.Dterm != null && entityData.Dterm != default(DateTime))
+            if (entityData.Dterm != null
+                && entityData.Dterm != default(DateTime)
+                && entityData.Dterm != existingEntity.Dterm)
             {
                 existingEntity.Dterm = entityData.Dterm;
             }
