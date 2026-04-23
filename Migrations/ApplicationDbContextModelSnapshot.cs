@@ -243,6 +243,24 @@ namespace BackendApp.Migrations
                     b.ToTable("OidTypes");
                 });
 
+            modelBuilder.Entity("BackendApp.Models.OmsType", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(254)
+                        .HasColumnType("nvarchar(254)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("OmsTypes");
+                });
+
             modelBuilder.Entity("BackendApp.Models.OrgDocument", b =>
                 {
                     b.Property<long>("Id")
@@ -449,6 +467,24 @@ namespace BackendApp.Migrations
                     b.ToTable("Subjects");
                 });
 
+            modelBuilder.Entity("BackendApp.Models.VedomType", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(254)
+                        .HasColumnType("nvarchar(254)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("VedomType");
+                });
+
             modelBuilder.Entity("BackendApp.Models.VidType", b =>
                 {
                     b.Property<long>("Id")
@@ -638,6 +674,64 @@ namespace BackendApp.Migrations
                     b.HasIndex("ExpTypeId");
 
                     b.ToTable("F006_VidExps");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f007_Vedom", b =>
+                {
+                    b.Property<long>("VedId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("VedId"));
+
+                    b.Property<long>("BaseDataId")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("DateBeg")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DateEnd")
+                        .HasColumnType("datetime2");
+
+                    b.Property<long>("VedomTypeId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("VedId");
+
+                    b.HasIndex("BaseDataId");
+
+                    b.HasIndex("VedomTypeId");
+
+                    b.ToTable("F007_Vedoms");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f008_TipOms", b =>
+                {
+                    b.Property<long>("DocId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("DocId"));
+
+                    b.Property<long>("BaseDataId")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("DateBeg")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DateEnd")
+                        .HasColumnType("datetime2");
+
+                    b.Property<long>("OmsTypeId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("DocId");
+
+                    b.HasIndex("BaseDataId");
+
+                    b.HasIndex("OmsTypeId");
+
+                    b.ToTable("F008_TipOms");
                 });
 
             modelBuilder.Entity("BackendApp.Models.f019_PersAccOrg", b =>
@@ -1124,6 +1218,44 @@ namespace BackendApp.Migrations
                     b.Navigation("ExpType");
                 });
 
+            modelBuilder.Entity("BackendApp.Models.f007_Vedom", b =>
+                {
+                    b.HasOne("BackendApp.Models.BaseData", "BaseData")
+                        .WithMany()
+                        .HasForeignKey("BaseDataId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.VedomType", "VedomType")
+                        .WithMany("f007_Vedoms")
+                        .HasForeignKey("VedomTypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("BaseData");
+
+                    b.Navigation("VedomType");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f008_TipOms", b =>
+                {
+                    b.HasOne("BackendApp.Models.BaseData", "BaseData")
+                        .WithMany()
+                        .HasForeignKey("BaseDataId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.OmsType", "OmsType")
+                        .WithMany("f008_TipOms")
+                        .HasForeignKey("OmsTypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("BaseData");
+
+                    b.Navigation("OmsType");
+                });
+
             modelBuilder.Entity("BackendApp.Models.f019_PersAccOrg", b =>
                 {
                     b.HasOne("BackendApp.Models.Address", "Address")
@@ -1446,6 +1578,11 @@ namespace BackendApp.Migrations
                     b.Navigation("SpmoOrgDocuments");
                 });
 
+            modelBuilder.Entity("BackendApp.Models.OmsType", b =>
+                {
+                    b.Navigation("f008_TipOms");
+                });
+
             modelBuilder.Entity("BackendApp.Models.OrgDocument", b =>
                 {
                     b.Navigation("F031_Ermos");
@@ -1486,6 +1623,11 @@ namespace BackendApp.Migrations
             modelBuilder.Entity("BackendApp.Models.Person", b =>
                 {
                     b.Navigation("F002_SmoEmps");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.VedomType", b =>
+                {
+                    b.Navigation("f007_Vedoms");
                 });
 
             modelBuilder.Entity("BackendApp.Models.VidType", b =>
