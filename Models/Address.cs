@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace BackendApp.Models
@@ -15,8 +16,8 @@ namespace BackendApp.Models
         [StringLength(6, MinimumLength = 6, ErrorMessage = "Код почтового индекса (Index) - должен содержать 6 символов")]
         public string Index { get; set; }
 
-        [StringLength(5, MinimumLength = 5, ErrorMessage = "Код ОКАТО (Okato) - должен содержать 5 символов")]
-        public string? Okato { get; set; }
+        //[StringLength(5, MinimumLength = 5, ErrorMessage = "Код ОКАТО (Okato) - должен содержать 5 символов")]
+        //public string? Okato { get; set; }
 
         [StringLength(11, MinimumLength = 11, ErrorMessage = "Код ОКТМО (Oktmo) - должен содержать 11 символов")]
         public string? Oktmo { get; set; }
@@ -24,6 +25,7 @@ namespace BackendApp.Models
         [StringLength(36, MinimumLength = 0, ErrorMessage = "Уникальный код адреса МО (AddressCode) - должен быть в диапазоне от 0 до 36 символов")]
         public string? AddressCode { get; set; } // GAR
 
+        [ForeignKey(nameof(District))]
         public long? DistrictId { get; set; }
         public District? District { get; set; }
 
@@ -36,5 +38,7 @@ namespace BackendApp.Models
         public List<f019_PersAccOrg> F019_PersAccOrgs { get; set; } = new List<f019_PersAccOrg>();
 
         public List<f002_smoEmp> F002_SmoEmps { get; set; } = new List<f002_smoEmp>();
+
+        public List<f010_Subecti> F010_Subects { get; set; } = new List<f010_Subecti>();
     }
 }

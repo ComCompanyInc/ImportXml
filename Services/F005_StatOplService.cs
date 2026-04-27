@@ -53,7 +53,7 @@ namespace BackendApp.Services
             {
                 PaymentStatus paymentStatus = new PaymentStatus
                 {
-                    StatusName = item.StatusName
+                    StatusName = item.Name
                 };
 
                 long paymentStatusId;

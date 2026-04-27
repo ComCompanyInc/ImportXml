@@ -55,7 +55,7 @@ namespace BackendApp.Services
             {
                 OmsType omsType = new OmsType()
                 {
-                    Name = item.OmsTypeName
+                    Name = item.Name
                 };
 
                 long omsTypeId;

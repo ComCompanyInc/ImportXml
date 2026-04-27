@@ -9,6 +9,8 @@ namespace BackendApp.Models
     {
         public long Id { get; set; }
 
+        public long? Code { get; set; } // Код округа
+
         [StringLength(250, MinimumLength = 0, ErrorMessage = "Название округа (Name) - не должно превышать 250 символов")]
         public string? Name { get; set; }
 

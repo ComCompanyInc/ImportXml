@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using System.Text;
 using System.Xml.Serialization;
 
-namespace BackendApp.Dto.f007_vedom
+namespace BackendApp.Dto.F009_StatZl
 {
-    public class F7DataDto : IDictionaryTypesDto
+    public class F9DataDto : IDictionaryTypesDto
     {
-        [XmlElement("IDVED")]
+        [XmlElement("IDStatus")]
         public long Id { get; set; }
 
-        [XmlElement("VEDNAME")]
+        [XmlElement("StatusName")]
         public string Name { get; set; }
 
         [XmlElement("DATEBEG")]
         public string DateBeg { get; set; }
 
         [XmlElement("DATEEND")]
-        public string DateEnd { get; set; }        
+        public string DateEnd { get; set; }
     }
 }

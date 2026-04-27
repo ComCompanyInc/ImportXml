@@ -5,13 +5,13 @@ using System.Xml.Serialization;
 
 namespace BackendApp.Dto.f005_statopl
 {
-    public class F5DataDto
+    public class F5DataDto : IDictionaryTypesDto
     {
         [XmlElement("IDIDST")]
-        public long StatusCode { get; set; }
+        public long Id { get; set; }
 
         [XmlElement("STNAME")]
-        public string StatusName { get; set; }
+        public string Name { get; set; }
 
         [XmlElement("DATEBEG")]
         public string DateBeg { get; set; }

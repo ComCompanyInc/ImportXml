@@ -45,5 +45,8 @@ namespace BackendApp.Data
         public DbSet<f007_Vedom> F007_Vedoms { get; set; }
         public DbSet<OmsType> OmsTypes { get; set; }
         public DbSet<f008_TipOms> F008_TipOms { get; set; }
+        public DbSet<StatType> StatTypes { get; set; }
+        public DbSet<f009_StatZl> F009_StatZls { get; set; }
+        public DbSet<f010_Subecti> F010_Subects { get; set; }
     }
 }

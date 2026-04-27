@@ -47,10 +47,6 @@ namespace BackendApp.Migrations
                         .HasMaxLength(300)
                         .HasColumnType("nvarchar(300)");
 
-                    b.Property<string>("Okato")
-                        .HasMaxLength(5)
-                        .HasColumnType("nvarchar(5)");
-
                     b.Property<string>("Oktmo")
                         .HasMaxLength(11)
                         .HasColumnType("nvarchar(11)");
@@ -132,6 +128,9 @@ namespace BackendApp.Migrations
                         .HasColumnType("bigint");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<long?>("Code")
+                        .HasColumnType("bigint");
 
                     b.Property<DateTime?>("DateBegin")
                         .HasColumnType("datetime2");
@@ -449,6 +448,24 @@ namespace BackendApp.Migrations
                     b.ToTable("People");
                 });
 
+            modelBuilder.Entity("BackendApp.Models.StatType", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<string>("StatusName")
+                        .IsRequired()
+                        .HasMaxLength(254)
+                        .HasColumnType("nvarchar(254)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("StatTypes");
+                });
+
             modelBuilder.Entity("BackendApp.Models.Subject", b =>
                 {
                     b.Property<long>("Id")
@@ -461,6 +478,10 @@ namespace BackendApp.Migrations
                         .IsRequired()
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
+
+                    b.Property<string>("Okato")
+                        .HasMaxLength(5)
+                        .HasColumnType("nvarchar(5)");
 
                     b.HasKey("Id");
 
@@ -732,6 +753,74 @@ namespace BackendApp.Migrations
                     b.HasIndex("OmsTypeId");
 
                     b.ToTable("F008_TipOms");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f009_StatZl", b =>
+                {
+                    b.Property<long>("StatusId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("StatusId"));
+
+                    b.Property<long>("BaseDataId")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("DateBeg")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DateEnd")
+                        .HasColumnType("datetime2");
+
+                    b.Property<long>("StatTypeId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("StatusId");
+
+                    b.HasIndex("BaseDataId");
+
+                    b.HasIndex("StatTypeId");
+
+                    b.ToTable("F009_StatZls");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f010_Subecti", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<long?>("AddressId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("BaseDataId")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("CodeTf")
+                        .IsRequired()
+                        .HasMaxLength(2)
+                        .HasColumnType("nvarchar(2)");
+
+                    b.Property<DateTime>("DateBeg")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DateEnd")
+                        .HasColumnType("datetime2");
+
+                    b.Property<long>("SubjectId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AddressId");
+
+                    b.HasIndex("BaseDataId");
+
+                    b.HasIndex("SubjectId");
+
+                    b.ToTable("F010_Subects");
                 });
 
             modelBuilder.Entity("BackendApp.Models.f019_PersAccOrg", b =>
@@ -1256,6 +1345,48 @@ namespace BackendApp.Migrations
                     b.Navigation("OmsType");
                 });
 
+            modelBuilder.Entity("BackendApp.Models.f009_StatZl", b =>
+                {
+                    b.HasOne("BackendApp.Models.BaseData", "BaseData")
+                        .WithMany()
+                        .HasForeignKey("BaseDataId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.StatType", "StatType")
+                        .WithMany("F009_StatZls")
+                        .HasForeignKey("StatTypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("BaseData");
+
+                    b.Navigation("StatType");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f010_Subecti", b =>
+                {
+                    b.HasOne("BackendApp.Models.Address", null)
+                        .WithMany("F010_Subects")
+                        .HasForeignKey("AddressId");
+
+                    b.HasOne("BackendApp.Models.BaseData", "BaseData")
+                        .WithMany()
+                        .HasForeignKey("BaseDataId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.Subject", "Subject")
+                        .WithMany()
+                        .HasForeignKey("SubjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("BaseData");
+
+                    b.Navigation("Subject");
+                });
+
             modelBuilder.Entity("BackendApp.Models.f019_PersAccOrg", b =>
                 {
                     b.HasOne("BackendApp.Models.Address", "Address")
@@ -1520,6 +1651,8 @@ namespace BackendApp.Migrations
                 {
                     b.Navigation("F002_SmoEmps");
 
+                    b.Navigation("F010_Subects");
+
                     b.Navigation("F019_PersAccOrgs");
 
                     b.Navigation("F031_Ermos");
@@ -1623,6 +1756,11 @@ namespace BackendApp.Migrations
             modelBuilder.Entity("BackendApp.Models.Person", b =>
                 {
                     b.Navigation("F002_SmoEmps");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.StatType", b =>
+                {
+                    b.Navigation("F009_StatZls");
                 });
 
             modelBuilder.Entity("BackendApp.Models.VedomType", b =>

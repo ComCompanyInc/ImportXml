@@ -9,6 +9,9 @@ namespace BackendApp.Models
     {
         public long Id { get; set; }
 
+        [StringLength(5, MinimumLength = 5, ErrorMessage = "Код ОКАТО (Okato) - должен содержать 5 символов")]
+        public string? Okato { get; set; }
+
         [StringLength(250, MinimumLength = 0, ErrorMessage = "Наименование субьекта РФ (Name) - не должно превышать 250 символов")]
         public string Name { get; set; }
 

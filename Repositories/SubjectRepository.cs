@@ -3,6 +3,7 @@ using BackendApp.Models;
 using BackendApp.Repositories.AbstractBase;
 using BackendApp.Repositories.ExtensionBase;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -27,6 +28,9 @@ namespace BackendApp.Repositories
                 subjectResult = subjectResult
                     .Where(c => c.Name == entityData.Name);
             }
+            else {
+                return await FindDistrictByOkatoAndSubject(entityData.Okato);
+            }
 
             return await subjectResult.FirstOrDefaultAsync();
         }
@@ -34,6 +38,12 @@ namespace BackendApp.Repositories
         public Task<Subject> UpdateObject(Subject existingEntity, Subject entityData)
         {
             throw new NotImplementedException();
+        }
+
+        public async Task<Subject> FindDistrictByOkatoAndSubject(string Okato)
+        {
+            return await _context.Subjects.Where(c => c.Okato == Okato)
+                .FirstOrDefaultAsync();
         }
     }
 }

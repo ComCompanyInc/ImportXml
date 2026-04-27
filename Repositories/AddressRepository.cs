@@ -77,11 +77,11 @@ namespace BackendApp.Repositories
                 existingEntity.Index = entityData.Index;
             }
 
-            if (!entityData.Okato.IsNullOrEmpty()
-                && entityData.Okato != existingEntity.Okato)
-            {
-                existingEntity.Okato = entityData.Okato;
-            }
+            //if (!entityData.Okato.IsNullOrEmpty()
+            //    && entityData.Okato != existingEntity.Okato)
+            //{
+            //    existingEntity.Okato = entityData.Okato;
+            //}
 
             if (!entityData.AddressCode.IsNullOrEmpty()
                 && entityData.AddressCode != existingEntity.AddressCode)
@@ -107,5 +107,7 @@ namespace BackendApp.Repositories
 
             return existingEntity;
         }
+
+        
     }
 }

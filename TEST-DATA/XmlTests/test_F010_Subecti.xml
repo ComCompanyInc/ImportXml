@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<packet>
+  <zglv>
+    <type>Subekti</type>
+    <version>2.4</version>
+    <date>14.02.2023</date>
+  </zglv>
+  <zap>
+    <KOD_TF>01</KOD_TF>
+    <KOD_OKATO>79000</KOD_OKATO>
+    <SUBNAME>Республика Адыгея</SUBNAME>
+    <OKRUG>3</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>02</KOD_TF>
+    <KOD_OKATO>80000</KOD_OKATO>
+    <SUBNAME>Республика Башкортостан</SUBNAME>
+    <OKRUG>5</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>03</KOD_TF>
+    <KOD_OKATO>81000</KOD_OKATO>
+    <SUBNAME>Республика Бурятия</SUBNAME>
+    <OKRUG>7</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND>02.11.2018</DATEEND>
+  </zap>
+  <zap>
+    <KOD_TF>03</KOD_TF>
+    <KOD_OKATO>81000</KOD_OKATO>
+    <SUBNAME>Республика Бурятия</SUBNAME>
+    <OKRUG>8</OKRUG>
+    <DATEBEG>03.11.2018</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>04</KOD_TF>
+    <KOD_OKATO>84000</KOD_OKATO>
+    <SUBNAME>Республика Алтай</SUBNAME>
+    <OKRUG>7</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>05</KOD_TF>
+    <KOD_OKATO>82000</KOD_OKATO>
+    <SUBNAME>Республика Дагестан</SUBNAME>
+    <OKRUG>4</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>06</KOD_TF>
+    <KOD_OKATO>26000</KOD_OKATO>
+    <SUBNAME>Республика Ингушетия</SUBNAME>
+    <OKRUG>4</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>07</KOD_TF>
+    <KOD_OKATO>83000</KOD_OKATO>
+    <SUBNAME>Кабардино-Балкарская Республика</SUBNAME>
+    <OKRUG>4</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>08</KOD_TF>
+    <KOD_OKATO>85000</KOD_OKATO>
+    <SUBNAME>Республика Калмыкия</SUBNAME>
+    <OKRUG>3</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>09</KOD_TF>
+    <KOD_OKATO>91000</KOD_OKATO>
+    <SUBNAME>Карачаево-Черкесская Республика</SUBNAME>
+    <OKRUG>4</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>10</KOD_TF>
+    <KOD_OKATO>86000</KOD_OKATO>
+    <SUBNAME>Республика Карелия</SUBNAME>
+    <OKRUG>2</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>11</KOD_TF>
+    <KOD_OKATO>87000</KOD_OKATO>
+    <SUBNAME>Республика Коми</SUBNAME>
+    <OKRUG>2</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>12</KOD_TF>
+    <KOD_OKATO>88000</KOD_OKATO>
+    <SUBNAME>Республика Марий Эл</SUBNAME>
+    <OKRUG>5</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>13</KOD_TF>
+    <KOD_OKATO>89000</KOD_OKATO>
+    <SUBNAME>Республика Мордовия</SUBNAME>
+    <OKRUG>5</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>14</KOD_TF>
+    <KOD_OKATO>98000</KOD_OKATO>
+    <SUBNAME>Республика Саха (Якутия)</SUBNAME>
+    <OKRUG>8</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>15</KOD_TF>
+    <KOD_OKATO>90000</KOD_OKATO>
+    <SUBNAME>Республика Северная Осетия-Алания</SUBNAME>
+    <OKRUG>4</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>16</KOD_TF>
+    <KOD_OKATO>92000</KOD_OKATO>
+    <SUBNAME>Республика Татарстан</SUBNAME>
+    <OKRUG>5</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>17</KOD_TF>
+    <KOD_OKATO>93000</KOD_OKATO>
+    <SUBNAME>Республика Тыва</SUBNAME>
+    <OKRUG>7</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>18</KOD_TF>
+    <KOD_OKATO>94000</KOD_OKATO>
+    <SUBNAME>Удмуртская Республика</SUBNAME>
+    <OKRUG>5</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>19</KOD_TF>
+    <KOD_OKATO>95000</KOD_OKATO>
+    <SUBNAME>Республика Хакасия</SUBNAME>
+    <OKRUG>7</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>20</KOD_TF>
+    <KOD_OKATO>96000</KOD_OKATO>
+    <SUBNAME>Чеченская Республика</SUBNAME>
+    <OKRUG>4</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>21</KOD_TF>
+    <KOD_OKATO>97000</KOD_OKATO>
+    <SUBNAME>Чувашская Республика</SUBNAME>
+    <OKRUG>5</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>22</KOD_TF>
+    <KOD_OKATO>01000</KOD_OKATO>
+    <SUBNAME>Алтайский край</SUBNAME>
+    <OKRUG>7</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>23</KOD_TF>
+    <KOD_OKATO>03000</KOD_OKATO>
+    <SUBNAME>Краснодарский край</SUBNAME>
+    <OKRUG>3</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>24</KOD_TF>
+    <KOD_OKATO>04000</KOD_OKATO>
+    <SUBNAME>Красноярский край</SUBNAME>
+    <OKRUG>7</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>25</KOD_TF>
+    <KOD_OKATO>05000</KOD_OKATO>
+    <SUBNAME>Приморский край</SUBNAME>
+    <OKRUG>8</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>26</KOD_TF>
+    <KOD_OKATO>07000</KOD_OKATO>
+    <SUBNAME>Ставропольский край</SUBNAME>
+    <OKRUG>4</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>27</KOD_TF>
+    <KOD_OKATO>08000</KOD_OKATO>
+    <SUBNAME>Хабаровский край</SUBNAME>
+    <OKRUG>8</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>28</KOD_TF>
+    <KOD_OKATO>10000</KOD_OKATO>
+    <SUBNAME>Амурская область</SUBNAME>
+    <OKRUG>8</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>29</KOD_TF>
+    <KOD_OKATO>11000</KOD_OKATO>
+    <SUBNAME>Архангельская область</SUBNAME>
+    <OKRUG>2</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>30</KOD_TF>
+    <KOD_OKATO>12000</KOD_OKATO>
+    <SUBNAME>Астраханская область</SUBNAME>
+    <OKRUG>3</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>31</KOD_TF>
+    <KOD_OKATO>14000</KOD_OKATO>
+    <SUBNAME>Белгородская область</SUBNAME>
+    <OKRUG>1</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>32</KOD_TF>
+    <KOD_OKATO>15000</KOD_OKATO>
+    <SUBNAME>Брянская область</SUBNAME>
+    <OKRUG>1</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>33</KOD_TF>
+    <KOD_OKATO>17000</KOD_OKATO>
+    <SUBNAME>Владимирская область</SUBNAME>
+    <OKRUG>1</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>34</KOD_TF>
+    <KOD_OKATO>18000</KOD_OKATO>
+    <SUBNAME>Волгоградская область</SUBNAME>
+    <OKRUG>3</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>35</KOD_TF>
+    <KOD_OKATO>19000</KOD_OKATO>
+    <SUBNAME>Вологодская область</SUBNAME>
+    <OKRUG>2</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>36</KOD_TF>
+    <KOD_OKATO>20000</KOD_OKATO>
+    <SUBNAME>Воронежская область</SUBNAME>
+    <OKRUG>1</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>37</KOD_TF>
+    <KOD_OKATO>24000</KOD_OKATO>
+    <SUBNAME>Ивановская область</SUBNAME>
+    <OKRUG>1</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>38</KOD_TF>
+    <KOD_OKATO>25000</KOD_OKATO>
+    <SUBNAME>Иркутская область</SUBNAME>
+    <OKRUG>7</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>39</KOD_TF>
+    <KOD_OKATO>27000</KOD_OKATO>
+    <SUBNAME>Калининградская область</SUBNAME>
+    <OKRUG>2</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>40</KOD_TF>
+    <KOD_OKATO>29000</KOD_OKATO>
+    <SUBNAME>Калужская область</SUBNAME>
+    <OKRUG>1</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>41</KOD_TF>
+    <KOD_OKATO>30000</KOD_OKATO>
+    <SUBNAME>Камчатский край</SUBNAME>
+    <OKRUG>8</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>42</KOD_TF>
+    <KOD_OKATO>32000</KOD_OKATO>
+    <SUBNAME>Кемеровская область</SUBNAME>
+    <OKRUG>7</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND>26.03.2019</DATEEND>
+  </zap>
+  <zap>
+    <KOD_TF>42</KOD_TF>
+    <KOD_OKATO>32000</KOD_OKATO>
+    <SUBNAME>Кемеровская область - Кузбасс</SUBNAME>
+    <OKRUG>7</OKRUG>
+    <DATEBEG>27.03.2019</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>43</KOD_TF>
+    <KOD_OKATO>33000</KOD_OKATO>
+    <SUBNAME>Кировская область</SUBNAME>
+    <OKRUG>5</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>44</KOD_TF>
+    <KOD_OKATO>34000</KOD_OKATO>
+    <SUBNAME>Костромская область</SUBNAME>
+    <OKRUG>1</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>45</KOD_TF>
+    <KOD_OKATO>37000</KOD_OKATO>
+    <SUBNAME>Курганская область</SUBNAME>
+    <OKRUG>6</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>46</KOD_TF>
+    <KOD_OKATO>38000</KOD_OKATO>
+    <SUBNAME>Курская область</SUBNAME>
+    <OKRUG>1</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>47</KOD_TF>
+    <KOD_OKATO>41000</KOD_OKATO>
+    <SUBNAME>Ленинградская область</SUBNAME>
+    <OKRUG>2</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>48</KOD_TF>
+    <KOD_OKATO>42000</KOD_OKATO>
+    <SUBNAME>Липецкая область</SUBNAME>
+    <OKRUG>1</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>49</KOD_TF>
+    <KOD_OKATO>44000</KOD_OKATO>
+    <SUBNAME>Магаданская область</SUBNAME>
+    <OKRUG>8</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>50</KOD_TF>
+    <KOD_OKATO>46000</KOD_OKATO>
+    <SUBNAME>Московская область</SUBNAME>
+    <OKRUG>1</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>51</KOD_TF>
+    <KOD_OKATO>47000</KOD_OKATO>
+    <SUBNAME>Мурманская область</SUBNAME>
+    <OKRUG>2</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>52</KOD_TF>
+    <KOD_OKATO>22000</KOD_OKATO>
+    <SUBNAME>Нижегородская область</SUBNAME>
+    <OKRUG>5</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>53</KOD_TF>
+    <KOD_OKATO>49000</KOD_OKATO>
+    <SUBNAME>Новгородская область</SUBNAME>
+    <OKRUG>2</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>54</KOD_TF>
+    <KOD_OKATO>50000</KOD_OKATO>
+    <SUBNAME>Новосибирская область</SUBNAME>
+    <OKRUG>7</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>55</KOD_TF>
+    <KOD_OKATO>52000</KOD_OKATO>
+    <SUBNAME>Омская область</SUBNAME>
+    <OKRUG>7</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>56</KOD_TF>
+    <KOD_OKATO>53000</KOD_OKATO>
+    <SUBNAME>Оренбургская область</SUBNAME>
+    <OKRUG>5</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>57</KOD_TF>
+    <KOD_OKATO>54000</KOD_OKATO>
+    <SUBNAME>Орловская область</SUBNAME>
+    <OKRUG>1</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>58</KOD_TF>
+    <KOD_OKATO>56000</KOD_OKATO>
+    <SUBNAME>Пензенская область</SUBNAME>
+    <OKRUG>5</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>59</KOD_TF>
+    <KOD_OKATO>57000</KOD_OKATO>
+    <SUBNAME>Пермский край</SUBNAME>
+    <OKRUG>5</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>60</KOD_TF>
+    <KOD_OKATO>58000</KOD_OKATO>
+    <SUBNAME>Псковская область</SUBNAME>
+    <OKRUG>2</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>61</KOD_TF>
+    <KOD_OKATO>60000</KOD_OKATO>
+    <SUBNAME>Ростовская область</SUBNAME>
+    <OKRUG>3</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>62</KOD_TF>
+    <KOD_OKATO>61000</KOD_OKATO>
+    <SUBNAME>Рязанская область</SUBNAME>
+    <OKRUG>1</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>63</KOD_TF>
+    <KOD_OKATO>36000</KOD_OKATO>
+    <SUBNAME>Самарская область</SUBNAME>
+    <OKRUG>5</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>64</KOD_TF>
+    <KOD_OKATO>63000</KOD_OKATO>
+    <SUBNAME>Саратовская область</SUBNAME>
+    <OKRUG>5</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>65</KOD_TF>
+    <KOD_OKATO>64000</KOD_OKATO>
+    <SUBNAME>Сахалинская область</SUBNAME>
+    <OKRUG>8</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>66</KOD_TF>
+    <KOD_OKATO>65000</KOD_OKATO>
+    <SUBNAME>Свердловская область</SUBNAME>
+    <OKRUG>6</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>67</KOD_TF>
+    <KOD_OKATO>66000</KOD_OKATO>
+    <SUBNAME>Смоленская область</SUBNAME>
+    <OKRUG>1</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>68</KOD_TF>
+    <KOD_OKATO>68000</KOD_OKATO>
+    <SUBNAME>Тамбовская область</SUBNAME>
+    <OKRUG>1</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>69</KOD_TF>
+    <KOD_OKATO>28000</KOD_OKATO>
+    <SUBNAME>Тверская область</SUBNAME>
+    <OKRUG>1</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>70</KOD_TF>
+    <KOD_OKATO>69000</KOD_OKATO>
+    <SUBNAME>Томская область</SUBNAME>
+    <OKRUG>7</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>71</KOD_TF>
+    <KOD_OKATO>70000</KOD_OKATO>
+    <SUBNAME>Тульская область</SUBNAME>
+    <OKRUG>1</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>72</KOD_TF>
+    <KOD_OKATO>71000</KOD_OKATO>
+    <SUBNAME>Тюменская область</SUBNAME>
+    <OKRUG>6</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>73</KOD_TF>
+    <KOD_OKATO>73000</KOD_OKATO>
+    <SUBNAME>Ульяновская область</SUBNAME>
+    <OKRUG>5</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>74</KOD_TF>
+    <KOD_OKATO>75000</KOD_OKATO>
+    <SUBNAME>Челябинская область</SUBNAME>
+    <OKRUG>6</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>75</KOD_TF>
+    <KOD_OKATO>76000</KOD_OKATO>
+    <SUBNAME>Забайкальский край</SUBNAME>
+    <OKRUG>7</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND>02.11.2018</DATEEND>
+  </zap>
+  <zap>
+    <KOD_TF>75</KOD_TF>
+    <KOD_OKATO>76000</KOD_OKATO>
+    <SUBNAME>Забайкальский край</SUBNAME>
+    <OKRUG>8</OKRUG>
+    <DATEBEG>03.11.2018</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>76</KOD_TF>
+    <KOD_OKATO>78000</KOD_OKATO>
+    <SUBNAME>Ярославская область</SUBNAME>
+    <OKRUG>1</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>77</KOD_TF>
+    <KOD_OKATO>45000</KOD_OKATO>
+    <SUBNAME>г. Москва</SUBNAME>
+    <OKRUG>1</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>78</KOD_TF>
+    <KOD_OKATO>40000</KOD_OKATO>
+    <SUBNAME>г. Санкт-Петербург</SUBNAME>
+    <OKRUG>2</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>79</KOD_TF>
+    <KOD_OKATO>99000</KOD_OKATO>
+    <SUBNAME>Еврейская АО</SUBNAME>
+    <OKRUG>8</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>80</KOD_TF>
+    <KOD_OKATO>11100</KOD_OKATO>
+    <SUBNAME>Ненецкий АО</SUBNAME>
+    <OKRUG>2</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>81</KOD_TF>
+    <KOD_OKATO>71100</KOD_OKATO>
+    <SUBNAME>Ханты-Мансийский АО</SUBNAME>
+    <OKRUG>6</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>82</KOD_TF>
+    <KOD_OKATO>77000</KOD_OKATO>
+    <SUBNAME>Чукотский АО</SUBNAME>
+    <OKRUG>8</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>83</KOD_TF>
+    <KOD_OKATO>71140</KOD_OKATO>
+    <SUBNAME>Ямало-Ненецкий АО</SUBNAME>
+    <OKRUG>6</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>84</KOD_TF>
+    <KOD_OKATO>55000</KOD_OKATO>
+    <SUBNAME>г. Байконур</SUBNAME>
+    <OKRUG>0</OKRUG>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>85</KOD_TF>
+    <KOD_OKATO>35000</KOD_OKATO>
+    <SUBNAME>Республика Крым</SUBNAME>
+    <OKRUG>9</OKRUG>
+    <DATEBEG>18.04.2014</DATEBEG>
+    <DATEEND>27.07.2016</DATEEND>
+  </zap>
+  <zap>
+    <KOD_TF>85</KOD_TF>
+    <KOD_OKATO>35000</KOD_OKATO>
+    <SUBNAME>Республика Крым</SUBNAME>
+    <OKRUG>3</OKRUG>
+    <DATEBEG>28.07.2016</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>86</KOD_TF>
+    <KOD_OKATO>67000</KOD_OKATO>
+    <SUBNAME>г. Севастополь</SUBNAME>
+    <OKRUG>9</OKRUG>
+    <DATEBEG>18.04.2014</DATEBEG>
+    <DATEEND>27.07.2016</DATEEND>
+  </zap>
+  <zap>
+    <KOD_TF>86</KOD_TF>
+    <KOD_OKATO>67000</KOD_OKATO>
+    <SUBNAME>г. Севастополь</SUBNAME>
+    <OKRUG>3</OKRUG>
+    <DATEBEG>28.07.2016</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>87</KOD_TF>
+    <KOD_OKATO>21000</KOD_OKATO>
+    <SUBNAME>Донецкая Народная Республика</SUBNAME>
+    <OKRUG>9</OKRUG>
+    <DATEBEG>05.10.2022</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>88</KOD_TF>
+    <KOD_OKATO>43000</KOD_OKATO>
+    <SUBNAME>Луганская Народная Республика</SUBNAME>
+    <OKRUG>9</OKRUG>
+    <DATEBEG>05.10.2022</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>89</KOD_TF>
+    <KOD_OKATO>23000</KOD_OKATO>
+    <SUBNAME>Запорожская область</SUBNAME>
+    <OKRUG>9</OKRUG>
+    <DATEBEG>05.10.2022</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_TF>90</KOD_TF>
+    <KOD_OKATO>74000</KOD_OKATO>
+    <SUBNAME>Херсонская область</SUBNAME>
+    <OKRUG>9</OKRUG>
+    <DATEBEG>05.10.2022</DATEBEG>
+    <DATEEND/>
+  </zap>
+</packet>

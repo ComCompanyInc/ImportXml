@@ -6,13 +6,13 @@ using System.Xml.Serialization;
 
 namespace BackendApp.Dto.f008_TipOms
 {
-    public class F8DataDto
+    public class F8DataDto : IDictionaryTypesDto
     {
         [XmlElement("IDDOC")]
-        public long DocId { get; set; }
+        public long Id { get; set; }
 
         [XmlElement("DOCNAME")]
-        public string OmsTypeName { get; set; }
+        public string Name { get; set; }
 
         [XmlElement("DATEBEG")]
         public string DateBeg { get; set; }

@@ -54,7 +54,7 @@ namespace BackendApp.Services
             {
                 VedomType vedomType = new VedomType()
                 {
-                    Name = item.VedName
+                    Name = item.Name
                 };
 
                 long vedomTypeId;

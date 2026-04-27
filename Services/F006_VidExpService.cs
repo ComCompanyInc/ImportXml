@@ -54,7 +54,7 @@ namespace BackendApp.Services
             {
                 ExpType expType = new ExpType()
                 {
-                    Name = item.VidName
+                    Name = item.Name
                 };
 
                 long expTypeId;

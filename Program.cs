@@ -48,6 +48,9 @@ builder.Services.AddScoped<VedomTypeService>();
 builder.Services.AddScoped<F007_VedomService>();
 builder.Services.AddScoped<OmsTypeService>();
 builder.Services.AddScoped<F008_TipOmsService>();
+builder.Services.AddScoped<StatTypeService>();
+builder.Services.AddScoped<F009_StatZlService>();
+builder.Services.AddScoped<F010_SubectiService>();
 
 // регестируем все репозиторные классы приложения для DI
 builder.Services.AddScoped<F031_ErmosRepository>();
@@ -81,6 +84,9 @@ builder.Services.AddScoped<VedomTypeRepository>();
 builder.Services.AddScoped<F007_VedomRepository>();
 builder.Services.AddScoped<OmsTypeRepository>();
 builder.Services.AddScoped<F008_TipOmsRepository>();
+builder.Services.AddScoped<StatTypeRepository>();
+builder.Services.AddScoped<F009_StatZlRepository>();
+builder.Services.AddScoped<f010_SubectiRepository>();
 
 // Задаем лимит тела запросов на сервер до 100 Мб
 builder.WebHost.ConfigureKestrel(options =>

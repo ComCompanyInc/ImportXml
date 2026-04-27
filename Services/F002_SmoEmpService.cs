@@ -17,6 +17,8 @@ namespace BackendApp.Services
         private readonly BaseDataService _baseDataService;
         private readonly OrgNameService _orgNameService;
         private readonly OrganizationService _organizationService;
+        private readonly SubjectService _subjectService;
+        private readonly DistrictService _districtService;
         private readonly AddressService _addressService;
         private readonly PersonService _personService;
         private readonly LicenseService _licenseService;
@@ -31,6 +33,8 @@ namespace BackendApp.Services
             BaseDataService baseDataService,
             OrgNameService orgNameService,
             OrganizationService organizationService,
+            SubjectService subjectService,
+            DistrictService districtService,
             AddressService addressService,
             PersonService personService,
             LicenseService licenseService,
@@ -45,6 +49,8 @@ namespace BackendApp.Services
 
             _baseDataService = baseDataService;
             _organizationService = organizationService;
+            _subjectService = subjectService;
+            _districtService = districtService;
             _addressService = addressService;
             _personService = personService;
             _licenseService = licenseService;
@@ -78,9 +84,43 @@ namespace BackendApp.Services
 
             foreach (InsCompany item in dataContainer.InsCompanies)
             {
-                Address address = new Address
+                Subject subject = new Subject
                 {
                     Okato = item.Okato,
+                };
+
+                long subjectId;
+
+                Subject existingSubject = await _subjectService.GetEnitityByAttributes(subject);
+                if (existingSubject != null)
+                {
+                    subjectId = existingSubject.Id;
+                }
+                else
+                {
+                    subjectId = (await _subjectService.SaveSubjectObject(subject)).Id;
+                }
+
+                District district = new District
+                {
+                    SubjectId = subjectId,
+                };
+
+                long districtId;
+
+                District existingDistrict = await _districtService.GetEnitityByAttributes(district);
+                if (existingDistrict != null)
+                {
+                    districtId = existingDistrict.Id;
+                }
+                else
+                {
+                    districtId = (await _districtService.SaveDistrictObject(district)).Id;
+                }
+
+                Address address = new Address
+                {
+                    DistrictId = districtId,
                     Name = item.jurAddress.AddrJ,
                     Index = item.jurAddress.IndexJ
                 };
