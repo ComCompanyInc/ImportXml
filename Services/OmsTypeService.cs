@@ -15,7 +15,7 @@ namespace BackendApp.Services
             _omsTypeRepository = omsTypeRepository;
         }
 
-        public async Task<OmsType> SaveF008_TipOmsObject(OmsType entityData)
+        public async Task<OmsType> SaveOmsTypeObject(OmsType entityData)
         {
             return await _omsTypeRepository.SaveData(entityData);
         }

@@ -48,5 +48,7 @@ namespace BackendApp.Data
         public DbSet<StatType> StatTypes { get; set; }
         public DbSet<f009_StatZl> F009_StatZls { get; set; }
         public DbSet<f010_Subecti> F010_Subects { get; set; }
+        public DbSet<f011_Tipdoc> F011_Tipdocs { get; set; }
+        public DbSet<f012_TipSch> F012_TipSches { get; set; }
     }
 }

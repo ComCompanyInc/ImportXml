@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace BackendApp.Models
@@ -8,6 +9,7 @@ namespace BackendApp.Models
     public class f008_TipOms
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)] // не автоинкремент, задаем вручную
         public long DocId { get; set; }
 
         public long BaseDataId { get; set; }
@@ -19,5 +21,7 @@ namespace BackendApp.Models
         public DateTime DateBeg { get; set; }
 
         public DateTime? DateEnd { get; set; }
+
+        public List<f011_Tipdoc> F011_Tipdocs { get; set; } = new List<f011_Tipdoc>();
     }
 }

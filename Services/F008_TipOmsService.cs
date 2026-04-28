@@ -67,11 +67,12 @@ namespace BackendApp.Services
                 }
                 else
                 {
-                    omsTypeId = (await _omsTypeService.SaveF008_TipOmsObject(omsType)).Id;
+                    omsTypeId = (await _omsTypeService.SaveOmsTypeObject(omsType)).Id;
                 }
 
                 f008_TipOms f008_TipOms = new f008_TipOms()
                 {
+                    DocId = item.Id,
                     BaseDataId = baseDataId,
                     OmsTypeId = omsTypeId,
                     DateBeg = DateTime.ParseExact(item.DateBeg, "dd.MM.yyyy", null),

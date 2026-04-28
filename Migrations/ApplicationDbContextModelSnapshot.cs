@@ -729,10 +729,7 @@ namespace BackendApp.Migrations
             modelBuilder.Entity("BackendApp.Models.f008_TipOms", b =>
                 {
                     b.Property<long>("DocId")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("bigint");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("DocId"));
 
                     b.Property<long>("BaseDataId")
                         .HasColumnType("bigint");
@@ -821,6 +818,34 @@ namespace BackendApp.Migrations
                     b.HasIndex("SubjectId");
 
                     b.ToTable("F010_Subects");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f011_Tipdoc", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<string>("DocNum")
+                        .IsRequired()
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
+
+                    b.Property<string>("DocSer")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
+                    b.Property<long>("F008_TipOmsId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("F008_TipOmsId");
+
+                    b.ToTable("F011_Tipdocs");
                 });
 
             modelBuilder.Entity("BackendApp.Models.f019_PersAccOrg", b =>
@@ -1387,6 +1412,17 @@ namespace BackendApp.Migrations
                     b.Navigation("Subject");
                 });
 
+            modelBuilder.Entity("BackendApp.Models.f011_Tipdoc", b =>
+                {
+                    b.HasOne("BackendApp.Models.f008_TipOms", "F008_TipOms")
+                        .WithMany("F011_Tipdocs")
+                        .HasForeignKey("F008_TipOmsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("F008_TipOms");
+                });
+
             modelBuilder.Entity("BackendApp.Models.f019_PersAccOrg", b =>
                 {
                     b.HasOne("BackendApp.Models.Address", "Address")
@@ -1778,6 +1814,11 @@ namespace BackendApp.Migrations
                     b.Navigation("F002_Smo_InsAdvices");
 
                     b.Navigation("F019_PersAccOrgs");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f008_TipOms", b =>
+                {
+                    b.Navigation("F011_Tipdocs");
                 });
 
             modelBuilder.Entity("BackendApp.Models.f031_ermo", b =>

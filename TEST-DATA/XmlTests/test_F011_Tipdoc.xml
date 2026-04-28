@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<packet>
+  <zglv>
+    <type>Tipdoc</type>
+    <version>3.1</version>
+    <date>15.12.2023</date>
+  </zglv>
+  <zap>
+    <IDDoc>1</IDDoc>
+    <DocName>Паспорт гражданина СССР</DocName>
+    <DocSer>R-ББ</DocSer>
+    <DocNum>999999</DocNum>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDDoc>10</IDDoc>
+    <DocName>Свидетельство о рассмотрении ходатайства о признании иммигранта беженцем на территории Российской Федерации</DocName>
+    <DocSer>S</DocSer>
+    <DocNum>000000000009</DocNum>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND>31.12.2023</DATEEND>
+  </zap>
+  <zap>
+    <IDDoc>10</IDDoc>
+    <DocName>Свидетельство о рассмотрении ходатайства о признании иммигранта беженцем на территории Российской Федерации</DocName>
+    <DocSer>S</DocSer>
+    <DocNum>XXXXXXXXXXX9</DocNum>
+    <DATEBEG>01.01.2024</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDDoc>11</IDDoc>
+    <DocName>Вид на жительство</DocName>
+    <DocSer>S1</DocSer>
+    <DocNum>000000000009</DocNum>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND>31.12.2023</DATEEND>
+  </zap>
+  <zap>
+    <IDDoc>11</IDDoc>
+    <DocName>Вид на жительство</DocName>
+    <DocSer>S1</DocSer>
+    <DocNum>XXXXXXXXXXX9</DocNum>
+    <DATEBEG>01.01.2024</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDDoc>12</IDDoc>
+    <DocName>Удостоверение беженца в Российской Федерации</DocName>
+    <DocSer>S</DocSer>
+    <DocNum>000000000009</DocNum>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND>31.12.2023</DATEEND>
+  </zap>
+  <zap>
+    <IDDoc>12</IDDoc>
+    <DocName>Удостоверение беженца в Российской Федерации</DocName>
+    <DocSer>S</DocSer>
+    <DocNum>XXXXXXXXXXX9</DocNum>
+    <DATEBEG>01.01.2024</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDDoc>13</IDDoc>
+    <DocName>Временное удостоверение личности гражданина Российской Федерации</DocName>
+    <DocSer>S</DocSer>
+    <DocNum>000000000009</DocNum>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND>31.12.2023</DATEEND>
+  </zap>
+  <zap>
+    <IDDoc>13</IDDoc>
+    <DocName>Временное удостоверение личности гражданина Российской Федерации</DocName>
+    <DocSer>S</DocSer>
+    <DocNum>XXXXXXXXXXX9</DocNum>
+    <DATEBEG>01.01.2024</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDDoc>14</IDDoc>
+    <DocName>Паспорт гражданина Российской Федерации</DocName>
+    <DocSer>99 99</DocSer>
+    <DocNum>9999990</DocNum>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND>31.12.2023</DATEEND>
+  </zap>
+  <zap>
+    <IDDoc>14</IDDoc>
+    <DocName>Паспорт гражданина Российской Федерации</DocName>
+    <DocSer>99 99</DocSer>
+    <DocNum>999999X</DocNum>
+    <DATEBEG>01.01.2024</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDDoc>15</IDDoc>
+    <DocName>Заграничный паспорт гражданина Российской Федерации</DocName>
+    <DocSer>99</DocSer>
+    <DocNum>9999999</DocNum>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDDoc>16</IDDoc>
+    <DocName>Паспорт моряка</DocName>
+    <DocSer>ББ</DocSer>
+    <DocNum>999990</DocNum>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND>31.12.2023</DATEEND>
+  </zap>
+  <zap>
+    <IDDoc>16</IDDoc>
+    <DocName>Паспорт моряка</DocName>
+    <DocSer>ББ</DocSer>
+    <DocNum>99999X</DocNum>
+    <DATEBEG>01.01.2024</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDDoc>17</IDDoc>
+    <DocName>Военный билет офицера запаса</DocName>
+    <DocSer>ББ</DocSer>
+    <DocNum>999999</DocNum>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDDoc>18</IDDoc>
+    <DocName>Иные документы</DocName>
+    <DocSer>S1</DocSer>
+    <DocNum>0000000009</DocNum>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND>31.12.2023</DATEEND>
+  </zap>
+  <zap>
+    <IDDoc>18</IDDoc>
+    <DocName>Иные документы</DocName>
+    <DocSer>S1</DocSer>
+    <DocNum>XXXXXXXXX9</DocNum>
+    <DATEBEG>01.01.2024</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDDoc>2</IDDoc>
+    <DocName>Загранпаспорт гражданина СССР</DocName>
+    <DocSer>S</DocSer>
+    <DocNum>00000009</DocNum>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND>31.12.2023</DATEEND>
+  </zap>
+  <zap>
+    <IDDoc>2</IDDoc>
+    <DocName>Загранпаспорт гражданина СССР</DocName>
+    <DocSer>S</DocSer>
+    <DocNum>XXXXXXX9</DocNum>
+    <DATEBEG>01.01.2024</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDDoc>21</IDDoc>
+    <DocName>Документ иностранного гражданина</DocName>
+    <DocSer>S1</DocSer>
+    <DocNum>000000000009</DocNum>
+    <DATEBEG>04.07.2013</DATEBEG>
+    <DATEEND>31.12.2023</DATEEND>
+  </zap>
+  <zap>
+    <IDDoc>21</IDDoc>
+    <DocName>Документ иностранного гражданина</DocName>
+    <DocSer>S1</DocSer>
+    <DocNum>XXXXXXXXXXX9</DocNum>
+    <DATEBEG>01.01.2024</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDDoc>22</IDDoc>
+    <DocName>Документ лица без гражданства</DocName>
+    <DocSer>S1</DocSer>
+    <DocNum>000000000009</DocNum>
+    <DATEBEG>04.07.2013</DATEBEG>
+    <DATEEND>31.12.2023</DATEEND>
+  </zap>
+  <zap>
+    <IDDoc>22</IDDoc>
+    <DocName>Документ лица без гражданства</DocName>
+    <DocSer>S1</DocSer>
+    <DocNum>XXXXXXXXXXX9</DocNum>
+    <DATEBEG>01.01.2024</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDDoc>23</IDDoc>
+    <DocName>Разрешение на временное проживание</DocName>
+    <DocSer>S1</DocSer>
+    <DocNum>000000000009</DocNum>
+    <DATEBEG>04.07.2013</DATEBEG>
+    <DATEEND>31.12.2023</DATEEND>
+  </zap>
+  <zap>
+    <IDDoc>23</IDDoc>
+    <DocName>Разрешение на временное проживание</DocName>
+    <DocSer>S1</DocSer>
+    <DocNum>EEEEEEEEEEEEEEEEEEEEEEEE9</DocNum>
+    <DATEBEG>01.01.2024</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDDoc>24</IDDoc>
+    <DocName>Свидетельство о рождении, выданное не в Российской Федерации</DocName>
+    <DocSer>S1</DocSer>
+    <DocNum>000000000009</DocNum>
+    <DATEBEG>04.07.2013</DATEBEG>
+    <DATEEND>31.12.2023</DATEEND>
+  </zap>
+  <zap>
+    <IDDoc>24</IDDoc>
+    <DocName>Свидетельство о рождении, выданное не в Российской Федерации</DocName>
+    <DocSer>S1</DocSer>
+    <DocNum>EEEEEEEEEEEEEEEEEEEEEEEEC</DocNum>
+    <DATEBEG>01.01.2024</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDDoc>25</IDDoc>
+    <DocName>Свидетельство о предоставлении временного убежища на территории Российской Федерации</DocName>
+    <DocSer>ЦЦ</DocSer>
+    <DocNum>9999999</DocNum>
+    <DATEBEG>07.11.2013</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDDoc>26</IDDoc>
+    <DocName>Удостоверение сотрудника Евразийской экономической комиссии</DocName>
+    <DocSer/>
+    <DocNum>999999</DocNum>
+    <DATEBEG>22.11.2013</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDDoc>27</IDDoc>
+    <DocName>Копия жалобы о лишении статуса беженца</DocName>
+    <DocSer>S</DocSer>
+    <DocNum>000000000009</DocNum>
+    <DATEBEG>23.07.2014</DATEBEG>
+    <DATEEND>31.12.2023</DATEEND>
+  </zap>
+  <zap>
+    <IDDoc>27</IDDoc>
+    <DocName>Копия жалобы о лишении статуса беженца</DocName>
+    <DocSer>S</DocSer>
+    <DocNum>XXXXXXXXXXX9</DocNum>
+    <DATEBEG>01.01.2024</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDDoc>28</IDDoc>
+    <DocName>Иной документ, соответствующий свидетельству о предоставлении убежища на территории Российской Федерации</DocName>
+    <DocSer>S1</DocSer>
+    <DocNum>000000000009</DocNum>
+    <DATEBEG>15.08.2014</DATEBEG>
+    <DATEEND>31.12.2023</DATEEND>
+  </zap>
+  <zap>
+    <IDDoc>28</IDDoc>
+    <DocName>Иной документ, соответствующий свидетельству о предоставлении убежища на территории Российской Федерации</DocName>
+    <DocSer>S1</DocSer>
+    <DocNum>XXXXXXXXXXX9</DocNum>
+    <DATEBEG>01.01.2024</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDDoc>29</IDDoc>
+    <DocName>Трудовой договор</DocName>
+    <DocSer>S1</DocSer>
+    <DocNum>000000000009</DocNum>
+    <DATEBEG>01.01.2017</DATEBEG>
+    <DATEEND>31.12.2023</DATEEND>
+  </zap>
+  <zap>
+    <IDDoc>29</IDDoc>
+    <DocName>Трудовой договор</DocName>
+    <DocSer>S1</DocSer>
+    <DocNum>XXXXXXXXXXX9</DocNum>
+    <DATEBEG>01.01.2024</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDDoc>3</IDDoc>
+    <DocName>Свидетельство о рождении, выданное в Российской Федерации</DocName>
+    <DocSer>R-ББ</DocSer>
+    <DocNum>999999</DocNum>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDDoc>4</IDDoc>
+    <DocName>Удостоверение личности офицера</DocName>
+    <DocSer>ББ</DocSer>
+    <DocNum>9999999</DocNum>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDDoc>5</IDDoc>
+    <DocName>Справка об освобождении из места лишения свободы</DocName>
+    <DocSer>S</DocSer>
+    <DocNum>00000009</DocNum>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND>31.12.2023</DATEEND>
+  </zap>
+  <zap>
+    <IDDoc>5</IDDoc>
+    <DocName>Справка об освобождении из места лишения свободы</DocName>
+    <DocSer>S</DocSer>
+    <DocNum>XXXXXXX9</DocNum>
+    <DATEBEG>01.01.2024</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDDoc>6</IDDoc>
+    <DocName>Паспорт Минморфлота</DocName>
+    <DocSer>ББ</DocSer>
+    <DocNum>999999</DocNum>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDDoc>7</IDDoc>
+    <DocName>Военный билет</DocName>
+    <DocSer>ББ</DocSer>
+    <DocNum>9999990</DocNum>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND>31.12.2023</DATEEND>
+  </zap>
+  <zap>
+    <IDDoc>7</IDDoc>
+    <DocName>Военный билет</DocName>
+    <DocSer>ББ</DocSer>
+    <DocNum>999999X</DocNum>
+    <DATEBEG>01.01.2024</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDDoc>8</IDDoc>
+    <DocName>Дипломатический паспорт гражданина Российской Федерации</DocName>
+    <DocSer>99</DocSer>
+    <DocNum>9999999</DocNum>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDDoc>9</IDDoc>
+    <DocName>Паспорт иностранного гражданина</DocName>
+    <DocSer>S</DocSer>
+    <DocNum>000000000009</DocNum>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND>31.12.2023</DATEEND>
+  </zap>
+  <zap>
+    <IDDoc>9</IDDoc>
+    <DocName>Паспорт иностранного гражданина</DocName>
+    <DocSer>S</DocSer>
+    <DocNum>DDDDDDDDDDDDDDDDDDDDDDDDC</DocNum>
+    <DATEBEG>01.01.2024</DATEBEG>
+    <DATEEND/>
+  </zap>
+</packet>

@@ -22,5 +22,7 @@ namespace BackendApp.Models
         public List<f032_trmo> F032_Trmos { get; set; } = new List<f032_trmo>();
 
         public List<f002_smoEmp> F002_SmoEmps { get; set; } = new List<f002_smoEmp>();
+
+        public List<f012_TipSch> F012_TipSches { get; set; } = new List<f012_TipSch>();
     }
 }

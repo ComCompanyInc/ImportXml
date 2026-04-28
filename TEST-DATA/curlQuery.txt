@@ -25,3 +25,5 @@ F031 -> F032 -> F033 -> F38(f32, f33)
 11) curl.exe -X POST http://localhost:5000/api/F009_StatZl/import/F9 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F009_StatZl.xml"
 
 12) curl.exe -X POST http://localhost:5000/api/F010_Subecti/import/F10 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F010_Subecti.xml"
+
+13) curl.exe -X POST http://localhost:5000/api/F011_Tipdoc/import/F11 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F011_Tipdoc.xml"

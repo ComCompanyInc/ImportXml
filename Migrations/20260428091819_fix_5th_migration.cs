@@ -375,8 +375,7 @@ namespace BackendApp.Migrations
                 name: "F008_TipOms",
                 columns: table => new
                 {
-                    DocId = table.Column<long>(type: "bigint", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    DocId = table.Column<long>(type: "bigint", nullable: false),
                     BaseDataId = table.Column<long>(type: "bigint", nullable: false),
                     OmsTypeId = table.Column<long>(type: "bigint", nullable: false),
                     DateBeg = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -591,6 +590,27 @@ namespace BackendApp.Migrations
                         column: x => x.VedomTypeId,
                         principalTable: "VedomType",
                         principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "F011_Tipdocs",
+                columns: table => new
+                {
+                    Id = table.Column<long>(type: "bigint", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    F008_TipOmsId = table.Column<long>(type: "bigint", nullable: false),
+                    DocSer = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
+                    DocNum = table.Column<string>(type: "nvarchar(25)", maxLength: 25, nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_F011_Tipdocs", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_F011_Tipdocs_F008_TipOms_F008_TipOmsId",
+                        column: x => x.F008_TipOmsId,
+                        principalTable: "F008_TipOms",
+                        principalColumn: "DocId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -817,6 +837,11 @@ namespace BackendApp.Migrations
                 column: "SubjectId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_F011_Tipdocs_F008_TipOmsId",
+                table: "F011_Tipdocs",
+                column: "F008_TipOmsId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_f019_PersAccOrgs_AddressId",
                 table: "f019_PersAccOrgs",
                 column: "AddressId");
@@ -958,13 +983,13 @@ namespace BackendApp.Migrations
                 name: "F007_Vedoms");
 
             migrationBuilder.DropTable(
-                name: "F008_TipOms");
-
-            migrationBuilder.DropTable(
                 name: "F009_StatZls");
 
             migrationBuilder.DropTable(
                 name: "F010_Subects");
+
+            migrationBuilder.DropTable(
+                name: "F011_Tipdocs");
 
             migrationBuilder.DropTable(
                 name: "f019_PersAccOrgs");
@@ -985,16 +1010,19 @@ namespace BackendApp.Migrations
                 name: "VedomType");
 
             migrationBuilder.DropTable(
-                name: "OmsTypes");
+                name: "StatTypes");
 
             migrationBuilder.DropTable(
-                name: "StatTypes");
+                name: "F008_TipOms");
 
             migrationBuilder.DropTable(
                 name: "F002_SmoEmps");
 
             migrationBuilder.DropTable(
                 name: "F033_Spmos");
+
+            migrationBuilder.DropTable(
+                name: "OmsTypes");
 
             migrationBuilder.DropTable(
                 name: "InsIncludes");
