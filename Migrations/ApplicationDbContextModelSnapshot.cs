@@ -132,12 +132,6 @@ namespace BackendApp.Migrations
                     b.Property<long?>("Code")
                         .HasColumnType("bigint");
 
-                    b.Property<DateTime?>("DateBegin")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("DateEnd")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("Name")
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
@@ -848,6 +842,65 @@ namespace BackendApp.Migrations
                     b.ToTable("F011_Tipdocs");
                 });
 
+            modelBuilder.Entity("BackendApp.Models.f012_TipSch", b =>
+                {
+                    b.Property<string>("SchId")
+                        .HasMaxLength(2)
+                        .HasColumnType("nvarchar(2)");
+
+                    b.Property<long>("BaseDataId")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("DateBeg")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DateEnd")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(254)
+                        .HasColumnType("nvarchar(254)");
+
+                    b.Property<string>("ShortName")
+                        .IsRequired()
+                        .HasMaxLength(254)
+                        .HasColumnType("nvarchar(254)");
+
+                    b.HasKey("SchId");
+
+                    b.HasIndex("BaseDataId");
+
+                    b.ToTable("F012_TipSches");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f015_Okrug", b =>
+                {
+                    b.Property<string>("Code")
+                        .HasMaxLength(4)
+                        .HasColumnType("nvarchar(4)");
+
+                    b.Property<long>("BaseDataId")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("DateBeg")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DateEnd")
+                        .HasColumnType("datetime2");
+
+                    b.Property<long>("DistrictId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("Code");
+
+                    b.HasIndex("BaseDataId");
+
+                    b.HasIndex("DistrictId");
+
+                    b.ToTable("F015_Okrugs");
+                });
+
             modelBuilder.Entity("BackendApp.Models.f019_PersAccOrg", b =>
                 {
                     b.Property<long>("Id")
@@ -1423,6 +1476,36 @@ namespace BackendApp.Migrations
                     b.Navigation("F008_TipOms");
                 });
 
+            modelBuilder.Entity("BackendApp.Models.f012_TipSch", b =>
+                {
+                    b.HasOne("BackendApp.Models.BaseData", "BaseData")
+                        .WithMany("F012_TipSches")
+                        .HasForeignKey("BaseDataId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("BaseData");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f015_Okrug", b =>
+                {
+                    b.HasOne("BackendApp.Models.BaseData", "BaseData")
+                        .WithMany()
+                        .HasForeignKey("BaseDataId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.District", "District")
+                        .WithMany()
+                        .HasForeignKey("DistrictId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("BaseData");
+
+                    b.Navigation("District");
+                });
+
             modelBuilder.Entity("BackendApp.Models.f019_PersAccOrg", b =>
                 {
                     b.HasOne("BackendApp.Models.Address", "Address")
@@ -1701,6 +1784,8 @@ namespace BackendApp.Migrations
             modelBuilder.Entity("BackendApp.Models.BaseData", b =>
                 {
                     b.Navigation("F002_SmoEmps");
+
+                    b.Navigation("F012_TipSches");
 
                     b.Navigation("F031_Ermos");
 

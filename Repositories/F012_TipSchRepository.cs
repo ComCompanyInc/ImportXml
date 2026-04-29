@@ -40,6 +40,13 @@ namespace BackendApp.Repositories
 
         public async Task<f012_TipSch> UpdateObject(f012_TipSch existingEntity, f012_TipSch entityData)
         {
+            if (entityData.BaseDataId != null
+                && entityData.BaseDataId != 0
+                && entityData.BaseDataId != existingEntity.BaseDataId)
+            {
+                existingEntity.BaseDataId = entityData.BaseDataId;
+            }
+
             if (!entityData.ShortName.IsNullOrEmpty()
                 && entityData.ShortName != existingEntity.ShortName)
             {

@@ -14,9 +14,9 @@ namespace BackendApp.Models
         [StringLength(250, MinimumLength = 0, ErrorMessage = "Название округа (Name) - не должно превышать 250 символов")]
         public string? Name { get; set; }
 
-        public DateTime? DateBegin { get; set; }
+        //public DateTime? DateBegin { get; set; }
 
-        public DateTime? DateEnd { get; set; }
+        //public DateTime? DateEnd { get; set; }
 
         public long? SubjectId { get; set; }
         public Subject? Subject { get; set; }

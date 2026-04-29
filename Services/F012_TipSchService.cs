@@ -51,12 +51,14 @@ namespace BackendApp.Services
             {
                 f012_TipSch f012_TipSch = new f012_TipSch
                 {
+                    SchId = item.SchId,
+                    BaseDataId = baseDataId,
                     Name = item.Name,
                     ShortName = item.ShortName,
-                    DateBeg = DateTime.ParseExact(item.DateBeg, "dd,MM,yyyy", null),
+                    DateBeg = DateTime.ParseExact(item.DateBeg, "dd.MM.yyyy", null),
                     DateEnd = item.DateEnd.IsNullOrEmpty()
                                 ? null
-                                : DateTime.ParseExact(item.DateEnd, "dd,MM,yyyy", null),
+                                : DateTime.ParseExact(item.DateEnd, "dd.MM.yyyy", null),
                 };
 
                 string f012_TipSchId;

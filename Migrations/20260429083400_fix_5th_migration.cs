@@ -32,6 +32,14 @@ namespace BackendApp.Migrations
                 table: "Organizations");
 
             migrationBuilder.DropColumn(
+                name: "DateBegin",
+                table: "Districts");
+
+            migrationBuilder.DropColumn(
+                name: "DateEnd",
+                table: "Districts");
+
+            migrationBuilder.DropColumn(
                 name: "Okato",
                 table: "Addresses");
 
@@ -175,6 +183,55 @@ namespace BackendApp.Migrations
                         name: "FK_F010_Subects_Subjects_SubjectId",
                         column: x => x.SubjectId,
                         principalTable: "Subjects",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "F012_TipSches",
+                columns: table => new
+                {
+                    SchId = table.Column<string>(type: "nvarchar(2)", maxLength: 2, nullable: false),
+                    BaseDataId = table.Column<long>(type: "bigint", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(254)", maxLength: 254, nullable: false),
+                    ShortName = table.Column<string>(type: "nvarchar(254)", maxLength: 254, nullable: false),
+                    DateBeg = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DateEnd = table.Column<DateTime>(type: "datetime2", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_F012_TipSches", x => x.SchId);
+                    table.ForeignKey(
+                        name: "FK_F012_TipSches_BaseData_BaseDataId",
+                        column: x => x.BaseDataId,
+                        principalTable: "BaseData",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "F015_Okrugs",
+                columns: table => new
+                {
+                    Code = table.Column<string>(type: "nvarchar(4)", maxLength: 4, nullable: false),
+                    BaseDataId = table.Column<long>(type: "bigint", nullable: false),
+                    DistrictId = table.Column<long>(type: "bigint", nullable: false),
+                    DateBeg = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DateEnd = table.Column<DateTime>(type: "datetime2", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_F015_Okrugs", x => x.Code);
+                    table.ForeignKey(
+                        name: "FK_F015_Okrugs_BaseData_BaseDataId",
+                        column: x => x.BaseDataId,
+                        principalTable: "BaseData",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_F015_Okrugs_Districts_DistrictId",
+                        column: x => x.DistrictId,
+                        principalTable: "Districts",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -842,6 +899,21 @@ namespace BackendApp.Migrations
                 column: "F008_TipOmsId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_F012_TipSches_BaseDataId",
+                table: "F012_TipSches",
+                column: "BaseDataId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_F015_Okrugs_BaseDataId",
+                table: "F015_Okrugs",
+                column: "BaseDataId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_F015_Okrugs_DistrictId",
+                table: "F015_Okrugs",
+                column: "DistrictId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_f019_PersAccOrgs_AddressId",
                 table: "f019_PersAccOrgs",
                 column: "AddressId");
@@ -992,6 +1064,12 @@ namespace BackendApp.Migrations
                 name: "F011_Tipdocs");
 
             migrationBuilder.DropTable(
+                name: "F012_TipSches");
+
+            migrationBuilder.DropTable(
+                name: "F015_Okrugs");
+
+            migrationBuilder.DropTable(
                 name: "f019_PersAccOrgs");
 
             migrationBuilder.DropTable(
@@ -1110,6 +1188,18 @@ namespace BackendApp.Migrations
                 maxLength: 500,
                 nullable: false,
                 defaultValue: "");
+
+            migrationBuilder.AddColumn<DateTime>(
+                name: "DateBegin",
+                table: "Districts",
+                type: "datetime2",
+                nullable: true);
+
+            migrationBuilder.AddColumn<DateTime>(
+                name: "DateEnd",
+                table: "Districts",
+                type: "datetime2",
+                nullable: true);
 
             migrationBuilder.AlterColumn<string>(
                 name: "Fax",

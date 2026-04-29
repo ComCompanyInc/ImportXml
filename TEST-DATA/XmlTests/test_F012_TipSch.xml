@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<packet>
+  <zglv>
+    <type>TipSch</type>
+    <version>2.0</version>
+    <date>29.12.2025</date>
+  </zglv>
+  <zap>
+    <IDSch>01</IDSch>
+    <SchNameP>Cчет по базовой программе ОМС</SchNameP>
+    <SchNameK>БП</SchNameK>
+    <DATEBEG>01.01.2024</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDSch>02</IDSch>
+    <SchNameP>Счет по межтерриториальным расчетам</SchNameP>
+    <SchNameK>ИН</SchNameK>
+    <DATEBEG>01.01.2024</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDSch>03</IDSch>
+    <SchNameP>Счет по территориальной программе ОМС (для случаев превышения норматива финансового обеспечения, установленного базовой программой ОМС)</SchNameP>
+    <SchNameK>ЗЛ</SchNameK>
+    <DATEBEG>01.01.2024</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDSch>04</IDSch>
+    <SchNameP>Счет по межтерриториальным расчетам (повторная идентификация)</SchNameP>
+    <SchNameK>ПИ-ИН</SchNameK>
+    <DATEBEG>01.01.2024</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDSch>05</IDSch>
+    <SchNameP>Счет по территориальной программе ОМС (повторная идентификация для случаев превышения норматива финансового обеспечения, установленного базовой программой ОМС)</SchNameP>
+    <SchNameK>ПИ-ЗЛ</SchNameK>
+    <DATEBEG>01.01.2024</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDSch>06</IDSch>
+    <SchNameP>Счет на оплату медицинской помощи, оказанной лицам, не идентифицированным и не застрахованным по ОМС</SchNameP>
+    <SchNameK>НИЛ</SchNameK>
+    <DATEBEG>01.01.2024</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDSch>07</IDSch>
+    <SchNameP>Счет по авиамедицине</SchNameP>
+    <SchNameK>СМП-авиа</SchNameK>
+    <DATEBEG>01.01.2024</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDSch>08</IDSch>
+    <SchNameP>Счет по территориальной программе ОМС (для оплаты страховых случаев, видов и условий оказания медицинской помощи в дополнение к установленным базовой программой ОМС - по психиатрической медицине)</SchNameP>
+    <SchNameK>СМП-психо</SchNameK>
+    <DATEBEG>01.01.2024</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDSch>09</IDSch>
+    <SchNameP>Счет по территориальной программе ОМС (для оплаты страховых случаев, видов и условий оказания медицинской помощи в дополнение к установленным базовой программой ОМС - по КСГ)</SchNameP>
+    <SchNameK>КСГ-СБ</SchNameK>
+    <DATEBEG>01.01.2024</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDSch>10</IDSch>
+    <SchNameP>Счет по территориальной программе ОМС (для оплаты страховых случаев, видов и условий оказания медицинской помощи в дополнение к установленным базовой программой ОМС - по АМБ)</SchNameP>
+    <SchNameK>АМБ-СБ</SchNameK>
+    <DATEBEG>01.01.2024</DATEBEG>
+    <DATEEND/>
+  </zap>
+</packet>

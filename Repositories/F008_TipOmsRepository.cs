@@ -40,6 +40,13 @@ namespace BackendApp.Repositories
 
         public async Task<f008_TipOms> UpdateObject(f008_TipOms existingEntity, f008_TipOms entityData)
         {
+            if (entityData.BaseDataId != null
+                && entityData.BaseDataId != 0
+                && entityData.BaseDataId != existingEntity.BaseDataId)
+            {
+                existingEntity.BaseDataId = entityData.BaseDataId;
+            }
+
             if (entityData.OmsTypeId != null
                 && entityData.OmsTypeId != 0
                 && entityData.OmsTypeId != existingEntity.OmsTypeId)
