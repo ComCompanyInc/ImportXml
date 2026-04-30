@@ -23,24 +23,39 @@ namespace BackendApp.Repositories
         {
             IQueryable<Subject> subjectResult = _context.Subjects;
 
-            if (entityData.Name != null)
+            Subject updatedObject = null;
+            if (!entityData.Name.IsNullOrEmpty())
             {
                 subjectResult = subjectResult
                     .Where(c => c.Name == entityData.Name);
-            }
-            else {
-                return await FindDistrictByOkatoAndSubject(entityData.Okato);
-            }
 
-            return await subjectResult.FirstOrDefaultAsync();
+                Subject existingSubject = await subjectResult.FirstOrDefaultAsync();
+                if (existingSubject != null)
+                {
+                    updatedObject = await UpdateObject(existingSubject, entityData);
+                }
+            }
+            //else {
+            //    return await FindDistrictByOkatoAndSubject(entityData.Okato);
+            //}
+
+            return updatedObject;
         }
 
-        public Task<Subject> UpdateObject(Subject existingEntity, Subject entityData)
+        public async Task<Subject> UpdateObject(Subject existingEntity, Subject entityData)
         {
-            throw new NotImplementedException();
+            if (!entityData.Okato.IsNullOrEmpty())
+            {
+                existingEntity.Okato = entityData.Okato;
+            }
+
+            _context.Update(existingEntity);
+            await _context.SaveChangesAsync();
+
+            return existingEntity;
         }
 
-        public async Task<Subject> FindDistrictByOkatoAndSubject(string Okato)
+        public async Task<Subject> FindSubjectByOkato(string Okato)
         {
             return await _context.Subjects.Where(c => c.Okato == Okato)
                 .FirstOrDefaultAsync();

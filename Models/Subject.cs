@@ -16,5 +16,7 @@ namespace BackendApp.Models
         public string Name { get; set; }
 
         List<District> Districts { get; set; } = new List<District>();
+
+        List<f017_BillTypes> F017_BillTypes { get; set; } = new List<f017_BillTypes>();
     }
 }

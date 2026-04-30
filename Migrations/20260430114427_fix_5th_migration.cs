@@ -384,6 +384,49 @@ namespace BackendApp.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "F017_BillTypes",
+                columns: table => new
+                {
+                    Id = table.Column<long>(type: "bigint", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    BaseDataId = table.Column<long>(type: "bigint", nullable: false),
+                    BudgetSource = table.Column<string>(type: "nvarchar(1)", maxLength: 1, nullable: true),
+                    f012_TipSchId = table.Column<string>(type: "nvarchar(2)", nullable: false),
+                    OrgTypeId = table.Column<long>(type: "bigint", nullable: false),
+                    SubjectId = table.Column<long>(type: "bigint", nullable: false),
+                    DateBeg = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DateEnd = table.Column<DateTime>(type: "datetime2", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_F017_BillTypes", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_F017_BillTypes_BaseData_BaseDataId",
+                        column: x => x.BaseDataId,
+                        principalTable: "BaseData",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_F017_BillTypes_F012_TipSches_f012_TipSchId",
+                        column: x => x.f012_TipSchId,
+                        principalTable: "F012_TipSches",
+                        principalColumn: "SchId",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_F017_BillTypes_OrgTypes_OrgTypeId",
+                        column: x => x.OrgTypeId,
+                        principalTable: "OrgTypes",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_F017_BillTypes_Subjects_SubjectId",
+                        column: x => x.SubjectId,
+                        principalTable: "Subjects",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "F037_Licmos",
                 columns: table => new
                 {
@@ -914,6 +957,26 @@ namespace BackendApp.Migrations
                 column: "DistrictId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_F017_BillTypes_BaseDataId",
+                table: "F017_BillTypes",
+                column: "BaseDataId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_F017_BillTypes_f012_TipSchId",
+                table: "F017_BillTypes",
+                column: "f012_TipSchId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_F017_BillTypes_OrgTypeId",
+                table: "F017_BillTypes",
+                column: "OrgTypeId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_F017_BillTypes_SubjectId",
+                table: "F017_BillTypes",
+                column: "SubjectId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_f019_PersAccOrgs_AddressId",
                 table: "f019_PersAccOrgs",
                 column: "AddressId");
@@ -1064,10 +1127,10 @@ namespace BackendApp.Migrations
                 name: "F011_Tipdocs");
 
             migrationBuilder.DropTable(
-                name: "F012_TipSches");
+                name: "F015_Okrugs");
 
             migrationBuilder.DropTable(
-                name: "F015_Okrugs");
+                name: "F017_BillTypes");
 
             migrationBuilder.DropTable(
                 name: "f019_PersAccOrgs");
@@ -1092,6 +1155,9 @@ namespace BackendApp.Migrations
 
             migrationBuilder.DropTable(
                 name: "F008_TipOms");
+
+            migrationBuilder.DropTable(
+                name: "F012_TipSches");
 
             migrationBuilder.DropTable(
                 name: "F002_SmoEmps");

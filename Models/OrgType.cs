@@ -11,5 +11,7 @@ namespace BackendApp.Models
         public EOrgType OrgTypeName { get; set; }
 
         public List<Organization> Organizations { get; set; } = new List<Organization>();
+
+        public List<f017_BillTypes> F017_BillTypes { get; set; } = new List<f017_BillTypes>();
     }
 }

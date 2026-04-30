@@ -24,5 +24,7 @@ namespace BackendApp.Models
         public List<f002_smoEmp> F002_SmoEmps { get; set; } = new List<f002_smoEmp>();
 
         public List<f012_TipSch> F012_TipSches { get; set; } = new List<f012_TipSch>();
+
+        public List<f017_BillTypes> F017_BillTypes { get; set; } = new List<f017_BillTypes>();
     }
 }

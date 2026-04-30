@@ -23,5 +23,7 @@ namespace BackendApp.Models
         public DateTime DateBeg { get; set; }
 
         public DateTime? DateEnd { get; set; }
+
+        public List<f017_BillTypes> f017_BillTypes { get; set; } = new List<f017_BillTypes>();
     }
 }

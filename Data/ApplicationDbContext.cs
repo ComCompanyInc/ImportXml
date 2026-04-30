@@ -51,5 +51,6 @@ namespace BackendApp.Data
         public DbSet<f011_Tipdoc> F011_Tipdocs { get; set; }
         public DbSet<f012_TipSch> F012_TipSches { get; set; }
         public DbSet<f015_Okrug> F015_Okrugs { get; set; }
+        public DbSet<f017_BillTypes> F017_BillTypes { get; set; }
     }
 }

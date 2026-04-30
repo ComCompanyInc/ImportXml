@@ -63,6 +63,8 @@ namespace BackendApp.Services
 
                 long subjectId;
 
+                Console.WriteLine("SubjName => " + subject.Name);
+
                 Subject existingSubject = await _subjectService.GetEnitityByAttributes(subject);
                 if (existingSubject != null)
                 {

@@ -1,7 +1,7 @@
 ﻿using Azure.Core;
 using BackendApp.Dto;
 using BackendApp.Dto.f002_smo_emp;
-using BackendApp.Dto.f031_ermos;
+using BackendApp.Dto.f017_billtypes;
 using BackendApp.Services;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -13,16 +13,16 @@ namespace BackendApp.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class F002_SmoEmpController : ControllerBase
+    public class F017_BillTypesController : ControllerBase
     {
-        private readonly F002_SmoEmpService _f002_SmoEmpService;
+        private readonly F017_BillTypesService _f017_BillTypesService;
 
-        public F002_SmoEmpController(F002_SmoEmpService f002_SmoEmpService)
+        public F017_BillTypesController(F017_BillTypesService f017_BillTypesService)
         {
-            _f002_SmoEmpService = f002_SmoEmpService;
+            _f017_BillTypesService = f017_BillTypesService;
         }
 
-        [HttpPost("import/F2")]
+        [HttpPost("import/F17")]
         [Consumes("application/xml")]
         public async Task<List<ErrorResponseDto> /*DocumentDto<F31DataDto>*/> ImportXmlData(/*[FromBody] DocumentDto<F31DataDto> dataContainer*/)
         {
@@ -36,8 +36,8 @@ namespace BackendApp.Controllers
 
             // 2. Создаем StringReader для десериализации (приведение полученной xml-строки в кодировке windows-1251 в POCO-обьект DocumentDto<F31DataDto>)
             StringReader stringReader = new StringReader(xmlContent); // в поток передаем строку с полученым xml в нужной нам кодировке windows-1251
-            XmlSerializer serializer = new XmlSerializer(typeof(F2DataDto)); // приводим данные потока к классу-сериализатору xml в обьект XmlSerializer
-            F2DataDto dataContainer = (F2DataDto)serializer.Deserialize(stringReader); // при помощи класса XmlSerializer - сериализуем наш обьект в DocumentDto<F31DataDto>
+            XmlSerializer serializer = new XmlSerializer(typeof(DocumentDto<F17DataDto>)); // приводим данные потока к классу-сериализатору xml в обьект XmlSerializer
+            DocumentDto<F17DataDto> dataContainer = (DocumentDto<F17DataDto>)serializer.Deserialize(stringReader); // при помощи класса XmlSerializer - сериализуем наш обьект в DocumentDto<F31DataDto>
             stringReader.Close(); // ОБЯЗАТЕЛЬНО закрываем
 
             //return dataContainer;
@@ -45,7 +45,7 @@ namespace BackendApp.Controllers
             //return false;
 
             // 3. Сохраняем данные
-            return await _f002_SmoEmpService.SaveDataFromF2(dataContainer);
+            return await _f017_BillTypesService.SaveDataFromF17(dataContainer);
         }
     }
 }

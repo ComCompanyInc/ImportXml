@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<packet>
+  <zglv>
+    <type>BillTypes</type>
+    <version>3.0</version>
+    <date>11.03.2026</date>
+  </zglv>
+  <zap>
+    <tf_okato>32000</tf_okato>
+    <orgType>1</orgType>
+    <billcod>02</billcod>
+    <bill_namp>Счет по межтерриториальным расчетам</bill_namp>
+    <bill_namk>ИН</bill_namk>
+    <datebeg>01.01.2025</datebeg>
+    <dateend/>
+    <IS_PAY>1</IS_PAY>
+  </zap>
+  <zap>
+    <tf_okato>32000</tf_okato>
+    <orgType>2</orgType>
+    <billcod>03</billcod>
+    <bill_namp>Счет по территориальной программе ОМС (для случаев превышения норматива финансового обеспечения, установленного базовой программой ОМС)</bill_namp>
+    <bill_namk>ЗЛ</bill_namk>
+    <datebeg>01.01.2025</datebeg>
+    <dateend/>
+    <IS_PAY>1</IS_PAY>
+  </zap>
+</packet>

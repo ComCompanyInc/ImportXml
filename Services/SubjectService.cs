@@ -24,5 +24,10 @@ namespace BackendApp.Services
         {
             return await _subjectRepository.GetEnitityByAttributes(subject);
         }
+
+        public async Task<Subject> FindSubjectByOkato(string okato)
+        {
+            return await _subjectRepository.FindSubjectByOkato(okato);
+        }
     }
 }

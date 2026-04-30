@@ -901,6 +901,50 @@ namespace BackendApp.Migrations
                     b.ToTable("F015_Okrugs");
                 });
 
+            modelBuilder.Entity("BackendApp.Models.f017_BillTypes", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<long>("BaseDataId")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("BudgetSource")
+                        .HasMaxLength(1)
+                        .HasColumnType("nvarchar(1)");
+
+                    b.Property<DateTime>("DateBeg")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DateEnd")
+                        .HasColumnType("datetime2");
+
+                    b.Property<long>("OrgTypeId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("SubjectId")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("f012_TipSchId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BaseDataId");
+
+                    b.HasIndex("OrgTypeId");
+
+                    b.HasIndex("SubjectId");
+
+                    b.HasIndex("f012_TipSchId");
+
+                    b.ToTable("F017_BillTypes");
+                });
+
             modelBuilder.Entity("BackendApp.Models.f019_PersAccOrg", b =>
                 {
                     b.Property<long>("Id")
@@ -1506,6 +1550,41 @@ namespace BackendApp.Migrations
                     b.Navigation("District");
                 });
 
+            modelBuilder.Entity("BackendApp.Models.f017_BillTypes", b =>
+                {
+                    b.HasOne("BackendApp.Models.BaseData", "BaseData")
+                        .WithMany("F017_BillTypes")
+                        .HasForeignKey("BaseDataId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.OrgType", "OrgType")
+                        .WithMany("F017_BillTypes")
+                        .HasForeignKey("OrgTypeId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.Subject", "Subject")
+                        .WithMany()
+                        .HasForeignKey("SubjectId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.f012_TipSch", "f012_TipSch")
+                        .WithMany("f017_BillTypes")
+                        .HasForeignKey("f012_TipSchId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("BaseData");
+
+                    b.Navigation("OrgType");
+
+                    b.Navigation("Subject");
+
+                    b.Navigation("f012_TipSch");
+                });
+
             modelBuilder.Entity("BackendApp.Models.f019_PersAccOrg", b =>
                 {
                     b.HasOne("BackendApp.Models.Address", "Address")
@@ -1787,6 +1866,8 @@ namespace BackendApp.Migrations
 
                     b.Navigation("F012_TipSches");
 
+                    b.Navigation("F017_BillTypes");
+
                     b.Navigation("F031_Ermos");
 
                     b.Navigation("F032_Trmos");
@@ -1846,6 +1927,8 @@ namespace BackendApp.Migrations
 
             modelBuilder.Entity("BackendApp.Models.OrgType", b =>
                 {
+                    b.Navigation("F017_BillTypes");
+
                     b.Navigation("Organizations");
                 });
 
@@ -1904,6 +1987,11 @@ namespace BackendApp.Migrations
             modelBuilder.Entity("BackendApp.Models.f008_TipOms", b =>
                 {
                     b.Navigation("F011_Tipdocs");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f012_TipSch", b =>
+                {
+                    b.Navigation("f017_BillTypes");
                 });
 
             modelBuilder.Entity("BackendApp.Models.f031_ermo", b =>

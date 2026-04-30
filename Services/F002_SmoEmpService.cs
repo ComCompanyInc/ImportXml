@@ -62,8 +62,10 @@ namespace BackendApp.Services
             _f002_Smo_InsAdviceService = f002_Smo_InsAdviceService;
         }
 
-        public async Task<bool> SaveDataFromF2(F2DataDto dataContainer)
+        public async Task<List<ErrorResponseDto>> SaveDataFromF2(F2DataDto dataContainer)
         {
+            List<ErrorResponseDto> errors = new List<ErrorResponseDto>();
+
             BaseData baseData = new BaseData
             {
                 Version = dataContainer.Version,
@@ -84,21 +86,40 @@ namespace BackendApp.Services
 
             foreach (InsCompany item in dataContainer.InsCompanies)
             {
-                Subject subject = new Subject
-                {
-                    Okato = item.Okato,
-                };
+                //Subject subject = new Subject
+                //{
+                //    Okato = item.Okato,
+                //};
+
+                //long subjectId;
+
+                //Subject existingSubject = await _subjectService.GetEnitityByAttributes(subject);
+                //if (existingSubject != null)
+                //{
+                //    subjectId = existingSubject.Id;
+                //}
+                //else
+                //{
+                //    subjectId = (await _subjectService.SaveSubjectObject(subject)).Id;
+                //}
 
                 long subjectId;
 
-                Subject existingSubject = await _subjectService.GetEnitityByAttributes(subject);
-                if (existingSubject != null)
+                Subject existingSubject = await _subjectService.FindSubjectByOkato(item.Okato);
+                if (existingSubject == null)
                 {
-                    subjectId = existingSubject.Id;
+                    errors.Add(
+                        new ErrorResponseDto
+                        {
+                            ErrorMessage = $"Ошибка: В F002_SmoEmp с нахождением субьекта по ОКАТО: " + item.Okato + " (таблица Subject) - Сначала импортируйте субьекты (F010_Subecti) и повторите попытку!",
+                            ConflictObject = existingSubject
+                        }
+                    );
+
+                    continue; // пропускаем итерацию формирования текущей записи F002
                 }
-                else
-                {
-                    subjectId = (await _subjectService.SaveSubjectObject(subject)).Id;
+                else {
+                    subjectId = existingSubject.Id;
                 }
 
                 District district = new District
@@ -345,7 +366,7 @@ namespace BackendApp.Services
                 }
             }
 
-            return true;
+            return errors;
         }
 
         public async Task<f002_smoEmp> SaveF002_SpmoEmpObject(f002_smoEmp entityData)

@@ -98,7 +98,7 @@ namespace BackendApp.Services
 
                 f011_Tipdoc f011_Tipdoc = new f011_Tipdoc
                 {
-                    F008_TipOms = f008_TipOms,
+                    F008_TipOms = await _f008_TipOmsService.GetEnitityByAttributes(f008_TipOms), // берем обьект из БД по аттрибутам
                     F008_TipOmsId = f008_TipOmsId,
                     //BaseDataId = baseDataId,
 
