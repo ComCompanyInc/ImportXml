@@ -442,6 +442,24 @@ namespace BackendApp.Migrations
                     b.ToTable("People");
                 });
 
+            modelBuilder.Entity("BackendApp.Models.RefusalGround", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("RefusalGrounds");
+                });
+
             modelBuilder.Entity("BackendApp.Models.StatType", b =>
                 {
                     b.Property<long>("Id")
@@ -872,6 +890,61 @@ namespace BackendApp.Migrations
                     b.HasIndex("BaseDataId");
 
                     b.ToTable("F012_TipSches");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f014_OplOtk", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<long>("BaseDataId")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("CodePG")
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<decimal?>("CoefForfeit")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("CoefNonPay")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("DateBeg")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DateEnd")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("ErrorCode")
+                        .HasColumnType("int");
+
+                    b.Property<string>("OfficialComment")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<long>("RefusalGroundId")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("RefusalReason")
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<long?>("f006_VidExpVidId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BaseDataId");
+
+                    b.HasIndex("RefusalGroundId");
+
+                    b.HasIndex("f006_VidExpVidId");
+
+                    b.ToTable("F014_OplOtks");
                 });
 
             modelBuilder.Entity("BackendApp.Models.f015_Okrug", b =>
@@ -1531,6 +1604,32 @@ namespace BackendApp.Migrations
                     b.Navigation("BaseData");
                 });
 
+            modelBuilder.Entity("BackendApp.Models.f014_OplOtk", b =>
+                {
+                    b.HasOne("BackendApp.Models.BaseData", "BaseData")
+                        .WithMany("F014_OplOtks")
+                        .HasForeignKey("BaseDataId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.RefusalGround", "RefusalGround")
+                        .WithMany()
+                        .HasForeignKey("RefusalGroundId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.f006_VidExp", "F006_VidExp")
+                        .WithMany("F014_OplOtk")
+                        .HasForeignKey("f006_VidExpVidId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.Navigation("BaseData");
+
+                    b.Navigation("F006_VidExp");
+
+                    b.Navigation("RefusalGround");
+                });
+
             modelBuilder.Entity("BackendApp.Models.f015_Okrug", b =>
                 {
                     b.HasOne("BackendApp.Models.BaseData", "BaseData")
@@ -1866,6 +1965,8 @@ namespace BackendApp.Migrations
 
                     b.Navigation("F012_TipSches");
 
+                    b.Navigation("F014_OplOtks");
+
                     b.Navigation("F017_BillTypes");
 
                     b.Navigation("F031_Ermos");
@@ -1982,6 +2083,11 @@ namespace BackendApp.Migrations
                     b.Navigation("F002_Smo_InsAdvices");
 
                     b.Navigation("F019_PersAccOrgs");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f006_VidExp", b =>
+                {
+                    b.Navigation("F014_OplOtk");
                 });
 
             modelBuilder.Entity("BackendApp.Models.f008_TipOms", b =>

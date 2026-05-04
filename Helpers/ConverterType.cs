@@ -23,5 +23,15 @@ namespace BackendApp.Helpers
                 return null;
             }
         }
+
+        public static decimal? FromStringToDecimal(this string s)
+        {
+            return decimal.TryParse(s, out decimal result) ? result : null;
+        }
+
+        public static long? FromStringToLong(this string s)
+        {
+            return long.TryParse(s, out long result) ? result : null;
+        }
     }
 }

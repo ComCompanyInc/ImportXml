@@ -19,5 +19,7 @@ namespace BackendApp.Models
         public DateTime DateBeg { get; set; }
 
         public DateTime? DateEnd { get; set; }
+
+        public List<f014_OplOtk> F014_OplOtk { get; set; } = new List<f014_OplOtk>();
     }
 }

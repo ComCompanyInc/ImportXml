@@ -33,3 +33,5 @@ F031 -> F032 -> F033 -> F38(f32, f33)
 15) curl.exe -X POST http://localhost:5000/api/F015_Okrug/import/F15 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F015_Okrug.xml"
 
 16) curl.exe -X POST http://localhost:5000/api/F017_BillTypes/import/F17 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F017_BillTypes.xml"
+
+17) curl.exe -X POST http://localhost:5000/api/F014_OplOtk/import/F14 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F014_OplOtk.xml"

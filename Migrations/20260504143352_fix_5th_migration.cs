@@ -330,6 +330,19 @@ namespace BackendApp.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "RefusalGrounds",
+                columns: table => new
+                {
+                    Id = table.Column<long>(type: "bigint", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_RefusalGrounds", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "StatTypes",
                 columns: table => new
                 {
@@ -694,6 +707,47 @@ namespace BackendApp.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "F014_OplOtks",
+                columns: table => new
+                {
+                    Id = table.Column<long>(type: "bigint", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ErrorCode = table.Column<int>(type: "int", nullable: false),
+                    BaseDataId = table.Column<long>(type: "bigint", nullable: false),
+                    f006_VidExpVidId = table.Column<long>(type: "bigint", nullable: true),
+                    RefusalGroundId = table.Column<long>(type: "bigint", nullable: false),
+                    RefusalReason = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: true),
+                    OfficialComment = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
+                    CoefNonPay = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    CoefForfeit = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    CodePG = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
+                    DateBeg = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DateEnd = table.Column<DateTime>(type: "datetime2", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_F014_OplOtks", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_F014_OplOtks_BaseData_BaseDataId",
+                        column: x => x.BaseDataId,
+                        principalTable: "BaseData",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_F014_OplOtks_F006_VidExps_f006_VidExpVidId",
+                        column: x => x.f006_VidExpVidId,
+                        principalTable: "F006_VidExps",
+                        principalColumn: "VidId",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_F014_OplOtks_RefusalGrounds_RefusalGroundId",
+                        column: x => x.RefusalGroundId,
+                        principalTable: "RefusalGrounds",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "F011_Tipdocs",
                 columns: table => new
                 {
@@ -947,6 +1001,21 @@ namespace BackendApp.Migrations
                 column: "BaseDataId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_F014_OplOtks_BaseDataId",
+                table: "F014_OplOtks",
+                column: "BaseDataId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_F014_OplOtks_f006_VidExpVidId",
+                table: "F014_OplOtks",
+                column: "f006_VidExpVidId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_F014_OplOtks_RefusalGroundId",
+                table: "F014_OplOtks",
+                column: "RefusalGroundId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_F015_Okrugs_BaseDataId",
                 table: "F015_Okrugs",
                 column: "BaseDataId");
@@ -1112,9 +1181,6 @@ namespace BackendApp.Migrations
                 name: "F005_StatOpls");
 
             migrationBuilder.DropTable(
-                name: "F006_VidExps");
-
-            migrationBuilder.DropTable(
                 name: "F007_Vedoms");
 
             migrationBuilder.DropTable(
@@ -1125,6 +1191,9 @@ namespace BackendApp.Migrations
 
             migrationBuilder.DropTable(
                 name: "F011_Tipdocs");
+
+            migrationBuilder.DropTable(
+                name: "F014_OplOtks");
 
             migrationBuilder.DropTable(
                 name: "F015_Okrugs");
@@ -1145,9 +1214,6 @@ namespace BackendApp.Migrations
                 name: "PaymentStatuses");
 
             migrationBuilder.DropTable(
-                name: "ExpTypes");
-
-            migrationBuilder.DropTable(
                 name: "VedomType");
 
             migrationBuilder.DropTable(
@@ -1155,6 +1221,12 @@ namespace BackendApp.Migrations
 
             migrationBuilder.DropTable(
                 name: "F008_TipOms");
+
+            migrationBuilder.DropTable(
+                name: "F006_VidExps");
+
+            migrationBuilder.DropTable(
+                name: "RefusalGrounds");
 
             migrationBuilder.DropTable(
                 name: "F012_TipSches");
@@ -1167,6 +1239,9 @@ namespace BackendApp.Migrations
 
             migrationBuilder.DropTable(
                 name: "OmsTypes");
+
+            migrationBuilder.DropTable(
+                name: "ExpTypes");
 
             migrationBuilder.DropTable(
                 name: "InsIncludes");
