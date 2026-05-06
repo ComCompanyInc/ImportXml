@@ -112,5 +112,10 @@ namespace BackendApp.Services
         {
             return await _f010_SubectiRepository.GetEnitityByAttributes(entityData);
         }
+
+        public async Task<f010_Subecti> FindF10BySubjectId(long subjectId)
+        {
+            return await _f010_SubectiRepository.FindF10BySubjectId(subjectId);
+        }
     }
 }

@@ -54,5 +54,7 @@ namespace BackendApp.Data
         public DbSet<f017_BillTypes> F017_BillTypes { get; set; }
         public DbSet<f014_OplOtk> F014_OplOtks { get; set; }
         public DbSet<RefusalGround> RefusalGrounds { get; set; }
+        public DbSet<Account> Accounts { get; set; }
+        public DbSet<f001_tfoms> F001_Tfoms { get; set; }
     }
 }

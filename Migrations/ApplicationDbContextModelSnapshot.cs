@@ -22,6 +22,34 @@ namespace BackendApp.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("BackendApp.Models.Account", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<string>("Bank")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<string>("Rs")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Accounts");
+                });
+
             modelBuilder.Entity("BackendApp.Models.Address", b =>
                 {
                     b.Property<long>("Id")
@@ -534,6 +562,81 @@ namespace BackendApp.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("VidTypes");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f001_tfoms", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<long>("AddressId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("BaseDataId")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("Bic")
+                        .IsRequired()
+                        .HasMaxLength(9)
+                        .HasColumnType("nvarchar(9)");
+
+                    b.Property<long>("CommunicationId")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("DBegin")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DEdit")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DEnd")
+                        .HasColumnType("datetime2");
+
+                    b.Property<long>("DocumentId")
+                        .HasColumnType("bigint");
+
+                    b.Property<bool>("NoSmo")
+                        .HasColumnType("bit");
+
+                    b.Property<long>("OrganizationId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("PersonId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("ReceiverAccountId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("SenderAccountId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("f010_SubectiId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AddressId");
+
+                    b.HasIndex("BaseDataId");
+
+                    b.HasIndex("CommunicationId");
+
+                    b.HasIndex("DocumentId");
+
+                    b.HasIndex("OrganizationId");
+
+                    b.HasIndex("PersonId");
+
+                    b.HasIndex("ReceiverAccountId");
+
+                    b.HasIndex("SenderAccountId");
+
+                    b.HasIndex("f010_SubectiId");
+
+                    b.ToTable("F001_Tfoms");
                 });
 
             modelBuilder.Entity("BackendApp.Models.f002_InsInclude", b =>
@@ -1377,6 +1480,81 @@ namespace BackendApp.Migrations
                     b.Navigation("OrgName");
 
                     b.Navigation("OrgType");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f001_tfoms", b =>
+                {
+                    b.HasOne("BackendApp.Models.Address", "Address")
+                        .WithMany()
+                        .HasForeignKey("AddressId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.BaseData", "BaseData")
+                        .WithMany()
+                        .HasForeignKey("BaseDataId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.Communication", "Communication")
+                        .WithMany()
+                        .HasForeignKey("CommunicationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.Document", "Document")
+                        .WithMany()
+                        .HasForeignKey("DocumentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.Organization", "Organization")
+                        .WithMany()
+                        .HasForeignKey("OrganizationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.Person", "Person")
+                        .WithMany()
+                        .HasForeignKey("PersonId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.Account", "ReceiverAccount")
+                        .WithMany()
+                        .HasForeignKey("ReceiverAccountId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.Account", "SenderAccount")
+                        .WithMany()
+                        .HasForeignKey("SenderAccountId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("BackendApp.Models.f010_Subecti", "F010_Subecti")
+                        .WithMany()
+                        .HasForeignKey("f010_SubectiId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Address");
+
+                    b.Navigation("BaseData");
+
+                    b.Navigation("Communication");
+
+                    b.Navigation("Document");
+
+                    b.Navigation("F010_Subecti");
+
+                    b.Navigation("Organization");
+
+                    b.Navigation("Person");
+
+                    b.Navigation("ReceiverAccount");
+
+                    b.Navigation("SenderAccount");
                 });
 
             modelBuilder.Entity("BackendApp.Models.f002_InsInclude", b =>

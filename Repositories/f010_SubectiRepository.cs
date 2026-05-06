@@ -77,5 +77,12 @@ namespace BackendApp.Repositories
 
             return existingEntity;
         }
+
+        public async Task<f010_Subecti> FindF10BySubjectId(long subjectId)
+        {
+            return await _context.F010_Subects
+                .Where(c => c.SubjectId == subjectId)
+                .FirstOrDefaultAsync();
+        }
     }
 }

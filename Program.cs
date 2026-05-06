@@ -57,6 +57,8 @@ builder.Services.AddScoped<F015_OkrugService>();
 builder.Services.AddScoped<F017_BillTypesService>();
 builder.Services.AddScoped<RefusalGroundService>();
 builder.Services.AddScoped<F014_OplOtkService>();
+builder.Services.AddScoped<AccountService>();
+builder.Services.AddScoped<F001_TfomsService>();
 
 // регестируем все репозиторные классы приложения для DI
 builder.Services.AddScoped<F031_ErmosRepository>();
@@ -99,6 +101,8 @@ builder.Services.AddScoped<F015_OkrugRepository>();
 builder.Services.AddScoped<F017_BillTypesRepository>();
 builder.Services.AddScoped<RefusalGroundRepository>();
 builder.Services.AddScoped<F014_OplOtkRepository>();
+builder.Services.AddScoped<AccountRepository>();
+builder.Services.AddScoped<F001_TfomsRepository>();
 
 // Задаем лимит тела запросов на сервер до 100 Мб
 builder.WebHost.ConfigureKestrel(options =>
