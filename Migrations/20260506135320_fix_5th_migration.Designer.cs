@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BackendApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20260506081539_fix_5th_migration")]
+    [Migration("20260506135320_fix_5th_migration")]
     partial class fix_5th_migration
     {
         /// <inheritdoc />
@@ -1156,7 +1156,7 @@ namespace BackendApp.Migrations
 
                     b.HasIndex("OrganizationId");
 
-                    b.ToTable("f019_PersAccOrgs");
+                    b.ToTable("F019_PersAccOrgs");
                 });
 
             modelBuilder.Entity("BackendApp.Models.f031_ermo", b =>

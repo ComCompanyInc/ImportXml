@@ -1153,7 +1153,7 @@ namespace BackendApp.Migrations
 
                     b.HasIndex("OrganizationId");
 
-                    b.ToTable("f019_PersAccOrgs");
+                    b.ToTable("F019_PersAccOrgs");
                 });
 
             modelBuilder.Entity("BackendApp.Models.f031_ermo", b =>

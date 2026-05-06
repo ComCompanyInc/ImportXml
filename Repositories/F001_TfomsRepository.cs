@@ -25,7 +25,7 @@ namespace BackendApp.Repositories
 
             f001_tfoms updatedF001_Tfoms = null;
             if (entityData.F010_Subecti != null
-                && entityData.F010_Subecti.CodeTf.IsNullOrEmpty())
+                && !entityData.F010_Subecti.CodeTf.IsNullOrEmpty())
             {
                 f001_TfomsResult = f001_TfomsResult
                     .Where(c => c.F010_Subecti.CodeTf == entityData.F010_Subecti.CodeTf);

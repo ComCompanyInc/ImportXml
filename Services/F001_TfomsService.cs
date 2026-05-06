@@ -298,6 +298,8 @@ namespace BackendApp.Services
                 // сохранение F001
                 f001_tfoms f001_Tfoms = new f001_tfoms
                 {
+                    F010_Subecti = existingF010_Subject,
+
                     f010_SubectiId = f010_SubjectId,
                     AddressId = addresId,
                     CommunicationId = communicationId,
@@ -321,6 +323,9 @@ namespace BackendApp.Services
                 long f001_TfomsId;
 
                 f001_tfoms existingF001_Tfoms = await this.GetEnitityByAttributes(f001_Tfoms);
+
+                //Console.WriteLine("existingF001->> " + System.Text.Json.JsonSerializer.Serialize(existingF001_Tfoms));
+                
                 if (existingF001_Tfoms != null)
                 {
                     f001_TfomsId = existingF001_Tfoms.Id;

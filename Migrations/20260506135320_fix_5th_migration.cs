@@ -933,7 +933,7 @@ namespace BackendApp.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "f019_PersAccOrgs",
+                name: "F019_PersAccOrgs",
                 columns: table => new
                 {
                     Id = table.Column<long>(type: "bigint", nullable: false)
@@ -946,20 +946,20 @@ namespace BackendApp.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_f019_PersAccOrgs", x => x.Id);
+                    table.PrimaryKey("PK_F019_PersAccOrgs", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_f019_PersAccOrgs_Addresses_AddressId",
+                        name: "FK_F019_PersAccOrgs_Addresses_AddressId",
                         column: x => x.AddressId,
                         principalTable: "Addresses",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_f019_PersAccOrgs_F002_SmoEmps_F002_SmoEmpId",
+                        name: "FK_F019_PersAccOrgs_F002_SmoEmps_F002_SmoEmpId",
                         column: x => x.F002_SmoEmpId,
                         principalTable: "F002_SmoEmps",
                         principalColumn: "SmoCod",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_f019_PersAccOrgs_Organizations_OrganizationId",
+                        name: "FK_F019_PersAccOrgs_Organizations_OrganizationId",
                         column: x => x.OrganizationId,
                         principalTable: "Organizations",
                         principalColumn: "Id");
@@ -1186,18 +1186,18 @@ namespace BackendApp.Migrations
                 column: "SubjectId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_f019_PersAccOrgs_AddressId",
-                table: "f019_PersAccOrgs",
+                name: "IX_F019_PersAccOrgs_AddressId",
+                table: "F019_PersAccOrgs",
                 column: "AddressId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_f019_PersAccOrgs_F002_SmoEmpId",
-                table: "f019_PersAccOrgs",
+                name: "IX_F019_PersAccOrgs_F002_SmoEmpId",
+                table: "F019_PersAccOrgs",
                 column: "F002_SmoEmpId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_f019_PersAccOrgs_OrganizationId",
-                table: "f019_PersAccOrgs",
+                name: "IX_F019_PersAccOrgs_OrganizationId",
+                table: "F019_PersAccOrgs",
                 column: "OrganizationId");
 
             migrationBuilder.CreateIndex(
@@ -1342,7 +1342,7 @@ namespace BackendApp.Migrations
                 name: "F017_BillTypes");
 
             migrationBuilder.DropTable(
-                name: "f019_PersAccOrgs");
+                name: "F019_PersAccOrgs");
 
             migrationBuilder.DropTable(
                 name: "F037_Licmos");
