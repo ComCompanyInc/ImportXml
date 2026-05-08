@@ -24,13 +24,22 @@ namespace BackendApp.Repositories
             IQueryable<f010_Subecti> f010_SubectsResult = _context.F010_Subects;
 
             f010_Subecti updatedF010_Subecti = null;
+            
             if (!entityData.CodeTf.IsNullOrEmpty()) // CodeTf - здесь часть уникальной записи
             {
-                if (!entityData.Subject.Okato.IsNullOrEmpty()) // okato - здесь часть уникальной записи
+                f010_Subecti existingF010_Subecti = await f010_SubectsResult
+                    .Where(c => c.CodeTf == entityData.CodeTf)
+                .FirstOrDefaultAsync();
+            }
+            
+            if (entityData.Subject != null
+                && !entityData.Subject.Okato.IsNullOrEmpty()) // okato - здесь часть уникальной записи
+            {
+                if (entityData.DateEnd == null)
                 {
-                    f010_Subecti existingF010_Subecti = await f010_SubectsResult
-                        .Where(c => c.CodeTf == entityData.CodeTf
-                            && c.Subject.Okato == entityData.Subject.Okato)
+                     f010_Subecti existingF010_Subecti = await f010_SubectsResult
+                        .Where(c => c.Subject.Okato == entityData.Subject.Okato
+                            && c.DateEnd == null)
                         .FirstOrDefaultAsync();
 
                     if (existingF010_Subecti != null)
@@ -45,11 +54,11 @@ namespace BackendApp.Repositories
 
         public async Task<f010_Subecti> UpdateObject(f010_Subecti existingEntity, f010_Subecti entityData)
         {
-            if (!entityData.CodeTf.IsNullOrEmpty()
-                && entityData.CodeTf != existingEntity.CodeTf)
-            {
-                existingEntity.CodeTf = entityData.CodeTf;
-            }
+            //if (!entityData.CodeTf.IsNullOrEmpty()
+            //    && entityData.CodeTf != existingEntity.CodeTf)
+            //{
+            //    existingEntity.CodeTf = entityData.CodeTf;
+            //}
 
             if (entityData.SubjectId != null
                 && entityData.SubjectId != 0
@@ -58,31 +67,24 @@ namespace BackendApp.Repositories
                 existingEntity.SubjectId = entityData.SubjectId;
             }
 
-            if (entityData.DateBeg != null
-                && entityData.DateBeg != default(DateTime)
-                && entityData.DateBeg != existingEntity.DateBeg)
-            {
-                existingEntity.DateBeg = existingEntity.DateBeg;
-            }
+            //if (entityData.DateBeg != null
+            //    && entityData.DateBeg != default(DateTime)
+            //    && entityData.DateBeg != existingEntity.DateBeg)
+            //{
+            //    existingEntity.DateBeg = existingEntity.DateBeg;
+            //}
 
             if (entityData.DateEnd != null
                 && entityData.DateEnd != default(DateTime)
                 && entityData.DateEnd != existingEntity.DateEnd)
             {
-                existingEntity.DateEnd = existingEntity.DateEnd;
+                existingEntity.DateEnd = entityData.DateEnd;
             }
 
             _context.Update(existingEntity);
             await _context.SaveChangesAsync();
 
             return existingEntity;
-        }
-
-        public async Task<f010_Subecti> FindF10BySubjectId(long subjectId)
-        {
-            return await _context.F010_Subects
-                .Where(c => c.SubjectId == subjectId)
-                .FirstOrDefaultAsync();
         }
     }
 }

@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BackendApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20260506135320_fix_5th_migration")]
+    [Migration("20260508072623_fix_5th_migration")]
     partial class fix_5th_migration
     {
         /// <inheritdoc />
@@ -1138,23 +1138,32 @@ namespace BackendApp.Migrations
                     b.Property<DateTime>("DateBeg")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("DateEnd")
+                    b.Property<DateTime?>("DateEnd")
                         .HasColumnType("datetime2");
 
+                    b.Property<long>("F001_TfomsId")
+                        .HasColumnType("bigint");
+
                     b.Property<string>("F002_SmoEmpId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(5)");
 
                     b.Property<long?>("OrganizationId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("SubjectId")
                         .HasColumnType("bigint");
 
                     b.HasKey("Id");
 
                     b.HasIndex("AddressId");
 
+                    b.HasIndex("F001_TfomsId");
+
                     b.HasIndex("F002_SmoEmpId");
 
                     b.HasIndex("OrganizationId");
+
+                    b.HasIndex("SubjectId");
 
                     b.ToTable("F019_PersAccOrgs");
                 });
@@ -1867,25 +1876,38 @@ namespace BackendApp.Migrations
 
             modelBuilder.Entity("BackendApp.Models.f019_PersAccOrg", b =>
                 {
-                    b.HasOne("BackendApp.Models.Address", "Address")
+                    b.HasOne("BackendApp.Models.Address", null)
                         .WithMany("F019_PersAccOrgs")
                         .HasForeignKey("AddressId");
+
+                    b.HasOne("BackendApp.Models.f001_tfoms", "F001_Tfoms")
+                        .WithMany()
+                        .HasForeignKey("F001_TfomsId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
 
                     b.HasOne("BackendApp.Models.f002_smoEmp", "F002_SmoEmp")
                         .WithMany("F019_PersAccOrgs")
                         .HasForeignKey("F002_SmoEmpId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("BackendApp.Models.Organization", "Organization")
                         .WithMany("F019_PersAccOrgs")
                         .HasForeignKey("OrganizationId");
 
-                    b.Navigation("Address");
+                    b.HasOne("BackendApp.Models.Subject", "Subject")
+                        .WithMany()
+                        .HasForeignKey("SubjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("F001_Tfoms");
 
                     b.Navigation("F002_SmoEmp");
 
                     b.Navigation("Organization");
+
+                    b.Navigation("Subject");
                 });
 
             modelBuilder.Entity("BackendApp.Models.f031_ermo", b =>

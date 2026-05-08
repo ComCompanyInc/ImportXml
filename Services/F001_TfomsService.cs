@@ -141,9 +141,27 @@ namespace BackendApp.Services
                     addresId = (await _addressService.SaveAddressObject(address)).Id;
                 }
 
+                f010_Subecti f010_Subecti = new f010_Subecti
+                {
+                    CodeTf = item.CodeTf,
+                    SubjectId = subjectId,
+
+                    Subject = existingSubject
+                };
+
                 long f010_SubjectId;
 
-                f010_Subecti existingF010_Subject = await _f010_SubectiService.FindF10BySubjectId(subjectId);
+                f010_Subecti existingF010_Subject = await _f010_SubectiService.GetEnitityByAttributes(f010_Subecti);
+                //FindF10BySubjectIdAndDate(
+                    //subjectId, null, null
+                //);
+
+                //Console.WriteLine("\nexistingF010 -> " + JsonSerializer.Serialize(existingF010_Subject) + "\n");
+                //Console.WriteLine("\aAttributes ->\nSubjId = " + subjectId
+                //    + "\nDateBeg = " + DateTime.ParseExact(item.DBegin, "dd.MM.yyyy", null)
+                //    + "\nDateEnd = " + item.DEnd
+                //);
+
                 if (existingF010_Subject != null)
                 {
                     f010_SubjectId = existingF010_Subject.Id;
@@ -323,9 +341,6 @@ namespace BackendApp.Services
                 long f001_TfomsId;
 
                 f001_tfoms existingF001_Tfoms = await this.GetEnitityByAttributes(f001_Tfoms);
-
-                //Console.WriteLine("existingF001->> " + System.Text.Json.JsonSerializer.Serialize(existingF001_Tfoms));
-                
                 if (existingF001_Tfoms != null)
                 {
                     f001_TfomsId = existingF001_Tfoms.Id;

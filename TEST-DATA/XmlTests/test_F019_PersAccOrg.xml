@@ -1,0 +1,3220 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<packet>
+  <zglv>
+    <type>РersAccOrg</type>
+    <version>2.47</version>
+    <date>27.03.2026</date>
+  </zglv>
+  <zap>
+    <tf_okato>79000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>01000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ РЕСПУБЛИКИ АДЫГЕЯ</nam_orgp>
+    <nam_orgk>ТФОМС РА</nam_orgk>
+    <tf_kod>01</tf_kod>
+    <smocod/>
+    <datebeg>13.05.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>79000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>01004</orgcod>
+    <nam_orgp>АДЫГЕЙСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>АДЫГЕЙСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>01004</smocod>
+    <datebeg>27.08.2019</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>80000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>02000</orgcod>
+    <nam_orgp>Государственное учреждение Территориальный фонд обязательного медицинского страхования Республики Башкортостан</nam_orgp>
+    <nam_orgk>ГУ ТФОМС РБ</nam_orgk>
+    <tf_kod>02</tf_kod>
+    <smocod/>
+    <datebeg>14.07.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>80000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>02001</orgcod>
+    <nam_orgp>ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "МЕДИЦИНСКАЯ АКЦИОНЕРНАЯ СТРАХОВАЯ КОМПАНИЯ" В ГОРОДЕ УФЕ</nam_orgp>
+    <nam_orgk>ФИЛИАЛ АО "МАКС-М" В Г. УФЕ</nam_orgk>
+    <tf_kod/>
+    <smocod>02001</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>80000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>02004</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В РЕСПУБЛИКЕ БАШКОРТОСТАН</nam_orgp>
+    <nam_orgk>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В РЕСПУБЛИКЕ БАШКОРТОСТАН</nam_orgk>
+    <tf_kod/>
+    <smocod>02004</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>80000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>02008</orgcod>
+    <nam_orgp>УФИМСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>УФИМСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>02008</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>80000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>02010</orgcod>
+    <nam_orgp>ФИЛИАЛ ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "СТРАХОВОЕ МЕДИЦИНСКОЕ ОБЩЕСТВО "СПАСЕНИЕ" В РЕСПУБЛИКЕ БАШКОРТОСТАН "БАШКИРСКАЯ МЕДИЦИНСКАЯ СТРАХОВАЯ КОМПАНИЯ"</nam_orgp>
+    <nam_orgk>БАШКИРСКИЙ ФИЛИАЛ "СПАСЕНИЕ-БМСК"</nam_orgk>
+    <tf_kod/>
+    <smocod>02010</smocod>
+    <datebeg>25.08.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>80000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>02014</orgcod>
+    <nam_orgp>ФИЛИАЛ "БАШКОРТОСТАН" ООО "АЛЬФАСТРАХОВАНИЕ-ОМС"</nam_orgp>
+    <nam_orgk>ФИЛИАЛ "БАШКОРТОСТАН" ООО "АЛЬФАСТРАХОВАНИЕ-ОМС"</nam_orgk>
+    <tf_kod/>
+    <smocod>02014</smocod>
+    <datebeg>31.08.2015</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>80000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>02016</orgcod>
+    <nam_orgp>УФИМСКИЙ ФИЛИАЛ ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "СТРАХОВАЯ МЕДИЦИНСКАЯ КОМПАНИЯ РЕСО-МЕД"</nam_orgp>
+    <nam_orgk>УФИМСКИЙ ФИЛИАЛ ООО "СМК РЕСО-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>02016</smocod>
+    <datebeg>17.08.2017</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>80000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>02017</orgcod>
+    <nam_orgp>АО "АСТРАМЕД-МС" (СМК) ФИЛИАЛ В РЕСПУБЛИКЕ БАШКОРТОСТАН</nam_orgp>
+    <nam_orgk>АО "АСТРАМЕД-МС" (СМК) ФИЛИАЛ В РЕСПУБЛИКЕ БАШКОРТОСТАН</nam_orgk>
+    <tf_kod/>
+    <smocod>02017</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>81000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>03000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Республики Бурятия</nam_orgp>
+    <nam_orgk>ТФОМС РБ</nam_orgk>
+    <tf_kod>03</tf_kod>
+    <smocod/>
+    <datebeg>25.05.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>81000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>03101</orgcod>
+    <nam_orgp>БУРЯТСКИЙ ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>БУРЯТСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>03101</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>81000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>03102</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС"-ФИЛИАЛ В РЕСПУБЛИКЕ БУРЯТИЯ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС"-ФИЛИАЛ В РЕСПУБЛИКЕ БУРЯТИЯ</nam_orgk>
+    <tf_kod/>
+    <smocod>03102</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>84000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>04000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Республики Алтай</nam_orgp>
+    <nam_orgk>ТФОМС РА</nam_orgk>
+    <tf_kod>04</tf_kod>
+    <smocod/>
+    <datebeg>28.03.1994</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>84000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>04004</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В РЕСПУБЛИКЕ АЛТАЙ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС" - ФИЛИАЛ В РЕСПУБЛИКЕ АЛТАЙ</nam_orgk>
+    <tf_kod/>
+    <smocod>04004</smocod>
+    <datebeg>03.08.2015</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>82000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>05000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ РЕСПУБЛИКИ ДАГЕСТАН</nam_orgp>
+    <nam_orgk>ТФОМС РД</nam_orgk>
+    <tf_kod>05</tf_kod>
+    <smocod/>
+    <datebeg>08.09.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>82000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>05501</orgcod>
+    <nam_orgp>ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "МЕДИЦИНСКАЯ АКЦИОНЕРНАЯ СТРАХОВАЯ КОМПАНИЯ" В ГОРОДЕ МАХАЧКАЛЕ</nam_orgp>
+    <nam_orgk>ФИЛИАЛ АО "МАКС-М" В Г.МАХАЧКАЛЕ</nam_orgk>
+    <tf_kod/>
+    <smocod>05501</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>26000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>06000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Республики Ингушетия</nam_orgp>
+    <nam_orgk>ТФ ОМС РИ</nam_orgk>
+    <tf_kod>06</tf_kod>
+    <smocod/>
+    <datebeg>17.06.1994</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>26000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>06050</orgcod>
+    <nam_orgp>ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "МЕДИЦИНСКАЯ АКЦИОНЕРНАЯ СТРАХОВАЯ КОМПАНИЯ" В Г. НАЗРАНИ</nam_orgp>
+    <nam_orgk>ФИЛИАЛ АО "МАКС-М" В Г. НАЗРАНИ</nam_orgk>
+    <tf_kod/>
+    <smocod>06050</smocod>
+    <datebeg>10.03.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>83000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>07000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Кабардино-Балкарской Республики</nam_orgp>
+    <nam_orgk>ТФОМС КБР</nam_orgk>
+    <tf_kod>07</tf_kod>
+    <smocod/>
+    <datebeg>18.05.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>83000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>07004</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В КАБАРДИНО-БАЛКАРСКОЙ РЕСПУБЛИКЕ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ" МС"- ФИЛИАЛ В КБР</nam_orgk>
+    <tf_kod/>
+    <smocod>07004</smocod>
+    <datebeg>07.08.2015</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>83000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>07005</orgcod>
+    <nam_orgp>КАБАРДИНО-БАЛКАРСКИЙ ФИЛИАЛ ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "СТРАХОВАЯ МЕДИЦИНСКАЯ КОМПАНИЯ РЕСО-МЕД"</nam_orgp>
+    <nam_orgk>КАБАРДИНО-БАЛКАРСКИЙ ФИЛИАЛ ООО "СМК РЕСО-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>07005</smocod>
+    <datebeg>17.08.2015</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>85000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>08000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Республики Калмыкия</nam_orgp>
+    <nam_orgk>ТФОМС Республики Калмыкия</nam_orgk>
+    <tf_kod>08</tf_kod>
+    <smocod/>
+    <datebeg>29.07.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>85000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>08005</orgcod>
+    <nam_orgp>КАЛМЫЦКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>КАЛМЫЦКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>08005</smocod>
+    <datebeg>15.06.2018</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>91000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>09000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ КАРАЧАЕВО-ЧЕРКЕССКОЙ РЕСПУБЛИКИ</nam_orgp>
+    <nam_orgk>ТФОМС КЧР</nam_orgk>
+    <tf_kod>09</tf_kod>
+    <smocod/>
+    <datebeg>11.08.1998</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>91000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>09050</orgcod>
+    <nam_orgp>ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "МЕДИЦИНСКАЯ АКЦИОНЕРНАЯ СТРАХОВАЯ КОМПАНИЯ" В ГОРОДЕ ЧЕРКЕССКЕ</nam_orgp>
+    <nam_orgk>ФИЛИАЛ АО "МАКС-М" В Г. ЧЕРКЕССКЕ</nam_orgk>
+    <tf_kod/>
+    <smocod>09050</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>86000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>10000</orgcod>
+    <nam_orgp>ГОСУДАРСТВЕННОЕ УЧРЕЖДЕНИЕ "ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ РЕСПУБЛИКИ КАРЕЛИЯ"</nam_orgp>
+    <nam_orgk>ГУ ТФОМС РК</nam_orgk>
+    <tf_kod>10</tf_kod>
+    <smocod/>
+    <datebeg>11.08.1998</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>86000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>10001</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. ПЕТРОЗАВОДСК</nam_orgp>
+    <nam_orgk>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. ПЕТРОЗАВОДСК</nam_orgk>
+    <tf_kod/>
+    <smocod>10001</smocod>
+    <datebeg>01.04.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>86000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>10003</orgcod>
+    <nam_orgp>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "СТРАХОВАЯ МЕДИЦИНСКАЯ КОМПАНИЯ РЕСО-МЕД" КАРЕЛЬСКИЙ ФИЛИАЛ</nam_orgp>
+    <nam_orgk>ООО "СМК РЕСО-МЕД" КАРЕЛЬСКИЙ ФИЛИАЛ</nam_orgk>
+    <tf_kod/>
+    <smocod>10003</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>87000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>11000</orgcod>
+    <nam_orgp>Государственное бюджетное учреждение Республики Коми "Территориальный фонд обязательного медицинского страхования Республики Коми"</nam_orgp>
+    <nam_orgk>ГУ ТФОМС Республики Коми</nam_orgk>
+    <tf_kod>11</tf_kod>
+    <smocod/>
+    <datebeg>05.05.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>87000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>11001</orgcod>
+    <nam_orgp>СЫКТЫВКАРСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>СЫКТЫВКАРСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>11001</smocod>
+    <datebeg>15.04.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>87000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>11002</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В РЕСПУБЛИКЕ КОМИ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС" - ФИЛИАЛ В РЕСПУБЛИКЕ КОМИ</nam_orgk>
+    <tf_kod/>
+    <smocod>11002</smocod>
+    <datebeg>15.04.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>88000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>12000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ РЕСПУБЛИКИ МАРИЙ ЭЛ</nam_orgp>
+    <nam_orgk>ТФОМС РЕСПУБЛИКИ МАРИЙ ЭЛ</nam_orgk>
+    <tf_kod>12</tf_kod>
+    <smocod/>
+    <datebeg>02.09.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>88000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>12001</orgcod>
+    <nam_orgp>МАРИЙСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>МАРИЙСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>12001</smocod>
+    <datebeg>17.06.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>89000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>13000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ РЕСПУБЛИКИ МОРДОВИЯ</nam_orgp>
+    <nam_orgk>ТФОМС РЕСПУБЛИКИ МОРДОВИЯ</nam_orgk>
+    <tf_kod>13</tf_kod>
+    <smocod/>
+    <datebeg>06.08.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>89000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>13006</orgcod>
+    <nam_orgp>МОРДОВСКИЙ ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>МОРДОВСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>13006</smocod>
+    <datebeg>01.01.2012</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>89000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>13009</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В РЕСПУБЛИКЕ МОРДОВИЯ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС" - ФИЛИАЛ В РЕСПУБЛИКЕ МОРДОВИЯ</nam_orgk>
+    <tf_kod/>
+    <smocod>13009</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>98000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>14000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Республики Саха (Якутия)</nam_orgp>
+    <nam_orgk>ТФОМС РС(Я)</nam_orgk>
+    <tf_kod>14</tf_kod>
+    <smocod/>
+    <datebeg>11.08.1998</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>98000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>14002</orgcod>
+    <nam_orgp>АКЦИОНЕРНОЕ ОБЩЕСТВО "СТРАХОВАЯ МЕДИЦИНСКАЯ КОМПАНИЯ "САХАМЕДСТРАХ"</nam_orgp>
+    <nam_orgk>АО "СМК "САХАМЕДСТРАХ"</nam_orgk>
+    <tf_kod/>
+    <smocod>14002</smocod>
+    <datebeg>28.04.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>98000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>14005</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "КАПИТАЛ МЕДИЦИНСКОЕ СТРАХОВАНИЕ" - ФИЛИАЛ В РЕСПУБЛИКЕ САХА (ЯКУТИЯ)</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС" - ФИЛИАЛ В РЕСПУБЛИКИ САХА(ЯКУТИЯ)</nam_orgk>
+    <tf_kod/>
+    <smocod>14005</smocod>
+    <datebeg>28.04.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>90000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>15000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ РЕСПУБЛИКИ СЕВЕРНАЯ ОСЕТИЯ-АЛАНИЯ</nam_orgp>
+    <nam_orgk>ТФОМС РСО-АЛАНИЯ</nam_orgk>
+    <tf_kod>15</tf_kod>
+    <smocod/>
+    <datebeg>04.08.1994</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>90000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>15002</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МЕДИЦИНСКОЕ СТРАХОВАНИЕ"-ФИЛИАЛ В РЕСПУБЛИКЕ СЕВЕРНАЯ ОСЕТИЯ-АЛАНИЯ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС"-ФИЛИАЛ В РСО-АЛАНИЯ</nam_orgk>
+    <tf_kod/>
+    <smocod>15002</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>92000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>16000</orgcod>
+    <nam_orgp>Государственное учреждение "Территориальный фонд обязательного медицинского страхования Республики Татарстан"</nam_orgp>
+    <nam_orgk>ТФОМС Республики Татарстан</nam_orgk>
+    <tf_kod>16</tf_kod>
+    <smocod/>
+    <datebeg>23.12.2002</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>92000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>16051</orgcod>
+    <nam_orgp>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "СТРАХОВАЯ КОМПАНИЯ "АК БАРС-МЕД"</nam_orgp>
+    <nam_orgk>ООО "СК "АК БАРС-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>16051</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>92000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>16052</orgcod>
+    <nam_orgp>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "СТРАХОВОЕ МЕДИЦИНСКОЕ ОБЩЕСТВО "СПАСЕНИЕ"</nam_orgp>
+    <nam_orgk>ООО "СМО "СПАСЕНИЕ"</nam_orgk>
+    <tf_kod/>
+    <smocod>16052</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>92000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>16053</orgcod>
+    <nam_orgp>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ СТРАХОВАЯ МЕДИЦИНСКАЯ ОРГАНИЗАЦИЯ "ЧУЛПАН-МЕД"</nam_orgp>
+    <nam_orgk>ООО СМО "ЧУЛПАН-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>16053</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>93000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>17000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Республики Тыва</nam_orgp>
+    <nam_orgk>ТФОМС Республики Тыва</nam_orgk>
+    <tf_kod>17</tf_kod>
+    <smocod/>
+    <datebeg>20.07.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>93000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>17004</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "КАПИТАЛ МЕДИЦИНСКОЕ СТРАХОВАНИЕ" - ФИЛИАЛ В РЕСПУБЛИКЕ ТЫВА</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС" - ФИЛИАЛ В РЕСПУБЛИКЕ ТЫВА</nam_orgk>
+    <tf_kod/>
+    <smocod>17004</smocod>
+    <datebeg>07.08.2015</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>94000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>18000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Удмуртской Республики</nam_orgp>
+    <nam_orgk>ТФОМС УР</nam_orgk>
+    <tf_kod>18</tf_kod>
+    <smocod/>
+    <datebeg>16.06.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>94000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>18002</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. ИЖЕВСК</nam_orgp>
+    <nam_orgk>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. ИЖЕВСК</nam_orgk>
+    <tf_kod/>
+    <smocod>18002</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>94000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>18005</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС"-ФИЛИАЛ В УДМУРТСКОЙ РЕСПУБЛИКЕ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС"-ФИЛИАЛ В УДМУРТСКОЙ РЕСПУБЛИКЕ</nam_orgk>
+    <tf_kod/>
+    <smocod>18005</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>94000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>18006</orgcod>
+    <nam_orgp>УДМУРТСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>УДМУРТСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>18006</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>95000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>19000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Республики Хакасия</nam_orgp>
+    <nam_orgk>ТФОМС Республики Хакасия</nam_orgk>
+    <tf_kod>19</tf_kod>
+    <smocod/>
+    <datebeg>06.05.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>95000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>19001</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. АБАКАН</nam_orgp>
+    <nam_orgk>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. АБАКАН</nam_orgk>
+    <tf_kod/>
+    <smocod>19001</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>95000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>19006</orgcod>
+    <nam_orgp>ХАКАССКИЙ ФИЛИАЛ ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "СТРАХОВАЯ МЕДИЦИНСКАЯ КОМПАНИЯ "РЕСО-МЕД"</nam_orgp>
+    <nam_orgk>ХАКАССКИЙ ФИЛИАЛ ООО "СМК "РЕСО-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>19006</smocod>
+    <datebeg>30.08.2019</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>96000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>20000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Чеченской Республики</nam_orgp>
+    <nam_orgk>ТФОМС Чеченской Республики</nam_orgk>
+    <tf_kod>20</tf_kod>
+    <smocod/>
+    <datebeg>11.08.1998</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>96000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>20001</orgcod>
+    <nam_orgp>ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "МЕДИЦИНСКАЯ АКЦИОНЕРНАЯ СТРАХОВАЯ КОМПАНИЯ" В ГОРОДЕ ГРОЗНЫЙ</nam_orgp>
+    <nam_orgk>ФИЛИАЛ АО "МАКС-М" В Г.ГРОЗНЫЙ</nam_orgk>
+    <tf_kod/>
+    <smocod>20001</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>97000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>21000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Чувашской Республики</nam_orgp>
+    <nam_orgk>ТФОМС Чувашской Республики</nam_orgk>
+    <tf_kod>21</tf_kod>
+    <smocod/>
+    <datebeg>24.06.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>97000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>21001</orgcod>
+    <nam_orgp>АКЦИОНЕРНОЕ ОБЩЕСТВО "ЧУВАШСКАЯ МЕДИЦИНСКАЯ СТРАХОВАЯ КОМПАНИЯ"</nam_orgp>
+    <nam_orgk>АО "ЧУВАШСКАЯ МСК"</nam_orgk>
+    <tf_kod/>
+    <smocod>21001</smocod>
+    <datebeg>15.04.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>97000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>21002</orgcod>
+    <nam_orgp>АКЦИОНЕРНОЕ ОБЩЕСТВО "СТРАХОВАЯ КОМПАНИЯ "ЧУВАШИЯ-МЕД"</nam_orgp>
+    <nam_orgk>АО "СК "ЧУВАШИЯ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>21002</smocod>
+    <datebeg>15.04.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>01000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>22000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ АЛТАЙСКОГО КРАЯ</nam_orgp>
+    <nam_orgk>ТФОМС АЛТАЙСКОГО КРАЯ</nam_orgk>
+    <tf_kod>22</tf_kod>
+    <smocod/>
+    <datebeg>23.07.1992</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>01000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>22001</orgcod>
+    <nam_orgp>АЛТАЙСКИЙ ФИЛИАЛ ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "СТРАХОВАЯ МЕДИЦИНСКАЯ КОМПАНИЯ РЕСО-МЕД"</nam_orgp>
+    <nam_orgk>АЛТАЙСКИЙ ФИЛИАЛ ООО "СМК РЕСО-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>22001</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>01000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>22006</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В АЛТАЙСКОМ КРАЕ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС" - ФИЛИАЛ В АЛТАЙСКОМ КРАЕ</nam_orgk>
+    <tf_kod/>
+    <smocod>22006</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>03000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>23000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ КРАСНОДАРСКОГО КРАЯ</nam_orgp>
+    <nam_orgk>ТФОМС КК</nam_orgk>
+    <tf_kod>23</tf_kod>
+    <smocod/>
+    <datebeg>17.05.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>03000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>23207</orgcod>
+    <nam_orgp>КРАСНОДАРСКИЙ ФИЛИАЛ ООО "АЛЬФАСТРАХОВАНИЕ-ОМС"</nam_orgp>
+    <nam_orgk>КРАСНОДАРСКИЙ ФИЛИАЛ ООО "АЛЬФАСТРАХОВАНИЕ-ОМС"</nam_orgk>
+    <tf_kod/>
+    <smocod>23207</smocod>
+    <datebeg>30.07.2013</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>03000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>23407</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МЕДИЦИНСКОЕ СТРАХОВАНИЕ" - ФИЛИАЛ В КРАСНОДАРСКОМ КРАЕ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС" - ФИЛИАЛ В КРАСНОДАРСКОМ КРАЕ</nam_orgk>
+    <tf_kod/>
+    <smocod>23407</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>03000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>23607</orgcod>
+    <nam_orgp>КРАСНОДАРСКИЙ ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>КРАСНОДАРСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>23607</smocod>
+    <datebeg>19.08.2014</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>04000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>24000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ КРАСНОЯРСКОГО КРАЯ</nam_orgp>
+    <nam_orgk>ТФОМС КРАСНОЯРСКОГО КРАЯ</nam_orgk>
+    <tf_kod>24</tf_kod>
+    <smocod/>
+    <datebeg>07.05.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>04000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>24008</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. КРАСНОЯРСК</nam_orgp>
+    <nam_orgk>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. КРАСНОЯРСК</nam_orgk>
+    <tf_kod/>
+    <smocod>24008</smocod>
+    <datebeg>23.04.2020</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>04000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>24020</orgcod>
+    <nam_orgp>КРАСНОЯРСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>КРАСНОЯРСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>24020</smocod>
+    <datebeg>12.07.2019</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>04000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>24022</orgcod>
+    <nam_orgp>КРАСНОЯРСКИЙ ФИЛИАЛ ООО "СМК РЕСО-МЕД"</nam_orgp>
+    <nam_orgk>КРАСНОЯРСКИЙ ФИЛИАЛ ООО "СМК РЕСО-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>24022</smocod>
+    <datebeg>30.04.2020</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>05000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>25000</orgcod>
+    <nam_orgp>Государственное учреждение Территориальный фонд обязательного медицинского страхования Приморского края</nam_orgp>
+    <nam_orgk>ГУ ТФОМС ПК</nam_orgk>
+    <tf_kod>25</tf_kod>
+    <smocod/>
+    <datebeg>15.04.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>05000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>25011</orgcod>
+    <nam_orgp>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ СТРАХОВАЯ МЕДИЦИНСКАЯ ОРГАНИЗАЦИЯ "ВОСТОЧНО-СТРАХОВОЙ АЛЬЯНС"</nam_orgp>
+    <nam_orgk>ООО СМО "ВОСТОЧНО-СТРАХОВОЙ АЛЬЯНС"</nam_orgk>
+    <tf_kod/>
+    <smocod>25011</smocod>
+    <datebeg>24.08.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>05000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>25014</orgcod>
+    <nam_orgp>АКЦИОНЕРНОЕ ОБЩЕСТВО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>25014</smocod>
+    <datebeg>14.07.2021</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>07000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>26000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ СТАВРОПОЛЬСКОГО КРАЯ</nam_orgp>
+    <nam_orgk>ТФОМС СК</nam_orgk>
+    <tf_kod>26</tf_kod>
+    <smocod/>
+    <datebeg>29.04.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>07000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>26005</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. СТАВРОПОЛЕ</nam_orgp>
+    <nam_orgk>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. СТАВРОПОЛЕ</nam_orgk>
+    <tf_kod/>
+    <smocod>26005</smocod>
+    <datebeg>29.08.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>07000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>26008</orgcod>
+    <nam_orgp>СТАВРОПОЛЬСКИЙ ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>СТАВРОПОЛЬСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>26008</smocod>
+    <datebeg>15.06.2018</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>08000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>27000</orgcod>
+    <nam_orgp>ХАБАРОВСКИЙ КРАЕВОЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ</nam_orgp>
+    <nam_orgk>ХКФОМС</nam_orgk>
+    <tf_kod>27</tf_kod>
+    <smocod/>
+    <datebeg>11.08.1998</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>08000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>27005</orgcod>
+    <nam_orgp>ХАБАРОВСКИЙ ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>ХАБАРОВСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>27005</smocod>
+    <datebeg>27.07.2015</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>10000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>28000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ АМУРСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>ТФОМС АМУРСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod>28</tf_kod>
+    <smocod/>
+    <datebeg>10.08.1998</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>10000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>28004</orgcod>
+    <nam_orgp>АМУРСКИЙ ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>АМУРСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>28004</smocod>
+    <datebeg>01.01.2013</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>11000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>29000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ АРХАНГЕЛЬСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>ТФОМС АО</nam_orgk>
+    <tf_kod>29</tf_kod>
+    <smocod/>
+    <datebeg>03.06.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>11000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>29030</orgcod>
+    <nam_orgp>АРХАНГЕЛЬСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>АРХАНГЕЛЬСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>29030</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>11000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>29031</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В АРХАНГЕЛЬСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В АРХАНГЕЛЬСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod/>
+    <smocod>29031</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>12000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>30000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Астраханской области</nam_orgp>
+    <nam_orgk>ТФОМС Астраханской области</nam_orgk>
+    <tf_kod>30</tf_kod>
+    <smocod/>
+    <datebeg>21.05.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>12000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>30002</orgcod>
+    <nam_orgp>АСТРАХАНСКИЙ ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>АСТРАХАНСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>30002</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>14000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>31000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ БЕЛГОРОДСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>ТФ ОМС БЕЛГОРОДСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod>31</tf_kod>
+    <smocod/>
+    <datebeg>01.09.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>14000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>31001</orgcod>
+    <nam_orgp>ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "МЕДИЦИНСКАЯ АКЦИОНЕРНАЯ СТРАХОВАЯ КОМПАНИЯ" В ГОРОДЕ БЕЛГОРОДЕ</nam_orgp>
+    <nam_orgk>ФИЛИАЛ АО "МАКС-М" В Г. БЕЛГОРОДЕ</nam_orgk>
+    <tf_kod/>
+    <smocod>31001</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>14000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>31006</orgcod>
+    <nam_orgp>БЕЛГОРОДСКИЙ ФИЛИАЛ ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "МЕДИЦИНСКАЯ СТРАХОВАЯ КОМПАНИЯ "ИНКО-МЕД"</nam_orgp>
+    <nam_orgk>БЕЛГОРОДСКИЙ ФИЛИАЛ ООО "МСК "ИНКО-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>31006</smocod>
+    <datebeg>14.08.2014</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>15000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>32000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ БРЯНСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>ТФОМС БРЯНСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod>32</tf_kod>
+    <smocod/>
+    <datebeg>29.04.1996</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>15000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>32020</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. БРЯНСК</nam_orgp>
+    <nam_orgk>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. БРЯНСК</nam_orgk>
+    <tf_kod/>
+    <smocod>32020</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>15000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>32040</orgcod>
+    <nam_orgp>БРЯНСКИЙ ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>БРЯНСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>32040</smocod>
+    <datebeg>14.06.2018</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>15000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>32055</orgcod>
+    <nam_orgp>БРЯНСКИЙ ФИЛИАЛ ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "АЛЬФАСТРАХОВАНИЕ-ОМС"</nam_orgp>
+    <nam_orgk>БРЯНСКИЙ ФИЛИАЛ ООО "АЛЬФАСТРАХОВАНИЕ-ОМС"</nam_orgk>
+    <tf_kod/>
+    <smocod>32055</smocod>
+    <datebeg>09.08.2013</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>17000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>33000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ ВЛАДИМИРСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>ТФОМС ВЛАДИМИРСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod>33</tf_kod>
+    <smocod/>
+    <datebeg>13.05.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>17000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>33004</orgcod>
+    <nam_orgp>ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "МЕДИЦИНСКАЯ АКЦИОНЕРНАЯ СТРАХОВАЯ КОМПАНИЯ" В ГОРОДЕ ВЛАДИМИРЕ</nam_orgp>
+    <nam_orgk>ФИЛИАЛ АО "МАКС-М" В Г.ВЛАДИМИРЕ</nam_orgk>
+    <tf_kod/>
+    <smocod>33004</smocod>
+    <datebeg>15.04.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>17000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>33007</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. ВЛАДИМИР</nam_orgp>
+    <nam_orgk>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. ВЛАДИМИР</nam_orgk>
+    <tf_kod/>
+    <smocod>33007</smocod>
+    <datebeg>15.04.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>17000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>33009</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ ВО ВЛАДИМИРСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС" - ФИЛИАЛ ВО ВЛАДИМИРСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod/>
+    <smocod>33009</smocod>
+    <datebeg>14.08.2015</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>18000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>34000</orgcod>
+    <nam_orgp>ГОСУДАРСТВЕННОЕ УЧРЕЖДЕНИЕ "ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ ВОЛГОГРАДСКОЙ ОБЛАСТИ"</nam_orgp>
+    <nam_orgk>"ТФОМС ВОЛГОГРАДСКОЙ ОБЛАСТИ"</nam_orgk>
+    <tf_kod>34</tf_kod>
+    <smocod/>
+    <datebeg>11.08.1998</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>18000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>34002</orgcod>
+    <nam_orgp>ВОЛГОГРАДСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ - МЕД"</nam_orgp>
+    <nam_orgk>ВОЛГОГРАДСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ - МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>34002</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>18000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>34007</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В ВОЛГОГРАДСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС" - ФИЛИАЛ В ВОЛГОГРАДСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod/>
+    <smocod>34007</smocod>
+    <datebeg>10.08.2015</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>19000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>35000</orgcod>
+    <nam_orgp>ГОСУДАРСТВЕННОЕ УЧРЕЖДЕНИЕ ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ ВОЛОГОДСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>ТФОМС ВОЛОГОДСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod>35</tf_kod>
+    <smocod/>
+    <datebeg>11.08.1998</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>19000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>35003</orgcod>
+    <nam_orgp>ВОЛОГОДСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>ВОЛОГОДСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>35003</smocod>
+    <datebeg>02.08.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>20000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>36000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ ВОРОНЕЖСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>ТФОМС ВОРОНЕЖСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod>36</tf_kod>
+    <smocod/>
+    <datebeg>25.03.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>20000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>36065</orgcod>
+    <nam_orgp>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "МЕДИЦИНСКАЯ СТРАХОВАЯ КОМПАНИЯ "ИНКО-МЕД"</nam_orgp>
+    <nam_orgk>ООО "МСК "ИНКО-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>36065</smocod>
+    <datebeg>01.04.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>20000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>36071</orgcod>
+    <nam_orgp>ВОРОНЕЖСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>ВОРОНЕЖСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>36071</smocod>
+    <datebeg>01.04.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>24000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>37000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Ивановской области</nam_orgp>
+    <nam_orgk>ТФОМС Ивановской области</nam_orgk>
+    <tf_kod>37</tf_kod>
+    <smocod/>
+    <datebeg>25.03.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>24000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>37002</orgcod>
+    <nam_orgp>ИВАНОВСКИЙ ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>ИВАНОВСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>37002</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>25000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>38000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ ИРКУТСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>ТФОМС ИРКУТСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod>38</tf_kod>
+    <smocod/>
+    <datebeg>30.06.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>25000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>38014</orgcod>
+    <nam_orgp>ИРКУТСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>ИРКУТСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>38014</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>25000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>38020</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. ИРКУТСК</nam_orgp>
+    <nam_orgk>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. ИРКУТСК</nam_orgk>
+    <tf_kod/>
+    <smocod>38020</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>27000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>39000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ КАЛИНИНГРАДСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>ТФОМС КАЛИНИНГРАДСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod>39</tf_kod>
+    <smocod/>
+    <datebeg>01.11.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>27000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>39002</orgcod>
+    <nam_orgp>КАЛИНИНГРАДСКИЙ ФИЛИАЛ АКЦИОНЕРНОЕ ОБЩЕСТВО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>КАЛИНИНГРАДСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД""</nam_orgk>
+    <tf_kod/>
+    <smocod>39002</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>27000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>39005</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "КАПИТАЛ МС" - ФИЛИАЛ В КАЛИНИНГРАДСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС" - ФИЛИАЛ В КАЛИНИНГРАДСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod/>
+    <smocod>39005</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>29000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>40000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ КАЛУЖСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>ТФОМС КАЛУЖСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod>40</tf_kod>
+    <smocod/>
+    <datebeg>27.05.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>29000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>40002</orgcod>
+    <nam_orgp>ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "МЕДИЦИНСКАЯ АКЦИОНЕРНАЯ СТРАХОВАЯ КОМПАНИЯ" В ГОРОДЕ КАЛУГЕ</nam_orgp>
+    <nam_orgk>ФИЛИАЛ АО "МАКС-М" В Г.КАЛУГЕ</nam_orgk>
+    <tf_kod/>
+    <smocod>40002</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>29000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>40004</orgcod>
+    <nam_orgp>КАЛУЖСКИЙ ФИЛИАЛ АО"СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>КАЛУЖСКИЙ ФИЛИАЛ АО"СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>40004</smocod>
+    <datebeg>19.06.2018</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>30000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>41000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ КАМЧАТСКОГО КРАЯ</nam_orgp>
+    <nam_orgk>ТФОМС КАМЧАТСКОГО КРАЯ</nam_orgk>
+    <tf_kod>41</tf_kod>
+    <smocod/>
+    <datebeg>01.06.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>30000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>41001</orgcod>
+    <nam_orgp>КАМЧАТСКИЙ ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>КАМЧАТСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>41001</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>32000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>42000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ КЕМЕРОВСКОЙ ОБЛАСТИ - КУЗБАССА</nam_orgp>
+    <nam_orgk>ТФОМС КЕМЕРОВСКОЙ ОБЛАСТИ - КУЗБАССА</nam_orgk>
+    <tf_kod>42</tf_kod>
+    <smocod/>
+    <datebeg>22.06.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>32000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>42005</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. КЕМЕРОВО</nam_orgp>
+    <nam_orgk>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. КЕМЕРОВО</nam_orgk>
+    <tf_kod/>
+    <smocod>42005</smocod>
+    <datebeg>01.04.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>32000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>42009</orgcod>
+    <nam_orgp>КУЗБАССКИЙ ФИЛИАЛ ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "АЛЬФАСТРАХОВАНИЕ-ОМС"</nam_orgp>
+    <nam_orgk>КУЗБАССКИЙ ФИЛИАЛ ООО "АЛЬФАСТРАХОВАНИЕ-ОМС"</nam_orgk>
+    <tf_kod/>
+    <smocod>42009</smocod>
+    <datebeg>05.08.2013</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>33000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>43000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Кировской области</nam_orgp>
+    <nam_orgk>ТФОМС Кировской области</nam_orgk>
+    <tf_kod>43</tf_kod>
+    <smocod/>
+    <datebeg>24.08.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>33000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>43005</orgcod>
+    <nam_orgp>ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "МЕДИЦИНСКАЯ АКЦИОНЕРНАЯ СТРАХОВАЯ КОМПАНИЯ" В ГОРОДЕ КИРОВЕ</nam_orgp>
+    <nam_orgk>ФИЛИАЛ АО "МАКС-М" В Г. КИРОВЕ</nam_orgk>
+    <tf_kod/>
+    <smocod>43005</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>33000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>43006</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. КИРОВ</nam_orgp>
+    <nam_orgk>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. КИРОВ</nam_orgk>
+    <tf_kod/>
+    <smocod>43006</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>33000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>43011</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В КИРОВСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС" - ФИЛИАЛ В КИРОВСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod/>
+    <smocod>43011</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>33000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>43012</orgcod>
+    <nam_orgp>КИРОВСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>КИРОВСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>43012</smocod>
+    <datebeg>13.06.2018</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>34000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>44000</orgcod>
+    <nam_orgp>территориальный фонд обязательного медицинского страхования Костромской области</nam_orgp>
+    <nam_orgk>ТФОМС Костромской области</nam_orgk>
+    <tf_kod>44</tf_kod>
+    <smocod/>
+    <datebeg>27.10.2025</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>34000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>44003</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В КОСТРОМСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС" - ФИЛИАЛ В КОСТРОМСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod/>
+    <smocod>44003</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>34000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>44011</orgcod>
+    <nam_orgp>ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "МЕДИЦИНСКАЯ АКЦИОНЕРНАЯ СТРАХОВАЯ КОМПАНИЯ" В ГОРОДЕ КОСТРОМЕ</nam_orgp>
+    <nam_orgk>ФИЛИАЛ АО "МАКС-М" В Г. КОСТРОМЕ</nam_orgk>
+    <tf_kod/>
+    <smocod>44011</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>34000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>44013</orgcod>
+    <nam_orgp>КОСТРОМСКОЙ ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>КОСТРОМСКОЙ ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>44013</smocod>
+    <datebeg>26.06.2018</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>37000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>45000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ КУРГАНСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>ТФ ОМС КУРГАНСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod>45</tf_kod>
+    <smocod/>
+    <datebeg>11.08.1998</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>37000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>45001</orgcod>
+    <nam_orgp>АО "АСТРАМЕД-МС" (СМК) ФИЛИАЛ В КУРГАНСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>АО "АСТРАМЕД-МС" (СМК) ФИЛИАЛ В КУРГАНСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod/>
+    <smocod>45001</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>37000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>45002</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В КУРГАНСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС" - ФИЛИАЛ В КУРГАНСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod/>
+    <smocod>45002</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>38000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>46000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ КУРСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>ТФОМС КУРСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod>46</tf_kod>
+    <smocod/>
+    <datebeg>13.05.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>38000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>46003</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. КУРСКЕ</nam_orgp>
+    <nam_orgk>АОСП ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. КУРСКЕ</nam_orgk>
+    <tf_kod/>
+    <smocod>46003</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>38000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>46006</orgcod>
+    <nam_orgp>КУРСКИЙ ФИЛИАЛ ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "МЕДИЦИНСКАЯ СТРАХОВАЯ КОМПАНИЯ "ИНКО-МЕД"</nam_orgp>
+    <nam_orgk>КУРСКИЙ ФИЛИАЛ ООО "МСК "ИНКО-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>46006</smocod>
+    <datebeg>12.08.2014</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>38000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>46007</orgcod>
+    <nam_orgp>КУРСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>КУРСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>46007</smocod>
+    <datebeg>14.06.2018</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>41000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>47000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Ленинградской области</nam_orgp>
+    <nam_orgk>ТФОМС ЛО</nam_orgk>
+    <tf_kod>47</tf_kod>
+    <smocod/>
+    <datebeg>02.06.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>41000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>47042</orgcod>
+    <nam_orgp>САНКТ-ПЕТЕРБУРГСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>САНКТ-ПЕТЕРБУРГСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>47042</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>41000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>47043</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В Г. САНКТ-ПЕТЕРБУРГЕ И ЛЕНИНГРАДСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС" - ФИЛИАЛ В Г.САНКТ-ПЕТЕРБУРГЕ И ЛЕНИНГРАДСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod/>
+    <smocod>47043</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>41000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>47045</orgcod>
+    <nam_orgp>СЕВЕРО-ЗАПАДНЫЙ ФИЛИАЛ ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "СТРАХОВАЯ МЕДИЦИНСКАЯ КОМПАНИЯ РЕСО-МЕД"</nam_orgp>
+    <nam_orgk>СЕВЕРО-ЗАПАДНЫЙ ФИЛИАЛ ООО "СМК РЕСО-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>47045</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>42000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>48000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Липецкой области</nam_orgp>
+    <nam_orgk>ТФОМС Липецкой области</nam_orgk>
+    <tf_kod>48</tf_kod>
+    <smocod/>
+    <datebeg>14.05.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>42000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>48004</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В ЛИПЕЦКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС" - ФИЛИАЛ В ЛИПЕЦКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod/>
+    <smocod>48004</smocod>
+    <datebeg>19.08.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>42000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>48008</orgcod>
+    <nam_orgp>ЛИПЕЦКИЙ ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>ЛИПЕЦКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>48008</smocod>
+    <datebeg>19.06.2018</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>44000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>49000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Магаданской области</nam_orgp>
+    <nam_orgk>ТФОМС Магаданской области</nam_orgk>
+    <tf_kod>49</tf_kod>
+    <smocod/>
+    <datebeg>20.07.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>44000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>49005</orgcod>
+    <nam_orgp>МАГАДАНСКИЙ ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>МАГАДАНСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>49005</smocod>
+    <datebeg>30.08.2012</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>46000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>50000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ МОСКОВСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>ТФОМС МО</nam_orgk>
+    <tf_kod>50</tf_kod>
+    <smocod/>
+    <datebeg>29.09.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>46000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>50005</orgcod>
+    <nam_orgp>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "СТРАХОВАЯ МЕДИЦИНСКАЯ КОМПАНИЯ РЕСО-МЕД"</nam_orgp>
+    <nam_orgk>ООО "СМК РЕСО-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>50005</smocod>
+    <datebeg>25.05.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>46000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>50006</orgcod>
+    <nam_orgp>АКЦИОНЕРНОЕ ОБЩЕСТВО "МЕДИЦИНСКАЯ АКЦИОНЕРНАЯ СТРАХОВАЯ КОМПАНИЯ"</nam_orgp>
+    <nam_orgk>АО "МАКС-М"</nam_orgk>
+    <tf_kod/>
+    <smocod>50006</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>46000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>50046</orgcod>
+    <nam_orgp>АКЦИОНЕРНОЕ ОБЩЕСТВО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>50046</smocod>
+    <datebeg>08.08.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>46000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>50051</orgcod>
+    <nam_orgp>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "КАПИТАЛ МЕДИЦИНСКОЕ СТРАХОВАНИЕ"</nam_orgp>
+    <nam_orgk>ООО "КАПИТАЛ МС"</nam_orgk>
+    <tf_kod/>
+    <smocod>50051</smocod>
+    <datebeg>06.08.2013</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>46000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>50052</orgcod>
+    <nam_orgp>МОСКОВСКИЙ ФИЛИАЛ ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "МЕДИЦИНСКАЯ СТРАХОВАЯ КОМПАНИЯ "ИНКО-МЕД"</nam_orgp>
+    <nam_orgk>МОСКОВСКИЙ ФИЛИАЛ ООО "МСК "ИНКО-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>50052</smocod>
+    <datebeg>23.09.2025</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>47000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>51000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ МУРМАНСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>ТФОМС МУРМАНСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod>51</tf_kod>
+    <smocod/>
+    <datebeg>27.04.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>47000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>51014</orgcod>
+    <nam_orgp>МУРМАНСКИЙ ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>МУРМАНСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>51014</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>47000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>51018</orgcod>
+    <nam_orgp>МУРМАНСКИЙ ФИЛИАЛ ООО "АЛЬФАСТРАХОВАНИЕ-ОМС"</nam_orgp>
+    <nam_orgk>МУРМАНСКИЙ ФИЛИАЛ ООО "АЛЬФАСТРАХОВАНИЕ-ОМС"</nam_orgk>
+    <tf_kod/>
+    <smocod>51018</smocod>
+    <datebeg>01.01.2014</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>22000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>52000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Нижегородской области</nam_orgp>
+    <nam_orgk>ТФОМС Нижегородской области</nam_orgk>
+    <tf_kod>52</tf_kod>
+    <smocod/>
+    <datebeg>11.03.1998</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>22000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>52001</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. НИЖНИЙ НОВГОРОД</nam_orgp>
+    <nam_orgk>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. НИЖНИЙ НОВГОРОД</nam_orgk>
+    <tf_kod/>
+    <smocod>52001</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>22000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>52006</orgcod>
+    <nam_orgp>НИЖЕГОРОДСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>НИЖЕГОРОДСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>52006</smocod>
+    <datebeg>13.06.2018</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>22000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>52008</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В НИЖЕГОРОДСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС" - ФИЛИАЛ В НИЖЕГОРОДСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod/>
+    <smocod>52008</smocod>
+    <datebeg>18.08.2015</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>49000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>53000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ НОВГОРОДСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>ТФОМС НО</nam_orgk>
+    <tf_kod>53</tf_kod>
+    <smocod/>
+    <datebeg>11.08.1998</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>49000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>53007</orgcod>
+    <nam_orgp>НОВГОРОДСКИЙ ФИЛИАЛ ООО "АЛЬФАСТРАХОВАНИЕ - ОМС"</nam_orgp>
+    <nam_orgk>НОВГОРОДСКИЙ ФИЛИАЛ ООО "АЛЬФАСТРАХОВАНИЕ-ОМС"</nam_orgk>
+    <tf_kod/>
+    <smocod>53007</smocod>
+    <datebeg>01.01.2014</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>49000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>53009</orgcod>
+    <nam_orgp>НОВГОРОДСКИЙ ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>НОВГОРОДСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>53009</smocod>
+    <datebeg>26.03.2020</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>50000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>54000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Новосибирской области</nam_orgp>
+    <nam_orgk>ТФОМС НСО</nam_orgk>
+    <tf_kod>54</tf_kod>
+    <smocod/>
+    <datebeg>15.08.1992</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>50000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>54001</orgcod>
+    <nam_orgp>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "СТРАХОВАЯ МЕДИЦИНСКАЯ ОРГАНИЗАЦИЯ "СИМАЗ-МЕД"</nam_orgp>
+    <nam_orgk>ООО "СМО "СИМАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>54001</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>50000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>54004</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. НОВОСИБИРСК</nam_orgp>
+    <nam_orgk>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. НОВОСИБИРСК</nam_orgk>
+    <tf_kod/>
+    <smocod>54004</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>50000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>54009</orgcod>
+    <nam_orgp>НОВОСИБИРСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>НОВОСИБИРСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>54009</smocod>
+    <datebeg>10.07.2019</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>52000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>55000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ ОМСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>ТФОМС ОМСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod>55</tf_kod>
+    <smocod/>
+    <datebeg>24.06.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>52000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>55041</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В ОМСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС" - ФИЛИАЛ В ОМСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod/>
+    <smocod>55041</smocod>
+    <datebeg>08.08.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>52000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>55044</orgcod>
+    <nam_orgp>ОМСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>ОМСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>55044</smocod>
+    <datebeg>14.06.2018</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>52000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>55050</orgcod>
+    <nam_orgp>ОМСКИЙ ФИЛИАЛ ООО "АЛЬФАСТРАХОВАНИЕ-ОМС"</nam_orgp>
+    <nam_orgk>ОМСКИЙ ФИЛИАЛ ООО "АЛЬФАСТРАХОВАНИЕ-ОМС"</nam_orgk>
+    <tf_kod/>
+    <smocod>55050</smocod>
+    <datebeg>08.07.2016</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>53000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>56000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Оренбургской области</nam_orgp>
+    <nam_orgk>ТФОМС Оренбургской области</nam_orgk>
+    <tf_kod>56</tf_kod>
+    <smocod/>
+    <datebeg>14.04.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>53000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>56021</orgcod>
+    <nam_orgp>ОРЕНБУРГСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>ОРЕНБУРГСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>56021</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>53000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>56029</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. ОРЕНБУРГ</nam_orgp>
+    <nam_orgk>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. ОРЕНБУРГ</nam_orgk>
+    <tf_kod/>
+    <smocod>56029</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>53000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>56032</orgcod>
+    <nam_orgp>ФИЛИАЛ АО "МАКС-М" В Г. ОРЕНБУРГЕ</nam_orgp>
+    <nam_orgk>ФИЛИАЛ АО "МАКС-М" В Г. ОРЕНБУРГЕ</nam_orgk>
+    <tf_kod/>
+    <smocod>56032</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>53000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>56034</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В ОРЕНБУРГСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В ОРЕНБУРГСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod/>
+    <smocod>56034</smocod>
+    <datebeg>14.08.2015</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>54000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>57000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ ОРЛОВСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>ТФОМС ОРЛОВСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod>57</tf_kod>
+    <smocod/>
+    <datebeg>01.05.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>54000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>57002</orgcod>
+    <nam_orgp>ОРЛОВСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>ОРЛОВСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>57002</smocod>
+    <datebeg>04.08.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>54000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>57003</orgcod>
+    <nam_orgp>ОРЛОВСКИЙ ФИЛИАЛ ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "СТРАХОВАЯ МЕДИЦИНСКАЯ КОМПАНИЯ РЕСО-МЕД"</nam_orgp>
+    <nam_orgk>ОРЛОВСКИЙ ФИЛИАЛ ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "СТРАХОВАЯ МЕДИЦИНСКАЯ КОМПАНИЯ РЕСО-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>57003</smocod>
+    <datebeg>22.07.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>56000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>58000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Пензенской области</nam_orgp>
+    <nam_orgk>ТФОМС Пензенской области</nam_orgk>
+    <tf_kod>58</tf_kod>
+    <smocod/>
+    <datebeg>11.08.1998</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>56000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>58004</orgcod>
+    <nam_orgp>ФИЛИАЛ АО "МАКС-М" В Г.ПЕНЗЕ</nam_orgp>
+    <nam_orgk>ФИЛИАЛ АО "МАКС-М" В Г.ПЕНЗЕ</nam_orgk>
+    <tf_kod/>
+    <smocod>58004</smocod>
+    <datebeg>30.03.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>56000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>58006</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В ПЕНЗЕНСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В ПЕНЗЕНСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod/>
+    <smocod>58006</smocod>
+    <datebeg>30.03.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>57000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>59000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Пермского края</nam_orgp>
+    <nam_orgk>ТФОМС Пермского края</nam_orgk>
+    <tf_kod>59</tf_kod>
+    <smocod/>
+    <datebeg>29.04.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>57000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>59015</orgcod>
+    <nam_orgp>ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "МЕДИЦИНСКАЯ АКЦИОНЕРНАЯ СТРАХОВАЯ КОМПАНИЯ" В Г.ПЕРМИ</nam_orgp>
+    <nam_orgk>ФИЛИАЛ АО "МАКС-М" В Г. ПЕРМИ</nam_orgk>
+    <tf_kod/>
+    <smocod>59015</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>57000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>59018</orgcod>
+    <nam_orgp>АО "АСТРАМЕД-МС" (СМК) ФИЛИАЛ В ПЕРМСКОМ КРАЕ</nam_orgp>
+    <nam_orgk>АО "АСТРАМЕД-МС" (СМК) ФИЛИАЛ В ПЕРМСКОМ КРАЕ</nam_orgk>
+    <tf_kod/>
+    <smocod>59018</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>57000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>59020</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В ПЕРМСКОМ КРАЕ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС" ФИЛИАЛ В ПЕРМСКОМ КРАЕ</nam_orgk>
+    <tf_kod/>
+    <smocod>59020</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>57000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>59021</orgcod>
+    <nam_orgp>ПЕРМСКИЙ ФИЛИАЛ ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "СТРАХОВАЯ МЕДИЦИНСКАЯ КОМПАНИЯ "РЕСО-МЕД"</nam_orgp>
+    <nam_orgk>ПЕРМСКИЙ ФИЛИАЛ ООО "СМК "РЕСО-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>59021</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>58000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>60000</orgcod>
+    <nam_orgp>территориальный фонд обязательного медицинского страхования Псковской области</nam_orgp>
+    <nam_orgk>ТФОМС Псковской области</nam_orgk>
+    <tf_kod>60</tf_kod>
+    <smocod/>
+    <datebeg>23.06.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>58000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>60001</orgcod>
+    <nam_orgp>ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "МЕДИЦИНСКАЯ АКЦИОНЕРНАЯ СТРАХОВАЯ КОМПАНИЯ" В ГОРОДЕ ПСКОВЕ</nam_orgp>
+    <nam_orgk>ФИЛИАЛ АО "МАКС-М" В Г. ПСКОВЕ</nam_orgk>
+    <tf_kod/>
+    <smocod>60001</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>60000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>61000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Ростовской области</nam_orgp>
+    <nam_orgk>ТФОМС Ростовской области</nam_orgk>
+    <tf_kod>61</tf_kod>
+    <smocod/>
+    <datebeg>11.08.1998</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>60000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>61001</orgcod>
+    <nam_orgp>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ МЕДИЦИНСКОЕ СТРАХОВОЕ ОБЩЕСТВО "ПАНАЦЕЯ"</nam_orgp>
+    <nam_orgk>ООО МСО "ПАНАЦЕЯ"</nam_orgk>
+    <tf_kod/>
+    <smocod>61001</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>60000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>61013</orgcod>
+    <nam_orgp>РОСТОВСКИЙ ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "МЕДИЦИНСКАЯ АКЦИОНЕРНАЯ СТРАХОВАЯ КОМПАНИЯ"</nam_orgp>
+    <nam_orgk>РОСТОВСКИЙ ФИЛИАЛ АО "МАКС-М"</nam_orgk>
+    <tf_kod/>
+    <smocod>61013</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>60000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>61017</orgcod>
+    <nam_orgp>РОСТОВСКИЙ ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>РОСТОВСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>61017</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>60000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>61022</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В РОСТОВСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС"- ФИЛИАЛ В РОСТОВСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod/>
+    <smocod>61022</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>60000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>61024</orgcod>
+    <nam_orgp>РОСТОВСКИЙ ФИЛИАЛ ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "АЛЬФАСТРАХОВАНИЕ-ОМС"</nam_orgp>
+    <nam_orgk>РОСТОВСКИЙ ФИЛИАЛ ООО "АЛЬФАСТРАХОВАНИЕ-ОМС"</nam_orgk>
+    <tf_kod/>
+    <smocod>61024</smocod>
+    <datebeg>13.08.2013</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>61000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>62000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ РЯЗАНСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>ТФОМС РЯЗАНСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod>62</tf_kod>
+    <smocod/>
+    <datebeg>24.05.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>61000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>62003</orgcod>
+    <nam_orgp>РЯЗАНСКИЙ ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>РЯЗАНСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>62003</smocod>
+    <datebeg>01.03.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>61000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>62006</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "КАПИТАЛ МЕДИЦИНСКОЕ СТРАХОВАНИЕ" - ФИЛИАЛ В РЯЗАНСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС" - ФИЛИАЛ В РЯЗАНСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod/>
+    <smocod>62006</smocod>
+    <datebeg>03.08.2015</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>36000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>63000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ САМАРСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>ТФОМС САМАРСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod>63</tf_kod>
+    <smocod/>
+    <datebeg>11.08.1998</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>36000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>63023</orgcod>
+    <nam_orgp>ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "МЕДИЦИНСКАЯ АКЦИОНЕРНАЯ СТРАХОВАЯ КОМПАНИЯ" В ГОРОДЕ САМАРЕ</nam_orgp>
+    <nam_orgk>ФИЛИАЛ АО "МАКС-М" В Г. САМАРЕ</nam_orgk>
+    <tf_kod/>
+    <smocod>63023</smocod>
+    <datebeg>15.04.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>36000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>63031</orgcod>
+    <nam_orgp>"АСКОМЕД" АО "АСТРАМЕД-МС" (СМК) ФИЛИАЛ В САМАРСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>"АСКОМЕД" АО "АСТРАМЕД-МС" (СМК) ФИЛИАЛ В САМАРСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod/>
+    <smocod>63031</smocod>
+    <datebeg>16.03.2023</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>63000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>64000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Саратовской области</nam_orgp>
+    <nam_orgk>ТФОМС Саратовской области</nam_orgk>
+    <tf_kod>64</tf_kod>
+    <smocod/>
+    <datebeg>29.04.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>63000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>64008</orgcod>
+    <nam_orgp>САРАТОВСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>САРАТОВСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>64008</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>63000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>64014</orgcod>
+    <nam_orgp>ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "МЕДИЦИНСКАЯ АКЦИОНЕРНАЯ СТРАХОВАЯ КОМПАНИЯ" В ГОРОДЕ САРАТОВЕ</nam_orgp>
+    <nam_orgk>ФИЛИАЛ АО "МАКС-М" В Г.САРАТОВЕ</nam_orgk>
+    <tf_kod/>
+    <smocod>64014</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>63000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>64015</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В САРАТОВСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС" - ФИЛИАЛ В САРАТОВСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod/>
+    <smocod>64015</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>64000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>65000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Сахалинской области</nam_orgp>
+    <nam_orgk>ТФОМС Сахалинской области</nam_orgk>
+    <tf_kod>65</tf_kod>
+    <smocod/>
+    <datebeg>11.08.1998</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>64000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>65001</orgcod>
+    <nam_orgp>САХАЛИНСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>САХАЛИНСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>65001</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>65000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>66000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Свердловской области</nam_orgp>
+    <nam_orgk>ТФОМС Свердловской области</nam_orgk>
+    <tf_kod>66</tf_kod>
+    <smocod/>
+    <datebeg>21.05.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>65000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>66004</orgcod>
+    <nam_orgp>АКЦИОНЕРНОЕ ОБЩЕСТВО "АСТРАМЕД-МС" (СТРАХОВАЯ МЕДИЦИНСКАЯ КОМПАНИЯ)</nam_orgp>
+    <nam_orgk>АО "АСТРАМЕД-МС" (СМК)</nam_orgk>
+    <tf_kod/>
+    <smocod>66004</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>65000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>66013</orgcod>
+    <nam_orgp>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ CТРАХОВАЯ МЕДИЦИНСКАЯ КОМПАНИЯ "УРАЛ-РЕЦЕПТ М"</nam_orgp>
+    <nam_orgk>ООО СМК "УРАЛ-РЕЦЕПТ М"</nam_orgk>
+    <tf_kod/>
+    <smocod>66013</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>65000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>66063</orgcod>
+    <nam_orgp>ЕКАТЕРИНБУРГСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>ЕКАТЕРИНБУРГСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>66063</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>65000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>66070</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. ЕКАТЕРИНБУРГ</nam_orgp>
+    <nam_orgk>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. ЕКАТЕРИНБУРГ</nam_orgk>
+    <tf_kod/>
+    <smocod>66070</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>66000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>67000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Смоленской области</nam_orgp>
+    <nam_orgk>ТФОМС Смоленской области</nam_orgk>
+    <tf_kod>67</tf_kod>
+    <smocod/>
+    <datebeg>11.08.1998</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>66000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>67002</orgcod>
+    <nam_orgp>СМОЛЕНСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>СМОЛЕНСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>67002</smocod>
+    <datebeg>15.04.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>66000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>67003</orgcod>
+    <nam_orgp>ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "МЕДИЦИНСКАЯ АКЦИОНЕРНАЯ СТРАХОВАЯ КОМПАНИЯ" В Г.СМОЛЕНСКЕ</nam_orgp>
+    <nam_orgk>ФИЛИАЛ АО "МАКС-М" В Г.СМОЛЕНСКЕ</nam_orgk>
+    <tf_kod/>
+    <smocod>67003</smocod>
+    <datebeg>15.04.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>66000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>67004</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В СМОЛЕНСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС" - ФИЛИАЛ В СМОЛЕНСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod/>
+    <smocod>67004</smocod>
+    <datebeg>15.04.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>68000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>68000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ ТАМБОВСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>ТФОМС ТАМБОВСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod>68</tf_kod>
+    <smocod/>
+    <datebeg>11.08.1998</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>68000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>68004</orgcod>
+    <nam_orgp>ТАМБОВСКИЙ ФИЛИАЛ АКЦИОНЕРНОЕ ОБЩЕСТВО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>ТАМБОВСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>68004</smocod>
+    <datebeg>19.08.2014</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>28000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>69000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ ТВЕРСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>ТФОМС ТВЕРСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod>69</tf_kod>
+    <smocod/>
+    <datebeg>11.08.1998</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>28000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>69005</orgcod>
+    <nam_orgp>ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "МЕДИЦИНСКАЯ АКЦИОНЕРНАЯ СТРАХОВАЯ КОМПАНИЯ" В Г. ТВЕРИ</nam_orgp>
+    <nam_orgk>ФИЛИАЛ АО "МАКС-М" В Г. ТВЕРИ</nam_orgk>
+    <tf_kod/>
+    <smocod>69005</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>28000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>69011</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В ТВЕРСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС" - ФИЛИАЛ В ТВЕРСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod/>
+    <smocod>69011</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>28000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>69013</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. ТВЕРЬ</nam_orgp>
+    <nam_orgk>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. ТВЕРЬ</nam_orgk>
+    <tf_kod/>
+    <smocod>69013</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>28000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>69016</orgcod>
+    <nam_orgp>ТВЕРСКОЙ ФИЛИАЛ ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "АЛЬФАСТРАХОВАНИЕ-ОМС"</nam_orgp>
+    <nam_orgk>ТВЕРСКОЙ ФИЛИАЛ ООО "АЛЬФАСТРАХОВАНИЕ-ОМС"</nam_orgk>
+    <tf_kod/>
+    <smocod>69016</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>69000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>70000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Томской области</nam_orgp>
+    <nam_orgk>ТФОМС Томской области</nam_orgk>
+    <tf_kod>70</tf_kod>
+    <smocod/>
+    <datebeg>04.06.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>69000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>70010</orgcod>
+    <nam_orgp>ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "МЕДИЦИНСКАЯ АКЦИОНЕРНАЯ СТРАХОВАЯ КОМПАНИЯ" В ГОРОДЕ ТОМСКЕ</nam_orgp>
+    <nam_orgk>ФИЛИАЛ АО "МАКС-М" В Г. ТОМСКЕ</nam_orgk>
+    <tf_kod/>
+    <smocod>70010</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>69000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>70012</orgcod>
+    <nam_orgp>ТОМСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>ТОМСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>70012</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>70000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>71000</orgcod>
+    <nam_orgp>территориальный фонд обязательного медицинского страхования Тульской области</nam_orgp>
+    <nam_orgk>ТФОМС Тульской области</nam_orgk>
+    <tf_kod>71</tf_kod>
+    <smocod/>
+    <datebeg>11.08.1998</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>70000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>71001</orgcod>
+    <nam_orgp>ТУЛЬСКИЙ ФИЛИАЛ ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "АЛЬФАСТРАХОВАНИЕ-ОМС"</nam_orgp>
+    <nam_orgk>ТУЛЬСКИЙ ФИЛИАЛ ООО "АЛЬФАСТРАХОВАНИЕ-ОМС"</nam_orgk>
+    <tf_kod/>
+    <smocod>71001</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>70000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>71004</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В ТУЛЬСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС" - ФИЛИАЛ В ТУЛЬСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod/>
+    <smocod>71004</smocod>
+    <datebeg>12.08.2015</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>71000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>72000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ ТЮМЕНСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>ТФОМС ТЮМЕНСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod>72</tf_kod>
+    <smocod/>
+    <datebeg>11.08.1998</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>71000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>72002</orgcod>
+    <nam_orgp>ТЮМЕНСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>ТЮМЕНСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>72002</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>71000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>72007</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС"-ФИЛИАЛ В ТЮМЕНСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС"-ФИЛИАЛ В ТЮМЕНСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod/>
+    <smocod>72007</smocod>
+    <datebeg>01.09.2015</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>71000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>72008</orgcod>
+    <nam_orgp>ТЮМЕНСКИЙ ФИЛИАЛ ООО "АЛЬФАСТРАХОВАНИЕ - ОМС"</nam_orgp>
+    <nam_orgk>ТЮМЕНСКИЙ ФИЛИАЛ ООО "АЛЬФАСТРАХОВАНИЕ - ОМС"</nam_orgk>
+    <tf_kod/>
+    <smocod>72008</smocod>
+    <datebeg>01.09.2015</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>73000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>73000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Ульяновской области</nam_orgp>
+    <nam_orgk>ТФОМС Ульяновской области</nam_orgk>
+    <tf_kod>73</tf_kod>
+    <smocod/>
+    <datebeg>25.05.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>73000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>73060</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В УЛЬЯНОВСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС" -ФИЛИАЛ В УЛЬЯНОВСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod/>
+    <smocod>73060</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>73000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>73064</orgcod>
+    <nam_orgp>УЛЬЯНОВСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>УЛЬЯНОВСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>73064</smocod>
+    <datebeg>14.06.2018</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>75000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>74000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ ЧЕЛЯБИНСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>ТФОМС ЧЕЛЯБИНСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod>74</tf_kod>
+    <smocod/>
+    <datebeg>11.08.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>75000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>74030</orgcod>
+    <nam_orgp>ЧЕЛЯБИНСКИЙ ФИЛИАЛ ООО "СМК РЕСО-МЕД"</nam_orgp>
+    <nam_orgk>ЧЕЛЯБИНСКИЙ ФИЛИАЛ ООО "СМК РЕСО-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>74030</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>75000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>74036</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. ЧЕЛЯБИНСК</nam_orgp>
+    <nam_orgk>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. ЧЕЛЯБИНСК</nam_orgk>
+    <tf_kod/>
+    <smocod>74036</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>75000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>74039</orgcod>
+    <nam_orgp>ЕКАТЕРИНБУРГСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>ЕКАТЕРИНБУРГСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>74039</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>75000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>74057</orgcod>
+    <nam_orgp>ЧЕЛЯБИНСКИЙ ФИЛИАЛ ООО "АЛЬФАСТРАХОВАНИЕ-ОМС"</nam_orgp>
+    <nam_orgk>ЧЕЛЯБИНСКИЙ ФИЛИАЛ ООО "АЛЬФАСТРАХОВАНИЕ-ОМС"</nam_orgk>
+    <tf_kod/>
+    <smocod>74057</smocod>
+    <datebeg>07.08.2013</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>75000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>74058</orgcod>
+    <nam_orgp>АО "АСТРАМЕД-МС" (СМК) ФИЛИАЛ В ЧЕЛЯБИНСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>АО "АСТРАМЕД-МС" (СМК) ФИЛИАЛ В ЧЕЛЯБИНСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod/>
+    <smocod>74058</smocod>
+    <datebeg>30.08.2021</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>76000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>75000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Забайкальского края</nam_orgp>
+    <nam_orgk>ТФОМС Забайкальского края</nam_orgk>
+    <tf_kod>75</tf_kod>
+    <smocod/>
+    <datebeg>11.08.1998</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>76000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>75004</orgcod>
+    <nam_orgp>АКЦИОНЕРНОЕ ОБЩЕСТВО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>75004</smocod>
+    <datebeg>13.07.2021</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>76000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>75009</orgcod>
+    <nam_orgp>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "СТРАХОВАЯ МЕДИЦИНСКАЯ КОМПАНИЯ "ЗАБАЙКАЛМЕДСТРАХ"</nam_orgp>
+    <nam_orgk>ООО "СМК "ЗАБАЙКАЛМЕДСТРАХ"</nam_orgk>
+    <tf_kod/>
+    <smocod>75009</smocod>
+    <datebeg>06.11.2024</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>78000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>76000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ ЯРОСЛАВСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>ТФОМС ЯРОСЛАВСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod>76</tf_kod>
+    <smocod/>
+    <datebeg>29.04.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>78000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>76001</orgcod>
+    <nam_orgp>ЯРОСЛАВCКИЙ ФИЛИАЛ ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "СТРАХОВАЯ МЕДИЦИНСКАЯ КОМПАНИЯ РЕСО-МЕД"</nam_orgp>
+    <nam_orgk>ЯРОСЛАВСКИЙ ФИЛИАЛ ООО "СМК РЕСО-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>76001</smocod>
+    <datebeg>10.05.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>78000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>76003</orgcod>
+    <nam_orgp>ЯРОСЛАВСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>ЯРОСЛАВСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>76003</smocod>
+    <datebeg>10.05.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>78000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>76004</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС"- ФИЛИАЛ В ЯРОСЛАВСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС"- ФИЛИАЛ В ЯРОСЛАВСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod/>
+    <smocod>76004</smocod>
+    <datebeg>10.05.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>78000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>76006</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. ЯРОСЛАВЛЬ</nam_orgp>
+    <nam_orgk>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. ЯРОСЛАВЛЬ</nam_orgk>
+    <tf_kod/>
+    <smocod>76006</smocod>
+    <datebeg>10.05.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>45000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>77000</orgcod>
+    <nam_orgp>МОСКОВСКИЙ ГОРОДСКОЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ</nam_orgp>
+    <nam_orgk>МГФОМС</nam_orgk>
+    <tf_kod>77</tf_kod>
+    <smocod/>
+    <datebeg>22.08.2024</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>45000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>77004</orgcod>
+    <nam_orgp>АКЦИОНЕРНОЕ ОБЩЕСТВО "МЕДИЦИНСКАЯ АКЦИОНЕРНАЯ СТРАХОВАЯ КОМПАНИЯ"</nam_orgp>
+    <nam_orgk>АО "МАКС-М"</nam_orgk>
+    <tf_kod/>
+    <smocod>77004</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>45000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>77008</orgcod>
+    <nam_orgp>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "СТРАХОВАЯ МЕДИЦИНСКАЯ КОМПАНИЯ РЕСО-МЕД" (МОСКОВСКИЙ ФИЛИАЛ)</nam_orgp>
+    <nam_orgk>ООО "СМК РЕСО-МЕД" (МОСКОВСКИЙ ФИЛИАЛ)</nam_orgk>
+    <tf_kod/>
+    <smocod>77008</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>45000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>77012</orgcod>
+    <nam_orgp>АКЦИОНЕРНОЕ ОБЩЕСТВО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>77012</smocod>
+    <datebeg>01.01.2012</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>45000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>77013</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. МОСКВЕ</nam_orgp>
+    <nam_orgk>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. МОСКВЕ</nam_orgk>
+    <tf_kod/>
+    <smocod>77013</smocod>
+    <datebeg>01.01.2012</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>45000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>77015</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В Г. МОСКВЕ (АСП ООО "КАПИТАЛ МС" - ФИЛИАЛ В Г. МОСКВЕ)</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС" - ФИЛИАЛ В Г.МОСКВЕ</nam_orgk>
+    <tf_kod/>
+    <smocod>77015</smocod>
+    <datebeg>24.08.2012</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>45000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>77016</orgcod>
+    <nam_orgp>МОСКОВСКИЙ ФИЛИАЛ ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "МЕДИЦИНСКАЯ СТРАХОВАЯ КОМПАНИЯ "ИНКО-МЕД"</nam_orgp>
+    <nam_orgk>МОСКОВСКИЙ ФИЛИАЛ ООО "МСК "ИНКО-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>77016</smocod>
+    <datebeg>11.07.2022</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>40000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>78000</orgcod>
+    <nam_orgp>Государственное учреждение «Территориальный фонд обязательного медицинского страхования Санкт-Петербурга»</nam_orgp>
+    <nam_orgk>ТФОМС Санкт-Петербурга</nam_orgk>
+    <tf_kod>78</tf_kod>
+    <smocod/>
+    <datebeg>27.07.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>40000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>78003</orgcod>
+    <nam_orgp>АКЦИОНЕРНОЕ ОБЩЕСТВО "ГОРОДСКАЯ СТРАХОВАЯ МЕДИЦИНСКАЯ КОМПАНИЯ"</nam_orgp>
+    <nam_orgk>АО "ГСМК"</nam_orgk>
+    <tf_kod/>
+    <smocod>78003</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>40000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>78005</orgcod>
+    <nam_orgp>ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "МЕДИЦИНСКАЯ АКЦИОНЕРНАЯ СТРАХОВАЯ КОМПАНИЯ" В ГОРОДЕ САНКТ-ПЕТЕРБУРГЕ</nam_orgp>
+    <nam_orgk>ФИЛИАЛ АО "МАКС-М" В Г. САНКТ-ПЕТЕРБУРГЕ</nam_orgk>
+    <tf_kod/>
+    <smocod>78005</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>40000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>78006</orgcod>
+    <nam_orgp>САНКТ-ПЕТЕРБУРГСКИЙ ФИЛИАЛ ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "СТРАХОВАЯ МЕДИЦИНСКАЯ КОМПАНИЯ РЕСО-МЕД"</nam_orgp>
+    <nam_orgk>САНКТ-ПЕТЕРБУРГСКИЙ ФИЛИАЛ ООО "СМК РЕСО-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>78006</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>40000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>78007</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В Г. САНКТ-ПЕТЕРБУРГЕ И ЛЕНИНГРАДСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС" - ФИЛИАЛ В Г.САНКТ-ПЕТЕРБУРГЕ И ЛЕНИНГРАДСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod/>
+    <smocod>78007</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>40000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>78010</orgcod>
+    <nam_orgp>САНКТ-ПЕТЕРБУРГСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>САНКТ-ПЕТЕРБУРГСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>78010</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>40000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>78013</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "СТРАХОВАЯ КОМПАНИЯ "ИНГОССТРАХ-М"- ФИЛИАЛ В Г.САНКТ-ПЕТЕРБУРГ</nam_orgp>
+    <nam_orgk>АДМИНИСТРАТИВНОЕ ОБОСОБЛЕННОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "СК "ИНГОССТРАХ-М" - ФИЛИАЛ В Г. САНКТ-ПЕТЕРБУРГ</nam_orgk>
+    <tf_kod/>
+    <smocod>78013</smocod>
+    <datebeg>07.05.2022</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>99000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>79000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Еврейской автономной области</nam_orgp>
+    <nam_orgk>ТФОМС ЕАО</nam_orgk>
+    <tf_kod>79</tf_kod>
+    <smocod/>
+    <datebeg>26.03.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>99000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>79003</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В ЕВРЕЙСКОЙ АВТОНОМНОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС" - ФИЛИАЛ В ЕВРЕЙСКОЙ АО</nam_orgk>
+    <tf_kod/>
+    <smocod>79003</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>99000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>79006</orgcod>
+    <nam_orgp>ДИРЕКЦИЯ ЕВРЕЙСКОЙ АО ХАБАРОВСКОГО ФИЛИАЛА АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>ДИРЕКЦИЯ ЕВРЕЙСКОЙ АО ХАБАРОВСКОГО ФИЛИАЛА АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>79006</smocod>
+    <datebeg>31.08.2016</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>11100</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>80000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ НЕНЕЦКОГО АВТОНОМНОГО ОКРУГА</nam_orgp>
+    <nam_orgk>ТФОМС НАО</nam_orgk>
+    <tf_kod>80</tf_kod>
+    <smocod/>
+    <datebeg>17.06.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>11100</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>80001</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В НЕНЕЦКОМ АВТОНОМНОМ ОКРУГЕ</nam_orgp>
+    <nam_orgk>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ООО "КАПИТАЛ МС" - ФИЛИАЛ В НЕНЕЦКОМ АВТОНОМНОМ ОКРУГЕ</nam_orgk>
+    <tf_kod/>
+    <smocod>80001</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>71100</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>81000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ ХАНТЫ-МАНСИЙСКОГО АВТОНОМНОГО ОКРУГА – ЮГРЫ</nam_orgp>
+    <nam_orgk>ТФОМС ЮГРЫ</nam_orgk>
+    <tf_kod>81</tf_kod>
+    <smocod/>
+    <datebeg>11.08.1998</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>71100</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>81001</orgcod>
+    <nam_orgp>ЮГОРСКИЙ ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>ЮГОРСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>81001</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>71100</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>81007</orgcod>
+    <nam_orgp>АДМИНИСТРАТИВНОЕ СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "КАПИТАЛ МЕДИЦИНСКОЕ СТРАХОВАНИЕ" - ФИЛИАЛ В ХАНТЫ-МАНСИЙСКОМ АВТОНОМНОМ ОКРУГЕ - ЮГРЕ</nam_orgp>
+    <nam_orgk>АСП ООО "КАПИТАЛ МС" - ФИЛИАЛ В ХМАО-ЮГРЕ</nam_orgk>
+    <tf_kod/>
+    <smocod>81007</smocod>
+    <datebeg>11.08.2015</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>71100</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>81008</orgcod>
+    <nam_orgp>ХАНТЫ-МАНСИЙСКИЙ ФИЛИАЛ ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "АЛЬФАСТРАХОВАНИЕ-ОМС"</nam_orgp>
+    <nam_orgk>ХАНТЫ-МАНСИЙСКИЙ ФИЛИАЛ ООО "АЛЬФАСТРАХОВАНИЕ-ОМС"</nam_orgk>
+    <tf_kod/>
+    <smocod>81008</smocod>
+    <datebeg>31.08.2015</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>77000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>82000</orgcod>
+    <nam_orgp>Чукотский территориальный фонд обязательного медицинского страхования</nam_orgp>
+    <nam_orgk>ЧТФОМС</nam_orgk>
+    <tf_kod>82</tf_kod>
+    <smocod/>
+    <datebeg>20.08.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>77000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>82001</orgcod>
+    <nam_orgp>ЧУКОТСКИЙ ФИЛИАЛ АКЦИОНЕРНОГО ОБЩЕСТВА "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>ЧУКОТСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>82001</smocod>
+    <datebeg>26.08.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>71140</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>83000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Ямало-Ненецкого автономного округа</nam_orgp>
+    <nam_orgk>ТФОМС ЯНАО</nam_orgk>
+    <tf_kod>83</tf_kod>
+    <smocod/>
+    <datebeg>15.11.1993</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>71140</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>83001</orgcod>
+    <nam_orgp>АКЦИОНЕРНОЕ ОБЩЕСТВО "ГОСУДАРСТВЕННАЯ МЕДИЦИНСКАЯ СТРАХОВАЯ КОМПАНИЯ "ЗАПОЛЯРЬЕ"</nam_orgp>
+    <nam_orgk>АО "ГМСК "ЗАПОЛЯРЬЕ"</nam_orgk>
+    <tf_kod/>
+    <smocod>83001</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>71140</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>83008</orgcod>
+    <nam_orgp>ЯМАЛЬСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>ЯМАЛЬСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>83008</smocod>
+    <datebeg>01.01.2011</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>55000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>84000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ ГОРОДА БАЙКОНУР</nam_orgp>
+    <nam_orgk>ТФОМС ГОРОДА БАЙКОНУР</nam_orgk>
+    <tf_kod>84</tf_kod>
+    <smocod/>
+    <datebeg>01.07.1997</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>55000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>84002</orgcod>
+    <nam_orgp>БАЙКОНУРСКИЙ ФИЛИАЛ АКЦИОНЕРНОЕ ОБЩЕСТВО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>БАЙКОНУРСКИЙ ФИЛИАЛ АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>84002</smocod>
+    <datebeg>31.08.2018</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>35000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>85000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ РЕСПУБЛИКИ КРЫМ</nam_orgp>
+    <nam_orgk>ТФОМС РЕСПУБЛИКИ КРЫМ</nam_orgk>
+    <tf_kod>85</tf_kod>
+    <smocod/>
+    <datebeg>19.06.2014</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>35000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>85002</orgcod>
+    <nam_orgp>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "CТРАХОВАЯ МЕДИЦИНСКАЯ КОМПАНИЯ "КРЫММЕДСТРАХ"</nam_orgp>
+    <nam_orgk>ООО "СМК "КРЫММЕДСТРАХ"</nam_orgk>
+    <tf_kod/>
+    <smocod>85002</smocod>
+    <datebeg>30.07.2014</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>35000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>85004</orgcod>
+    <nam_orgp>ФИЛИАЛ "КРЫМСКАЯ СТРАХОВАЯ МЕДИЦИНСКАЯ КОМПАНИЯ" ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "АРСЕНАЛ МЕДИЦИНСКОЕ СТРАХОВАНИЕ"</nam_orgp>
+    <nam_orgk>ФИЛИАЛ "КСМК" ООО "АРСЕНАЛ МС"</nam_orgk>
+    <tf_kod/>
+    <smocod>85004</smocod>
+    <datebeg>18.08.2015</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>35000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>85005</orgcod>
+    <nam_orgp>АКЦИОНЕРНОЕ ОБЩЕСТВО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>85005</smocod>
+    <datebeg>14.08.2024</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>67000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>86000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ ГОРОДА СЕВАСТОПОЛЯ</nam_orgp>
+    <nam_orgk>ТФОМС города Севастополя</nam_orgk>
+    <tf_kod>86</tf_kod>
+    <smocod/>
+    <datebeg>07.04.2014</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>67000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>86001</orgcod>
+    <nam_orgp>СЕВАСТОПОЛЬСКИЙ ФИЛИАЛ "КРЫМСКОЙ СТРАХОВОЙ МЕДИЦИНСКОЙ КОМПАНИИ" ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "АРСЕНАЛ МЕДИЦИНСКОЕ СТРАХОВАНИЕ"</nam_orgp>
+    <nam_orgk>СЕВАСТОПОЛЬСКИЙ ФИЛИАЛ "КСМК"</nam_orgk>
+    <tf_kod/>
+    <smocod>86001</smocod>
+    <datebeg>29.08.2014</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>67000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>86002</orgcod>
+    <nam_orgp>СЕВАСТОПОЛЬСКИЙ ФИЛИАЛ ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "СТРАХОВАЯ МЕДИЦИНСКАЯ КОМПАНИЯ "КРЫММЕДСТРАХ"</nam_orgp>
+    <nam_orgk>СЕВАСТОПОЛЬСКИЙ ФИЛИАЛ ООО"СМК"КРЫММЕДСТРАХ"</nam_orgk>
+    <tf_kod/>
+    <smocod>86002</smocod>
+    <datebeg>29.08.2014</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>67000</tf_okato>
+    <orgtype>2</orgtype>
+    <orgcod>86004</orgcod>
+    <nam_orgp>АКЦИОНЕРНОЕ ОБЩЕСТВО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgp>
+    <nam_orgk>АО "СТРАХОВАЯ КОМПАНИЯ "СОГАЗ-МЕД"</nam_orgk>
+    <tf_kod/>
+    <smocod>86004</smocod>
+    <datebeg>16.08.2024</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>21000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>87000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ ДОНЕЦКОЙ НАРОДНОЙ РЕСПУБЛИКИ</nam_orgp>
+    <nam_orgk>ТФОМС ДОНЕЦКОЙ НАРОДНОЙ РЕСПУБЛИКИ</nam_orgk>
+    <tf_kod>87</tf_kod>
+    <smocod/>
+    <datebeg>23.01.2023</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>43000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>88000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ ЛУГАНСКОЙ НАРОДНОЙ РЕСПУБЛИКИ</nam_orgp>
+    <nam_orgk>ТФОМС Луганской Народной Республики</nam_orgk>
+    <tf_kod>88</tf_kod>
+    <smocod/>
+    <datebeg>01.02.2023</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>23000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>89000</orgcod>
+    <nam_orgp>ТЕРРИТОРИАЛЬНЫЙ ФОНД ОБЯЗАТЕЛЬНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ ЗАПОРОЖСКОЙ ОБЛАСТИ</nam_orgp>
+    <nam_orgk>ТФОМС ЗАПОРОЖСКОЙ ОБЛАСТИ</nam_orgk>
+    <tf_kod>89</tf_kod>
+    <smocod/>
+    <datebeg>16.02.2023</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>74000</tf_okato>
+    <orgtype>1</orgtype>
+    <orgcod>90000</orgcod>
+    <nam_orgp>Территориальный фонд обязательного медицинского страхования Херсонской области</nam_orgp>
+    <nam_orgk>ТФОМС Херсонской области</nam_orgk>
+    <tf_kod>90</tf_kod>
+    <smocod/>
+    <datebeg>24.01.2023</datebeg>
+    <dateend/>
+  </zap>
+  <zap>
+    <tf_okato>00000</tf_okato>
+    <orgtype>0</orgtype>
+    <orgcod>99000</orgcod>
+    <nam_orgp>Федеральный фонд обязательного медицинского страхования</nam_orgp>
+    <nam_orgk>ФОМС</nam_orgk>
+    <tf_kod>99</tf_kod>
+    <smocod/>
+    <datebeg>11.08.1998</datebeg>
+    <dateend/>
+  </zap>
+</packet>

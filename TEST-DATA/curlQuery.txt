@@ -37,3 +37,10 @@ F031 -> F032 -> F033 -> F38(f32, f33)
 17) curl.exe -X POST http://localhost:5000/api/F014_OplOtk/import/F14 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F014_OplOtk.xml"
 
 18) curl.exe -X POST http://localhost:5000/api/F001_Tfoms/import/F1 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F001_tfoms.xml"
+
+19) curl.exe -X POST http://localhost:5000/api/F019_PersAccOrg/import/F19 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F019_PersAccOrg.xml"
+(F010, F001, F002)
+
+
+
+  SELECT * FROM [F001_Tfoms] WHERE f010_SubectiId = 42

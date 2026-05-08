@@ -939,10 +939,12 @@ namespace BackendApp.Migrations
                     Id = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     OrganizationId = table.Column<long>(type: "bigint", nullable: true),
-                    AddressId = table.Column<long>(type: "bigint", nullable: true),
                     DateBeg = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    DateEnd = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    F002_SmoEmpId = table.Column<string>(type: "nvarchar(5)", nullable: false)
+                    DateEnd = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    F002_SmoEmpId = table.Column<string>(type: "nvarchar(5)", nullable: true),
+                    F001_TfomsId = table.Column<long>(type: "bigint", nullable: false),
+                    SubjectId = table.Column<long>(type: "bigint", nullable: false),
+                    AddressId = table.Column<long>(type: "bigint", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -953,16 +955,28 @@ namespace BackendApp.Migrations
                         principalTable: "Addresses",
                         principalColumn: "Id");
                     table.ForeignKey(
+                        name: "FK_F019_PersAccOrgs_F001_Tfoms_F001_TfomsId",
+                        column: x => x.F001_TfomsId,
+                        principalTable: "F001_Tfoms",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
                         name: "FK_F019_PersAccOrgs_F002_SmoEmps_F002_SmoEmpId",
                         column: x => x.F002_SmoEmpId,
                         principalTable: "F002_SmoEmps",
                         principalColumn: "SmoCod",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_F019_PersAccOrgs_Organizations_OrganizationId",
                         column: x => x.OrganizationId,
                         principalTable: "Organizations",
                         principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_F019_PersAccOrgs_Subjects_SubjectId",
+                        column: x => x.SubjectId,
+                        principalTable: "Subjects",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
@@ -1191,6 +1205,11 @@ namespace BackendApp.Migrations
                 column: "AddressId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_F019_PersAccOrgs_F001_TfomsId",
+                table: "F019_PersAccOrgs",
+                column: "F001_TfomsId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_F019_PersAccOrgs_F002_SmoEmpId",
                 table: "F019_PersAccOrgs",
                 column: "F002_SmoEmpId");
@@ -1199,6 +1218,11 @@ namespace BackendApp.Migrations
                 name: "IX_F019_PersAccOrgs_OrganizationId",
                 table: "F019_PersAccOrgs",
                 column: "OrganizationId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_F019_PersAccOrgs_SubjectId",
+                table: "F019_PersAccOrgs",
+                column: "SubjectId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_F033_Spmos_BaseDataId",
@@ -1315,9 +1339,6 @@ namespace BackendApp.Migrations
                 table: "Organizations");
 
             migrationBuilder.DropTable(
-                name: "F001_Tfoms");
-
-            migrationBuilder.DropTable(
                 name: "f002_smo_insAdvices");
 
             migrationBuilder.DropTable(
@@ -1351,12 +1372,6 @@ namespace BackendApp.Migrations
                 name: "F038_Addrmps");
 
             migrationBuilder.DropTable(
-                name: "Accounts");
-
-            migrationBuilder.DropTable(
-                name: "F010_Subects");
-
-            migrationBuilder.DropTable(
                 name: "PaymentStatuses");
 
             migrationBuilder.DropTable(
@@ -1378,6 +1393,9 @@ namespace BackendApp.Migrations
                 name: "F012_TipSches");
 
             migrationBuilder.DropTable(
+                name: "F001_Tfoms");
+
+            migrationBuilder.DropTable(
                 name: "F002_SmoEmps");
 
             migrationBuilder.DropTable(
@@ -1388,6 +1406,12 @@ namespace BackendApp.Migrations
 
             migrationBuilder.DropTable(
                 name: "ExpTypes");
+
+            migrationBuilder.DropTable(
+                name: "Accounts");
+
+            migrationBuilder.DropTable(
+                name: "F010_Subects");
 
             migrationBuilder.DropTable(
                 name: "InsIncludes");
