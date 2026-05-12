@@ -9,6 +9,9 @@ namespace BackendApp.Models
     {
         public long Id { get; set; }
 
+        public long BaseDataId { get; set; }
+        public BaseData BaseData { get; set; }
+
         [StringLength(17, MinimumLength = 0, ErrorMessage = "Длинна UIDMO (F031_ErmoId) должна быть от 0 до 17 символов")]
         public string? F031_ErmoId { get; set; }
         public f031_ermo? F031_Ermo { get; set; }

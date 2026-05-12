@@ -141,6 +141,7 @@ namespace BackendApp.Services
 
                 f037_licmo f037_Licmo = new f037_licmo
                 {
+                    BaseDataId = baseDataId,
                     F031_ErmoId = item.F031_ErmoId,
                     F032_TrmoId = item.F032_TrmoId,
                     OrganizationId = organizationId,

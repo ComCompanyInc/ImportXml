@@ -2,41 +2,41 @@
 F031 -> F032 -> F033 -> F38(f32, f33)
 
 
-1) curl.exe -X POST http://localhost:5000/api/F031_ErmosComtroller/import/F31 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F031_ermo.xml"
+1) curl.exe -X POST http://localhost:5000/api/F031_ErmosComtroller/import/F31 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F031_ermo.xml" +
 
-2) curl.exe -X POST http://localhost:5000/api/F032_Trmos/import/F32 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F032_trmo.xml"
+2) curl.exe -X POST http://localhost:5000/api/F032_Trmos/import/F32 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F032_trmo.xml" +
 
-3) curl.exe -X POST http://localhost:5000/api/F033_Spmos/import/F33 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F033_spmo.xml"
+3) curl.exe -X POST http://localhost:5000/api/F033_Spmos/import/F33 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F033_spmo.xml" +
 
-4) curl.exe -X POST http://localhost:5000/api/F038_Addrmps/import/F38 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F038_addrmp.xml"
+4) curl.exe -X POST http://localhost:5000/api/F038_Addrmps/import/F38 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F038_addrmp.xml" +
 
-5) curl.exe -X POST http://localhost:5000/api/F037_Licmo/import/F37 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F037_licmo.xml"
+5) curl.exe -X POST http://localhost:5000/api/F037_Licmo/import/F37 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F037_licmo.xml" +
 
-7) curl.exe -X POST http://localhost:5000/api/F005_StatOpl/import/F5 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F005_StatOpl.xml"
+7) curl.exe -X POST http://localhost:5000/api/F005_StatOpl/import/F5 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F005_StatOpl.xml" +
 
-8) curl.exe -X POST http://localhost:5000/api/F006_VidExp/import/F6 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F006_VidExp.xml"
+8) curl.exe -X POST http://localhost:5000/api/F006_VidExp/import/F6 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F006_VidExp.xml" +
 
-9) curl.exe -X POST http://localhost:5000/api/F007_Vedom/import/F7 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F007_Vedom.xml"
+9) curl.exe -X POST http://localhost:5000/api/F007_Vedom/import/F7 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F007_Vedom.xml"  +
 
-10) curl.exe -X POST http://localhost:5000/api/F008_TipOms/import/F8 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F008_TipOms.xml"
+10) curl.exe -X POST http://localhost:5000/api/F008_TipOms/import/F8 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F008_TipOms.xml"  +
 
-11) curl.exe -X POST http://localhost:5000/api/F009_StatZl/import/F9 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F009_StatZl.xml"
+11) curl.exe -X POST http://localhost:5000/api/F009_StatZl/import/F9 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F009_StatZl.xml" +
 
-12) curl.exe -X POST http://localhost:5000/api/F010_Subecti/import/F10 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F010_Subecti.xml"
+12) curl.exe -X POST http://localhost:5000/api/F010_Subecti/import/F10 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F010_Subecti.xml" +
 
-6) curl.exe -X POST http://localhost:5000/api/F002_SmoEmp/import/F2 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F002.xml"
+6) curl.exe -X POST http://localhost:5000/api/F002_SmoEmp/import/F2 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F002.xml" +
 
-13) curl.exe -X POST http://localhost:5000/api/F011_Tipdoc/import/F11 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F011_Tipdoc.xml"
+13) curl.exe -X POST http://localhost:5000/api/F011_Tipdoc/import/F11 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F011_Tipdoc.xml"  +
 
-14) curl.exe -X POST http://localhost:5000/api/F012_TipSch/import/F12 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F012_TipSch.xml"
+14) curl.exe -X POST http://localhost:5000/api/F012_TipSch/import/F12 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F012_TipSch.xml" +
 
-15) curl.exe -X POST http://localhost:5000/api/F015_Okrug/import/F15 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F015_Okrug.xml"
+15) curl.exe -X POST http://localhost:5000/api/F015_Okrug/import/F15 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F015_Okrug.xml"  +
 
-16) curl.exe -X POST http://localhost:5000/api/F017_BillTypes/import/F17 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F017_BillTypes.xml"
+16) curl.exe -X POST http://localhost:5000/api/F017_BillTypes/import/F17 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F017_BillTypes.xml"  +
 
-17) curl.exe -X POST http://localhost:5000/api/F014_OplOtk/import/F14 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F014_OplOtk.xml"
+17) curl.exe -X POST http://localhost:5000/api/F014_OplOtk/import/F14 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F014_OplOtk.xml" +
 
-18) curl.exe -X POST http://localhost:5000/api/F001_Tfoms/import/F1 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F001_tfoms.xml"
+18) curl.exe -X POST http://localhost:5000/api/F001_Tfoms/import/F1 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F001_tfoms.xml"  +
 
 19) curl.exe -X POST http://localhost:5000/api/F019_PersAccOrg/import/F19 -H "Content-Type: application/xml; charset=windows-1251" -d "@test_F019_PersAccOrg.xml"
 (F010, F001, F002)

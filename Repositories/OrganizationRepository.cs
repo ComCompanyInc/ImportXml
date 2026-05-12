@@ -19,7 +19,7 @@ namespace BackendApp.Repositories
             _context = context;
         }
 
-        public async Task<Organization> GetEnitityByAttributes(Organization entityData)
+        private async Task<Organization> GetEntityByOrgName(Organization entityData)
         {
             IQueryable<Organization> organizationResult = _context.Organizations;
 
@@ -37,65 +37,33 @@ namespace BackendApp.Repositories
                 }
             }
 
-            //if (entityData.KfTf != null)
-            //{
-            //    organizationResult = organizationResult
-            //        .Where(c => c.KfTf == entityData.KfTf);
-            //}
+            return updatedOrg;
+        }
 
-            //if (!entityData.Kbk.IsNullOrEmpty())
-            //{
-            //    organizationResult = organizationResult
-            //        .Where(c => c.Kbk == entityData.Kbk);
-            //}
+        public async Task<Organization> GetEnitityByAttributes(Organization entityData)
+        {
+            IQueryable<Organization> organizationResult = _context.Organizations;
 
-            //if (entityData.NoSmo != null)
-            //{
-            //    organizationResult = organizationResult
-            //        .Where(c => c.NoSmo == entityData.NoSmo);
-            //}
+            Organization updatedOrg = null;
+            if (!entityData.OrgCode.IsNullOrEmpty())
+            {
+                organizationResult = organizationResult
+                    .Where(c => c.OrgCode == entityData.OrgCode);
 
-            //if (!entityData.OrgCode.IsNullOrEmpty())
-            //{
-            //    organizationResult = organizationResult
-            //        .Where(c => c.OrgCode == entityData.OrgCode);
-            //}
-
-            //if (!entityData.Mcod.IsNullOrEmpty())
-            //{
-            //    organizationResult = organizationResult
-            //        .Where(c => c.Mcod == entityData.Mcod);
-            //}
-
-            //if (!entityData.Okopf.IsNullOrEmpty())
-            //{
-            //    organizationResult = organizationResult
-            //        .Where(c => c.Okopf == entityData.Okopf);
-            //}
-
-            //if (!entityData.NameE.IsNullOrEmpty())
-            //{
-            //    organizationResult = organizationResult
-            //        .Where(c => c.NameE == entityData.NameE);
-            //}
-
-            //if (entityData.NalP != null && entityData.NalP != 0)
-            //{
-            //    organizationResult = organizationResult
-            //        .Where(c => c.NalP == entityData.NalP);
-            //}
-
-            //if (!entityData.VedPri.IsNullOrEmpty())
-            //{
-            //    organizationResult = organizationResult
-            //        .Where(c => c.VedPri == entityData.VedPri);
-            //}
-
-            //if (entityData.OrgTypeId != null && entityData.OrgTypeId != 0)
-            //{
-            //    organizationResult = organizationResult
-            //        .Where(c => c.OrgTypeId == entityData.OrgTypeId);
-            //}
+                Organization existingOrg = await organizationResult.FirstOrDefaultAsync();
+                if (existingOrg != null)
+                {
+                    updatedOrg = await UpdateObject(existingOrg, entityData);
+                }
+                else
+                {
+                    updatedOrg = await GetEntityByOrgName(entityData);
+                }
+            }
+            else
+            {
+                updatedOrg = await GetEntityByOrgName(entityData);
+            }
 
             return updatedOrg;
         }
