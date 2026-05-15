@@ -1,0 +1,31 @@
+﻿#logContainer {
+    margin-top: 15px;
+}
+
+.log-card {
+    background: #f0f0f0;
+    padding: 8px;
+    margin-bottom: 3px;
+    border-radius: 5px;
+
+    /*Максимальная ширина(резиновый) но не больше 500 пикселей*/
+    max-width: 500px;
+    width: 100%;
+
+    word-wrap: break-word;      /* перенос длинных слов */
+}
+
+.log-time {
+    color: #666;
+    margin-right: 10px;
+}
+
+.file-name {
+    font-weight: bold;
+    color: #0066cc;
+    margin-right: 10px;
+}
+
+.log-message {
+    color: #333;
+}

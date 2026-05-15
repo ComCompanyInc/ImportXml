@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<packet>
+  <zglv>
+    <type>Vedom</type>
+    <version>2.2</version>
+    <date>07.05.2024</date>
+  </zglv>
+  <zap>
+    <IDVED>1</IDVED>
+    <VEDNAME>Муниципального образования</VEDNAME>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND>31.12.2014</DATEEND>
+  </zap>
+  <zap>
+    <IDVED>2</IDVED>
+    <VEDNAME>Субъекта Российской Федерации</VEDNAME>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND>17.09.2014</DATEEND>
+  </zap>
+  <zap>
+    <IDVED>2</IDVED>
+    <VEDNAME>Органы исполнительной власти в области здравоохранения субъектов Российской Федерации</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>3</IDVED>
+    <VEDNAME>Минздрав России</VEDNAME>
+    <DATEBEG>12.12.2012</DATEBEG>
+    <DATEEND>17.09.2014</DATEEND>
+  </zap>
+  <zap>
+    <IDVED>3</IDVED>
+    <VEDNAME>Министерство здравоохранения Российской Федерации</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>4</IDVED>
+    <VEDNAME>Минобрнауки России</VEDNAME>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND>17.09.2014</DATEEND>
+  </zap>
+  <zap>
+    <IDVED>4</IDVED>
+    <VEDNAME>Министерство образования и науки Российской Федерации</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND>14.05.2018</DATEEND>
+  </zap>
+  <zap>
+    <IDVED>4</IDVED>
+    <VEDNAME>Министерство науки и высшего образования Российской Федерации</VEDNAME>
+    <DATEBEG>15.05.2018</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>5</IDVED>
+    <VEDNAME>Минобороны России</VEDNAME>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND>17.09.2014</DATEEND>
+  </zap>
+  <zap>
+    <IDVED>5</IDVED>
+    <VEDNAME>Министерство обороны Российской Федерации</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>6</IDVED>
+    <VEDNAME>МВД России</VEDNAME>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND>17.09.2014</DATEEND>
+  </zap>
+  <zap>
+    <IDVED>6</IDVED>
+    <VEDNAME>Министерство внутренних дел Российской Федерации</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>7</IDVED>
+    <VEDNAME>ФСИН России</VEDNAME>
+    <DATEBEG>25.10.2012</DATEBEG>
+    <DATEEND>17.09.2014</DATEEND>
+  </zap>
+  <zap>
+    <IDVED>7</IDVED>
+    <VEDNAME>Федеральная служба исполнения наказаний</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>8</IDVED>
+    <VEDNAME>ФСБ России</VEDNAME>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND>17.09.2014</DATEEND>
+  </zap>
+  <zap>
+    <IDVED>8</IDVED>
+    <VEDNAME>Федеральная служба безопасности Российской Федерации</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>9</IDVED>
+    <VEDNAME>РАМН</VEDNAME>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND>17.09.2014</DATEEND>
+  </zap>
+  <zap>
+    <IDVED>9</IDVED>
+    <VEDNAME>Российская академия медицинских наук</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND>31.12.2014</DATEEND>
+  </zap>
+  <zap>
+    <IDVED>10</IDVED>
+    <VEDNAME>ФМБА России</VEDNAME>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND>17.09.2014</DATEEND>
+  </zap>
+  <zap>
+    <IDVED>10</IDVED>
+    <VEDNAME>Федеральное медико-биологическое агентство</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>11</IDVED>
+    <VEDNAME>Прочих федеральных министерств и ведомств</VEDNAME>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>12</IDVED>
+    <VEDNAME>НУЗ ОАО "РЖД"</VEDNAME>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND>17.09.2014</DATEEND>
+  </zap>
+  <zap>
+    <IDVED>12</IDVED>
+    <VEDNAME>Негосударственные учреждения здравоохранения ОАО "РЖД"</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>13</IDVED>
+    <VEDNAME>Автономные МО</VEDNAME>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND>17.09.2014</DATEEND>
+  </zap>
+  <zap>
+    <IDVED>13</IDVED>
+    <VEDNAME>Автономные медицинские организации</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>14</IDVED>
+    <VEDNAME>Общественных, религиозных организаций</VEDNAME>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND>17.09.2014</DATEEND>
+  </zap>
+  <zap>
+    <IDVED>14</IDVED>
+    <VEDNAME>Общественные и религиозные медицинские организации</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>15</IDVED>
+    <VEDNAME>Иные</VEDNAME>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>16</IDVED>
+    <VEDNAME>Минтруда России</VEDNAME>
+    <DATEBEG>22.11.2012</DATEBEG>
+    <DATEEND>17.09.2014</DATEEND>
+  </zap>
+  <zap>
+    <IDVED>16</IDVED>
+    <VEDNAME>Министерство Труда и социальной защиты Российской Федерации</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>17</IDVED>
+    <VEDNAME>Органы местного самоуправления, осуществляющие полномочия в сфере охраны здоровья</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>18</IDVED>
+    <VEDNAME>Муниципальные районы</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>19</IDVED>
+    <VEDNAME>Городские округа</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>20</IDVED>
+    <VEDNAME>Министерство Российской Федерации по делам гражданской обороны, чрезвычайным ситуациям и ликвидации стихийных бедствий</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>21</IDVED>
+    <VEDNAME>Министерство иностранных дел Российской Федерации</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>22</IDVED>
+    <VEDNAME>Федеральное агентство специального строительства</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>23</IDVED>
+    <VEDNAME>Федеральное агентство воздушного транспорта</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>24</IDVED>
+    <VEDNAME>Федеральное агентство морского и речного транспорта</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>25</IDVED>
+    <VEDNAME>Федеральное дорожное агентство</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>26</IDVED>
+    <VEDNAME>Министерство финансов Российской Федерации</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>27</IDVED>
+    <VEDNAME>Федеральная налоговая служба</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>28</IDVED>
+    <VEDNAME>Министерство экономического развития Российской Федерации</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>29</IDVED>
+    <VEDNAME>Федеральное агентство по управлению государственным имуществом</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>30</IDVED>
+    <VEDNAME>Министерство энергетики Российской Федерации</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>31</IDVED>
+    <VEDNAME>Министерство промышленности и торговли Российской Федерации</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>32</IDVED>
+    <VEDNAME>Министерство сельского хозяйства Российской Федерации</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>33</IDVED>
+    <VEDNAME>Федеральная служба судебных приставов</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>34</IDVED>
+    <VEDNAME>Управление делами Президента Российской Федерации</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>35</IDVED>
+    <VEDNAME>Федеральная служба по надзору в сфере защиты прав потребителей и благополучия человека</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>36</IDVED>
+    <VEDNAME>Федеральное агентство научных организаций</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND>14.05.2018</DATEEND>
+  </zap>
+  <zap>
+    <IDVED>37</IDVED>
+    <VEDNAME>Российская академия наук</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND>31.12.2014</DATEEND>
+  </zap>
+  <zap>
+    <IDVED>38</IDVED>
+    <VEDNAME>Частные медицинские организации и индивидуальные предприниматели</VEDNAME>
+    <DATEBEG>18.09.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>39</IDVED>
+    <VEDNAME>Автономные медицинские организации (государственные)</VEDNAME>
+    <DATEBEG>29.05.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>40</IDVED>
+    <VEDNAME>Автономные медицинские организации (негосударственные)</VEDNAME>
+    <DATEBEG>20.05.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>41</IDVED>
+    <VEDNAME>Министерство просвещения Российской Федерации</VEDNAME>
+    <DATEBEG>15.05.2018</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDVED>42</IDVED>
+    <VEDNAME>Органы исполнительной власти субъектов Российской Федерации, осуществляющие функции в области транспорта и дорожного строительства</VEDNAME>
+    <DATEBEG>06.09.2023</DATEBEG>
+    <DATEEND/>
+  </zap>
+</packet>

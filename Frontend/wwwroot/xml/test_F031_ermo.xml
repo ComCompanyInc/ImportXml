@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<packet>
+  <zglv>
+    <type>ERMO-6.957</type>
+    <version>4.433</version>
+    <date>27.03.2026</date>
+  </zglv>
+  <zap>
+    <IDMO>01080000000000000</IDMO>
+    <NAM_MOP>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ЮНИДЕНТ"</NAM_MOP>
+    <NAM_MOK>ООО "ЮНИДЕНТ"</NAM_MOK>
+    <INN>7720439330</INN>
+    <KPP>772701001</KPP>
+    <OGRN>1187746733327</OGRN>
+    <OID_MO>1.2.643.5.1.13.13.12.2.77.46277</OID_MO>
+    <OKOPF>12300</OKOPF>
+    <OKFS>16</OKFS>
+    <ADDR_J>117628, г Москва, ул Грина, д 36</ADDR_J>
+    <ADDR_J_GAR>a7366760-dbc3-4180-8138-1a50d134fa56</ADDR_J_GAR>
+    <OKTMO>45000000000</OKTMO>
+    <EMAIL>stom.dent@inbox.ru</EMAIL>
+    <PHONE>+79687851515</PHONE>
+    <FAX/>
+    <DATEBEG>01.01.2026</DATEBEG>
+    <DATEEND>31.12.2026</DATEEND>
+  </zap>
+</packet>

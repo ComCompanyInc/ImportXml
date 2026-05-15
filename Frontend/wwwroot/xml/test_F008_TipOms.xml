@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<packet>
+  <zglv>
+    <type>TipOMS</type>
+    <version>2.0</version>
+    <date>15.12.2017</date>
+  </zglv>
+  <zap>
+    <IDDOC>1</IDDOC>
+    <DOCNAME>Полис ОМС старого образца</DOCNAME>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDDOC>2</IDDOC>
+    <DOCNAME>Временное свидетельство, подтверждающее оформление полиса обязательного медицинского страхования</DOCNAME>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDDOC>3</IDDOC>
+    <DOCNAME>Полис ОМС единого образца</DOCNAME>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDDOC>4</IDDOC>
+    <DOCNAME>Состояние на учёте без полиса ОМС</DOCNAME>
+    <DATEBEG>01.01.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDDOC>5</IDDOC>
+    <DOCNAME>Состояние на учёте без временного свидетельства при приёме заявления в иную организацию</DOCNAME>
+    <DATEBEG>01.07.2014</DATEBEG>
+    <DATEEND/>
+  </zap>
+</packet>

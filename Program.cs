@@ -3,9 +3,22 @@ using BackendApp.Models;
 using BackendApp.Repositories;
 using BackendApp.Services;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Добавляем CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        policy =>
+        {
+            policy.AllowAnyOrigin()
+                  .AllowAnyMethod()
+                  .AllowAnyHeader();
+        });
+});
 
 builder.Services.AddDbContext<ApplicationDbContext>(
     options => options.UseSqlServer(
@@ -13,7 +26,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(
     )
 );
 
-builder.Services.AddControllers()
+builder.Services.AddControllersWithViews()  // Добавляем поддержку Views (.AddControllers() - только для api, без представлений)
     .AddXmlSerializerFormatters();
 
 // регестируем все сервисные классы приложения для DI
@@ -118,6 +131,9 @@ builder.Services.AddOpenApi();
 
 var app = builder.Build();
 
+// Используем CORS
+app.UseCors("AllowAll");
+
 app.MapControllers();
 
 // Configure the HTTP request pipeline.
@@ -127,5 +143,26 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+// ------------FRONTEND---------
+// Настройка обработки статических файлов (CSS, JS, XML)
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(
+        Path.Combine(Directory.GetCurrentDirectory(), "Frontend", "wwwroot"))
+}); // ВАЖНО! Без этого не будет работать CSS/JS - подключение папки со статическими файлами
+
+// Настройка маршрутизации
+app.UseRouting();
+
+// роут на главную страницу сайта
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=MainPage}/{action=Index}");
+
+// роут на страницу импорта всех xml файлов
+app.MapControllerRoute(
+    name: "import",
+    pattern: "{controller=Import}/{action=All}");
 
 app.Run();

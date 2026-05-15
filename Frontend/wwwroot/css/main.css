@@ -1,0 +1,35 @@
+﻿/* Чтобы body не давал отступы */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Верхний блок на всю ширину */
+.header {
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box; /* Чтобы padding не расширял блок */
+}
+
+/* Контейнер для двух блоков в строку */
+.container {
+    display: flex;  /* Включаем флекс */
+    /*height: 700px;*/
+    min-height: 90vh;  /* РАСТЯГИВАЕТСЯ! Минимум = высота окна */
+}
+
+/* Левый блок */
+.left {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Правый блок */
+.right {
+    flex: 2;
+    padding: 20px;
+    border: 1px solid #ccc;
+}

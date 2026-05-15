@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<packet>
+  <zglv>
+    <type>TRMO-6.957</type>
+    <version>5.291</version>
+    <date>27.03.2026</date>
+  </zglv>
+  <zap>
+    <UIDMO>77202600400</UIDMO>
+    <IDMO>01080000000000000</IDMO>
+    <MCOD>770075</MCOD>
+    <OKTMO_P>45000000000</OKTMO_P>
+    <SUBJ>г. Москва</SUBJ>
+    <D_BEGIN>03.04.2025</D_BEGIN>
+    <D_BEGIN_OMS>01.01.2026</D_BEGIN_OMS>
+    <D_END/>
+    <NAME_E/>
+    <OSP>0</OSP>
+    <PARENT_IDMO>01080000000000000</PARENT_IDMO>
+    <PARENT_UIDMO>77202600400</PARENT_UIDMO>
+    <VID_MO>Поликлиники (в том числе детские), а также поликлиники государственной и муниципальной систем здравоохранения. стоматологическая, в том числе детская</VID_MO>
+    <OID_MO>1.2.643.5.1.13.13.12.2.77.46277</OID_MO>
+    <OID_SPMO/>
+    <NAM_MOP>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ЮНИДЕНТ"</NAM_MOP>
+    <NAM_MOK>ООО "ЮНИДЕНТ"</NAM_MOK>
+    <INN>7720439330</INN>
+    <KPP>772701001</KPP>
+    <OGRN>1187746733327</OGRN>
+    <JURADDRESS_INDEX>117628</JURADDRESS_INDEX>
+    <JURADDRESS_ADDRESS>117628, г Москва, ул Грина, д 36</JURADDRESS_ADDRESS>
+    <GAR_ADDRESS>a7366760-dbc3-4180-8138-1a50d134fa56</GAR_ADDRESS>
+    <OKFS>16</OKFS>
+    <VEDPRI/>
+    <PHONE>+79687851515</PHONE>
+    <FAX/>
+    <EMAIL>stom.dent@inbox.ru</EMAIL>
+    <DATEBEG>01.01.2026</DATEBEG>
+    <DATEEND>31.12.2026</DATEEND>
+  </zap>
+</packet>

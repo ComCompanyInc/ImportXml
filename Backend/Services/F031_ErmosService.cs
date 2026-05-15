@@ -1,0 +1,253 @@
+﻿using BackendApp.Dto;
+using BackendApp.Dto.f031_ermos;
+using BackendApp.Dto.SearchFilterDto;
+using BackendApp.Models;
+using BackendApp.Repositories;
+using Microsoft.EntityFrameworkCore.Storage;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace BackendApp.Services
+{
+    public class F031_ErmosService
+    {
+        private readonly F031_ErmosRepository _f031_ErmosRepository;
+
+        private readonly BaseDataService _baseDataService;
+        private readonly CommunicationService _comminicationService;
+        private readonly OrganizationService _organizationService;
+        private readonly DocumentService _documentService;
+        private readonly OrgDocumentService _moDocumentService;
+        private readonly AddressService _addressService;
+        private readonly OidTypeService _oidTypeService;
+        private readonly OrgNameService _orgNameService;
+
+        public F031_ErmosService(
+            F031_ErmosRepository f031_ErmosRepository,
+            BaseDataService baseDataService,
+            CommunicationService comminicationService,
+            OrganizationService organizationService,
+            DocumentService documentService,
+            OrgDocumentService moDocumentService,
+            AddressService addressService,
+            OidTypeService oidTypeService,
+            OrgNameService orgNameService
+        )
+        {
+            _f031_ErmosRepository = f031_ErmosRepository;
+
+            _baseDataService = baseDataService;
+            _comminicationService = comminicationService;
+            _organizationService = organizationService;
+            _documentService = documentService;
+            _moDocumentService = moDocumentService;
+            _addressService = addressService;
+            _oidTypeService = oidTypeService;
+            _orgNameService = orgNameService;
+        }
+
+        /// <summary>
+        /// Сохраняет данные из Dto в базу данных
+        /// (данные - фрагменты из F031.xml)
+        /// </summary>
+        /// <returns>Сохраненный обьект</returns>
+        public async Task<bool> SaveDataFromF31(DocumentDto<F31DataDto> dataContainer)
+        {
+            BaseData baseData = new BaseData
+            {
+                Type = dataContainer.BaseData.Type,
+                Version = dataContainer.BaseData.Version,
+                Date = DateTime.ParseExact(dataContainer.BaseData.Date, "dd.MM.yyyy", null)
+            }; // создаем обьект с заголовком и передаем в него данные из документа
+
+            long baseDataId;
+
+            BaseData existingBaseData = await _baseDataService.GetEnitityByAttributes(baseData);
+            if (existingBaseData != null)
+            {
+                baseDataId = existingBaseData.Id;
+            }
+            else
+            {
+                baseDataId = (await _baseDataService.SaveBaseDataObject(baseData)).Id;
+            }
+
+            foreach (F31DataDto item in dataContainer.ZapList) // перебираем все записи данных листа с данными
+            {
+                //каждую новую итерацию нового элемента, создаем обьекты с данными из XML и сохраняем его по разным сущностям
+                Communication communication = new Communication
+                {
+                    Phone = item.Phone,
+                    Fax = item.Fax,
+                    Email = item.Email,
+                }; // данные контактов
+
+                long communicationId;
+
+                // если обьект уже существует в БД - сразу берем у него ID, иначе создаем его и берем у новосозданного Id
+                Communication existingCommunication = await _comminicationService.GetEnitityByAttributes(communication);
+                if (existingCommunication != null)
+                {
+                    communicationId = existingCommunication.Id;
+                }
+                else
+                {
+                    communicationId = (await _comminicationService.SaveCommunicationObject(communication)).Id;
+                }
+
+                OrgName orgName = new OrgName
+                {
+                    Name = item.Name,
+                    ShortName = item.ShortName
+                };
+
+                long orgNameId;
+
+                OrgName existingOrgName = await _orgNameService.GetEnitityByAttributes(orgName);
+                if (existingOrgName != null)
+                {
+                    orgNameId = existingOrgName.Id;
+                }
+                else
+                {
+                    orgNameId = (await _orgNameService.SaveOrgNameObject(orgName)).Id;
+                }
+
+                Organization organization = new Organization
+                {
+                    OrgNameId = orgNameId,
+                    Okopf = item.Okopf
+                };
+
+                long organizationId;
+
+                Organization existingOrganization = await _organizationService.GetEnitityByAttributes(organization);
+                if (existingOrganization != null)
+                {
+                    organizationId = existingOrganization.Id;
+                }
+                else
+                {
+                    organizationId = (await _organizationService.SaveOrganizationObject(organization)).Id;
+                }
+
+                Document document = new Document
+                {
+                    Inn = item.Inn,
+                    Kpp = item.Kpp,
+                    Ogrn = item.Ogrn
+                };
+
+                long documentId;
+
+                Document existingDocument = await _documentService.GetEnitityByAttributes(document);
+                if (existingDocument != null)
+                {
+                    documentId = existingDocument.Id;
+                }
+                else
+                {
+                    documentId = (await _documentService.SaveDocumentObject(document)).Id;
+                }
+
+                OidType oidTypeMo = new OidType
+                {
+                    Name = item.OidMo,
+                };
+
+                long oidTypeMoId;
+
+                OidType existingOidTypeMo = await _oidTypeService.GetEnitityByAttributes(oidTypeMo);
+                if (existingOidTypeMo != null)
+                {
+                    oidTypeMoId = existingOidTypeMo.Id;
+                }
+                else
+                {
+                    oidTypeMoId = (await _oidTypeService.SaveOidTypeObject(oidTypeMo)).Id;
+                }
+
+                OrgDocument orgDocument = new OrgDocument
+                {
+                    //MoId = item.MoId,
+                    Okfs = item.Okfs,
+                    OidTypeMoId = oidTypeMoId,
+                    DateBeg = DateTime.Today
+                };
+
+                long orgDocumentId;
+
+                OrgDocument existingMoDocument = await _moDocumentService.GetEnitityByAttributes(orgDocument);
+                if (existingMoDocument != null)
+                {
+                    orgDocumentId = existingMoDocument.Id;
+                }
+                else
+                {
+                    orgDocumentId = (await _moDocumentService.SaveOrgDocument(orgDocument)).Id;
+                }
+
+                Address address = new Address
+                {
+                    Oktmo = item.Oktmo,
+                    Name = item.FullAddressName,
+                    AddressCode = item.AddressCode,
+                    Index = item.FullAddressName.Substring(0, 6),
+                };
+
+                long addressId;
+
+                Address existingAddress = await _addressService.GetEnitityByAttributes(address);
+                if (existingAddress != null)
+                {
+                    addressId = existingAddress.Id;
+                }
+                else
+                {
+                    addressId = (await _addressService.SaveAddressObject(address)).Id;
+                }
+
+                f031_ermo f031_ermo = new f031_ermo
+                {
+                    Id = item.F31_ErmosId,
+                    BaseDataId = baseDataId,
+                    OrgDocumentId = orgDocumentId,
+                    OrganizationId = organizationId,
+                    DocumentId = documentId,
+                    AddressId = addressId,
+                    DateBeg = DateTime.ParseExact(item.DateBeg, "dd.MM.yyyy", null),
+                    DateEnd = DateTime.ParseExact(item.DateEnd, "dd.MM.yyyy", null),
+                    CommunicationId = communicationId,
+                };
+
+                if (await this.GetEnitityByAttributes(f031_ermo) == null)
+                {
+                    await SaveF031_ermoObject(f031_ermo);
+                }
+            }
+
+            return true;
+        }
+
+        public async Task<f031_ermo> SaveF031_ermoObject(f031_ermo f031_ermo)
+        {
+            return await _f031_ErmosRepository.SaveData(f031_ermo);
+        }
+
+        public async Task<f031_ermo> GetEnitityByAttributes(f031_ermo f031_ErmoData)
+        {
+            return await _f031_ErmosRepository.GetEnitityByAttributes(f031_ErmoData);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="dataContainer"></param>
+        /// <returns></returns>
+        public async Task<List<DocumentDto<F31DataDto>>> GetDataFromF31(BaseSearchFilterDto search)
+        {
+            throw new NotImplementedException();
+        }
+    }
+}

@@ -1,0 +1,35 @@
+﻿@{
+    Layout = null; // Без общего макета
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Главная</title>
+    <link rel="stylesheet" href="~/css/import/import.css">
+</head>
+<body>
+
+    <!--Шаблон карточки для вывода логов-->
+    <template id="logTemplate">
+        <div class="log-card">
+            [<span class="log-time"></span>]
+            <span class="file-name"></span>
+            <span class="log-message"></span>
+        </div>
+    </template>
+
+    <!-- Верхний див на всю ширину -->
+    <div class="headerImport">
+        <button onclick="importXml()">Импортировать все</button>
+        
+        <!-- Контейнер для логов импорта -->
+        <div id="logContainer" class="logContainer">
+            
+        </div>    
+    </div>
+
+    <script src="~/js/import/importXml.js"></script>
+</body>
+</html>

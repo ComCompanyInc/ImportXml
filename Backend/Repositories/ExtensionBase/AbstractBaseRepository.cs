@@ -1,0 +1,58 @@
+﻿using BackendApp.Data;
+using BackendApp.Models;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Text;
+
+namespace BackendApp.Repositories.AbstractBase
+{
+    /// <summary>
+    /// Универсальный класс для управления сущностями
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    public abstract class AbstractBaseRepository<T> where T : class
+    {
+        private readonly ApplicationDbContext _context;
+        protected readonly DbSet<T> _dbSet;
+
+        public AbstractBaseRepository(ApplicationDbContext context)
+        {
+            _context = context;
+            _dbSet = _context.Set<T>();
+        }
+
+        public async Task<T> SaveData(T obj)
+        {
+            if (obj != null)
+            {
+                try
+                {
+                    await _dbSet.AddAsync(obj);
+                    await _context.SaveChangesAsync();
+
+                    return obj;
+                }
+                catch (Exception ex)
+                {
+
+                    // Автоматически выводим ВСЕ поля объекта
+                    string json = System.Text.Json.JsonSerializer.Serialize(obj, new System.Text.Json.JsonSerializerOptions
+                    {
+                        WriteIndented = true,
+                        ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles
+                    });
+
+                    Console.WriteLine("ОШИБКА: " + ex + " НА ОБЬЕКТЕ: " + obj.ToString() + " " + json);
+
+                    throw;
+                }
+            }
+            else
+            {
+                return null;
+            }
+        }
+    }
+}

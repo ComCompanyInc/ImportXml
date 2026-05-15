@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<packet>
+  <zglv>
+    <type>StatOpl</type>
+    <version>2.0</version>
+    <date>15.12.2017</date>
+  </zglv>
+  <zap>
+    <IDIDST>0</IDIDST>
+    <STNAME>Не принято решение об оплате</STNAME>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDIDST>1</IDIDST>
+    <STNAME>Оплачена</STNAME>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDIDST>2</IDIDST>
+    <STNAME>Не оплачена</STNAME>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <IDIDST>3</IDIDST>
+    <STNAME>Частично оплачена</STNAME>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+</packet>

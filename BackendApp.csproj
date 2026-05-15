@@ -20,7 +20,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Dto\Новая папка\" />
+    <Folder Include="Backend\Dto\Новая папка\" />
+    <Folder Include="Frontend\wwwroot\xml\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Frontend\Views\Import\ImportPage.cshtml" />
   </ItemGroup>
 
 </Project>

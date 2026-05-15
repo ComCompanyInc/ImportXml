@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<packet>
+  <zglv>
+    <type>Okrug</type>
+    <version>2.0</version>
+    <date>19.12.2017</date>
+  </zglv>
+  <zap>
+    <KOD_OK>0</KOD_OK>
+    <OKRNAME>Байконур</OKRNAME>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_OK>1</KOD_OK>
+    <OKRNAME>Центральный федеральный округ</OKRNAME>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_OK>2</KOD_OK>
+    <OKRNAME>Северо-Западный федеральный округ</OKRNAME>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_OK>3</KOD_OK>
+    <OKRNAME>Южный федеральный округ</OKRNAME>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_OK>4</KOD_OK>
+    <OKRNAME>Северо-Кавказский федеральный округ</OKRNAME>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_OK>5</KOD_OK>
+    <OKRNAME>Приволжский федеральный округ</OKRNAME>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_OK>6</KOD_OK>
+    <OKRNAME>Уральский федеральный округ</OKRNAME>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_OK>7</KOD_OK>
+    <OKRNAME>Сибирский федеральный округ</OKRNAME>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_OK>8</KOD_OK>
+    <OKRNAME>Дальневосточный федеральный округ</OKRNAME>
+    <DATEBEG>01.01.2011</DATEBEG>
+    <DATEEND/>
+  </zap>
+  <zap>
+    <KOD_OK>9</KOD_OK>
+    <OKRNAME>Крымский федеральный округ</OKRNAME>
+    <DATEBEG>12.02.2014</DATEBEG>
+    <DATEEND>27.07.2016</DATEEND>
+  </zap>
+</packet>
