@@ -21,6 +21,8 @@
 
   <ItemGroup>
     <Folder Include="Backend\Dto\Новая папка\" />
+    <Folder Include="Frontend\wwwroot\css\BaseData\" />
+    <Folder Include="Frontend\wwwroot\js\BaseData\" />
     <Folder Include="Frontend\wwwroot\xml\" />
   </ItemGroup>
 

@@ -19,11 +19,6 @@ namespace BackendApp.Repositories
             _context = context;
         }
 
-        public Task<List<District>> GetDataBySearchFilter(District FilterDto)
-        {
-            throw new NotImplementedException();
-        }
-
         public async Task<District> GetEnitityByAttributes(District entityData)
         {
             IQueryable<District> documentResult = _context.Districts;
@@ -99,6 +94,20 @@ namespace BackendApp.Repositories
             await _context.SaveChangesAsync();
 
             return existingEntity;
+        }
+
+        public async Task<List<District>> GetDataBySearchFilter(District FilterDto)
+        {
+            IQueryable<District> districts = _context.Districts;
+
+            if (!FilterDto.Name.IsNullOrEmpty())
+            {
+                districts.Where(c =>
+                    c.Name == FilterDto.Name
+                );
+            }
+
+            return await districts.ToListAsync();
         }
     }
 }

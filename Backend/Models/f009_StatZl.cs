@@ -1,11 +1,12 @@
-﻿using System;
+﻿using BackendApp.Backend.Models.ExtensionBase;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace BackendApp.Models
 {
-    public class f009_StatZl
+    public class f009_StatZl : IHasDateRange
     {
         [Key]
         public long StatusId { get; set; } // IDSTATUS

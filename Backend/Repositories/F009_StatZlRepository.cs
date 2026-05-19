@@ -1,4 +1,5 @@
-﻿using BackendApp.Data;
+﻿using BackendApp.Backend.Repositories.ExtensionBase;
+using BackendApp.Data;
 using BackendApp.Models;
 using BackendApp.Repositories.AbstractBase;
 using BackendApp.Repositories.ExtensionBase;
@@ -12,15 +13,12 @@ namespace BackendApp.Repositories
     public class F009_StatZlRepository : AbstractBaseRepository<f009_StatZl>, ISearchData<f009_StatZl>
     {
         private readonly ApplicationDbContext _context;
+        private readonly BaseSearchMethods<f009_StatZl> _searchMethods; // композиция вспомогательного класса с методами для фильтрации сущности
 
         public F009_StatZlRepository(ApplicationDbContext context) : base(context)
         {
             _context = context;
-        }
-
-        public Task<List<f009_StatZl>> GetDataBySearchFilter(f009_StatZl FilterDto)
-        {
-            throw new NotImplementedException();
+            _searchMethods = new BaseSearchMethods<f009_StatZl>(context);
         }
 
         public async Task<f009_StatZl> GetEnitityByAttributes(f009_StatZl entityData)
@@ -78,6 +76,14 @@ namespace BackendApp.Repositories
             await _context.SaveChangesAsync();
 
             return existingEntity;
+        }
+
+        public async Task<List<f009_StatZl>> GetDataBySearchFilter(f009_StatZl FilterDto)
+        {
+            // Вся сложная логика уже в BaseSearchMethods
+            IQueryable<f009_StatZl> query = await _searchMethods.GetDataBySearchFilter(FilterDto);
+            
+            return await query.ToListAsync();
         }
     }
 }

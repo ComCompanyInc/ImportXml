@@ -19,11 +19,6 @@ namespace BackendApp.Repositories
             _context = context;
         }
 
-        public Task<List<f002_smo_insAdvice>> GetDataBySearchFilter(f002_smo_insAdvice FilterDto)
-        {
-            throw new NotImplementedException();
-        }
-
         public async Task<f002_smo_insAdvice> GetEnitityByAttributes(f002_smo_insAdvice entityData)
         {
             IQueryable<f002_smo_insAdvice> f002_smo_insAdviceResult = _context.f002_smo_insAdvices;
@@ -40,7 +35,7 @@ namespace BackendApp.Repositories
                     .Where(c => c.Duved == entityData.Duved);
             }
 
-            if (entityData.KolZl != null)
+            if (entityData.KolZl.IsNullOrEmpty())
             {
                 f002_smo_insAdviceResult = f002_smo_insAdviceResult
                     .Where(c => c.KolZl == entityData.KolZl);
@@ -58,6 +53,47 @@ namespace BackendApp.Repositories
         public Task<f002_smo_insAdvice> UpdateObject(f002_smo_insAdvice existingEntity, f002_smo_insAdvice entityData)
         {
             throw new NotImplementedException();
+        }
+
+        public async Task<List<f002_smo_insAdvice>> GetDataBySearchFilter(f002_smo_insAdvice FilterDto)
+        {
+            IQueryable<f002_smo_insAdvice> insAdvices = _context.f002_smo_insAdvices;
+
+            if (!FilterDto.YearWork.IsNullOrEmpty())
+            {
+                insAdvices = insAdvices
+                    .Where(c =>
+                        c.YearWork == FilterDto.YearWork
+                    );
+            }
+
+            if (!FilterDto.KolZl.IsNullOrEmpty())
+            {
+                insAdvices = insAdvices
+                    .Where(c =>
+                        c.YearWork == FilterDto.YearWork
+                    );
+            }
+
+            if (FilterDto.DEdit != default(DateTime)
+                && FilterDto.DEdit != null)
+            {
+                insAdvices = insAdvices
+                    .Where(c =>
+                        c.DEdit == FilterDto.DEdit
+                    );
+            }
+
+            if (FilterDto.Duved != default(DateTime)
+                && FilterDto.Duved != null)
+            {
+                insAdvices = insAdvices
+                    .Where(c =>
+                        c.Duved == FilterDto.Duved
+                    );
+            }
+
+            return await insAdvices.ToListAsync();
         }
     }
 }

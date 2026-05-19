@@ -1,4 +1,6 @@
-﻿function openImport() {
+﻿
+// функция открытия страницы для выгрузки данных из XML в БД
+function openImport() {
     fetch('/Import/All')
         .then(response => response.text())
         .then(html => {

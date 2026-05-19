@@ -19,11 +19,6 @@ namespace BackendApp.Repositories
             _context = context;
         }
 
-        public Task<List<ExpType>> GetDataBySearchFilter(ExpType FilterDto)
-        {
-            throw new NotImplementedException();
-        }
-
         public async Task<ExpType> GetEnitityByAttributes(ExpType entityData)
         {
             IQueryable<ExpType> expTypeResult = _context.ExpTypes;
@@ -40,6 +35,21 @@ namespace BackendApp.Repositories
         public Task<ExpType> UpdateObject(ExpType existingEntity, ExpType entityData)
         {
             throw new NotImplementedException();
+        }
+
+        public async Task<List<ExpType>> GetDataBySearchFilter(ExpType FilterDto)
+        {
+            IQueryable<ExpType> expTypes = _context.ExpTypes;
+
+            if (!FilterDto.Name.IsNullOrEmpty())
+            {
+                expTypes = expTypes
+                    .Where(c =>
+                        c.Name == FilterDto.Name
+                    );
+            }
+
+            return await expTypes.ToListAsync();
         }
     }
 }

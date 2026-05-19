@@ -1,4 +1,5 @@
-﻿using BackendApp.Data;
+﻿using BackendApp.Backend.Repositories.ExtensionBase;
+using BackendApp.Data;
 using BackendApp.Models;
 using BackendApp.Repositories.AbstractBase;
 using BackendApp.Repositories.ExtensionBase;
@@ -12,15 +13,12 @@ namespace BackendApp.Repositories
     public class F007_VedomRepository : AbstractBaseRepository<f007_Vedom>, ISearchData<f007_Vedom>
     {
         private readonly ApplicationDbContext _context;
+        private readonly BaseSearchMethods<f007_Vedom> _searchMethods; // композиция вспомогательного класса с методами для фильтрации сущности
 
         public F007_VedomRepository(ApplicationDbContext context) : base(context)
         {
             _context = context;
-        }
-
-        public Task<List<f007_Vedom>> GetDataBySearchFilter(f007_Vedom FilterDto)
-        {
-            throw new NotImplementedException();
+            _searchMethods = new BaseSearchMethods<f007_Vedom>(_context);
         }
 
         public async Task<f007_Vedom> GetEnitityByAttributes(f007_Vedom entityData)
@@ -77,6 +75,14 @@ namespace BackendApp.Repositories
             await _context.SaveChangesAsync();
 
             return existingEntity;
+        }
+
+        public async Task<List<f007_Vedom>> GetDataBySearchFilter(f007_Vedom FilterDto)
+        {
+            // Вся сложная логика уже в BaseSearchMethods
+            IQueryable<f007_Vedom> query = await _searchMethods.GetDataBySearchFilter(FilterDto);
+
+            return await query.ToListAsync();
         }
     }
 }

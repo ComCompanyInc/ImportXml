@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BackendApp.Backend.Models.ExtensionBase;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -6,7 +7,7 @@ using System.Text;
 
 namespace BackendApp.Models
 {
-    public class f008_TipOms
+    public class f008_TipOms : IHasDateRange
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)] // не автоинкремент, задаем вручную

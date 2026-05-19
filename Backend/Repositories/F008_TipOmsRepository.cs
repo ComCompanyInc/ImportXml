@@ -1,4 +1,5 @@
-﻿using BackendApp.Data;
+﻿using BackendApp.Backend.Repositories.ExtensionBase;
+using BackendApp.Data;
 using BackendApp.Models;
 using BackendApp.Repositories.AbstractBase;
 using BackendApp.Repositories.ExtensionBase;
@@ -12,15 +13,12 @@ namespace BackendApp.Repositories
     public class F008_TipOmsRepository : AbstractBaseRepository<f008_TipOms>, ISearchData<f008_TipOms>
     {
         private readonly ApplicationDbContext _context;
+        private readonly BaseSearchMethods<f008_TipOms> _searchMethods; // композиция вспомогательного класса с методами для фильтрации сущности
 
         public F008_TipOmsRepository(ApplicationDbContext context) : base(context)
         {
             _context = context;
-        }
-
-        public Task<List<f008_TipOms>> GetDataBySearchFilter(f008_TipOms FilterDto)
-        {
-            throw new NotImplementedException();
+            _searchMethods = new BaseSearchMethods<f008_TipOms>(_context);
         }
 
         public async Task<f008_TipOms> GetEnitityByAttributes(f008_TipOms entityData)
@@ -77,6 +75,14 @@ namespace BackendApp.Repositories
             await _context.SaveChangesAsync();
 
             return existingEntity;
+        }
+
+        public async Task<List<f008_TipOms>> GetDataBySearchFilter(f008_TipOms FilterDto)
+        {
+            // Вся сложная логика уже в BaseSearchMethods
+            IQueryable<f008_TipOms> query = await _searchMethods.GetDataBySearchFilter(FilterDto);
+
+            return await query.ToListAsync();
         }
     }
 }

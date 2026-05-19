@@ -1,11 +1,12 @@
-﻿using System;
+﻿using BackendApp.Backend.Models.ExtensionBase;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace BackendApp.Models
 {
-    public class f005_StatOpl
+    public class f005_StatOpl : IHasDateRange
     {
         [Key]
         public long StatusCode { get; set; } // IDIDIST

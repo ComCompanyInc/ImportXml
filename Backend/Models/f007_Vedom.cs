@@ -1,11 +1,12 @@
-﻿using System;
+﻿using BackendApp.Backend.Models.ExtensionBase;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace BackendApp.Models
 {
-    public class f007_Vedom
+    public class f007_Vedom : IHasDateRange
     {
         [Key]
         public long VedId { get; set; }

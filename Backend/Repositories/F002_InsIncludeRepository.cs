@@ -19,11 +19,6 @@ namespace BackendApp.Repositories
             _context = context;
         }
 
-        public Task<List<f002_InsInclude>> GetDataBySearchFilter(f002_InsInclude FilterDto)
-        {
-            throw new NotImplementedException();
-        }
-
         public async Task<f002_InsInclude> GetEnitityByAttributes(f002_InsInclude entityData)
         {
             IQueryable<f002_InsInclude> insIncludeResult = _context.InsIncludes;
@@ -34,7 +29,7 @@ namespace BackendApp.Repositories
                     .Where(c => c.NameE == entityData.NameE);
             }
 
-            if (entityData.NalP != null)
+            if (!entityData.NalP.IsNullOrEmpty())
             {
                 insIncludeResult = insIncludeResult
                     .Where(c => c.NalP == entityData.NalP);
@@ -64,6 +59,65 @@ namespace BackendApp.Repositories
         public Task<f002_InsInclude> UpdateObject(f002_InsInclude existingEntity, f002_InsInclude entityData)
         {
             throw new NotImplementedException();
+        }
+
+        public async Task<List<f002_InsInclude>> GetDataBySearchFilter(f002_InsInclude FilterDto)
+        {
+            IQueryable<f002_InsInclude> insIncludes = _context.InsIncludes;
+
+            if (!FilterDto.NameE.IsNullOrEmpty())
+            {
+                insIncludes = insIncludes
+                    .Where(c =>
+                        c.NameE == c.NameE
+                    );
+            }
+
+            if (!FilterDto.NalP.IsNullOrEmpty())
+            {
+                insIncludes = insIncludes
+                    .Where(c =>
+                        c.NalP == c.NalP
+                    );
+            }
+
+            if (
+                (FilterDto.DBegin != null
+                    && FilterDto.DBegin != default(DateTime))
+                && (FilterDto.DEnd != null
+                    && FilterDto.DEnd != default(DateTime))
+            )
+            {
+                insIncludes = insIncludes
+                    .Where(c =>
+                        c.DBegin >= FilterDto.DBegin
+                        && c.DEnd <= FilterDto.DEnd
+                    );
+            }
+            else
+            {
+                if (FilterDto.DBegin != null
+                    && FilterDto.DBegin != default(DateTime)
+                )
+                {
+                    insIncludes = insIncludes
+                        .Where(c =>
+                            c.DBegin == FilterDto.DBegin
+                        );
+                }
+
+                if (FilterDto.DEnd != null
+                    && FilterDto.DEnd != default(DateTime)
+                )
+                {
+                    insIncludes = insIncludes
+                        .Where(c =>
+                            c.DEnd == FilterDto.DEnd
+                        );
+                }
+            }
+
+            return await insIncludes.ToListAsync();
         }
     }
 }

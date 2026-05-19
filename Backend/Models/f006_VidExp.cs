@@ -1,11 +1,12 @@
-﻿using System;
+﻿using BackendApp.Backend.Models.ExtensionBase;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace BackendApp.Models
 {
-    public class f006_VidExp
+    public class f006_VidExp : IHasDateRange
     {
         [Key]
         public long VidId { get; set; } // IDVID

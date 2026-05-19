@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace BackendApp.Repositories
@@ -17,11 +18,6 @@ namespace BackendApp.Repositories
         public F001_TfomsRepository(ApplicationDbContext context) : base(context)
         {
             _context = context;
-        }
-
-        public Task<List<f001_tfoms>> GetDataBySearchFilter(f001_tfoms FilterDto)
-        {
-            throw new NotImplementedException();
         }
 
         public async Task<f001_tfoms> GetEnitityByAttributes(f001_tfoms entityData)
@@ -84,6 +80,75 @@ namespace BackendApp.Repositories
             await _context.SaveChangesAsync();
 
             return existingEntity;
+        }
+
+        public async Task<List<f001_tfoms>> GetDataBySearchFilter(f001_tfoms FilterDto)
+        {
+            IQueryable<f001_tfoms> f001_Tfoms = _context.F001_Tfoms;
+
+            if (FilterDto.NoSmo != null)
+            {
+                f001_Tfoms = f001_Tfoms
+                    .Where(c =>
+                        c.NoSmo == FilterDto.NoSmo
+                    );
+            }
+
+            if (FilterDto.DEdit != null
+                    && FilterDto.DEdit != default(DateTime)
+                )
+            {
+                f001_Tfoms = f001_Tfoms
+                    .Where(c =>
+                        c.DEdit == FilterDto.DEdit
+                    );
+            }
+
+            if (
+                (FilterDto.DBegin != null
+                    && FilterDto.DBegin != default(DateTime))
+                && (FilterDto.DEnd != null
+                    && FilterDto.DEnd != default(DateTime))
+            )
+            {
+                f001_Tfoms = f001_Tfoms
+                    .Where(c =>
+                        c.DBegin >= FilterDto.DBegin
+                        && c.DEnd <= FilterDto.DEnd
+                    );
+            }
+            else
+            {
+                if (FilterDto.DBegin != null
+                    && FilterDto.DBegin != default(DateTime)
+                )
+                {
+                    f001_Tfoms = f001_Tfoms
+                        .Where(c =>
+                            c.DBegin == FilterDto.DBegin
+                        );
+                }
+
+                if (FilterDto.DEnd != null
+                    && FilterDto.DEnd != default(DateTime)
+                )
+                {
+                    f001_Tfoms = f001_Tfoms
+                        .Where(c =>
+                            c.DEnd == FilterDto.DEnd
+                        );
+                }
+            }
+
+            if (!FilterDto.Bic.IsNullOrEmpty())
+            {
+                f001_Tfoms = f001_Tfoms
+                    .Where(c =>
+                        c.Bic == FilterDto.Bic
+                    );
+            }
+
+            return await f001_Tfoms.ToListAsync();
         }
     }
 }

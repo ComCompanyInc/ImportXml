@@ -19,11 +19,6 @@ namespace BackendApp.Repositories
             _context = context;
         }
 
-        public Task<List<f002_smoEmp>> GetDataBySearchFilter(f002_smoEmp FilterDto)
-        {
-            throw new NotImplementedException();
-        }
-
         public async Task<f002_smoEmp> GetEnitityByAttributes(f002_smoEmp entityData)
         {
             IQueryable<f002_smoEmp> f002_smoEmpResult = _context.F002_SmoEmps;
@@ -85,6 +80,11 @@ namespace BackendApp.Repositories
             await _context.SaveChangesAsync();
 
             return existingEntity;
+        }
+
+        public Task<List<f002_smoEmp>> GetDataBySearchFilter(f002_smoEmp FilterDto)
+        {
+            throw new NotImplementedException(); // оставить так (по ключам не ищем)
         }
     }
 }

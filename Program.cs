@@ -165,4 +165,9 @@ app.MapControllerRoute(
     name: "import",
     pattern: "{controller=Import}/{action=All}");
 
+// роут на страницу просмотра всех справочников
+app.MapControllerRoute(
+    name: "import",
+    pattern: "{controller=Import}/{action=All}");
+
 app.Run();

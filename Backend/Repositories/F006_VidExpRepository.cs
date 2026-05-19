@@ -1,4 +1,5 @@
-﻿using BackendApp.Data;
+﻿using BackendApp.Backend.Repositories.ExtensionBase;
+using BackendApp.Data;
 using BackendApp.Models;
 using BackendApp.Repositories.AbstractBase;
 using BackendApp.Repositories.ExtensionBase;
@@ -12,15 +13,12 @@ namespace BackendApp.Repositories
     public class F006_VidExpRepository : AbstractBaseRepository<f006_VidExp>, ISearchData<f006_VidExp>
     {
         private readonly ApplicationDbContext _context;
+        private readonly BaseSearchMethods<f006_VidExp> _searchMethods; // композиция вспомогательного класса с методами для фильтрации сущности
 
         public F006_VidExpRepository(ApplicationDbContext context) : base(context)
         {
             _context = context;
-        }
-
-        public Task<List<f006_VidExp>> GetDataBySearchFilter(f006_VidExp FilterDto)
-        {
-            throw new NotImplementedException();
+            _searchMethods = new BaseSearchMethods<f006_VidExp>(_context);
         }
 
         public async Task<f006_VidExp> GetEnitityByAttributes(f006_VidExp entityData)
@@ -77,6 +75,14 @@ namespace BackendApp.Repositories
             await _context.SaveChangesAsync();
 
             return existingEntity;
+        }
+
+        public async Task<List<f006_VidExp>> GetDataBySearchFilter(f006_VidExp FilterDto)
+        {
+            // Вся сложная логика уже в BaseSearchMethods
+            IQueryable<f006_VidExp> query = await _searchMethods.GetDataBySearchFilter(FilterDto);
+
+            return await query.ToListAsync();
         }
     }
 }
