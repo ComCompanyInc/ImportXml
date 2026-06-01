@@ -82,7 +82,7 @@ namespace BackendApp.Repositories
             return existingEntity;
         }
 
-        public async Task<List<f001_tfoms>> GetDataBySearchFilter(f001_tfoms FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(f001_tfoms FilterDto)
         {
             IQueryable<f001_tfoms> f001_Tfoms = _context.F001_Tfoms;
 
@@ -148,7 +148,7 @@ namespace BackendApp.Repositories
                     );
             }
 
-            return await f001_Tfoms.ToListAsync();
+            return await f001_Tfoms.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
         }
     }
 }

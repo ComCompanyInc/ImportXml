@@ -101,7 +101,7 @@ namespace BackendApp.Repositories
         }
 
         // взятие данных по поиску
-        public async Task<List<f031_ermo>> GetDataBySearchFilter(f031_ermo FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(f031_ermo FilterDto)
         {
             IQueryable<f031_ermo> f031_ermo = _context.F031_Ermos;
 
@@ -139,7 +139,30 @@ namespace BackendApp.Repositories
                 }
             }
 
-            return await f031_ermo.ToListAsync();
+            return await f031_ermo
+                .Select(x =>
+                            new {
+                                Id = x.Id,                    // только Id
+                                OrgName = x.Organization.OrgName.Name,
+                                OrgShortName = x.Organization.OrgName.ShortName,
+                                Inn = x.Document.Inn,
+                                Kpp = x.Document.Kpp,
+                                Ogrn = x.Document.Ogrn,
+                                OidMo = x.OrgDocument.OidTypeMo.Name,
+                                Okopf = x.Organization.Okopf,
+                                Okfs = x.OrgDocument.Okfs,
+                                AddrName = x.Address.Name,
+                                AddrCode = x.Address.AddressCode,
+                                Oktmo = x.Address.Oktmo,
+                                Email = x.Communication.Email,
+                                Phone = x.Communication.Phone,
+                                Fax = x.Communication.Fax,
+                                DateBeg = x.DateBeg,
+                                DateEnd = x.DateEnd
+                            }
+                        )
+                .Cast<object>()
+                .ToListAsync();
         }
     }
 }

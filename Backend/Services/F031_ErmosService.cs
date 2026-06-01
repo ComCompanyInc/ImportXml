@@ -249,5 +249,10 @@ namespace BackendApp.Services
         {
             throw new NotImplementedException();
         }
+
+        public async Task<List<object>> GetDataBySearchFilter(f031_ermo FilterDto)
+        {
+            return await _f031_ErmosRepository.GetDataBySearchFilter(FilterDto);
+        }
     }
 }

@@ -19,7 +19,7 @@ namespace BackendApp.Repositories
             _context = context;
         }
 
-        public Task<List<f038_addrmp>> GetDataBySearchFilter(f038_addrmp FilterDto)
+        public Task<List<object>> GetDataBySearchFilter(f038_addrmp FilterDto)
         {
             throw new NotImplementedException();
         }

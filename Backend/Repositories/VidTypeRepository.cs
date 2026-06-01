@@ -18,7 +18,7 @@ namespace BackendApp.Repositories
             _context = context;
         }
 
-        public Task<List<VidType>> GetDataBySearchFilter(VidType FilterDto)
+        public Task<List<object>> GetDataBySearchFilter(VidType FilterDto)
         {
             throw new NotImplementedException();
         }

@@ -19,7 +19,7 @@ namespace BackendApp.Repositories
             _context = context;
         }
 
-        public Task<List<Models.License>> GetDataBySearchFilter(Models.License FilterDto)
+        public Task<List<object>> GetDataBySearchFilter(Models.License FilterDto)
         {
             throw new NotImplementedException();
         }

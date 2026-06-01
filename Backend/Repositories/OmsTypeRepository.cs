@@ -19,7 +19,7 @@ namespace BackendApp.Repositories
             _context = context;
         }
 
-        public Task<List<OmsType>> GetDataBySearchFilter(OmsType FilterDto)
+        public Task<List<object>> GetDataBySearchFilter(OmsType FilterDto)
         {
             throw new NotImplementedException();
         }

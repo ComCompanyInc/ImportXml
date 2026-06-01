@@ -1,3 +1,5 @@
+USE [SpravTest]
+
 SELECT 
     -- Секция zglv (из BaseData)
     bd.[Type] AS [type],

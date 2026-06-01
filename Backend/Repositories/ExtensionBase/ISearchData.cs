@@ -32,7 +32,7 @@ namespace BackendApp.Repositories.ExtensionBase
         /// </summary>
         /// <param name="FilterDto"></param>
         /// <returns></returns>
-        public Task<List<T>> GetDataBySearchFilter(
+        public Task<List<object>> GetDataBySearchFilter(
             T FilterDto
         );
     }

@@ -49,7 +49,7 @@ namespace BackendApp.Repositories
             throw new NotImplementedException();
         }
 
-        public async Task<List<BaseData>> GetDataBySearchFilter(BaseData FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(BaseData FilterDto)
         {
             IQueryable<BaseData> baseData = _context.BaseData;
 
@@ -78,7 +78,7 @@ namespace BackendApp.Repositories
                     );
             }
 
-            return await baseData.ToListAsync();
+            return await baseData.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
         }
     }
 }

@@ -8,7 +8,7 @@ namespace BackendApp.Frontend.Controllers.BaseData
     public class BaseDataController : Controller
     {
         // GET: /BaseData/All
-        public IActionResult All()
+        public IActionResult GetTable()
         {
             return View("~/Frontend/Views/BaseData/BaseDataPage.cshtml");
         }

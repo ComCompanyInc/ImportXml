@@ -41,3 +41,7 @@ build_metadata.AdditionalFiles.CssScope =
 [X:/ASU/Кулаев/Projects/BackendApp/Frontend/Views/MainPage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcVmlld3NcTWFpblBhZ2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
+
+[X:/ASU/Кулаев/Projects/BackendApp/Frontend/Views/Table/Table.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RnJvbnRlbmRcVmlld3NcVGFibGVcVGFibGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 

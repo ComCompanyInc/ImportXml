@@ -111,7 +111,7 @@ namespace BackendApp.Repositories
             return existingEntity;
         }
 
-        public async Task<List<f033_spmo>> GetDataBySearchFilter(f033_spmo FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(f033_spmo FilterDto)
         {
             IQueryable<f033_spmo> f033_spmo = _context.F033_Spmos;
 
@@ -157,7 +157,7 @@ namespace BackendApp.Repositories
                 }
             }
 
-            return await f033_spmo.ToListAsync();
+            return await f033_spmo.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
         }
     }
 }

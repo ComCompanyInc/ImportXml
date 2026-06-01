@@ -108,7 +108,7 @@ namespace BackendApp.Repositories
             return existingEntity;
         }
 
-        public async Task<List<Address>> GetDataBySearchFilter(Address FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(Address FilterDto)
         {
             IQueryable<Address> addresses = _context.Addresses;
 
@@ -144,7 +144,7 @@ namespace BackendApp.Repositories
                     );
             }
 
-            return await addresses.ToListAsync();
+            return await addresses.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
         }
     }
 }

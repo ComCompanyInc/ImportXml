@@ -18,7 +18,7 @@ namespace BackendApp.Repositories
             _context = context;
         }
 
-        public Task<List<f012_TipSch>> GetDataBySearchFilter(f012_TipSch FilterDto)
+        public Task<List<object>> GetDataBySearchFilter(f012_TipSch FilterDto)
         {
             throw new NotImplementedException();
         }

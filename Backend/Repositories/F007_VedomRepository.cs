@@ -77,12 +77,12 @@ namespace BackendApp.Repositories
             return existingEntity;
         }
 
-        public async Task<List<f007_Vedom>> GetDataBySearchFilter(f007_Vedom FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(f007_Vedom FilterDto)
         {
             // Вся сложная логика уже в BaseSearchMethods
             IQueryable<f007_Vedom> query = await _searchMethods.GetDataBySearchFilter(FilterDto);
 
-            return await query.ToListAsync();
+            return await query.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
         }
     }
 }

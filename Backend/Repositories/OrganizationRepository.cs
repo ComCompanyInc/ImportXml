@@ -149,7 +149,7 @@ namespace BackendApp.Repositories
                 .FirstOrDefaultAsync();
         }
 
-        public async Task<List<Organization>> GetDataBySearchFilter(Organization FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(Organization FilterDto)
         {
             IQueryable<Organization> organizationsResult = _context.Organizations;
 
@@ -211,7 +211,7 @@ namespace BackendApp.Repositories
             }
 
             // Преобразуем в список и возвращаем
-            return await organizationsResult.ToListAsync();
+            return await organizationsResult.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
         }
     }
 }

@@ -98,7 +98,7 @@ namespace BackendApp.Repositories
             return existingEntity;
         }
 
-        public async Task<List<Communication>> GetDataBySearchFilter(Communication FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(Communication FilterDto)
         {
             IQueryable<Communication> communication = _context.Communications;
 
@@ -142,7 +142,7 @@ namespace BackendApp.Repositories
                     );
             }
 
-            return await communication.ToListAsync();
+            return await communication.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
         }
     }
 }

@@ -19,7 +19,7 @@ namespace BackendApp.Repositories
             _context = context;
         }
 
-        public Task<List<f019_PersAccOrg>> GetDataBySearchFilter(f019_PersAccOrg FilterDto)
+        public Task<List<object>> GetDataBySearchFilter(f019_PersAccOrg FilterDto)
         {
             throw new NotImplementedException();
         }

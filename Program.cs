@@ -1,4 +1,5 @@
 using BackendApp.Data;
+using BackendApp.Frontend.Services;
 using BackendApp.Models;
 using BackendApp.Repositories;
 using BackendApp.Services;
@@ -73,6 +74,8 @@ builder.Services.AddScoped<F014_OplOtkService>();
 builder.Services.AddScoped<AccountService>();
 builder.Services.AddScoped<F001_TfomsService>();
 builder.Services.AddScoped<F019_PersAccOrgService>();
+
+builder.Services.AddScoped<RenderTableService>();
 
 // регестируем все репозиторные классы приложения для DI
 builder.Services.AddScoped<F031_ErmosRepository>();
@@ -167,7 +170,7 @@ app.MapControllerRoute(
 
 // роут на страницу просмотра всех справочников
 app.MapControllerRoute(
-    name: "import",
-    pattern: "{controller=Import}/{action=All}");
+    name: "table",
+    pattern: "{controller=Table}/{action=GetTable}");
 
 app.Run();

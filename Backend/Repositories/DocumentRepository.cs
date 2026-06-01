@@ -70,7 +70,7 @@ namespace BackendApp.Repositories
             return existingEntity;
         }
 
-        public async Task<List<Document>> GetDataBySearchFilter(Document FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(Document FilterDto)
         {
             IQueryable<Document> document = _context.Documents;
 
@@ -98,7 +98,7 @@ namespace BackendApp.Repositories
                     );
             }
 
-            return await document.ToListAsync();
+            return await document.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
         }
     }
 }

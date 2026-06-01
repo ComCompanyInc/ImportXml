@@ -19,7 +19,7 @@ namespace BackendApp.Repositories
             _context = context;
         }
 
-        public Task<List<f017_BillTypes>> GetDataBySearchFilter(f017_BillTypes FilterDto)
+        public Task<List<object>> GetDataBySearchFilter(f017_BillTypes FilterDto)
         {
             throw new NotImplementedException();
         }

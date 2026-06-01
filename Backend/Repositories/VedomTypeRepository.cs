@@ -19,7 +19,7 @@ namespace BackendApp.Repositories
             _context = context;
         }
 
-        public Task<List<VedomType>> GetDataBySearchFilter(VedomType FilterDto)
+        public Task<List<object>> GetDataBySearchFilter(VedomType FilterDto)
         {
             throw new NotImplementedException();
         }

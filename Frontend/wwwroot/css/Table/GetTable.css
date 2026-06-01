@@ -1,0 +1,11 @@
+﻿/* Уменьшаем шрифт во всей таблице */
+.right table
+{
+    font-size: 12px;  /* Добавить */
+}
+
+/* к таблице - только верхняя и левая границы */
+.right td {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}

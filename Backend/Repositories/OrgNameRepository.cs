@@ -42,7 +42,7 @@ namespace BackendApp.Repositories
             throw new NotImplementedException();
         }
 
-        public async Task<List<OrgName>> GetDataBySearchFilter(OrgName FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(OrgName FilterDto)
         {
             IQueryable<OrgName> orgName = _context.OrgNames;
 
@@ -62,7 +62,7 @@ namespace BackendApp.Repositories
                     );
             }
 
-            return await orgName.ToListAsync();
+            return await orgName.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
         }
     }
 }

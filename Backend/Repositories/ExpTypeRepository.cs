@@ -37,7 +37,7 @@ namespace BackendApp.Repositories
             throw new NotImplementedException();
         }
 
-        public async Task<List<ExpType>> GetDataBySearchFilter(ExpType FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(ExpType FilterDto)
         {
             IQueryable<ExpType> expTypes = _context.ExpTypes;
 
@@ -49,7 +49,7 @@ namespace BackendApp.Repositories
                     );
             }
 
-            return await expTypes.ToListAsync();
+            return await expTypes.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
         }
     }
 }

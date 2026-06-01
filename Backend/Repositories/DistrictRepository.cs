@@ -96,7 +96,7 @@ namespace BackendApp.Repositories
             return existingEntity;
         }
 
-        public async Task<List<District>> GetDataBySearchFilter(District FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(District FilterDto)
         {
             IQueryable<District> districts = _context.Districts;
 
@@ -107,7 +107,7 @@ namespace BackendApp.Repositories
                 );
             }
 
-            return await districts.ToListAsync();
+            return await districts.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
         }
     }
 }

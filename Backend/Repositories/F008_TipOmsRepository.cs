@@ -77,12 +77,12 @@ namespace BackendApp.Repositories
             return existingEntity;
         }
 
-        public async Task<List<f008_TipOms>> GetDataBySearchFilter(f008_TipOms FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(f008_TipOms FilterDto)
         {
             // Вся сложная логика уже в BaseSearchMethods
             IQueryable<f008_TipOms> query = await _searchMethods.GetDataBySearchFilter(FilterDto);
 
-            return await query.ToListAsync();
+            return await query.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
         }
     }
 }

@@ -15,3 +15,20 @@ function openImport() {
             document.querySelector('.right').innerHTML = '<p>Ошибка загрузки</p>';
         });
 }
+
+// подгрузка основной страницы с таблицей документа 
+function loadTablePage(tableId) {
+    // Показываем индикатор загрузки
+    document.querySelector('.right').innerHTML = '<div style="padding: 20px;">Загрузка...</div>';
+    
+    // Асинхронно получаем HTML таблицы
+    fetch(`/Table/GetTable?tableId=${tableId}`)
+        .then(response => response.text())
+        .then(html => {
+            // Вставляем полученный HTML в правый див
+            document.querySelector('.right').innerHTML = html;
+        })
+        .catch(error => {
+            document.querySelector('.right').innerHTML = `<div style="color: red; padding: 20px;">Ошибка: ${error}</div>`;
+        });
+}

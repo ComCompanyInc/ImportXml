@@ -36,7 +36,7 @@ namespace BackendApp.Repositories
             throw new NotImplementedException();
         }
 
-        public async Task<List<OspType>> GetDataBySearchFilter(OspType FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(OspType FilterDto)
         {
             IQueryable<OspType> ospType = _context.OspTypes;
 
@@ -48,7 +48,7 @@ namespace BackendApp.Repositories
                     );
             }
 
-            return await ospType.ToListAsync();
+            return await ospType.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
         }
     }
 }

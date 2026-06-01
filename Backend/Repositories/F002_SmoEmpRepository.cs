@@ -82,7 +82,7 @@ namespace BackendApp.Repositories
             return existingEntity;
         }
 
-        public Task<List<f002_smoEmp>> GetDataBySearchFilter(f002_smoEmp FilterDto)
+        public Task<List<object>> GetDataBySearchFilter(f002_smoEmp FilterDto)
         {
             throw new NotImplementedException(); // оставить так (по ключам не ищем)
         }

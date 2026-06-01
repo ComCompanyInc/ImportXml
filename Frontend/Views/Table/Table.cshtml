@@ -1,0 +1,53 @@
+﻿@{
+    Layout = null; // Без общего макета
+
+    var tableData = ViewBag.TableData as List<object>;
+    var tableName = ViewBag.TableId as string;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Таблица</title>
+    <link rel="stylesheet" href="~/css/Table/GetTable.css">
+</head>
+<body>
+    <h1>@tableName</h1>
+
+    @if (tableData != null && tableData.Any())
+    {
+        // Получаем свойства первого объекта для заголовков
+        var properties = tableData.First().GetType().GetProperties();
+        
+        <table class="table">
+            <thead>
+                <tr>
+                    @foreach (var prop in properties)
+                    {
+                        <th>@prop.Name</th>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in tableData)
+                {
+                    <tr>
+                        @foreach (var prop in properties)
+                        {
+                            <td>@(prop.GetValue(item)?.ToString() ?? "")</td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>Нет данных для справочника "@tableName"</p>
+    }
+
+
+    <script src="~/js/Table/GetTable.js"></script>
+</body>
+</html>

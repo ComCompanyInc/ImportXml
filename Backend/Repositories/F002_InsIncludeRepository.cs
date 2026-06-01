@@ -61,7 +61,7 @@ namespace BackendApp.Repositories
             throw new NotImplementedException();
         }
 
-        public async Task<List<f002_InsInclude>> GetDataBySearchFilter(f002_InsInclude FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(f002_InsInclude FilterDto)
         {
             IQueryable<f002_InsInclude> insIncludes = _context.InsIncludes;
 
@@ -117,7 +117,7 @@ namespace BackendApp.Repositories
                 }
             }
 
-            return await insIncludes.ToListAsync();
+            return await insIncludes.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
         }
     }
 }

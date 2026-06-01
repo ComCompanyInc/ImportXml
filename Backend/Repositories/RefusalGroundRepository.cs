@@ -19,7 +19,7 @@ namespace BackendApp.Repositories
             _context = context;
         }
 
-        public Task<List<RefusalGround>> GetDataBySearchFilter(RefusalGround FilterDto)
+        public Task<List<object>> GetDataBySearchFilter(RefusalGround FilterDto)
         {
             throw new NotImplementedException();
         }

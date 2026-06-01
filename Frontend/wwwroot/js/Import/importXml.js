@@ -39,7 +39,7 @@ async function importXml() { // async/await для последовательн�
 function importOneXml(patch, fileName) {
     // 1. Загружаем XML файл как BLOB (бинарные данные)
     return fetch('/xml/' + fileName + '.xml')
-        .then(response => response.blob())  // ← изменили: .blob() вместо .text()
+        .then(response => response.blob())  // изменили: .blob() вместо .text()
         .then(blob => {
             // 2. Отправляем на C# сервер как есть
             return fetch('http://localhost:5000/api/' + patch, {

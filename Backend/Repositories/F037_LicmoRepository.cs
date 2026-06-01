@@ -19,7 +19,7 @@ namespace BackendApp.Repositories
             _context = context;
         }
 
-        public Task<List<f037_licmo>> GetDataBySearchFilter(f037_licmo FilterDto)
+        public Task<List<object>> GetDataBySearchFilter(f037_licmo FilterDto)
         {
             throw new NotImplementedException();
         }

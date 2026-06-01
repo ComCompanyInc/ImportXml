@@ -22,14 +22,25 @@ body {
 
 /* Левый блок */
 .left {
-    flex: 1;
+    width: 280px;           /* Фикс ширина */
+    flex-shrink: 0;         /* Не сжимается */
     padding: 20px;
     border: 1px solid #ccc;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Кнопки растянуть */
+.button-stack button {
+    width: 100%;
 }
 
 /* Правый блок */
 .right {
-    flex: 2;
+    width: calc(100% - 280px);  /* Остальное пространство */
+    flex-shrink: 1;             /* Может сжиматься при необходимости */
     padding: 20px;
     border: 1px solid #ccc;
+    overflow-x: auto;
 }

@@ -55,7 +55,7 @@ namespace BackendApp.Repositories
             throw new NotImplementedException();
         }
 
-        public async Task<List<f002_smo_insAdvice>> GetDataBySearchFilter(f002_smo_insAdvice FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(f002_smo_insAdvice FilterDto)
         {
             IQueryable<f002_smo_insAdvice> insAdvices = _context.f002_smo_insAdvices;
 
@@ -93,7 +93,7 @@ namespace BackendApp.Repositories
                     );
             }
 
-            return await insAdvices.ToListAsync();
+            return await insAdvices.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
         }
     }
 }
