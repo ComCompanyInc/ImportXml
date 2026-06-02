@@ -18,7 +18,7 @@ namespace BackendApp.Repositories
             _context = context;
         }
 
-        public Task<List<object>> GetDataBySearchFilter(OrgType FilterDto)
+        public Task<List<object>> GetDataBySearchFilter(Dictionary<string, object> filter)
         {
             throw new NotImplementedException();
         }

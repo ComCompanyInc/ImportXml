@@ -92,11 +92,11 @@ namespace BackendApp.Repositories
             return existingEntity;
         }
 
-        public async Task<List<object>> GetDataBySearchFilter(OrgDocument FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(Dictionary<string, object> filter)
         {
             IQueryable<OrgDocument> orgDocument = _context.OrgDocuments;
 
-            if (!FilterDto.Okfs.IsNullOrEmpty())
+            /*if (!FilterDto.Okfs.IsNullOrEmpty())
             {
                 orgDocument = orgDocument
                     .Where(c =>
@@ -136,7 +136,7 @@ namespace BackendApp.Repositories
                             c.DateEnd == FilterDto.DateEnd
                         );
                 }
-            }
+            }*/
 
             return await orgDocument.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
         }

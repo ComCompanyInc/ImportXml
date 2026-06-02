@@ -36,17 +36,17 @@ namespace BackendApp.Repositories
             throw new NotImplementedException();
         }
 
-        public async Task<List<object>> GetDataBySearchFilter(OspType FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(Dictionary<string, object> filter)
         {
             IQueryable<OspType> ospType = _context.OspTypes;
 
-            if (FilterDto.Name != null)
+            /*if (FilterDto.Name != null)
             {
                 ospType = ospType
                     .Where(c =>
                         c.Name == FilterDto.Name
                     );
-            }
+            }*/
 
             return await ospType.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
         }

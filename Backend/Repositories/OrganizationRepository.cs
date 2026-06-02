@@ -149,11 +149,11 @@ namespace BackendApp.Repositories
                 .FirstOrDefaultAsync();
         }
 
-        public async Task<List<object>> GetDataBySearchFilter(Organization FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(Dictionary<string, object> filter)
         {
             IQueryable<Organization> organizationsResult = _context.Organizations;
 
-            if (FilterDto.KfTf != null
+            /*if (FilterDto.KfTf != null
                 && FilterDto.KfTf != 0)
             {
                 organizationsResult = organizationsResult
@@ -208,7 +208,7 @@ namespace BackendApp.Repositories
                     .Where(c =>
                         c.VedPri.Contains(FilterDto.VedPri) // LIKE '%значение%'
                     );
-            }
+            }*/
 
             // Преобразуем в список и возвращаем
             return await organizationsResult.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!

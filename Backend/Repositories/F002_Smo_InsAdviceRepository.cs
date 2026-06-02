@@ -55,11 +55,11 @@ namespace BackendApp.Repositories
             throw new NotImplementedException();
         }
 
-        public async Task<List<object>> GetDataBySearchFilter(f002_smo_insAdvice FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(Dictionary<string, object> filter)
         {
             IQueryable<f002_smo_insAdvice> insAdvices = _context.f002_smo_insAdvices;
 
-            if (!FilterDto.YearWork.IsNullOrEmpty())
+            /*if (!FilterDto.YearWork.IsNullOrEmpty())
             {
                 insAdvices = insAdvices
                     .Where(c =>
@@ -91,7 +91,7 @@ namespace BackendApp.Repositories
                     .Where(c =>
                         c.Duved == FilterDto.Duved
                     );
-            }
+            }*/
 
             return await insAdvices.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
         }

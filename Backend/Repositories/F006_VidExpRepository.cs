@@ -77,12 +77,14 @@ namespace BackendApp.Repositories
             return existingEntity;
         }
 
-        public async Task<List<object>> GetDataBySearchFilter(f006_VidExp FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(Dictionary<string, object> filter)
         {
             // Вся сложная логика уже в BaseSearchMethods
-            IQueryable<f006_VidExp> query = await _searchMethods.GetDataBySearchFilter(FilterDto);
+            //IQueryable<f006_VidExp> query = await _searchMethods.GetDataBySearchFilter(FilterDto);
 
-            return await query.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
+            //return await query.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
+
+            throw new NotImplementedException();
         }
     }
 }

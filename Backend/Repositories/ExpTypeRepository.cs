@@ -37,17 +37,17 @@ namespace BackendApp.Repositories
             throw new NotImplementedException();
         }
 
-        public async Task<List<object>> GetDataBySearchFilter(ExpType FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(Dictionary<string, object> filter)
         {
             IQueryable<ExpType> expTypes = _context.ExpTypes;
 
-            if (!FilterDto.Name.IsNullOrEmpty())
+            /*if (!FilterDto.Name.IsNullOrEmpty())
             {
                 expTypes = expTypes
                     .Where(c =>
                         c.Name == FilterDto.Name
                     );
-            }
+            }*/
 
             return await expTypes.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
         }

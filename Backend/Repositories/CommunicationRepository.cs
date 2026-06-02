@@ -98,11 +98,11 @@ namespace BackendApp.Repositories
             return existingEntity;
         }
 
-        public async Task<List<object>> GetDataBySearchFilter(Communication FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(Dictionary<string, object> filter)
         {
             IQueryable<Communication> communication = _context.Communications;
 
-            if (!FilterDto.Phone.IsNullOrEmpty())
+            /*if (!FilterDto.Phone.IsNullOrEmpty())
             {
                 communication = communication
                     .Where(c =>
@@ -140,7 +140,7 @@ namespace BackendApp.Repositories
                     .Where(c =>
                         c.Site.Contains(FilterDto.Site)
                     );
-            }
+            }*/
 
             return await communication.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
         }

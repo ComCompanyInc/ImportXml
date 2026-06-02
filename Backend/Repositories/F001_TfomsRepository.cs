@@ -82,11 +82,11 @@ namespace BackendApp.Repositories
             return existingEntity;
         }
 
-        public async Task<List<object>> GetDataBySearchFilter(f001_tfoms FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(Dictionary<string, object> filter)
         {
             IQueryable<f001_tfoms> f001_Tfoms = _context.F001_Tfoms;
 
-            if (FilterDto.NoSmo != null)
+            /*if (FilterDto.NoSmo != null)
             {
                 f001_Tfoms = f001_Tfoms
                     .Where(c =>
@@ -146,7 +146,7 @@ namespace BackendApp.Repositories
                     .Where(c =>
                         c.Bic == FilterDto.Bic
                     );
-            }
+            }*/
 
             return await f001_Tfoms.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
         }

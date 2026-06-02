@@ -78,12 +78,14 @@ namespace BackendApp.Repositories
             return existingEntity;
         }
 
-        public async Task<List<object>> GetDataBySearchFilter(f009_StatZl FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(Dictionary<string, object> filter)
         {
             // Вся сложная логика уже в BaseSearchMethods
-            IQueryable<f009_StatZl> query = await _searchMethods.GetDataBySearchFilter(FilterDto);
-            
-            return await query.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
+            //IQueryable<f009_StatZl> query = await _searchMethods.GetDataBySearchFilter(FilterDto);
+
+            //return await query.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
+
+            throw new NotImplementedException();
         }
     }
 }

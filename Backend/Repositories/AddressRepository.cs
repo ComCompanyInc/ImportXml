@@ -108,11 +108,11 @@ namespace BackendApp.Repositories
             return existingEntity;
         }
 
-        public async Task<List<object>> GetDataBySearchFilter(Address FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(Dictionary<string, object> filter)
         {
             IQueryable<Address> addresses = _context.Addresses;
 
-            if (!FilterDto.Name.IsNullOrEmpty())
+            /*if (!FilterDto.Name.IsNullOrEmpty())
             {
                 addresses = addresses
                     .Where(c =>
@@ -142,7 +142,7 @@ namespace BackendApp.Repositories
                     .Where(c =>
                         c.AddressCode.Contains(FilterDto.AddressCode)
                     );
-            }
+            }*/
 
             return await addresses.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
         }

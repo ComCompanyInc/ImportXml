@@ -96,16 +96,16 @@ namespace BackendApp.Repositories
             return existingEntity;
         }
 
-        public async Task<List<object>> GetDataBySearchFilter(District FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(Dictionary<string, object> filter)
         {
             IQueryable<District> districts = _context.Districts;
 
-            if (!FilterDto.Name.IsNullOrEmpty())
+            /*if (!FilterDto.Name.IsNullOrEmpty())
             {
                 districts.Where(c =>
                     c.Name == FilterDto.Name
                 );
-            }
+            }*/
 
             return await districts.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
         }

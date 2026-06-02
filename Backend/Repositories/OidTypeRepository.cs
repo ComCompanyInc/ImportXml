@@ -20,7 +20,7 @@ namespace BackendApp.Repositories
             _context = context;
         }
 
-        public Task<List<object>> GetDataBySearchFilter(OidType FilterDto)
+        public Task<List<object>> GetDataBySearchFilter(Dictionary<string, object> filter)
         {
             throw new NotImplementedException();
         }

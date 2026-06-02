@@ -15,9 +15,11 @@ namespace BackendApp.Frontend.Controllers.Table
         }
 
         //localhost:5000/Table/GetTable
-        public async Task<IActionResult> GetTable(string tableId) //добавляем параметр для представления
+        public async Task<IActionResult> GetTable(string tableId, [FromQuery] string filterJson) //добавляем параметр для представления
         {
-            List<object> tableData = await _renderTableService.GetDataByTableName(tableId);
+            Console.WriteLine("filter=> " + filterJson);
+
+            List<object> tableData = await _renderTableService.GetDataByTableName(tableId, filterJson);
 
             // Передаём параметр в представление через ViewBag
             ViewBag.TableId = tableId;

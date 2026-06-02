@@ -27,6 +27,11 @@ function loadTablePage(tableId) {
         .then(html => {
             // Вставляем полученный HTML в правый див
             document.querySelector('.right').innerHTML = html;
+
+            // Загружаем JS файл для этой таблицы динамически
+            const script = document.createElement('script');
+            script.src = '/js/Table/GetTable.js';
+            document.body.appendChild(script);
         })
         .catch(error => {
             document.querySelector('.right').innerHTML = `<div style="color: red; padding: 20px;">Ошибка: ${error}</div>`;

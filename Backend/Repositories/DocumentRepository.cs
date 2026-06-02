@@ -70,11 +70,11 @@ namespace BackendApp.Repositories
             return existingEntity;
         }
 
-        public async Task<List<object>> GetDataBySearchFilter(Document FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(Dictionary<string, object> filter)
         {
             IQueryable<Document> document = _context.Documents;
 
-            if (FilterDto.Inn.IsNullOrEmpty())
+            /*if (FilterDto.Inn.IsNullOrEmpty())
             {
                 document = document
                     .Where(c =>
@@ -96,7 +96,7 @@ namespace BackendApp.Repositories
                     .Where(c =>
                         c.Kpp.Contains(FilterDto.Kpp)
                     );
-            }
+            }*/
 
             return await document.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
         }

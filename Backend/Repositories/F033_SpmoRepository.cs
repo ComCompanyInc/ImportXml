@@ -111,11 +111,11 @@ namespace BackendApp.Repositories
             return existingEntity;
         }
 
-        public async Task<List<object>> GetDataBySearchFilter(f033_spmo FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(Dictionary<string, object> filter)
         {
             IQueryable<f033_spmo> f033_spmo = _context.F033_Spmos;
 
-            if (FilterDto.Code.IsNullOrEmpty())
+            /*if (FilterDto.Code.IsNullOrEmpty())
             {
                 f033_spmo = f033_spmo
                     .Where(c =>
@@ -155,7 +155,7 @@ namespace BackendApp.Repositories
                             c.DateEnd == FilterDto.DateEnd
                         );
                 }
-            }
+            }*/
 
             return await f033_spmo.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
         }

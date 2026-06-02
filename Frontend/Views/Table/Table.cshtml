@@ -15,6 +15,8 @@
 <body>
     <h1>@tableName</h1>
 
+    <button onclick="loadTableByParam('@tableName')">Сортировать</button>
+
     @if (tableData != null && tableData.Any())
     {
         // Получаем свойства первого объекта для заголовков
@@ -30,6 +32,16 @@
                 </tr>
             </thead>
             <tbody>
+                 <!-- Новая строка с полями для ввода (первая строка) -->
+                <tr class="input-row">
+                    @foreach (var prop in properties)
+                    {
+                        <td>
+                            <input id="@prop.Name" type="text" placeholder="Введите @prop.Name" />
+                        </td>
+                    }
+                </tr>
+
                 @foreach (var item in tableData)
                 {
                     <tr>
@@ -46,7 +58,6 @@
     {
         <p>Нет данных для справочника "@tableName"</p>
     }
-
 
     <script src="~/js/Table/GetTable.js"></script>
 </body>

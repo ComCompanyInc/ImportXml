@@ -230,11 +230,11 @@ namespace BackendApp.Repositories
             return existingEntity;
         }
 
-        public async Task<List<object>> GetDataBySearchFilter(f032_trmo FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(Dictionary<string, object> filter)
         {
             IQueryable<f032_trmo> f032_trmo = _context.F032_Trmos;
 
-            if (
+            /*if (
                 (FilterDto.DateBeg != null
                     && FilterDto.DateBeg != default(DateTime))
                 && (FilterDto.DateEnd != null
@@ -310,7 +310,7 @@ namespace BackendApp.Repositories
                         .Where(c =>
                            c.DateBeginOms == FilterDto.DateBeginOms
                         );
-            }
+            }*/
 
             return await f032_trmo.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
         }

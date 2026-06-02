@@ -61,11 +61,11 @@ namespace BackendApp.Repositories
             throw new NotImplementedException();
         }
 
-        public async Task<List<object>> GetDataBySearchFilter(f002_InsInclude FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(Dictionary<string, object> filter)
         {
             IQueryable<f002_InsInclude> insIncludes = _context.InsIncludes;
 
-            if (!FilterDto.NameE.IsNullOrEmpty())
+            /*if (!FilterDto.NameE.IsNullOrEmpty())
             {
                 insIncludes = insIncludes
                     .Where(c =>
@@ -115,7 +115,7 @@ namespace BackendApp.Repositories
                             c.DEnd == FilterDto.DEnd
                         );
                 }
-            }
+            }*/
 
             return await insIncludes.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
         }

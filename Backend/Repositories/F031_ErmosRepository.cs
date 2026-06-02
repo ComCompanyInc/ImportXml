@@ -101,40 +101,177 @@ namespace BackendApp.Repositories
         }
 
         // взятие данных по поиску
-        public async Task<List<object>> GetDataBySearchFilter(f031_ermo FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(Dictionary<string, object> filter)
         {
             IQueryable<f031_ermo> f031_ermo = _context.F031_Ermos;
 
-            if (
-                (FilterDto.DateBeg != null
-                    && FilterDto.DateBeg != default(DateTime))
-                && (FilterDto.DateEnd != null
-                    && FilterDto.DateEnd != default(DateTime))
-            )
+            DateTime? dateBeg = null;
+
+            if (filter != null)
             {
-                f031_ermo = f031_ermo
-                    .Where(c =>
-                        c.DateBeg >= FilterDto.DateBeg
-                        && c.DateEnd <= FilterDto.DateEnd
-                    );
-            }
-            else
-            {
-                if (FilterDto.DateBeg != null
-                    && FilterDto.DateBeg != default(DateTime))
+                if (filter.ContainsKey("DateBeg") && !filter["DateBeg"].ToString().IsNullOrEmpty())
+                {
+                    dateBeg = DateTime.ParseExact(filter["DateBeg"].ToString(), "dd-MM-yyyy", null);
+                }
+
+                DateTime? dateEnd = null;
+                if (filter.ContainsKey("DateEnd") && !filter["DateEnd"].ToString().IsNullOrEmpty())
+                {
+                    dateBeg = DateTime.ParseExact(filter["DateEnd"].ToString(), "dd-MM-yyyy", null);
+                }
+
+                if (dateBeg != null && dateEnd != null)
                 {
                     f031_ermo = f031_ermo
                         .Where(c =>
-                           c.DateBeg == FilterDto.DateBeg
+                            c.DateBeg >= dateBeg
+                            && c.DateEnd <= dateEnd
+                        );
+                }
+                else
+                {
+                    if (dateBeg != null)
+                    {
+                        f031_ermo = f031_ermo
+                            .Where(c =>
+                               c.DateBeg == dateBeg
+                            );
+                    }
+
+                    if (dateEnd != null)
+                    {
+                        f031_ermo = f031_ermo
+                            .Where(c =>
+                               c.DateEnd == dateEnd
+                            );
+                    }
+                }
+
+                if (filter.ContainsKey("Id") && !filter["Id"].ToString().IsNullOrEmpty())
+                {
+                    f031_ermo = f031_ermo
+                        .Where(c =>
+                            c.Id.Contains(filter["Id"].ToString())
                         );
                 }
 
-                if (FilterDto.DateEnd != null
-                    && FilterDto.DateEnd != default(DateTime))
+                if (filter.ContainsKey("OrgName") && !filter["OrgName"].ToString().IsNullOrEmpty())
                 {
                     f031_ermo = f031_ermo
                         .Where(c =>
-                           c.DateEnd == FilterDto.DateEnd
+                            c.Organization.OrgName.Name.Contains(filter["OrgName"].ToString())
+                        );
+                }
+
+                if (filter.ContainsKey("OrgShortName") && !filter["OrgShortName"].ToString().IsNullOrEmpty())
+                {
+                    f031_ermo = f031_ermo
+                        .Where(c =>
+                            c.Organization.OrgName.ShortName.Contains(filter["OrgShortName"].ToString())
+                        );
+                }
+
+                if (filter.ContainsKey("Inn") && !filter["Inn"].ToString().IsNullOrEmpty())
+                {
+                    f031_ermo = f031_ermo
+                        .Where(c =>
+                            c.Document.Inn.Contains(filter["Inn"].ToString())
+                        );
+                }
+
+                if (filter.ContainsKey("Kpp") && !filter["Kpp"].ToString().IsNullOrEmpty())
+                {
+                    f031_ermo = f031_ermo
+                        .Where(c =>
+                            c.Document.Kpp.Contains(filter["Kpp"].ToString())
+                        );
+                }
+
+                if (filter.ContainsKey("Ogrn") && !filter["Ogrn"].ToString().IsNullOrEmpty())
+                {
+                    f031_ermo = f031_ermo
+                        .Where(c =>
+                            c.Document.Ogrn.Contains(filter["Ogrn"].ToString())
+                        );
+                }
+
+                if (filter.ContainsKey("OidMo") && !filter["OidMo"].ToString().IsNullOrEmpty())
+                {
+                    f031_ermo = f031_ermo
+                        .Where(c =>
+                            c.OrgDocument.OidTypeMo.Name.Contains(filter["OidMo"].ToString())
+                        );
+                }
+
+                if (filter.ContainsKey("Okopf") && !filter["Okopf"].ToString().IsNullOrEmpty())
+                {
+                    f031_ermo = f031_ermo
+                        .Where(c =>
+                            c.Organization.Okopf.Contains(filter["Okopf"].ToString())
+                        );
+                }
+
+                if (filter.ContainsKey("Okfs") && !filter["Okfs"].ToString().IsNullOrEmpty())
+                {
+                    f031_ermo = f031_ermo
+                        .Where(c =>
+                            c.OrgDocument.Okfs.Contains(filter["Okfs"].ToString())
+                        );
+                }
+
+                if (filter.ContainsKey("AddrName") && !filter["AddrName"].ToString().IsNullOrEmpty())
+                {
+                    f031_ermo = f031_ermo
+                        .Where(c =>
+                            c.Address.Name.Contains(filter["AddrName"].ToString())
+                        );
+                }
+
+                if (filter.ContainsKey("AddrCode") && !filter["AddrCode"].ToString().IsNullOrEmpty())
+                {
+                    f031_ermo = f031_ermo
+                        .Where(c =>
+                            c.Address.AddressCode.Contains(filter["AddrCode"].ToString())
+                        );
+                }
+
+                if (filter.ContainsKey("Oktmo") && !filter["Oktmo"].ToString().IsNullOrEmpty())
+                {
+                    f031_ermo = f031_ermo
+                        .Where(c =>
+                            c.Address.Oktmo.Contains(filter["Oktmo"].ToString())
+                        );
+                }
+
+                if (filter.ContainsKey("Email") && !filter["Email"].ToString().IsNullOrEmpty())
+                {
+                    f031_ermo = f031_ermo
+                        .Where(c =>
+                            c.Communication.Email.Contains(filter["Email"].ToString())
+                        );
+                }
+
+                if (filter.ContainsKey("Phone") && !filter["Phone"].ToString().IsNullOrEmpty())
+                {
+                    f031_ermo = f031_ermo
+                        .Where(c =>
+                            c.Communication.Phone.Contains(filter["Phone"].ToString())
+                        );
+                }
+
+                if (filter.ContainsKey("Phone") && !filter["Phone"].ToString().IsNullOrEmpty())
+                {
+                    f031_ermo = f031_ermo
+                        .Where(c =>
+                            c.Communication.Phone.Contains(filter["Phone"].ToString())
+                        );
+                }
+
+                if (filter.ContainsKey("Fax") && !filter["Fax"].ToString().IsNullOrEmpty())
+                {
+                    f031_ermo = f031_ermo
+                        .Where(c =>
+                            c.Communication.Fax.Contains(filter["Fax"].ToString())
                         );
                 }
             }

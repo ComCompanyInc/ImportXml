@@ -42,11 +42,11 @@ namespace BackendApp.Repositories
             throw new NotImplementedException();
         }
 
-        public async Task<List<object>> GetDataBySearchFilter(OrgName FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(Dictionary<string, object> filter)
         {
             IQueryable<OrgName> orgName = _context.OrgNames;
 
-            if (!FilterDto.Name.IsNullOrEmpty())
+            /*if (!FilterDto.Name.IsNullOrEmpty())
             {
                 orgName = orgName
                     .Where(c =>
@@ -60,7 +60,7 @@ namespace BackendApp.Repositories
                     .Where(c =>
                         c.ShortName.Contains(FilterDto.ShortName)
                     );
-            }
+            }*/
 
             return await orgName.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
         }

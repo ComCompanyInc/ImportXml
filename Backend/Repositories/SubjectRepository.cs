@@ -61,7 +61,7 @@ namespace BackendApp.Repositories
                 .FirstOrDefaultAsync();
         }
 
-        public Task<List<object>> GetDataBySearchFilter(Subject FilterDto)
+        public Task<List<object>> GetDataBySearchFilter(Dictionary<string, object> filter)
         {
             throw new NotImplementedException();
         }

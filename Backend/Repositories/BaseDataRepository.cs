@@ -49,11 +49,11 @@ namespace BackendApp.Repositories
             throw new NotImplementedException();
         }
 
-        public async Task<List<object>> GetDataBySearchFilter(BaseData FilterDto)
+        public async Task<List<object>> GetDataBySearchFilter(Dictionary<string, object> filter)
         {
             IQueryable<BaseData> baseData = _context.BaseData;
 
-            if (FilterDto.Version.IsNullOrEmpty())
+            /*if (FilterDto.Version.IsNullOrEmpty())
             {
                 baseData = baseData
                     .Where(c =>
@@ -76,7 +76,7 @@ namespace BackendApp.Repositories
                     .Where(c =>
                         c.Date == FilterDto.Date
                     );
-            }
+            }*/
 
             return await baseData.Cast<object>().ToListAsync(); // ИЗМЕНИТЬ НА ВЫВОД КОНКРЕТНЫХ ПОЛЕЙ!
         }
