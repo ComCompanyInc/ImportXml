@@ -11,19 +11,24 @@ namespace BackendApp.Frontend.Services
     public class RenderTableService
     {
         private readonly F031_ErmosService _f031_ErmosService;
+        private readonly F032_TrmosService _f032_TrmosService;
 
-        public RenderTableService(F031_ErmosService f031_ErmosService)
+        public RenderTableService(
+            F031_ErmosService f031_ErmosService,
+            F032_TrmosService f032_TrmosService
+        )
         {
             _f031_ErmosService = f031_ErmosService;
+            _f032_TrmosService = f032_TrmosService;
         }
 
         public async Task<List<object>> GetDataByTableName(string TableName, string filterJson)
         {
+            Dictionary<string, object> filter;
 
             switch (TableName)
             {
                 case "F031":
-                    Dictionary<string, object> filter;
 
                     filter = filterJson != null
                         ? JsonSerializer.Deserialize<Dictionary<string, object>>(filterJson)
@@ -32,9 +37,14 @@ namespace BackendApp.Frontend.Services
                     // Выбираем ТОЛЬКО нужные поля
                     return await _f031_ErmosService.GetDataBySearchFilter(filter);
 
-                //case "F032":
-                //    // Получаем список F032 и приводим к List<object>
-                //    return _context.F032_Trmos.Cast<object>().ToList();
+                case "F032":
+
+                    filter = filterJson != null
+                           ? JsonSerializer.Deserialize<Dictionary<string, object>>(filterJson)
+                           : null;
+
+                    // Выбираем ТОЛЬКО нужные поля
+                    return await _f032_TrmosService.GetDataBySearchFilter(filter);
 
                 default:
                     return new List<object>();

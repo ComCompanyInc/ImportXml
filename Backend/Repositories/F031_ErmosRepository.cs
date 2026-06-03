@@ -105,10 +105,10 @@ namespace BackendApp.Repositories
         {
             IQueryable<f031_ermo> f031_ermo = _context.F031_Ermos;
 
-            DateTime? dateBeg = null;
-
+            
             if (filter != null)
             {
+                DateTime? dateBeg = null;
                 if (filter.ContainsKey("DateBeg") && !filter["DateBeg"].ToString().IsNullOrEmpty())
                 {
                     dateBeg = DateTime.ParseExact(filter["DateBeg"].ToString(), "dd-MM-yyyy", null);

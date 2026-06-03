@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BackendApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20260512090003_6th_migration")]
+    [Migration("20260603061100_6th_migration")]
     partial class _6th_migration
     {
         /// <inheritdoc />
@@ -1245,6 +1245,9 @@ namespace BackendApp.Migrations
                     b.Property<DateTime?>("ExclusionDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<long>("F002_InsIncludeId")
+                        .HasColumnType("bigint");
+
                     b.Property<DateTime>("InclusionDate")
                         .HasColumnType("datetime2");
 
@@ -1275,6 +1278,8 @@ namespace BackendApp.Migrations
                     b.HasIndex("CommunicationId");
 
                     b.HasIndex("DocumentId");
+
+                    b.HasIndex("F002_InsIncludeId");
 
                     b.HasIndex("OrgDocumentId");
 
@@ -1992,6 +1997,12 @@ namespace BackendApp.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("BackendApp.Models.f002_InsInclude", "F002_InsInclude")
+                        .WithMany("f032_Trmos")
+                        .HasForeignKey("F002_InsIncludeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("BackendApp.Models.OrgDocument", "OrgDocument")
                         .WithMany()
                         .HasForeignKey("OrgDocumentId")
@@ -2029,6 +2040,8 @@ namespace BackendApp.Migrations
                     b.Navigation("Communication");
 
                     b.Navigation("Document");
+
+                    b.Navigation("F002_InsInclude");
 
                     b.Navigation("F031_Ermo");
 
@@ -2292,6 +2305,11 @@ namespace BackendApp.Migrations
             modelBuilder.Entity("BackendApp.Models.VidType", b =>
                 {
                     b.Navigation("MoDocuments");
+                });
+
+            modelBuilder.Entity("BackendApp.Models.f002_InsInclude", b =>
+                {
+                    b.Navigation("f032_Trmos");
                 });
 
             modelBuilder.Entity("BackendApp.Models.f002_smoEmp", b =>

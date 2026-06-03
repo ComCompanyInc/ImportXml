@@ -142,7 +142,10 @@ namespace BackendApp.Services
                 OrgDocument orgDocument = new OrgDocument
                 {
                     OidTypeSpmoId = oidTypeSpmoId,
-                    VidTypeId = vidTypeSpmoId
+                    VidTypeId = vidTypeSpmoId,
+                    //Okfs = null,
+                    //DateBeg = default,     
+                    //OidTypeMoId = null
                 };
 
                 long orgDocumentId;

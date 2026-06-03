@@ -46,6 +46,9 @@ namespace BackendApp.Models
         public long OrgDocumentId { get; set; }
         public OrgDocument OrgDocument { get; set; }
 
+        public long F002_InsIncludeId { get; set; }
+        public f002_InsInclude F002_InsInclude { get; set; }
+
         public DateTime DateBeg { get; set; }
 
         public DateTime? DateEnd { get; set; }

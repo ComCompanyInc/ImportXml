@@ -30,6 +30,23 @@ namespace BackendApp.Repositories
             //}
 
             OrgDocument updatedOrgDocument = null;
+            
+            // ДОБАВИТЬ поиск по этим полям!
+            if (entityData.VidTypeId != null && entityData.VidTypeId != 0)
+            {
+                moDocumentResult = moDocumentResult.Where(c => c.VidTypeId == entityData.VidTypeId);
+            }
+
+            if (entityData.OidTypeMoId != null && entityData.OidTypeMoId != 0)
+            {
+                moDocumentResult = moDocumentResult.Where(c => c.OidTypeMoId == entityData.OidTypeMoId);
+            }
+
+            if (entityData.OidTypeSpmoId != null && entityData.OidTypeSpmoId != 0)
+            {
+                moDocumentResult = moDocumentResult.Where(c => c.OidTypeSpmoId == entityData.OidTypeSpmoId);
+            }
+
             if (!entityData.Okfs.IsNullOrEmpty())
             {
                 moDocumentResult = moDocumentResult

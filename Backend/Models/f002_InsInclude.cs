@@ -22,5 +22,7 @@ namespace BackendApp.Models
         public DateTime? DBegin { get; set; }
 
         public DateTime? DEnd { get; set; }
+
+        public List<f032_trmo> f032_Trmos { get; set; }
     }
 }

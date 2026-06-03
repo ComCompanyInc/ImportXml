@@ -4,6 +4,7 @@ using BackendApp.Dto.f032_trmos;
 using BackendApp.Helpers;
 using BackendApp.Models;
 using BackendApp.Repositories;
+using Microsoft.AspNetCore.Components.Sections;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -219,6 +220,8 @@ namespace BackendApp.Services
                     oidTypeMoId = (await _oidTypeService.SaveOidTypeObject(oidTypeMo)).Id;
                 }
 
+                Console.WriteLine("\n\n_________________\nOidSpmo = " + item.OidSpmo + "\n_________________\n\n");
+
                 OidType oidTypeSpmo = new OidType
                 {
                     Name = item.OidSpmo,
@@ -348,6 +351,8 @@ namespace BackendApp.Services
                     AddressId = addressId,
                     CommunicationId = communicationId,
                     OspTypeId = ospTypeId,
+                    F002_InsInclude = insInclude,
+                    F002_InsIncludeId = insIncludeId
                 };
 
                 f031_ermo existingF031 = await _f031_ermosService.GetEnitityByAttributes(new f031_ermo { Id = item.F031_ErmosId });
@@ -401,6 +406,11 @@ namespace BackendApp.Services
         public async Task<f032_trmo> GetEnitityByAttributes(f032_trmo f032_TrmoData)
         {
             return await _f032_TrmosRepository.GetEnitityByAttributes(f032_TrmoData);
+        }
+
+        public async Task<List<object>> GetDataBySearchFilter(Dictionary<string, object> filter)
+        {
+            return await _f032_TrmosRepository.GetDataBySearchFilter(filter);
         }
     }
 }
